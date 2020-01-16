@@ -1,0 +1,854 @@
+Title = "EXFOR quantities"
+NumFields = 2
+FieldBreaks = [ 30 ]
+ 
+ (CUM),FY                        Fission-product yield (assumed cumulative)
+ (CUM),PY                        Product yield (assumed cumulative)
+ (CUM),SIG                       Cross section (assumed cumulative)
+ (CUM),SIG,G                     Gamma prod. cross sect.(assumed cumulative)
+ (CUM),TTY                       Thick-target yield (assumed cumulative)
+ (CUM),TTY,,DT                   Thick-target yield/unit time (assum.cumul.)
+ (CUM)/(M)/UND,SIG               Cross section,uncert. if cum or +meta,undef.
+ (CUM)/M+,SIG                    Cross section,incl.isom.trans.,uncert.if cum
+ (CUM)/UND,SIG                   Cross section, undef.react.(assumed cumulative)
+ (DEF),SIG                       Cross section (assumed reaction defined)
+ (M),PY                          Product yield (uncert.if isomeric trans.incl)
+ (M),SIG                         Cross section (uncert.if isomeric trans.incl)
+ (M),TTY                         Thick-target yield (uncert.if isom.trans.incl)
+ (M)/UND,SIG                     Cross sect.,undef.react.(uncert.isom.trans.inc)
+ 20,POL/DA,,TAP                  Tensor analyzing power, T20, spherical coord.
+ 21,POL/DA,,TAP                  Tensor analyzing power, T21, spherical coord.
+ 22,POL/DA,,TAP                  Tensor analyzing power, T22, spherical coord.
+ 20/PAR,POL/DA,,TAP              Tensor analyzing power,T20,spher.coord.,partl.
+ 21/PAR,POL/DA,,TAP              Tensor analyzing power,T21,spher.coord.,partl.
+ 22/PAR,POL/DA,,TAP              Tensor analyzing power,T22,spher.coord.,partl.
+ ,AG,,AA                        .Adler-Adler symmetry coefficient
+ ,AH,,AA                        .Adler-Adler asymmetry coefficient
+ ,AKE                            Average kinetic energy of outgoing particle
+ ,AKE,A                          Average kinetic energy of alphas
+ ,AKE,FF                         Average kinetic energy of fission fragments
+ ,AKE,FF,RES                    .Average kinetic en. of fission frag. at reson.
+ ,AKE,HF                         Average kinetic energy of heavy fragments
+ ,AKE,LF                         Average kinetic energy of light fragments
+ ,AKE,N                          Average kinetic energy of neutrons
+ ,AKE/DA,FF                      Avg.kinetic en. of fission frag. at given angle
+ ,AKE/DA,N                       Avg.kinetic en. of neutrons at a given angle
+ ,ALF                            Capture-to-fission cross section ratio
+ ,ALF,,RES                      .Capture-to-fission (alpha) ratio at resonance
+ ,AMP                            Scattering amplitude
+ ,AP                             Most probable mass of fission products
+ ,AP,*F                          Most probable mass of fragment specified
+ ,AP,*F,RES                     .Most probable mass at res. of fragment specif.
+ ,AP,HF                          Most probable mass of heavy fragment
+ ,AP,HF,RES                     .Most probable mass of heavy fragment at reson.
+ ,AP,LF                          Most probable mass of light fragment
+ ,AP,LF,RES                     .Most probable mass of light fragment at reson.
+ ,ARE                           .Resonance area
+ ,ARE,,RTE                      .Resonance area * square root(E)
+ ,COR                            Angular correlation
+ ,COR,A/FF                       Alpha to fission fragment angular correlation
+ ,COR,A/HF                       Alpha to heavy fragment angular correlation
+ ,COR,FF/FF                      Fragment to fragment angular correlation
+ ,COR,N/D                        Angular correlation neutrons/deuterons
+ ,COR,N/FF                       Neutron to fission fragment angular correlation
+ ,COR,N/P                        Angular correlation neutrons/protons
+ ,COR,N/T/A                      Angular correlation neutrons/tritons/alfas
+ ,COR,P/D                        Angular correlation protons/deuterons
+ ,D                             .Average level spacing
+ ,DA                             Differential c/s with respect to angle
+ ,DA,,4PI                        Differential c/s d/dA * 4pi
+ ,DA,,ASY                        Asymmetry of distribution of outgoing particles
+ ,DA,,COS                        Cosine coef. d/dA = a(0)+Sum(a(L)cos**L)
+ ,DA,,COS/1K2                    Cosine coef. k**2 d/dA = Sum(a(L)cos**L)
+ ,DA,,COS/RS                     Cosine coef. 4pi/Sig d/dA=1+Sum(a(L)cos**L)
+ ,DA,,COS/RS0                    Cosne coef. (d/dA)/(d/dA,0deg)=Sum(a(L)cos**L)
+ ,DA,,COS/RSD                    Cosne coef. (d/dA)/(d/dA,90deg)=Sum(a(L)cos**L)
+ ,DA,,CS2                        Cos coef. d/dA=a(0)+Sum(a(L)*sin**2*cos**L)
+ ,DA,,IPA                        Diff.cs integrated over partial angular range
+ ,DA,,LEG                        Legendre coef. d/dA=a(0)+Sum(a(L)*p(L))
+ ,DA,,LEG/1K2                    Legendre coef. k**2 d/dA=Sum(a(L)*p(L))
+ ,DA,,LEG/2L2                    Legendre coef. d/dA=1/2Sum((2L+1)a(L)*p(L))
+ ,DA,,LEG/L4P                    Legendre coef. 4pi d/dA=Sum((2L+1)a(L)*p(L))
+ ,DA,,LEG/RS                     Legendre coef. 4pi/Sig d/dA=1+Sum(a(L)*p(L))
+ ,DA,,LEG/RS0                    Leg.coef. (d/dA)/(d/dA,0deg)=Sum(a(L)*p(L))
+ ,DA,,LEG/RSD                    Leg.coef. d/dA=1+Sum(a(L)) rel.90deg.
+ ,DA,,LEG/RSL                    Leg.coef. 4pi/Sig d/dA=Sum((2L+1)a(L)*p(L))
+ ,DA,,RS                         Differential c/s d/dA * 4pi/Sigma
+ ,DA,,RS0                        Differential c/s d/dA relative to 0 deg.
+ ,DA,,RSD                        Differential c/s d/dA relative to 90 deg.
+ ,DA,,RTH                        Differential cs d/dA rel.to Rutherf.scatt.
+ ,DA,,SN2                        D/da coef. for sin**2 expansion
+ ,DA,*                           Angular distribution of particle specified
+ ,DA,*,4PI                       Angular distribution of particle spec. * 4pi
+ ,DA,*,COS                       Coeff. of cosine expansion for particle specif.
+ ,DA,*,LEG                       Legendre coef. d/dA=1+Sum(a(L)) for part. spec.
+ ,DA,*,RS                        Angular distribution of part.spec. * 4pi/Sigma
+ ,DA,*,RSD                       Angular distr. of particle specif. rel. 90 deg.
+ ,DA,*/*                         Angular distribution of particle pair specified
+ ,DA,A                           Angular distribution of alphas
+ ,DA,A,LEG                       Legendre coef. d/dA=1+Sum(a(L)) for alphas
+ ,DA,A,LEG/RS                    Legendre coef. 4pi/Sig d/dA=1+Sum(a(L))
+ ,DA,A,LEG/RSD                   Leg.coef. d/dA=1+Sum(a(L)) rel.90deg for alphas
+ ,DA,A,RS                        Angular distribution of alphas * 4pi/Sigma
+ ,DA,A,RSD                       Angular distribution of alphas rel.90 deg.
+ ,DA,A,TT/RSD                    Ang.distr.of alphas rel.90 deg.f.thick target
+ ,DA,D                           Angular distribution of of deuterons
+ ,DA,D,RS                        Angular distribution of deuterons * 4pi/Sigma
+ ,DA,FF                          Angular distribution of fission fragments
+ ,DA,FF,4PI                      Angular distribution of fission frag. * 4pi
+ ,DA,FF,COS                      Cos.coef. d/dA=a(0)+Sum(a(L)cos**L),fiss.frag.
+ ,DA,FF,COS/RS                   Cos.coef.4pi/Sig d/dA=Sum(2L+1)a(L)cos**L,ff
+ ,DA,FF,COS/RSD                  Cos.coef.(d/dA)/(d/dA90deg)=1+Sum(a(L)cos**L)ff
+ ,DA,FF,LEG                      Leg.coef. d/dA=a(0)+Sum(a(L)*p(L)),fission frag
+ ,DA,FF,LEG/RS                   Leg.coef.4pi/Sig d/dA=Sum(a(L)p(L)),fiss.frag.
+ ,DA,FF,LEG/RSL                  Leg.coef.4pi/Sig d/dA=Sum((2L+1)a(L)p(L)),ff
+ ,DA,FF,LEG/RSD                  Leg.coef.(d/dA)/(d/dA,90deg)=1+Sum(a(L)p(L)),ff
+ ,DA,FF,RSD                      Angular distribution of fission frag. rel.90deg
+ ,DA,FF,S2T                      Sine**2 coef.d/dA=a(0)+Sum(a(L)sin**2(L*Theta))
+ ,DA,FF,SN2/RS0                  Sine**2 coef. d/dA=Sum(a(L)sin**2L(Theta))
+ ,DA,G                           Angular distribution with respect to gammas
+ ,DA,G,4PI                       Angular distribution of gammas * 4pi
+ ,DA,G,LEG                       Leg.coef. d/dA=a(0)+Sum(a(L)p(L)) for gammas
+ ,DA,G,RSD                       Angular distribution of gammas rel.to 90 deg.
+ ,DA,HE3                         Angular distribution of 3He
+ ,DA,HE3,LEG                     Leg.coef. d/dA=a(0)+Sum(a(L)p(L)) for He-3
+ ,DA,HF                          Differential c/s d/dA of heavy fission frag.
+ ,DA,LF                          Differential c/s d/dA of light fission frag.
+ ,DA,LF,RSD                      Angular distr. of light fiss.frag.rel. 90 deg.
+ ,DA,N                           Angular distribution of neutrons
+ ,DA,N,LEG/RSD                   Leg.coef.4pi/Sig(90deg)d/dA=1+Sum(a(L)p(L)),n
+ ,DA,N,RS                        Angular distribution of neutrons * 4pi/Sigma
+ ,DA,N/P                         Angular distribution of neutron/proton pair
+ ,DA,P                           Angular distribution of protons
+ ,DA,P,4PI                       Angular distribution of protons * 4pi
+ ,DA,P,RTH                       Diff. cs d/dA for protons rel.to Rutherf.scatt.
+ ,DA,RSD                         Angular distribution of residual nucleus
+ ,DA,T                           Angular distribution of tritons
+ ,DA/CRL                         Angular correlation
+ ,DA/CRL,*/*                     Angular correlation of particle pair specified
+ ,DA/CRL,A/FF                    Alpha to fission fragment angular correlation
+ ,DA/CRL,A/HF                    Alpha to heavy fragment angular correlation
+ ,DA/CRL,FF/FF                   Fragment to fragment angular correlation
+ ,DA/CRL,N/D                     Angular correlation neutrons/deuterons
+ ,DA/CRL,N/FF                    Neutron to fission fragment angular correlation
+ ,DA/CRL,N/P                     Angular correlation neutrons/protons
+ ,DA/CRL,N/T/A                   Neutron/triton/alpha angular correlation
+ ,DA/CRL,P/D                     Angular correlation protons/deuterons
+ ,DA/DA                          Double diff. cross section d2/dA/dA
+ ,DA/DA,*/*                      Double diff. cross section d2/dA(*)/dA(*)
+ ,DA/DA,A/A                      Double diff. cross section d2/dA(a)/dA(a)
+ ,DA/DA,N/A                      Double diff. cross section d2/dA(n)/dA(a)
+ ,DA/DA,N/D                      Double diff. cross section d2/dA(n)/dA(d)
+ ,DA/DA,N/P                      Double diff. cross section d2/dA(n)/dA(p)
+ ,DA/DA,P/A                      Double diff. cross section d2/dA(p)/dA(a)
+ ,DA/DA,P/D                      Double diff. cross section d2/dA(p)/dA(d)
+ ,DA/DA,P/P                      Double diff. cross section d2/dA(p)/dA(p)
+ ,DA/DA/DE                       Triple diff.cross section d3/dA/dA/dE
+ ,DA/DA/DE,*/*/*                 Triple diff.cross section d3/dA(*)/dA(*)/dE(*)
+ ,DA/DA/DE,A/A/A                 Triple diff.cross section d3/dA(a)/dA(a)/dE(a)
+ ,DA/DA/DE,A/HE3/A               Triple diff.cross sect. d3/dA(a)/dA(He3)/dE(a)
+ ,DA/DA/DE,A/HE3/HE3             Triple diff.cs d3/dA(a)/dA(He3)/dE(He3)
+ ,DA/DA/DE,D/D/D                 Triple diff.cross section d3/dA(d)/dA(d)/dE(d)
+ ,DA/DA/DE,D/HE3/D               Triple diff.cross sect. d3/dA(d)/dA(He3)/dE(d)
+ ,DA/DA/DE,N/N/N                 Triple diff.cross section d3/dA(n)/dA(n)/dE(n)
+ ,DA/DA/DE,N/P/P                 Triple diff.cross section d3/dA(n)/dA(p)/dE(p)
+ ,DA/DA/DE,P/A/P                 Triple diff.cross section d3/dA(p)/dA(a)/dE(p)
+ ,DA/DA/DE,P/D/D                 Triple diff.cross section d3/dA(p)/dA(d)/dE(d)
+ ,DA/DA/DE,P/D/P                 Triple diff.cross section d3/dA(p)/dA(d)/dE(p)
+ ,DA/DA/DE,P/N/N                 Triple diff.cross section d3/dA(p)/dA(n)/dE(n)
+ ,DA/DA/DE,P/P/P                 Triple diff.cross section d3/dA(p)/dA(p)/dE(p)
+ ,DA/DA/DE,P/T/P                 Triple diff.cross section d3/dA(p)/dA(t)/dE(p)
+ ,DA/DA/DE,T/HE3/T               Triple diff.cross sect. d3/dA(t)/dA(He3)/dE(t)
+ ,DA/DE                          Double diff.cross section d2/dA/dE
+ ,DA/DE,,4PI                     Double diff.cross section d2/dA/dE * 4pi
+ ,DA/DE,,LEG                     Partl.leg.coef. 4pi/Sig d2/dA/dE=Sum(a(L)p(L))
+ ,DA/DE,*                        Double diff.cross sect. d2/dA/dE of part.spec.
+ ,DA/DE,A                        Double diff.cross section d2/dA/dE of alphas
+ ,DA/DE,D                        Double diff.cross sect. d2/dA/dE of deuterons
+ ,DA/DE,G                        Double diff. gamma prod.cross section d2/dA/dE
+ ,DA/DE,N                        Double diff.cross section d2/dA/dE of neutrons
+ ,DA/DE,N,RSD                    Double diff.cs d2/dA/dE of neutrons rel.90 deg
+ ,DA/DE,P                        Double diff.cross section d2/dA/dE of protons
+ ,DA/DE,T                        Double diff.cross section d2/dA/dE of tritons
+ ,DA/DE/DE,*/*/*                 Triple diff.cross section d3/dA(*)/dE(*)/dE(*)
+ ,DA/DE/DE,N/N/P                 Triple diff.cross section d3/dA(n)/dE(n)/dE(p)
+ ,DA/DP                          Diff.cs dAngle/d(lin.momentum)
+ ,DA/KE,FF                       Kinetic en. of fission frag. with resp.to angle
+ ,DA/TMP,FF,LEG/RS               Lg.cf.4pi/Sig d/dA=Sum(a(L)p(L)),fis.fr.,tmp.dp
+ ,DA/TYA,P                       Diff.cross sect. with resp.to Treim.-Yang angle
+ ,DA2/DE2,A/A                    Quadruple diff.cs d4/dA(a)/dE(a)/dA(a)/dE(a)
+ ,DA2/DE2,P/A                    Quadruple diff.cs d4/dA(p)/dE(p)/dA(a)/dE(a)
+ ,DE                             Energy spectrum of outgoing particles
+ ,DE,*                           Energy spectrum of particle specified
+ ,DE,*/*                         Energy spectrum of particle pair specified
+ ,DE,A                           Energy spectrum of alphas
+ ,DE,A/RSD                       Energy spectrum of alpha/residual nucleus pair
+ ,DE,D                           Energy spectrum of deuterons
+ ,DE,FF                          Energy spectrum of fission fragments
+ ,DE,G                           Energy spectrum of gammas
+ ,DE,LF                          Energy spectrum of light fission fragments
+ ,DE,N                           Energy spectrum of neutrons
+ ,DE,N/D                         Energy spectrum of neutron/deuteron pair
+ ,DE,N/P                         Energy spectrum of neutron/proton pair
+ ,DE,P                           Energy spectrum of protons
+ ,DE,P/A                         Energy spectrum of proton/alpha pair
+ ,DE,P/D                         Energy spectrum of proton/deuteron pair
+ ,DE,P/RSD                       Energy spectrum of proton/residual nucleus pair
+ ,DE,T                           Energy spectrum of tritons
+ ,DE/ZCAL                        Energy spectrum in zero-degree calorimeter
+ ,DEK                            dsigma/dE(k)
+ ,DET                            dsigma/dE(T)
+ ,DET/PB                         dsigma/dE(T) in lead glass detector
+ ,DMT/DR,,2MT                    dsigma/dm(T)/dRapidity * 1/(2pi*m(T))
+ ,DP3,,RSE                       E/sigma d3sigma/dp3
+ ,DT                             Diff.c/s with respect to 4-mom.transfer squared
+ ,ECO                            Energy correlation
+ ,EMC                            Effective mass correlation
+ ,EN                            .Resonance energy
+ ,EN,,AA                        .Adler-Adler resonance energy
+ ,ETA                            Neutron yield (Eta)
+ ,ETA,,RES                      .Eta at resonance
+ ,ETA/NU,,RES                   .Eta/Nu at resonance
+ ,ETR/DPR                        dE(T)/dRapidity
+ ,ETR/PB/DPR                     dE(T)/dRapidity in lead glass detector
+ ,FM/DA,,AL1                     Leg.coef.of 1st kind for spin-pol.prob. * d/dA
+ ,FM/DA,,AL1/RS                  Leg.coef.of 1st kind for spin-pol.prob. * d/dA
+ ,FM/DA,,SN2                     Sine**2 coef. for spin-pol.prob. * d/dA
+ ,FM2/DA,,AL1                    Leg.coef.of 1st kind, spin-pol.prob*(d/dA)**2
+ ,FM2/DA,,SN2                    Sine**2 coef. for spin-pol.prob * (d/dA)**2
+ ,INT                            Cross-section integral over incident energy
+ ,INT,,RES                      .Cross-section integral over inc. energy at res.
+ ,INT,,RTE                       Cross-section integral over inc. energy*sqrt(E)
+ ,INT/DA                         Integral over incid.energy of ang. distr.
+ ,INT/DA,,4PI                    4pi * integral over inc.energy of ang.distr.
+ ,ISP                            Inverse slope parameter
+ ,J                             .Spin J
+ ,KE,FF                          Kinetic energy  of fission fragments
+ ,KER                            Kerma factor
+ ,L                             .Momentum L
+ ,LDP                            Level density parameter
+ ,MCO                            Linear momentum correlation
+ ,MLT                            Multiplicity of outgoing particle
+ ,MLT,,TT                        Multiplicity for a thick target
+ ,MLT,G                          Gamma multiplicity
+ ,MLT,G,RES                     .Average gamma multiplicity at resonance
+ ,MLT,N                          Neutron multiplicity
+ ,MLT,N,TT                       Neutron multiplicity for a thick target
+ ,MLT,P                          Proton multiplicity
+ ,MLT,PIN                        Negative pion multiplicity
+ ,MLT,PIP                        Positive pion multiplicity
+ ,MLT/DA/DE,,TT                  Particle multiplicity f.thick target d2/dA/dE
+ ,NU                             Total neutron yield (nu-bar)
+ ,NU,,RES                       .Total Nu-bar at resonance
+ ,PHS,,VGT                      .Vogt relative phase
+ ,PN                             Delayed neutron emission probability
+ ,POL                            Spin-polarization probability
+ ,POL,,ASY                       Polarization asymmetry
+ ,POL,,DSP/ASY                   Spin-spin asymmetry (antiparallel-parallel)
+ ,POL,D                          Spin-polarization probability of deuterons
+ ,POL,FF,ASY                     Asymmetry of fission fragments
+ ,POL/DA                         Spin-polarization probability d/dA
+ ,POL/DA,,AL1                    Assc.leg.coef.of 1st kind to fit spin-pol.prob.
+ ,POL/DA,,ANA                    Analyzing power
+ ,POL/DA,,ASY                    Asymmetry of polarized particles
+ ,POL/DA,,ASY/PP                 Asymmetry as a fn. of inc.parallel/perpend.
+ ,POL/DA,,AYY                    Tensor anal.power,inc.proj.spin normal scatt.pl
+ ,POL/DA,,AZZ                    Tensor anal.power,inc.proj.spin parall.scatt.pl
+ ,POL/DA,,COS                    Cosine coef. for fit to spin-pol. probability
+ ,POL/DA,,LEG                    Legendre coef. for fit to spin-pol. probability
+ ,POL/DA,,SF                     Spin-flip probability, S(nn)
+ ,POL/DA,,SN2                    Spin-polariz. prob., coef. sum in power sin**2
+ ,POL/DA,,SRF                    Spin rotation function, Q
+ ,POL/DA,,TAP                    Tensor analyzing power, T(kq), spherical coord.
+ ,POL/DA,,VAP                    Vector analyzing power, iT(11),spherical coord.
+ ,POL/DA,*,ANA                   Analyzing power for particle specified
+ ,POL/DA,D                       Diff. spin-polariz. prob. d/dA of deuterons
+ ,POL/DA,D,ANA                   Analyzing power for deuterons
+ ,POL/DA,HE3,ANA                 Analyzing power for helium-3
+ ,POL/DA,N,ANA                   Analyzing power for neutrons
+ ,POL/DA,P,ANA                   Analyzing power for protons
+ ,POL/DA/DA/DE,,ANA              Analyzing power dA1/dA2/dE1 for 2 particles
+ ,POL/DA/DA/DE,P,ANA             Analyzing power dA1/dA2/dE1 for 2 protons
+ ,POL/DA/DE                      Diff.spin-pol.probab.w.resp.to angle and energy
+ ,POL/DA/DE,,ANA                 Analyzing power / dE
+ ,POL/DA/DE,A,ANA                Analyzing power dA/dE for alphas
+ ,POL/DA/DE,D,ANA                Analyzing power dA/dE for deuterons
+ ,POL/DA/DE,N,ANA                Analyzing power dA/dE for neutrons
+ ,POL/DA/DE,P,ANA                Analyzing power dA/dE for protons
+ ,POL/DA/DE,P/P,ANA              Analyzing power d2/dA/dE for proton pair
+ ,PTY                           .Parity
+ ,PY                             Product yield
+ ,PY,,DT                         Product yield per unit time
+ ,PY,,TT                         Product yield for a thick target
+ ,RAD                            Scattering radius
+ ,RI                             Resonance integral
+ ,RI,,LIM                        Resonance integral for limited energy range
+ ,RI,,RNV                        Resonance integral, non 1/v part
+ ,RI,,RNV/LIM                    Resonance int., non 1/v, limited energy range
+ ,RI,,RV                         Resonance integral, 1/v part
+ ,RI,,RV/LIM                     Resonance integral, 1/v, limited energy range
+ ,RI/SUM                         Resonance integral, isomeric sum
+ ,RI/SUM,,RNV                    Resonance integral, non 1/v part, isomeric sum
+ ,SCO                            Spin-cut-off factor
+ ,SGV                            Reaction rate (sigma*velocity)
+ ,SGV,,RNV                       Reaction rate (sigma*velocity), non 1/v part
+ ,SGV,,RV                        Reaction rate (sigma*velocity), 1/v part
+ ,SGV,,SFC                       S-factor for reaction rate
+ ,SIF                            Self-indication function
+ ,SIG                            Cross section
+ ,SIG,,DSP                       Cross sect. (spins antiparallel-spins parallel)
+ ,SIG,,RES                      .Cross section at resonance
+ ,SIG,,RES/RTE                  .Cross section * square root(E) at resonance
+ ,SIG,,RNV                       Cross section, non 1/v part
+ ,SIG,,RTE                       Cross section * root(E)
+ ,SIG,,RV                        Cross section, 1/v part
+ ,SIG,,SF                        Spin-flip cross section
+ ,SIG,,SFC                       S-factor for cross section
+ ,SIG,,SFC/RES                  .S-factor for cross section at resonance
+ ,SIG,,SS                        Spin-spin cross section
+ ,SIG,,TT                        Cross section for thick target
+ ,SIG,G                          Gamma-production cross section
+ ,SIG/DN                         Cs diff.by number of outgoing neutrons
+ ,SIG/RAT                        Cross section ratio
+ ,SIG/SUM                        Cross section sum
+ ,SIG/TEM                        Temperature-dependent cross section
+ ,SIG/TMP                        Temperature-dependent cross section
+ ,SPC                            Gamma spectrum
+ ,SPC,,RES                      .Gamma spectrum at resonance
+ ,SPC,,TT                       .Gamma spectrum for thick target
+ ,SPC/DA                         Gamma spectrum as function of angle
+ ,SPC/DR                         Spectrum as a function of rapidity
+ ,STF                           .Strength function
+ ,SWG                           .Statistical weight factor g
+ ,TEM                            Nuclear temperature
+ ,TTY                            Thick-target yield
+ ,TTY,,DT                        Thick-target yield per unit time
+ ,TTY/DA                         Differential thick target yield d/dA
+ ,TTY/DA,,DT                     Thick-target yield per unit time d/dA
+ ,TTY/DA/DE                      Differential thick target yield d/dA/dE
+ ,TTY/DE                         Differential thick target yield d/dE
+ ,WID                           .Resonance width
+ ,WID,,2AG                      .2ag * resonance width
+ ,WID,,2G                       .2g * resonance width
+ ,WID,,4AG                      .4ag * resonance width
+ ,WID,,AA                       .Adler-Adler Nu
+ ,WID,,AG                       .ag * resonance width
+ ,WID,,G                        .g * resonance width
+ ,WID,,RM                       .Reich-Moore resonance width
+ ,WID,,RM/2G                     2g * Reich-Moore resonance width
+ ,WID,,RM/G                     .g * Reich-Moore resonance width
+ ,WID,,RM/S0                     Reich-Moore resonance width * peak cross sect.
+ ,WID,,RM/SQ/G                  .g * Reich-Moore resonance width squared
+ ,WID,,S0                       .Resonance width * peak cross section
+ ,WID,,SQ                       .Resonance width squared
+ ,WID,,SQ/G                     .g * resonance width squared
+ ,WID,,SQ/S0                    .Resonance width squared * peak cross section
+ ,WID,,VGT                      .Vogt resonance width
+ ,WID,,VGT/2G                   .2g * Vogt resonance width
+ ,WID/RED                       .Reduced width
+ ,WID/RED,,2AG                  .2ag * reduced width
+ ,WID/RED,,2G                   .2g * reduced width
+ ,WID/RED,,4AG                  .4ag * reduced width
+ ,WID/RED,,AG                   .ag * reduced width
+ ,WID/RED,,G                    .g * reduced width
+ ,WID/RED,,RM                   .Reich-Moore reduced resonance width
+ ,WID/RED,,RM/2G                .2g * Reich-Moore reduced resonance width
+ ,WID/RED,,RMT                  .R-matrix reduced resonance width
+ ,WID/RED,,RMT/AMP              .R-matrix reduced width amplitude
+ ,WID/RED,,VGT                  .Vogt reduced resonance width
+ ,WID/STR                       .Resonance strength
+ ,ZP                             Most probable charge of fission products
+ ,ZP,HF                          Most probable charge of heavy fragments
+ ,ZP,LF                          Most probable charge of light fragments
+ 1,WID,,RM                      .Reich-Moore resonance width for channel 1
+ 1,WID,,VGT                     .Vogt resonance width for channel 1
+ 2,DE                            Energy spectrum of 2nd secondary particle
+ 2,WID,,RM                      .Reich-Moore resonance width for channel 2
+ 2,WID,,VGT                     .Vogt resonance width for channel 2
+ 3,WID,,RM                      .Reich-Moore resonance width for channel 3
+ 4,WID,,RM                      .Reich-Moore resonance width for channel 4
+ BA,AMP                          Bound-atom scattering amplitude
+ BA,SIG                          Bound-atom cross section
+ BA/COH,AMP                      Bound-atom coherent scattering amplitude
+ BA/PAR,AMP                      Partial bound-atom scattering amplitude
+ BIN,AKE,FF                      Average kinetic energy of binary fission frag.
+ BIN,AP,HF                       Most prob. mass of heavy frag.in binary fission
+ BIN,SIG                         Binary fission cross section
+ BIN/TER,DA/RAT,FF               Binary/ternary differential fiss.frag.dist.d/dA
+ BIN/TER,SIG/RAT                 Binary/ternary cross section ratio
+ CEN,SPC                         Spectrum of outgoing particles, central
+ CEN,SPC/DMT/DR,,2MT             dSpectr./dm(T)/dR * 1/(2pi*m(T)), central
+ CEN,SPC/DPT/DR,,2PT             dSpectr./dp(T)/dR * 1/(2pi*p(T)), central
+ CEN,SPC/DR                      Spectrum as a function of rapidity, central
+ CHG,FY                          Total element yield of fission products
+ CHG,FY/DE                       Total element fiss. yield of diff.d/d(frag.en.)
+ CHN,FY                          Total chain yield of fission products
+ CHN,FY/DE                       Total chain yield, fiss.prod.diff.d/d(frag.en)
+ CN,DA                           Differential c/s d/dA, compound nucleus contrib
+ CN,FY                           Fission-product yield, compound nucleus contrib
+ CN,NU                           Nu-bar, compound nucleus contribution
+ CN,PY                           Product yield, compound nucleus contribution
+ CN,SIG                          Cross section, compound nucleus contribution
+ CN/PAR,SIG                      Partial cross section, compound nucleus contrib
+ CN/SEQ,SIG                      Cross section, specif. seq., comp.nucl.contrib.
+ CN/SEQ/PAR,SIG                  Partial cross section, spec.seq.,comp.nuc.contr
+ COH,AMP                         Coherent scattering amplitude
+ COH,SIG                         Coherent cross section
+ CUM,FY                          Cumulative fission-product yield
+ CUM,FY/RAT                      Cummulative fission-product yield isom. ratio
+ CUM,PY                          Cumulative product yield
+ CUM,PY,,DT                      Cumulative product yield per unit time
+ CUM,SIG                         Cumulative cross section
+ CUM,SIG/SUM                     Cumulative cross section sum
+ CUM,TTY                         Cumulative thick-target yield
+ CUM,TTY,,DT                     Cumulative thick-target yield per unit time
+ CUM/(M),SIG                     Cumulative cross sect.(uncert.isom.trans.incl.)
+ CUM/(M),TTY                     Cum.thick-target yield (uncert.isom.trans.incl)
+ CUM/(M)/UND,SIG                 Cum.cross sect.,undef.react.(uncert.isom.trans)
+ CUM/M-,SIG                      Cumulative cross section, excluding isom.trans.
+ CUM/M-,TTY                      Cumulative thick-target yield,exclud.isom.trans
+ CUM/TER,FY                      Cumulative fission prod. yield for ternary fiss
+ CUM/UND,SIG                     Cumulative cross section, undefined reaction
+ CUM/UND,SIG/RAT                 Cumul. cross section ratio, undefined reaction
+ CUM/UND,TTY                     Cumulative thick-target yield, undefined react.
+ CUM/UND,TTY,,DT                 Cumul.thick-target yield/unit time,undef.react.
+ DI,DA                           Differential c/s d/dA,direct interaction contr.
+ DI,DA/DE                        Double diff. c/s d2/dA/dEdir.interaction contr
+ DI,DE                           En.spectrum of outg.partl.,dir.interact.contr.
+ DI,SIG                          Cross section, direct interaction contribution
+ DI/PAR,DA                       Partial diff. c/s d/dA,direct interaction contr
+ DI/PAR,DA/DE                    Partial double diff. c/s d2/dA/dE, ir.int.contr
+ DI/PAR,SIG                      Partial cross section, direct interact.contrib.
+ DI/SEQ,SIG                      Partial cross section, spec.seq.,dir.int.contr.
+ DL,AKE,N                        Average kinetic energy of delayed neutrons
+ DL,DE,N                         Energy spectrum of delayed neutrons
+ DL,NU                           Delayed neutron yield
+ DL,SIG,N                        Delayed-neutron emission cross section
+ DL,SPC                          Intensity of delayed gammas
+ DL/CUM,NU                       Cumulative delayed neutron yield
+ DL/GRP,NU                       Delayed neutron yield for given half-life group
+ DL/IND,NU                       Independent delayed neutron yield
+ DL/PAR,AKE,N                    Avg. kinetic en. for specif. delayed neut.group
+ DL/PAR,DE,N                     Energy spectrum for specific delayed neut.group
+ DL/PAR,NU                       Partial yield of delayed neutrons
+ DL/PAR,SIG,N                    Partial delayed-neutron emission cross section
+ EM,DA                           Particle emission angular distribution
+ EM,DA,,LEG/RSL                  Leg.coef. for fit to (4pi/Sig)d/dA emission c/s
+ EM,DA/DE                        Double diff. emission cross section, d/dA/dE
+ EM,DA/DE,P                      Double diff. proton emission cross section
+ EM,DA/DE,,LEG/RSL               Leg.coef. for fit to double-diff.emission cs
+ EM,DE                           Particle emission energy spectrum
+ EM,POL/DA/DE,,ANA               Analyzing power / dE for particle emission
+ EM,POL/DA/DE,P,ANA              Analyzing power dA/dE for proton emission
+ EM,SIG                          Emission cross section
+ EM,TTY/DA/DE                    Double-diff.thick target yield f.emission
+ EM/PAR,DA                       Particle emission partial diff. c/s d/dA
+ EM/PAR,DA/DE                    Partial double-diff. emission cs d2/dA/dE
+ EM/PAR,DA/DE,,LEG/RSL           Leg.coef.f.partial double-diff.emission cs
+ EM/PAR,DE                       Partial particle emission energy spectrum
+ EM/PAR,POL/DA                   Partial emission diff.spin-polar.prob.
+ EM/PAR,SIG                      Partial emission cross section
+ EP,DA                           Partial diff. c/s d/dA for electric polar.given
+ EP,SIG                          Cross section for electric polarity given
+ EP,SIG,,SFC                     Astrophysical s-factor for electr.polar. given
+ EP/PAR,INT                      Integral c/s over inc.en.for electr.polar.given
+ EP/PAR,SIG                      Partial cross section for electric polar. given
+ FA,AMP                          Free-atom scattering amplitude
+ FA,SIG                          Free-atom cross section
+ FA/COH,SIG                      Free-atom coherent scattering cross section
+ FA/INC,SIG                      Free-atom incoherent scattering cross section
+ FA/PAR,AMP                      Partial free-atom scattering amplitude
+ FIS,AKE                         Avg.kin.energy of outg.part.for high en.fission
+ FIS,AKE,FF                      Avg.kin.energy of fragments of high energy fiss
+ FIS,SIG                         Partial cs due to high-energy fission
+ HEN,SIG                         'High-energy' component of cross section
+ INC,AMP                         Incoherent scattering amplitude
+ INC,SIG                         Incoherent scattering cross section
+ IND,AKE/DA                      Avg.kin.energy at given angle, direct formation
+ IND,DA                          Differential cross sect. d/dA, direct formation
+ IND,DA,N                        Ang. distr. of neutrons, direct formation
+ IND,DA/DE                       Double diff. c/s d2/dA/dE, direct formation
+ IND,FY                          Independent fission-product yield
+ IND,FY,G                        Total yield of prompt fission gammas
+ IND,FY/CRL                      Independent yield of correlated fragment pairs
+ IND,FY/DE                       Diff.indep. fission product yield d/d(frag.en.)
+ IND,FY/RAT                      Independent fission-product yield ratio
+ IND,FY/SUM                      Independent fission-product yield sum
+ IND,PY                          Independent product yield
+ IND,PY,,DT                      Independent product yield per unit time
+ IND,PY,,TT                      Indep. product yield for a thick target
+ IND,SIG                         Independent cross section
+ IND,SIG,G                       Independent gamma prod.cs
+ IND,SIG/RAT                     Independent cross section ratio
+ IND,SIG/SUM                     Independent cross section sum
+ IND,TTY                         Independent thick-target yield
+ IND,TTY,,DT                     Independent thick-target yield per unit time
+ IND/(M),SIG                     Indep. cross section (isomeric trans.uncertain)
+ IND/M+,FY                       Indep. fission-product yield, incl. isom.trans.
+ IND/M+,PY                       Independent product yield, incl. isom.trans.
+ IND/M+,SIG                      Independent cross sect., incl. isomeric trans.
+ IND/M+,TTY                      Independent thick-target yield,incl.isom.trans.
+ IND/M+,TTY,,DT                  Ind.thick-target yield/unit time incl.isom.tr.
+ IND/M+/UND,SIG                  Ind. cross sect., undef.react.,incl.isom.trans.
+ IND/TER,FY                      Independ.fission-prod.yield for ternary fission
+ IND/UND,PY                      Independent product yield, undefined reaction
+ IND/UND,SIG                     Independent cross section, undefined reaction
+ IND/UND,SIG,G                   Independent gamma prod.cs, undefined reaction
+ IND/UND,SIG/RAT                 Indep. cross section ratio, undefined reaction
+ IND/UND,SIG/SUM                 Indep. cross section sum, undefined reaction
+ IND/UND,TTY                     Independent thick-target yield,undefined react.
+ IND/UND,TTY,,DT                 Indep.thick-target yield/unit time,undef.react.
+ LEN,SIG                         'Low-energy' component of cross section
+ LL,POL/DA,,ANA                  Spin correlation parameter, A(LL)
+ LL,POL/DA,,C                    Spin correlation parameter, C(LL)
+ LL,POL/DA,,D                    Spin rotation parameter, D(LL)
+ LL,POL/DA,,K                    Spin-transfer parameter, K(LL)
+ LL,POL/DA,N,D                   Spin rotation parameter, D(LL), for neutrons
+ LL,POL/DA,P,D                   Spin rotation parameter, D(LL), for protons
+ LL,POL/DA/DE,,D                 Doub.diff.spin rotation parameter, D(LL)
+ LL/PAR,POL/DA,,ANA              Partl.spin correlation parameter A(LL)
+ LL/PAR,POL/DA,,D                Spin-rotation parameter, D(LL), partl.reaction
+ LL/PAR,POL/DA,,K                Spin-transfer parameter, K(LL), partl.reaction
+ LL/SEQ,POL/DA,,D                Spin-rotation parameter, D(LL), specif. sequ.
+ LON,DA/DP,,IPA                  Cs diff.by long.sec.lin.mom.,int.over ang.range
+ LON,DA/DP,P,IPA                 Cs dif.by long.sec.lin.mom.int.over p ang.range
+ LON,POL,,ASY                    Polarization asymmetry for longitud.polar.
+ LON,POL,,DSP/ASY                Spin-spin asymmetry for longitud. spin states
+ LON,SIG,,DSP                    Cs diff.(longit.spins, parallel - antiparallel)
+ LON,SIG,,SS                     Spin-spin cs, longitudinal to beam direction
+ LS,POL/DA,,ANA                  Spin correlation parameter, A(LS)
+ LS,POL/DA,,C                    Spin correlation parameter, C(LS)
+ LS,POL/DA,,D                    Spin rotation parameter, D(LS)
+ LS,POL/DA,,K                    Spin-transfer parameter, K(LS)
+ LS,POL/DA,N,D                   Spin rotation parameter, D(LS), for neutrons
+ LS,POL/DA,P,D                   Spin rotation parameter, D(LS), for protons
+ LS/PAR,POL/DA,,D                Spin-rotation parameter, D(LS), partl.reaction
+ LS/PAR,POL/DA,,K                Spin-transfer parameter, K(LS), partl.reaction
+ LS/SEQ,POL/DA,,D                Spin-rotation parameter, D(LS), specif. sequ.
+ M+,PY                           Product yield,including via isomeric transition
+ M+,RI                           Resonance integral, including via isomer.trans.
+ M+,RI,,LIM                      Resonance int., lim.en.range, incl.isom.trans.
+ M+,SIG                          Cross section, incl. form. via isomeric trans.
+ M+,TTY                          Thick-target yield, incl. via isomeric trans.
+ M+,TTY,,DT                      Thick-target yield per unit time incl.isom.tr.
+ M+/(DEF),SIG                    Cross section,incl.isom.trans.(uncert.reac.def)
+ M+/UND,SIG                      Cross section,incl.via isom.trans.,undef.react.
+ M+/UND,TTY                      Thick target yield,incl.isom.trans.,undef.react
+ M+/UND,TTY,,DT                  Thick-targ.yld/unit time incl.isom.tr.,undef.
+ M-,SIG                          Cross section, excluding isomeric transition
+ M-,TTY                          Thick-target yield, excluding isomeric transit.
+ MAS,FY                          Mass yield of fiss.fragm.as sum of ind.yields
+ MNB,SPC                         Spectrum of outgoing particles, minimum bias
+ MNB,SPC/DPT/DR,,2PT             dSpectra/dp(T)/dRapid. * (1/2pi*p(T)), min.bias
+ MNB,SPC/DR                      dSpectra/dRapidity
+ MP,SIG                          Cross section for magnetic polarity given
+ NN,POL/DA,,ANA                  Spin correlation parameter, A(NN)
+ NN,POL/DA,,C                    Spin correlation parameter, C(NN)
+ NN,POL/DA,,D                    Spin-depolarization parameter, D(NN)
+ NN,POL/DA,,K                    Spin-transfer parameter, K(NN)
+ NN,POL/DA,,SF                   Spin-flip probability S(nn)
+ NN,POL/DA,N,D                   Spin-depolarization parameter, D(NN),f.neutrons
+ NN,POL/DA,P,D                   Spin-depolarization parameter, D(NN),f.protons
+ NN,POL/DA,RCL,K                 Spin-transfer parameter for recoil nucl., K(NN)
+ NN,POL/DA/DE,,D                 Doub.diff.spin rotation parameter, D(NN)
+ NN,POL/DA/DE,,K                 Doub.diff.spin transfer parameter, K(NN)
+ NN,POL/DA/DE,,SF                Double diff. spin-flip prob.d/dA/dE, S(nn)
+ NN/PAR,DA,,SF                   Spin-flip prob. S(nn)*d/dA, partl.reaction
+ NN/PAR,POL/DA,,ANA              Partl.spin correlation parameter A(NN)
+ NN/PAR,POL/DA,,D                Spin-depolarization param., D(NN), partl.react.
+ NN/PAR,POL/DA,,K                Spin-transfer parameter, K(NN), partl.reaction
+ NN/PAR,POL/DA,,SF               Spin-flip prob. S(nn) for partial reaction
+ NN/PAR,POL/DA,RCL,K             Spin-transf.param.K(NN),rec.nucl.,partl.react.
+ NN/SEQ,POL/DA,,D                Spin-depolarization parameter,D(NN),specif.seq.
+ PAR,AKE,G                       Average gamma energy for specific group of g's
+ PAR,AKE,G/N                     Av.gamma energy as fct.of energ.of emitt.neutr.
+ PAR,AKE,N                       Average energy for specific group of neutrons
+ PAR,ARE                         Partial resonance area
+ PAR,COR                         Partial reaction, angular correlation
+ PAR,COR,G/N                     Partial reaction, ang.correl. gammas/neutrons
+ PAR,DA                          Partial differential cross section d/dA
+ PAR,DA,,4PI                     Partial diff. cross section d/dA * 4pi
+ PAR,DA,,COS                     Cosine coef. for fit to partial d/dA
+ PAR,DA,,COS/RS                  Partl.cos coef.4pi/Sig d/dA=1+Sum(a(L)cos**L)
+ PAR,DA,,COS/RSD                 Ptl.cos coef(d/dA)/(d/dA,90deg)=Sum(a(L)cos**L)
+ PAR,DA,,IPA                     Par.diff.cs integrated over partial ang. range
+ PAR,DA,,LEG                     Legendre coef. for fit to partial d/dA
+ PAR,DA,,LEG/2L2                 Leg.coef.fit to partl d/dA=1/2Sum(2L+1)a(L)p(L)
+ PAR,DA,,LEG/RS                  Leg.coef.fit partl.4pi/Sig d/dA=1+Sum(a(L)p(L))
+ PAR,DA,,LEG/RS0                 Leg.coef. fit to partial (d/dA)/(d/dA,90deg)
+ PAR,DA,,LEG/RSD                 Par.Leg.coef(4pi/Sig,90deg)d/dA=1+Sum(a(L)p(L))
+ PAR,DA,,LEG/RSL                 Partl.Leg.coef(4pi/Sig)d/dA=Sum((2L+1)a(L)p(L))
+ PAR,DA,,RS                      Partial diff. cross section d/dA * 4pi/Sigma
+ PAR,DA,,RS0                     Partial diff. c/s d/dA relative to 0 deg.
+ PAR,DA,,RSD                     Partial diff. cross section d/dA rel. to 90 deg
+ PAR,DA,,RTH                     Partial diff. cs d/dA rel.to Rutherf.scatt.
+ PAR,DA,,SN2                     Partial D/da coef. for sin**2 expansion
+ PAR,DA,,TT                      Thick-target angular distr., partial reaction
+ PAR,DA,*                        Partial angular distr. of particle specified
+ PAR,DA,A                        Partial angular distribution of alphas
+ PAR,DA,D                        Partial angular distribution of deuterons
+ PAR,DA,G                        Partial diff. gamma em. cross section d/dA
+ PAR,DA,G,4PI                    Partial diff. gamma em. cross section d/dA*4pi
+ PAR,DA,G,LEG                    Leg.coef. for fit to partial gamma em. d/dA
+ PAR,DA,G,LEG/RS                 Leg.coef.partl.4pi/Sig d/dA=1+Sum(a(L)p(L)),g's
+ PAR,DA,G,LEG/RSD                Leg.cf.par.4pi/Sig(90dg)d/dA=1+Sum a(L)p(L),g's
+ PAR,DA,G,RSD                    Partial diff. gamma em. c/s d/dA rel.to 90 deg.
+ PAR,DA,HE3                      Partial angular distribution of He-3 particles
+ PAR,DA,N                        Partial angular distribution of neutrons
+ PAR,DA,N,LEG/RSD                Par.Leg.cf.4pi/cs(90deg)*d/dA=1+Sum(a(L)p(L)),n
+ PAR,DA,N,RSD                    Partial angular dist. of neutrons rel.to 90 deg
+ PAR,DA,N/P                      Partial angular distrib. of neutron/proton pair
+ PAR,DA,P                        Partial angular distribution of protons
+ PAR,DA,RSD                      Partial angular distribution of residual nucl.
+ PAR,DA,,SFC                     S-factor for partial  diff. cross section
+ PAR,DA,T                        Partial angular distribution of tritons
+ PAR,DA/CRL                      Ang.correl. of particle pair spec., partial
+ PAR,DA/CRL,*/*                  Ang.correl. of particle pair spec., partial
+ PAR,DA/CRL,D/A                  Deuteron/alpha angular correl.,partial reaction
+ PAR,DA/CRL,G/G                  Gamma/gamma angular correl., partial reaction
+ PAR,DA/CRL,G/N                  Gamma/neutron angular correl., partial reaction
+ PAR,DA/CRL,G/P                  Gamma/proton angular correl., partial reaction
+ PAR,DA/DA                       Partial double diff.cross section d2/dA/dA
+ PAR,DA/DA,*/*                   Partial double diff.cross sect. d2/dA(*)/dA(*)
+ PAR,DA/DA,N/A                   Partial double diff.cross sect. d2/dA(n)/dA(p)
+ PAR,DA/DA/DE                    Partial triple diff.cross-section
+ PAR,DA/DA/DE,*/*/*              Par.triple diff.cross sect.d3/dA(*)/dA(*)/dE(*)
+ PAR,DA/DA/DE,P/A/P              Partial triple diff.cross-section
+ PAR,DA/DE                       Partial double diff.cross-section
+ PAR,DA/DE,G                     Partial double diff.gamma-emiss.cross-section
+ PAR,DA/DE,G,4PI                 Partial double diff.gamma-emiss.cross-sect.*4pi
+ PAR,DE                          Spectrum of outgoing particles for specif.level
+ PAR,FM/DA,,AL1/RS               4pi/Sig polar. * d/dA Leg.coef.of 1st kind
+ PAR,INT                         Cs integral over incident energy f.given level
+ PAR,INT/DA                      Integral over incid.energy of partl.ang distr.
+ PAR,INT/DA,,4PI                 4pi * integral over inc.en. of partl.ang.distr.
+ PAR,INT/DA,G                    Integral over inc.en. of partl.ang distr. gams
+ PAR,INT/DA,G,4PI                4pi*integral over inc.energy of ang.distr.gams.
+ PAR,MCO,*/*                     Partl linear mom. correl. of particle pair */*
+ PAR,MCO,N/P                     Partial linear momentum correlation of n/p
+ PAR,MLT,*                       Partial multiplicity
+ PAR,MLT,G                       Partial gamma multiplicity
+ PAR,MLT,N                       Partial neutron multiplicity
+ PAR,NU                          Partial yield of neutrons
+ PAR,POL                         Partial polarization
+ PAR,POL,G                       Polarization  for gamma-ray specified
+ PAR,POL/DA                      Diff. spin-polarization prob.for partial react.
+ PAR,POL/DA,,ANA                 Partial analyzing power
+ PAR,POL/DA,,ASY                 Partial asymmetry of polarized particles
+ PAR,POL/DA,,AYY                 Partl.tensor anal.power,spins normal scatt.pl.
+ PAR,POL/DA,,AZZ                Partl.tensor anal.power,spins parallel to beam
+ PAR,POL/DA,,SF                  Spin-flip probability, S(nn), partial reaction
+ PAR,POL/DA,,TAP                 Tens.anal.power, partl.react.,T(kq),spher.coord
+ PAR,POL/DA,,VAP                 Vect.anal.power,partl.react.,iT(11),spher.coord
+ PAR,POL/DA,P/A,ASY              Asymmetry for given p-alpha pair
+ PAR,POL/DA/DA/DE,,ANA           Partial analyz.power dA1/dA2/dE1 f. 2 particles
+ PAR,PY,G,TT                     Product yield for thick target for a given gamm
+ PAR,SIG                         Partial cross section
+ PAR,SIG,,RES                    Partial cross section at resonance
+ PAR,SIG,,RTE                    Partial cross section * square root(E)
+ PAR,SIG,,SFC                    S-factor for partial cross section
+ PAR,SIG,*                       Partial cross section for particle specified
+ PAR,SIG,A                       Partial cross section for alpha group
+ PAR,SIG,G                       Partial gamma-production cross section
+ PAR,SIG,P                       Partial cross section for protons
+ PAR,SIG,*/*                     Partial cross section for particle pair specif.
+ PAR,SPC                         Partial gamma spectrum
+ PAR,STF                        .Partial strength function
+ PAR,TTY                         Partial thick target yield
+ PAR,TTY,G                       Partial thick target gamma yield
+ PAR,TTY/DA                      Partial differential thick target yield d/dA
+ PAR,WID                        .Partial width
+ PAR,WID,,G                     .g * partial width
+ PAR,WID/RED,,RMT               .R-matrix red.resonance width f.partial reaction
+ PAR,WID/STR                    .Partial resonance strength
+ PAR,ZP                          Most probable charge, for fragm.energy given
+ PAR/(CUM)/UND,SIG               Partial cross section,undef.react.,assumed cum.
+ PAR/(DEF),SIG                   Partial cross section (uncert.if react.defined)
+ PAR/CEN,ISP                     Inverse slope as function of rapidity, central
+ PAR/CUM,DA                      Partial angular distribution, cumulative
+ PAR/CUM,SIG                     Partial cumulative cross section
+ PAR/IND,DA                      Partial angular distribution, direct formation
+ PAR/IND,DA,,LEG/1K2             Part.leg.coef.k**2 d/dA=Sum(a(L)p(L)),dir.form.
+ PAR/IND,FY                      Ind.fission yield for fragm.energy given
+ PAR/IND,FY,G                    Abs.yield of pr.fiss.gammas of def.energy
+ PAR/IND,SIG                     Partial independent cross section
+ PAR/M+,DA,G                     Ang.distr.of discrete gammas incl.isom.trans.
+ PAR/M-,DA,G                     Ang.distr.of discrete gammas excl.isom.trans.
+ PAR/PRE,AKE                     Primary frag.avg.kin.energy for given exc.energ
+ PAR/PRE,AKE,FF                  Avg.kin.energy of prim.frag.for given exc.energ
+ PAR/PRE,FY                      Primary fragm.fission yield for given exc.energ
+ PAR/UND,DA                      Partial angular distrib., undefined reaction
+ PAR/UND,DA,*                    Partial angular distrib., undefined reaction
+ PAR/UND,DA,G                    Partial angular distr. of gammas, undef.react.
+ PAR/UND,SIG                     Partial cross section, undefined reaction
+ PER,SPC/DMT/DR,,2MT             dSpectr/dm(T)/dRap. * 1/(2pi*m(T)), peripheral
+ PER,SPC/DR                      Spectrum as a function of rapidity, peripheral
+ POT,RAD                         Potential scattering radius
+ POT,SIG                         Potential scattering cross section
+ PR,AKE,N                        Average kinetic energy of prompt neutrons
+ PR,COR,N/N                      Angular correlation of prompt fission neutrons
+ PR,COR/DE,N/FF                  Angle-energy correl. of prompt neut./fiss.frag.
+ PR,CRL,N/N                      Angular correlation of prompt fission neutrons
+ PR,DA,G,LEG/RS                  Leg.coef.4pi/Sig d/dA=1+Sum(a(L)p(L)),pr.gam.
+ PR,DA,G,RSD                     Ang. distrib. prompt fission gammas rel.90 deg.
+ PR,DA,N                         Angular distribution of prompt fission neutrons
+ PR,DA,N,LEG/RS                  Leg.coef.4pi/Sig d/dA=1+Sum(a(L)p(L)),pr neuts.
+ PR,DA,N,RSD                     Ang. distrib. prompt fiss. neutrons rel.90 deg.
+ PR,DA/CRL,N/N                   Angular correlation of prompt fission neutrons
+ PR,DA/DE,N                      Double diff.spect of pr.fiss.neutrons d2/dA/dE
+ PR,DE,N                         Energy spectrum of prompt fission neutrons
+ PR,DE,N,RTE                     Energy spect.of prompt fiss.neut*square root(E)
+ PR,NU                           Prompt neutron yield (nu-bar)
+ PR,NU,FF                        No.of prompt neutr.em.by fiss.fr.of def.A or Z
+ PR,NU,HF                        Prompt neutron yield as fctn.of heavy frag.mass
+ PR,NU,,RES                     .Prompt Nu-bar at resonance
+ PR,NU/DE,FF                     No.of prompt neutr.em.by fiss.fr.of given E
+ PR,NU/DE,LF                     No.of prompt neutr.em.by light fiss.fr.of giv.E
+ PR,SIG                          Prompt fission cross section
+ PR,SPC                          Intensity of prompt fission gammas
+ PR/PAR,DA,G                     Prompt partial diff. gamma emiss.cross section
+ PR/PAR,NU                       Partial prompt neutron yield (nu-bar)
+ PR/TER,DA,N                     Ang.dist.of prompt fission neuts,ternary fiss.
+ PR/TER,NU                       Prompt nu-bar for ternary fission
+ PR/TER,NU/DE,A                  Prompt nu-bar for ternary fission,fn of alpha E
+ PR/TER,SPC                      Prompt gamma-spectrum from ternary fission
+ PRE,AKE,FF                      Average kinetic energy of primary fragment
+ PRE,AKE,HF                      Average kinetic energy of primary heavy frag.
+ PRE,AKE,LF                      Average kinetic energy of primary light frag.
+ PRE,AKE/DA,FF                   Avg.kinetic energy of prim.frag.,fn.of angle
+ PRE,KE/CRL,LF/HF                Total kinetic energy of primary frag. pair
+ PRE,AP                          Most prob.mass of ifss.fragm., pre-n-emission
+ PRE,AP,*F                       Most prob.mass, pre-n-emission of frag.specif.
+ PRE,AP,HF                       Most prob.mass,pre-neutron-emission heavy frag.
+ PRE,AP,LF                       Most prob.mass,pre-neutron-emission light frag.
+ PRE,AP/DA,FF                    Centr.of mass dist.of pr.fiss.fr.,dep.on angle
+ PRE,DA,FF                       Angular distrib. of primary fission fragments
+ PRE,DA,LF                       Ang.distrib. of primary light fission fragm.
+ PRE,DA,FF,RSD                   Ang. distr. of primary fission frag.rel.90 deg.
+ PRE,DA/KE,FF                    Kin. energy ang.distr. of primary fission frag.
+ PRE,DA/TMP,FF,LEG/RS            Lg.cf.4pi/Sig d/dA=Sum(a(L)p(L)),pr.ff,tmp.dp
+ PRE,DE,*F                       Energy spectrum of primary fission frag.specif.
+ PRE,DE,FF                       Energy spectrum of primary fission fragments
+ PRE,DE,LF                       Energy spectrum of primary light fission frag.
+ PRE,FY                          Primary fission-product yield
+ PRE,FY/CRL                      Primary fiss.prod.yield of correl.frag. pairs
+ PRE,FY/DE                       Primary fission-product yield d/d(kinetic en.)
+ PRE,FY/DE,LF                    Primary light fragm.fission yield d/dE(fragm.)
+ PRE,KE,FF                       Kinetic energy of primary fission fragments
+ PRE/BIN,FY                      Primary-fission product yield, binary fission
+ PRE/TER,FY                      Primary-fission prod.yield, ternary fission
+ SEC,AKE,FF                      Average kin.energy of post-neut-emission frag.
+ SEC,AP                          Most prob. mass of fiss.fragm.,post-n-emiss.
+ SEC,AP,*F                       Most prob. mass of post-n-emiss. frag.specif.
+ SEC,AP,HF                       Most prob.mass of post-neut.-emiss. heavy frag.
+ SEC,AP,LF                       Most prob. mass of post-neut.-emiss.light frag.
+ SEC,FY                          Post-neutron-emission fission-product yield
+ SEC,FY/CRL                      Post-neutron-emiss.yield of correl.fragm.pairs
+ SEC,ZP                          Most prob. charge of fiss.fragm.,post-n-emiss.
+ SEC/CHN,FY                      Pre-delayed-neutron chain yield
+ SEC/CHN,FY/DE                   Pre-delayed-neutron chain yield d/d(kin. en.)
+ SEQ,DA                          Diff.cross section for spec. reaction seq.
+ SEQ,DA,*                        Ang.distr.of particle + reaction seq. specified
+ SEQ,DA,D                        Angular distr.of deuterons, specif.react.seq.
+ SEQ,DA/DA/DE,P/P/P              Triple-diff.cs d3/dA(p)/dA(p)/dE(p),spec.r.seq.
+ SEQ,DA/DA/DE,T/N/RSD            Triple-df.cs d3/dA(t)/dA(n)/dE(rsd),spec.r.seq.
+ SEQ,DA/DE                       Double-diff.cs for spec. reaction seq.
+ SEQ,DA,T                        Angular distr. of tritons, specif.reaction seq.
+ SEQ,INT                         Cross section int. over inc.en.,spec.react.seq.
+ SEQ,POL/DA,,ANA                 Analyzing power for specif.reaction sequence
+ SEQ,PY                          Product yield for specified reaction sequence
+ SEQ,SIG                         Cross section for specified reaction sequence
+ SEQ,TTY                         Thick target yield for specified reaction seq.
+ SEQ/PAR,DA                      Partial angular distr. for specif.reaction seq.
+ SEQ/PAR,DA,N                    Partial angular distr. of neuts.,spec.reac.seq.
+ SEQ/PAR,SIG                     Partial cross section, specified reaction seq.
+ SL,POL/DA,,ANA                  Spin correlation parameter, A(SL)
+ SL,POL/DA,,C                    Spin correlation parameter, C(SL)
+ SL,POL/DA,,D                    Spin rotation parameter, D(SL)
+ SL,POL/DA,,K                    Spin-transfer parameter, K(SL)
+ SL,POL/DA,N,D                   Spin rotation parameter, D(SL), for neutrons
+ SL,POL/DA,P,D                   Spin rotation parameter, D(SL), for protons
+ SL/PAR,POL/DA,,ANA              Partl.spin correlation parameter A(SL)
+ SL/PAR,POL/DA,,D                Spin-rotation parameter, D(SL), partl.reaction
+ SL/PAR,POL/DA,,K                Spin-transfer parameter, K(SL), partl.reaction
+ SL/SEQ,POL/DA,,D                Spin-rotation parameter, D(SL), specif. sequ.
+ SPL,AKE                         Average kinetic energy of spallation products
+ SPL,SIG                         Partial cross section due to spallation
+ SS,POL/DA,,ANA                  Spin correlation parameter, A(SS)
+ SS,POL/DA,,C                    Spin correlation parameter, C(SS)
+ SS,POL/DA,,D                    Spin rotation parameter, D(SS)
+ SS,POL/DA,,K                    Spin-transfer parameter, K(SS)
+ SS,POL/DA,N,D                   Spin rotation parameter, D(SS), for neutrons
+ SS,POL/DA,P,D                   Spin rotation parameter, D(SS), for protons
+ SS/PAR,POL/DA,,D                Spin-rotation parameter, D(SS), partl.reaction
+ SS/PAR,POL/DA,,K                Spin-transfer parameter, K(SS), partl.reaction
+ SS/SEQ,POL/DA,,D                Spin-rotation parameter, D(SS), specif.sequ.
+ TER,AKE,*                       Avg. kin.en. of particle specif., ternary fiss.
+ TER,AKE,A                       Avg. kinetic energy of alphas, ternary fission
+ TER,AKE,D                       Avg. kinetic energy of deuterons, ternary fiss.
+ TER,AKE,FF                      Avg. kin.energy of fission frag., ternary fiss.
+ TER,AKE,HE6                     Average kinetic energy of 6He, ternary fission
+ TER,AKE,HF                      Avg.kin.energy of heavy fiss.frag.,tern. fiss.
+ TER,AKE,LCP                     Avg. kin.energy light chg. part., ternary fiss.
+ TER,AKE,LF                      Avg.kin.energy of light fiss.frag.,tern. fiss.
+ TER,AKE,P                       Avg. kinetic energy of protons, ternary fission
+ TER,AKE,T                       Avg. kinetic energy of tritons, ternary fission
+ TER,AP                          Most probable mass of ternary fiss. frag.
+ TER,AP,HF                       Most prob. mass of heavy ternary fission frag.
+ TER,COR,A/FF                    Alpha/fragment angular correl., ternary fission
+ TER,COR,FF/FF                   Fragment/fragment ang. correl., ternary fission
+ TER,COR,LCP/FF                  Angular correl. light chg. part., ternary fiss.
+ TER,DA,*                        Ang. distr. of particle specif.,ternary fission
+ TER,DA,*,RSD                    Angular distr. alphas rel 90 deg.,ternary fiss.
+ TER,DA,A                        Angular distrution of alphas, ternary fission
+ TER,DA,A,RSD                    Angular distr. alphas rel 90 deg.,ternary fiss.
+ TER,DA,FF                       Angular distr. fission frag., ternary fission
+ TER,DA,FF,RSD                   Ang. distr. fiss. frag. rel 90deg,ternary fiss.
+ TER,DA,N                        Ang. distr. of fission neutrons,ternary fission
+ TER,DA/CRL,G/A,LEG/RS           Lg.cf.4pi/Sig d/dA=Sum(a(L)p(L))cor.a/g,tern.f.
+ TER,DA/CRL,G/A,RSD              Ang.corr.gammas/alphas rel.90 deg., tern.fiss.
+ TER,DA/CRL,G/LCP,LEG/RS         Lg.cf.4pi/Sig d/dA=Sum(a(L)p(L))cor.a/lcp,tern.
+ TER,DA/CRL,G/LCP,RSD            Ang.corr.gammas/light c.p.rel.90 deg.,tern.fiss
+ TER,DA/DE,*                     Double-diff. cs d2/dA/dE of alphas,ternary fiss
+ TER,DA/DE,A                     Double-diff. cs d2/dA/dE alphas, ternary fiss.
+ TER,DA/KE,*                     Kin. energy angular distr. alphas,ternary fiss.
+ TER,DA/KE,A                     Kin. energy angular distr.alphas, ternary fiss.
+ TER,DE,*                        Energy spectr.of particle specif.,ternary fiss.
+ TER,DE,A                        Energy spectrum of alphas, ternary fission
+ TER,DE,D                        Energy spectrum of deuterons, ternary fission
+ TER,DE,P                        Energy spectrum of protons, ternary fission
+ TER,DE,T                        Energy spectrum of tritons, ternary fission
+ TER,FY                          Fission-product yield, ternary fission
+ TER,FY,A                        Alpha yield from ternary fission
+ TER,FY,LCP                      Light-charged-particle yield, ternary fission
+ TER,FY,T                        Triton yield from ternary fission
+ TER,FY/CRL,*/*F                 (particle)/(fragment) correl., ternary fission
+ TER,FY/CRL,*F                   Frag.given/(fragment) correl., ternary fission
+ TER,FY/CRL,A                    Fragment given/alpha correl., ternary fission
+ TER,FY/CRL,A/HF                 Alpha/heavy frag. ang.correl., ternary fission
+ TER,FY/CRL,A/LF                 Alpha/light frag. ang.correl., ternary fission
+ TER,FY/CRL,FF/FF                Fragment/fragment ang. correl., ternary fission
+ TER,FY/CRL,HCP                  Fragm.gvn/heavy charged partl.corr.,tern.fiss.
+ TER,FY/CRL,HF/LF                Heavy frag./light frag.ang.correl.,tern.fission
+ TER,FY/CRL,LCP                  Fragm.gvn/light charged partl.corr.,tern.fiss.
+ TER,FY/CRL,LCP/HF               Light chgd prt./heavy frag.ang.corr.,tern.fiss.
+ TER,FY/CRL,LCP/LF               Light chgd prt./light frag.ang.corr.,tern.fiss.
+ TER,SIG                         Ternary fission cross section
+ TER,SIG,,RES                   .Ternary fission cross section at resonance
+ TER,SIG,A                       Alpha-emission cross section, ternary fission
+ TER,ZP                          Most probable charge of ternary fission frag.
+ TER/BIN,FY/RAT,A                Ternary/binary fission alpha yield ratio
+ TER/BIN,SIG/RAT                 Ternary/binary cross section ratio
+ TER/BIN,SIG/RAT,,RES           .Ternary/binary cross section ratio at resonance
+ TRS,POL,,ASY                    Polarization asymmetry for transverse polar.
+ TRS,POL,,DSP/ASY                Spin-spin asymmetry for transverse spin states
+ TRS,POL/DA,,ANA                 Transverse vector analyzing power, A(x)
+ TRS,SIG,,DSP                    Cs diff.(transv.spins, parallel - antiparallel)
+ TRS,SIG,,SS                     Spin-spin cs, transverse to beam direction
+ UND,SIG                         Cross section, undefined reaction
+ UND,SIG/RAT                     Cross section ratio, undefined reaction
+ UND,SIG/SUM                     Cross section sum, undefined reaction
+ UND,TTY                         Thick target yield, undefined reaction
+ UND,TTY,,DT                     Thick-target yield per unit time, undef.reactio
+ UNW,INT                         Unweighted prod.cs integral over incid.energy
+ UNW,SIG                         Unweighted production cross section

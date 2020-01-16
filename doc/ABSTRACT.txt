@@ -1,0 +1,100 @@
+1a. Software Acronym:
+	
+		x4i
+
+1b. Short title:
+
+		the EXFOR interface
+
+2. Developer Name and Affiliation:
+
+		David A. Brown (LLNL, Livermore CA, 94550)
+
+3. Software Completion Date:
+
+		10 March 2011
+	
+4. Brief Description:
+
+		The x4i package is an interface to the EXFOR nuclear data library.  It simplifies retrieval 
+		of EXFOR entries and can automatically parse them, allowing one to extract cross-section 
+		(and other) data in a simple, plot-able format. x4i also understands and can parse the 
+		entire reaction string, allowing one to build a strategy for processing the data.
+
+5. Method of Solution:
+
+		In x4i, we have encoded the relavent parts of the EXFOR grammer so that hte pyparsing
+		module can accurately parse EXFOR data.  In particular, x4i parses the EXFOR reaction 
+		strings allowing for the accurate classification of a dataset by target, projectile, 
+		reaction products and observable.  X4i also parses the data tables and converts all 
+		quantities to common units (e.g. MeV, barns, sterradians).
+		
+6. Computer(s) for which software is written:
+
+		Apple, PC.
+
+7. Operating System:
+
+		MacOSX, Linux, Unix.  Not tested on Windows.
+
+8. Programming Language(s) Used:
+
+		Python (100%). 
+		
+9. Software Limitations: 
+
+		None known.  Once unpacked, the entire EXFOR database takes up 539 Mb which is modest on 
+		today's systems.  X4i creates no temporary files.
+
+10. Unique Features of the Software:
+
+		As x4i is written purely in Python, it is highly portable and light-weight enough that it 
+		can easily be integrated into web-applications or data analysis packages.  
+		
+		X4i produces translations of EXFOR data that are human readable and can be plotted directly 
+		with plotting packages such as xmgrace or gnuplot.  X4i's translations rely on the parsing
+		module pyparsing, and not only reflect the underlying structure of the EXFOR data file, but
+		also "crack" the reaction string allowing for accurate classification of EXFOR data and 
+		development of a robust data search capability.  
+		
+11. Related and Auxiliary Software: 
+
+		X4i uses the pyparsing package, written by Paul McGuire and released under teh GPL license.  
+		Pyparsing source code is released along with x4i although we have not modifed the pyparsing 
+		source code.
+
+		X4i is a possible replacement fpr a code written by Dermont Cullen called X42C4.
+
+12. Other Programming or Operating Information or Restrictions: 
+
+		In the x4i/data directory, there are three kinds of files with non-standard file extensions.  
+		The summary.tbl file is a sqllite3 database containing an index of the EXFOR library.  The 
+		buggy.pickle file is a Python "pickle" file containing the errors encountered during the 
+		building of the summary.tbl index.  The files ending in .x4 are the actual EXFOR data 
+		files, given in EXFOR format.
+
+13. Hardware Requirements:
+
+		Roughly 1 Gb of free disk space to unpack the EXFOR database.
+
+14. Time Requirements:
+
+		Routine queries and retrievals of EXFOR data take much less than a second.  However, it 
+		takes roughly 30 min. to rebuild the index on a desktop machine.  
+
+15b. References; Additional background reference materials generally available:
+
+		[1]  A. Koning, “WPEC Subgroup 30: Quality improvement of the EXFOR database Status report 
+		June 2009,” NEA report number NEA/NSC/WPEC/DOC(2009)416 (2009).
+		
+		[2] O. Schwerer, “LEXFOR,” IAEA Nuclear Data Section report number IAEA-NDS-208, Vienna, 
+		Austria (2008).
+		
+		[3] O. Schwerer, “EXFOR Exchange Formats Manual,” IAEA Nuclear Data Section report number 
+		IAEA-NDS-207, Vienna, Austria (2008). 
+		
+		[4] O. Schwerer, “EXFOR/CINDA Dictionary Manual,” IAEA Nuclear Data Section report number 
+		IAEA-NDS-213, Vienna, Austria (2008).
+		
+		[5] O. Schwerer, “EXFOR Basics Manual,” IAEA Nuclear Data Section report number 
+		IAEA-NDS-206, Vienna, Austria (2008).

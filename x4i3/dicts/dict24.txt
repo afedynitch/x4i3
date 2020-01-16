@@ -1,0 +1,67 @@
+Title = "EXFOR data headings"
+NumFields = 2
+FieldBreaks = [ 15 ]
+
+-APRX           value is approximate
+-CM             value is in center-of-mass
+-DN             value for denominator of a reaction ratio
+-ERR            uncertainty on value
+-MIN            minimum value
+-MAX            maximum value
+-MEAN           mean value
+-NM             value for a numerator of a reaction ratio
+-NRM            value at which data is normalized
+-RSL            resolution of value
+ANAL-STEP       Analysis energy step
+ANG             Angle
+ASSUM           Assumed value, defined under ASSUMED
+COS             Cosine of angle
+DATA            Value of quantity specified under REACTION
+DECAY-FLAG      Decay flag. link to information under DECAY-DATA
+E               Energy of outgoing particle
+E-DGD           Degradation in secondary particle energy vs. incident energy
+E-EXC           Excitation energy
+E-GAIN          Gain in secondary particle energy vs. incident energy
+E-LVL           Level energy
+E-LVL-FIN       Final level of transition
+E-LVL-INI       Initial level of transition
+ELEMENT         Atomic number of element
+EMS             Effective mass squared
+EN              Energy of incident particle
+EN-DUMMY        Dummy incident projectile energy, for broad spectrum
+EN-RES          Resonance energy
+EN-RSL-FW       Incident particle energy resolution (FWHM)
+EN-RSL-HW       Incident particle energy resolution (1/2-FWHM)
+ERR             Systematic uncertainty, defined under ERR-ANALYS
+ERR-S           Statistical uncertainty (1-sigma)
+ERR-T           Total uncertainty (1-sigma)
+FLAG            Flag, link to information under FLAG
+HL              Half-life of nuclide specified
+ISOMER          Isomeric state for nuclide given
+KT              Spectrum temperature
+LVL-FLAG        Level flag, lin to information under LEVEL-PROP
+LVL-NUMB        Level number
+MASS            Atomic mass of nuclide
+MASS-RATIO      Ratio of atomic masses of fission fragments
+MISC            Miscellaneous information, defined under MISC-COL
+MOM             Linear momentum of incoming particle
+MOM-SEC         Linear momentum of outgoing particle
+MOMENTUM L      Angular momentum (l) of resonance
+MONIT           Normalization value, for reaction given under MONITOR
+MSS-T           Transverse mass of outgoing projectile
+MSS-TK          Transverse mass minus rest mass of outgoing projectile
+MU-ADLER        mu (for Adler-Adler resonance parameter)
+N-OUT           Number of emitted neutrons, for variable number of nucleons in reaction
+NUMBER          Fitting coefficient number
+P-OUT           Number of emitted protons, for variable number of nucleons in reaction
+PARITY          Parity (P) of resonance
+POL-BM          Beam polarization
+POL-TR          Target polarization
+POLAR           Polarity
+Q-VAL           Q-value
+RAP             Rapidity
+RAP-PS          Pseudorapidity
+SPIN J          Spin (J) of resonance
+STAT-W G        Statistical weight factor (g)
+TEMP            Sample temperature
+THICKNESS       Sample thickness

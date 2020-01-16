@@ -1,0 +1,68 @@
+ENTRY            E0783   20040622              20050926       0000
+SUBENT        E0783001   20040622              20050926       0000
+BIB                 10         19
+TITLE       ACCELERATION OF PROTONS AND DEUTERONS POLARIZED IN
+            THE HORIZONTAL PLANEBY THE RCNP CYCLOTRON
+AUTHOR     (K.HATANAKA,N.MATSUOKA,H.SAKAI,T.SAITO,H.TAMURA,
+           K.HOSONO,M.KONDO,K.IMAI,H.SHIMIZU,K.NISHIMURA)
+INSTITUTE  (2JPNOSA) RESEARCH CENTER FOR NUCLEAR PHYSICS, OSAKA
+            UNIV.
+           (2JPNKTO)
+REFERENCE  (J,NIM,217,397,1983)
+FACILITY   (CYCLO,2JPNOSA)
+INC-SOURCE  BEAM-INTENSITY IS 0.5NA
+            BEAM-POLARIZATION IS NOT GIVEN
+           (ATOMI) with a Wien filter
+SAMPLE      TARGET IS NOT POLARIZED
+            TARGET IS NOT ALIGNED
+PART-DET   (D)
+STATUS     (CURVE) DATA TAKEN FROM GRAPH
+HISTORY    (19881027T) CONVERTED FROM NRDF DATA NO. D783
+           (20040401A) Author's name is corrected. Code is added
+                       into INC-SOURCE. E-EXC=0.0 MeV is deleted.
+ENDBIB              19
+COMMON               1          3
+EN         
+MEV        
+56.        
+ENDCOMMON            3
+ENDSUBENT           26
+SUBENT        E0783002   20040622              20050926       0000
+BIB                  4          5
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+FLAG       (1.) DATA ERROR IS SMALLER THAN DATA POINT
+ERR-ANALYS (DATA-ERR) Uncertainty scanned from figure
+HISTORY    (20040401A) Quantity code is correcetd.
+                       ERR-ANALYS is added.
+ENDBIB               5
+NOCOMMON             0          0
+DATA                 4         24
+ANG-CM     DATA       DATA-ERR   FLAG
+ADEG       NO-DIM     NO-DIM     NO-DIM
+     30.712 -2.211E-03                    1.
+     38.727 -5.861E-03  0.821E-02
+     46.135  1.022E-02                    1.
+     55.814  4.098E-02                    1.
+     64.866  7.998E-02                    1.
+     69.415  1.126E-01                    1.
+     74.316  1.633E-01  0.147E-01
+     79.924  2.517E-01  0.115E-01
+     84.442  2.663E-01  0.131E-01
+     89.661  3.153E-01  0.821E-02
+     94.181  3.315E-01  0.164E-01
+     99.114  4.003E-01  0.115E-01
+    104.318  4.411E-01  0.131E-01
+    109.841  4.802E-01  0.132E-01
+    115.135  3.880E-01  0.132E-01
+    120.355  2.531E-01  0.131E-01
+    125.595 -5.416E-02  0.214E-01
+    129.340 -2.990E-01  0.197E-01
+    134.447 -3.140E-01  0.180E-01
+    139.629 -1.024E-01  0.197E-01
+    145.538 -2.551E-02  0.148E-01
+    150.255  1.040E-01  0.246E-01
+    155.357  8.570E-02  0.246E-01
+    160.562  1.265E-01  0.197E-01
+ENDDATA             26
+ENDSUBENT           36
+ENDENTRY             2

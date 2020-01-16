@@ -1,0 +1,18 @@
+Title = "Process Codes for REACTION SubField 3"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+ABS         Absorption                                             
+EL          Elastic scattering                                     
+F           Fission                                                
+INL         Inelastic scattering                                   
+NON         Nonelastic (= total minus elastic)                     
+PAI         Pair production                                        
+SCT         Total scattering (elastic + inelastic)                 
+TCC         Total charge changing
+THS         Thermal neutron scattering involving molecular and crystalline binding vibrations
+TOT         Total                                                  
+X           Process unspecified                                    
+XN          Variable number of emitted neutrons                    
+YP          Variable number of emitted protons                     
+

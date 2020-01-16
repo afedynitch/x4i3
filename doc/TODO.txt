@@ -1,0 +1,6 @@
+2/4/2010
+David Brown
+
+To do:
+1. Sort out all the errors logged in the buggy.pickle file
+2. sqrt(E)*cs data doesn't translate properly anymore

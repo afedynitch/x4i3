@@ -1,0 +1,45 @@
+Title = "Incident Source Codes"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+COMPT       Compton scattering
+HARD        Hardened
+KINDT       Kinematically determined
+POLIS       Polarized ion source
+POLTR       Polarized target
+SPALL       Spallation
+A-BE        Alpha-Beryllium
+CF252       Spont.fission of Californium-252
+CM244       Spont.fission of Curium-244
+CM246       Spont.fission of Curium-246
+CM248       Spont.fission of Curium-248
+D-BE        Deuteron-Beryllium
+D-C12       Deuteron-Carbon 12
+D-C14       Deuteron-Carbon 14
+D-D         Deuteron-Deuterium
+D-LI        Deuteron-Lithium
+D-LI7       Deuteron-Lithium 7
+D-N14       Deuteron-Nitrogen 14
+D-N15       Deuteron-Nitrogen 15
+D-T         Deuteron-Tritium
+EVAP        Evaporation neutrons
+EXPLO       Nuclear explosive device
+P-BE        Proton-Beryllium
+P-D         Proton-Deuterium
+P-LI7       Proton-Lithium 7
+P-T         Proton-Tritium
+PHOTO       Photo-neutron
+POLNS       Polarized neutron source
+PU240       Spont.fission of Plutonium-240
+REAC        Reactor
+THCOL       Thermal column
+ARAD        Annihilation radiation
+ATOMI       Atomic beam source
+BRST        Bremsstrahlung
+LAMB        Lamb-shift source
+LASER       Laser scattering
+MPH         Monoenergetic photons
+QMPH        Quasi-monoenergetic photons
+TAGD        Electron tagged
+THRDT       Determined by threshold technique
+VPH         Virtual photons

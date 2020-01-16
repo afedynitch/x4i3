@@ -1,0 +1,8 @@
+Anatoli Fedynitch, 2020
+
+This folder is empty to reduce the footprint of the python wheel distributed over pip.
+The first access to the database files by X4i3 initiates the download and decompression.
+
+The binaries are available for manual download from the releases page in https://github.com/afedynitch/x4i3/releases
+More support tools to recreate/update these files are located in the repository https://github.com/afedynitch/x4i3_tools
+

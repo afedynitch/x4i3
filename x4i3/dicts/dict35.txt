@@ -1,0 +1,9 @@
+Title = "Modifier Codes for REACTION SubField 9"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+CALC        Calculated data
+DERIV       Derived data
+EVAL        Evaluated data (Using best available experimental and theoretical information)                                        
+EXP         Experimental data
+RECOM       Recommended data

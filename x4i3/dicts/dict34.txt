@@ -1,0 +1,68 @@
+Title = "Modifier Codes for REACTION SubField 8"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+1K2         Modifier for Legendre or Cosine coefficients of the form k**2 d-Sig/d-Omega = Sum(a(L)*p(L)), where k = wave vector                                       
+2AG         times 2 * isotopic abund. and stat. weight factor      
+2G          times 2 * staistical weight factor                     
+2L2         Modifier for Legendre or Cosine coefficients of the form d-Sig/d-Omega = (1/2)Sum((2L+1)*a(L)*p(L))       
+4AG         times 4 * isotopic abund. and stat. weight factor      
+4PI         times 4 pi                                             
+AA          Adler-Adler formalism for resonance parameters                              
+AG          times isotopic abund. and stat. weight factor          
+AL1         Coefficients for first-order associated Legendre functions of the first kind                           
+AMP         Amplitude (for resonance parameters)                   
+ANA         Vector analyzing power, A(y), for incident beam        
+ASY         Asymmetry of polarization of outgoing particles        
+AXX         Tensor analyzing power, Cartesian coord.               
+AYY         Tensor analyz.power,inc.proj.spin normal to scatt.plane Tensor analyzing power, incident projectile spin normal to scattering plane                            
+AZZ         Tensor analyz.power,inc.proj.spin parall.to scatt.plane Tensor analyzing power, incident projectile spin parallel to beam direction in scattering plane
+C           Spin correlation parameter                             
+COS         Cosine coefficients                                    
+CS2         Coefficients of the form d-Sig/d-Omega = a(0) + a(1)*Sin**2(Theta) + a(2)*Sin**2(Theta)*Cos(Theta) + a(3)*Sin**2(Theta)*Cos**2(Theta)                      
+D           Spin rotation parameter                                
+DSP         Difference for spins parallel - antiparallel           
+DT          per unit time (for thick target yields)                
+G           times statistical weight factor                        
+IPA         integrated over partial angular range                  
+K           Spin transfer parameter                                
+L4P         Modifier for Legendre or Cos coefficients of the form 4pi*d-Sig/d-Omega =Sum((2L+1)*a(L)*p(L))              
+LEG         Legendre coefficients                                  
+LIM         Modifier for a resonance integral given for a limited EN-range only                   
+RES         at peak of resonance                                   
+RM          Reich-Moore formalism for resonance parameters                              
+RMT         R-matrix formalism for resonance parameters                              
+RNV         Non-1/v part of cross-section or resonance-integral                
+RS          Times 4pi/Sigma Modifier for diff.cross-sections 4pi/Sig d-Sig/d-Omega and for Legendre or Cosine coefficients of the form: (4pi/Sig)*(d-Sig/d-Omega) = Sum(a(L)*p(L))            
+RS0         Modifier for Legendre or Cosine coefficients of the form: (d-Sig/d-Omega)/(d-Sig/d-Omega at 0 deg)=Sum(a(L)*p(L)
+RSD         Modifier for Legendre or Cosine coefficients of the form: (d-Sig/d-Omega)/(d-Sig/d-Omega at 90 deg) = 1 +Sum(a(L)*p(L)); Also modifier for angular distributions of the form:  Sig(Theta)/Sig(90deg) and for the anisotropy-coeff Sig(0)/Sig(90deg)                                     
+RSL         Modifier for Legendre or Cosine coefficients of the form: (4pi/Sig)*(d-Sig/d-Omega)=Sum((2L+1)*a(L)*p(L))       
+RTE         times square-root(E)                                   
+RTH         relative to Rutherford scattering                      
+RV          1/v part only                                          
+S0          times total peak cross section                         
+S2T         Coefficients of the form: d-Sig/d-Omega = a(0) + A(1)*sin**2(Theta) + a(2)*sin**2(2*Theta)      
+SF          Spin flip                                              
+SFC         S-factor                                               
+SN2         Coefficients for a sum in power of Sine**2             
+SQ          Quantity squared                                       
+SRF         Spin rotation function                                 
+SS          Spin-spin cross section                                
+TAP         Tensor analyzing power, spherical coordinates          
+TT          Measured for thick target                              
+VAP         Vector analyzing power, spherical coordinates          
+VGT         Vogt formalism for resonance parameters                              
+(A)         Uncertain if corrected for natural isotopic abund.     
+A           Data times natural isotopic abundance                  
+AV          Average                                                
+FCT         times a factor (see text)                              
+MSC         Approximate definition only, see REACTION text         
+RAW         Raw data (see REACTION text)                           
+REL         Relative data                                          
+BRA         Bremsstrahlung spectrum average                        
+BRS         Average over part of bremsstrahlung spectrum           
+EPI         Epithermal neutron spectrum average                    
+FIS         Fission spectrum average                               
+FST         Fast reactor neutron spectrum average                  
+MXW         Maxwellian average                                     
+SPA         Spectrum average                                       

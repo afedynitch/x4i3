@@ -1,0 +1,8 @@
+Title = "Results code"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+CAPTA       G*Gamma(N) * Gamma(Gamma) / Gamma (Capture area/2*pi**2 * Lambda(0)**2)
+FRCUM       Fractional cumulative yield (Ratio of cumulative yield to chain yield)              
+FRIND       Fractional independent yield (Ratio of independent yield to chain yield)          
+RVAL        R-value (Ratio of yields at 2 different incid.energies)        

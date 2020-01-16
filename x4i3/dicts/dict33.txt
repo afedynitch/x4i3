@@ -1,0 +1,44 @@
+Title = "Particle types"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+0           No particle (incident or outgoing)
+A           Alphas
+AR          Annihilation radiation
+AN          Antineutrons
+AP          Antiprotons
+B           Decay Betas (unspecified whether B+ or B-)                          
+B+          Decay Beta+ (positrons)                                        
+B-          Decay Beta-
+D           Deuterons
+DG          Decay Gammas (Used for gammas emitted from metastable states and for gammas following a particle-emitting decay (e.g., beta decay) )
+DN          Delayed Neutrons
+E           Electrons (Where no more specific code applies, e.g., Auger)      
+EC          Electron Capture
+ER          Evaporation Residues  
+ETA         Eta mesons 
+FF          Fission Fragments
+G           Gammas (except decay gammas)                                   
+HCP         Heavy Charged Particle 
+HE2         He-2 
+HE3         He-3 
+HE6         He-6
+HF          Heavy Fragment 
+ICE         Internal-Conversion Electrons
+K           Kaons,unspecified
+KN          Kaons,negative
+KP          Kaons,positive
+LCP         Light Charged Particle (Z less than 7) 
+LF          Light Fragment 
+N           Neutrons
+P           Protons
+PI          Pions,unspecified
+PI0         Pions,neutral
+PIN         Pions,negative
+PIP         Pions,positive
+PN          Prompt Neutrons
+RCL         Recoil Nucleus
+RSD         Residual Nucleus
+SF          Fragments from Spontaneous Fission
+T           Tritons
+XR          X-rays (all types, K, L, M, etc.)                           

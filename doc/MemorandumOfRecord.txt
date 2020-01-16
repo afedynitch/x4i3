@@ -1,0 +1,16 @@
+March 10, 2011
+TO: 		Information Management (IM), L-662
+FROM:   	David A. Brown
+SUBJECT:	Memorandum of Record
+
+The EXFOR Interface (x4i) software package is a project that is funded by the DOE Office of Science.
+We have just completed a version 1.0 of x4i, and per our sponsor's request, would like to release it 
+as an open source package.  Users at Los Alamos National Laboratory, Brookhaven National Laboratory
+and the International Atomic Energy Agency have expressed interested in using our software.  X4i is 
+being integrated into our next generation Nuclear and Atomic Data System webapplication. Our sponsor 
+would like distribution of the software by the end of FY11.
+
+The information that we are distributing includes the source code for x4i, the complete EXFOR 
+data library (as of 12/2010) and a database indexing the EXFOR datasets. 
+
+

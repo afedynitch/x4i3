@@ -1,0 +1,477 @@
+Title = "Conference and book codes used in CINDA and EXFOR"
+NumFields = 2
+FieldBreaks = [ 16 ]
+
+ 55ANS           Nuclear Sci.and Engineering Congress, Cleveland 1955
+ 55GENEVA        1st UN Conf.Peaceful Uses Atomic Energy, Geneva 1955
+ 55MOSCOW        USSR Conf. Peaceful Uses of At. En., Moscow 1955
+ 56AMSTERDM      Conf. on Nuclear Reactions., Amsterdam 1956
+ 56BNL           Resonance Absorption Conf., Brookhaven 1956
+ 56KIEV          Kiev Conf., Kiev 1956
+ 57ANS           American Nuclear Society Meeting, New York 1957
+ 57COLUMBIA      Columbia Conf., New York 1957
+ 57PARIS         Radioisotopes in Scient.Res., UNESCO, Paris 1957
+ 58BERKELEY      Application of Pulsed Neutron Source Techniques Symp.
+ 58GENEVA        Second Internat. At.En. Conf., Geneva 1958
+ 58PARIS         Nucl. Phys. Congress, Paris 1958
+ 59ANL           Physics of Breeding Conf
+ 59CALCUTTA      Low Energy Nuclear Physics Symp., Calcutta 1959
+ 59LONDON        Conf.Nucl.Forces and Few-Nucleon Probl.,London 1959
+ 59TASHKENT      Peaceful Uses of At. En. Conf., Tashkent 1959
+ 59VIENNA        Panel on Heavy Water Lattices, Vienna 1959
+ 60BASEL         Conf.on Polariz.Phenom.in Nucl.React.,Basel 1960
+ 60KINGSTON      Nuclear Structure Conf., Kingston 1960
+ 60LONDON        Conf.Nucl.Forces and Few-Nucleon Probl.,London 1959
+ 60SVIENNA       Radiation Dosimetry Symp., Vienna, 1960
+ 60VIENNA        Pile Neutron Research Symp., Vienna 1960
+ 60WALTAIR       Low Energy Nuclear Physics Symp., Waltair 1960
+ 60WIEN          Neutron Inelastic Scattering Symp., Vienna 1960
+ 61BOMBAY        Nuclear Physics Symp., Bombay 1961
+ 61BRUSSELS      Neutron Time-of-Flight Colloquium, Brussels 1961
+ 61BUCHAR        Research Reactors Conf., Bucuresti,1961
+ 61DUBNA         Slow Neutron Physics Conf., Dubna 1961
+ 61MANCH         Rutherford Conf., Manchester 1961
+ 61RPI           Neutron Physics Symp., Rensselaer Polytech 1961
+ 61SACLAY        Time of Flight Methods Conf., Saclay 1961
+ 61VIENNA        Reactor Physics Sem., Vienna 1961
+ 61WIEN          Programming and Utiliz.of Res.Reactors Symp.Wien,1961
+ 62BNL           Neutron Thermalization Conf., Brookhaven 1962
+ 62CHALKR        Neutron Inelastic Scattering Symp., Chalk River 1962
+ 62HARWELL       Neutron Dosimetry Symp., Harwell 1962
+ 62LOSANG        Radiation Effects Symp., Los Angeles 1962
+ 62MADRAS        Nuclear Physics Symp., Madras 1962
+ 62MEXICO        Peaceful Appl.of Nucl.En.Symp., Mexico City 1962
+ 62PADUA         Nucl. Reaction Mechanisms Conf., Padua 1962
+ 62TRIESTE       Theoretical Physics Lectures, Trieste 1962
+ 62WIEN          Light Water Lattices Panel, Vienna 1962
+ 63ADAM          Expon. and Critical Expts.Symp., Amsterdam 1963
+ 63ANL           Nucl.Physics with Reactor Neutrons Conf.,Argonne 1963
+ 63BOMBAY        Nucl.and Sol.State Physics Symp., Bombay 1963
+ 63GATLNB        Conf.on Compound Nuclear States,Gatlinburg 1963
+ 63HOUSTON       Fast Neutron Physics Conf., Houston 1963
+ 63KRLSRH        Neutron Physics Conf., Karlsruhe 1963
+ 63MANCHST       Nuclear Physics Conf., Manchester 1963
+ 63OXFORD        Neutron Flux Detection Symp., Oxford 1963
+ 63SPAULO        Research Reactor Utilisation Symp., Sao Paulo 1963
+ 64ATHENS        Crystal Diffraction of Nucl.Gamma Rays, Athens,1964
+ 64BOMBAY        Neutron Inelastic Scatt.Symp., Bombay 1964
+ 64CHANDGRH      Nuclear and Solid State Phys.Symp., Chandigarh 1964
+ 64DUBNA         Neutron Interactions Conf., Dubna 1964
+ 64GENEVA        Third Internat. At.En. Conf., Geneva 1964
+ 64PARIS         Nuclear Physics Congress, Paris 1964
+ 64VIENNA        Plutonium for Power Production Panel, Vienna, 1964
+ 64WIEN          In-Pile Dosimetry Panel, Vienna, 1964
+ 65ANTWERP       Nuclear Structure Conf., Antwerp 1965
+ 65CALCUTTA      Nuclear and Solid State Phys.Symp., Calcutta 1965
+ 65IAEA          Accident Dosimetry Symp., Vienna 1965
+ 65KFK           Polarization Symp., Karlsruhe 1965
+ 65KRLSRH        Pulsed Neutron Symp., Karlsruhe 1965
+ 65MINSK         Nuclear Spectroscopy Conf., Minsk 1965
+ 65SALZBURG      Physics and Chemistry of Fission Conf., Salzburg 1965
+ 66ANL           Fast Critical Experiments Conf., Argonne 1966
+ 66ARGONNE       Capture-Gamma Spectroscopy Conf, Argonne, 1966
+ 66BERKELEY      Radiation Measurements Conf., Berkeley 1966
+ 66BOMBAY        Nuclear and Solid State Physics Symp., Bombay 1966
+ 66DUBNA         Nuclear Pulsed Systems Panel, Dubna 1966
+ 66GATLNBG       Int.Conf.on Nuclear Physics, Gatlinburg, 1966
+ 66LYON          Light Nuclei Colloquium, Lyon, 1966
+ 66MOSCOW        Nuclear Spectroscopy Conf., Moscow 1966
+ 66OXFORD        Conf.on Nucl.Struct.and Elem.Part.,Oxford 1966
+ 66PARIS         Nuclear Data For Reactors Conf., Paris 1966
+ 66ROME          Measurements in Power Reactors Sem., Rome 1966
+ 66ROSSDF        Nucl. Reactions and Structure Conf., Rossendorf 1966
+ 66SDIEGO        Reactor Physics Conf., San Diego 1966
+ 66TRIESTE       Fundamentals in Nuclear Theory Lectures, Trieste 1966
+ 66VIENNA        Symp.on Standardization of Radionuclides,Vienna 1966
+ 66WASH          Neutron Cross-Section Techn. Conf., Washington 1966
+ 67ANNARB        Neutron Thermalization Symp. Ann Arbor, Mich, 1967
+ 67BORDEAUX      Nuclear Physics Colloquium, Bordeaux 1967
+ 67BRELA         Light Nuclei Symp., Brela 1967
+ 67BRUSSELS      Symp.on Plutonium as a Reactor Fuel, Brussels 1967
+ 67BRXL          Neutron Cross-Sections Standards Panel, Brussels 1967
+ 67COLLEG        Nucl.Phys.Res. w.Low Energy Accel., U.Maryland 1967
+ 67GNSVLLE       Nucleon-Nucleon Interaction Conf., Gainsville 1967
+ 67JUELICH       Neutron Physics at Reactors Conf., Juelich 1967
+ 67KANPUR        Nucl. and Solid State Physics Symp., Kanpur 1967
+ 67KARLSR        Symp.on Fast Reactor Physics,Karlsruhe 1967
+ 67KHARKOV       Nucl. Spectroscopy and Structure Conf., Kharkov 1967
+ 67KRAKOW        Nuclear Spectroscopy Sem., Krakow 1967
+ 67LUBLIN        Polish Physics Congress, Lublin 1967
+ 67MCHG          Neutron Thermalization Symp. Ann Arbor, Mich, 1967
+ 67MARYLD        Symp.on Nucl.Phys.Res.w.Low En.Accel., Maryland 1967
+ 67ROS           Second Nucl.Reactions+Structure Conf.Rossendorf 1967
+ 67SCHFFHSN      Swiss Physical Soc. Meeting, Schaffhausen 1967
+ 67TOKAI         Utilization of Research Reactors Meeting,Tokai,1967
+ 67TOKYO         Nuclear Structure Conf., Tokyo 1967
+ 67VIENNA        Panel on Delayed Fission Neutrons, Vienna 1967
+ 67WIEN          Panel on Fuel Burn-Up Predictions,Vienna 1967
+ 68BOMBAY        Nucl. and Solid State Physics Symp., Bombay 1968
+ 68COPENHGN      Neutron Inelastic Scattering Symp., Copenhagen 1968
+ 68DEBRECEN      Electron Capture in Nucl. Decays Conf.,Debrecen,1968
+ 68DUBNA         Nuclear Data for Computations Sem., Dubna 1968
+ 68DUBPA         Nuclear Structure Studies Panel, Dubna 1968
+ 68DUBSY         Symp.on Nuclear Structure, Dubna, USSR, 4-11 Jul 1968
+ 68JINR          Nuclear Structure Studies Panel, Dubna 1968
+ 68MADRAS        Nucl. and Solid State Physics Symp., Madras 1968
+ 68RIGA          Nucl. Spectroscopy and Structure Conf., Riga 1968
+ 68WASH          Nuclear Cross-Sections Techn. Conf., Washington 1968
+ 69BOCHUM        Clustering Phenomena Conf., Bochum,Germany,1969
+ 69CHAND         Chemistry Symp., Chandigarh 1969
+ 69EREVAN        Nuclear Spectroscopy Conf., Erevan 1969
+ 69HOUSTON       Welch Found.Conf.on Chem.Res.,Houston,1969,Vol.13
+ 69KINSHASA      Peaceful Uses of At.Energy in Africa,Kinshasa,1969
+ 69LONDON        Physics of Fast Reac.Oper.+ Design,Conf.,London 1969
+ 69MONTRL        Conf.on Properties of Nuclear States,Montreal,1969
+ 69RIO           Nuclear Physics Symp., Rio de Janeiro 1969
+ 69ROORKEE       Nucl. and Solid State Physics Symp., Roorkee 1969
+ 69STUDSVIK      Neutron Capture Gamma-Ray Spectroscopy,Studsvik,1969
+ 69TRIESTE       Trieste Lectures 1969
+ 69VIENNA        Physics and Chemistry of Fission Symp., Vienna 1969
+ 69WIEN          Instrumentation for Neut.Inelast.Scat.Res.,Vienna1969
+ 70ANL           Neutron Standards Symp., Argonne 1970
+ 70BARCEL        7.Int.Conf.on Corpuscular Photography, Barcelona 1970
+ 70CHICAGO       APS Meeting Chicago 1970
+ 70HELSINKI      Nuclear Data for Reactors Conf., Helsinki 1970
+ 70LENING        Nucl.Spectroscopy Conf.,Leningrad 1970
+ 70LVEG          ANS Nucl.Expl.Symp.,Las Vegas 1970
+ 70MADISON       Polarization Phenomena Conf., Madison 1970
+ 70MADRAS        Chemistry Symp., ITT, Madras 1970
+ 70MADURAI       Nucl. and Solid State Physics Symp., Madurai 1970
+ 70MARBG         7.Int.Conf.on Electrom.Isotope Separatn, Marburg 1970
+ 70PARIS         Reactor Shielding Specialist Meeting, Paris, 1970
+ 70SFE           Plutonium 1970 Symp. Santa Fe 1970
+ 71ALBANY        Conf.on Statistical Properties of Nuclei,Albany,1971
+ 71BUDAPEST      Symp.on The Nuclear 3-Body Problem, Budapest 1971
+ 71CANT          Chemical Nucl. Data Conf.,Canterbury 1971
+ 71KIEV          Neutron Physics Conf., Kiev 1971
+ 71KNOX          3rd Conf.Neutron Cross-Sections+Tech.,Knoxville 1971
+ 71MOCKBA        Neutron Metrology Conf, Moskva 1971
+ 71MOSCOW        Nuclear Spectroscopy Conf., Moscow 1971
+ 71VIENNA        Prompt Fission Neutron Spectra Meeting, Vienna 1971
+ 72ALUSHTA       Nucl.Structure Lectures, Alushta 1972
+ 72BOMBAY        14.Nucl.and Solid State Physics Symp, Bombay 1972
+ 72BUD           Nucl.Structure Conf.,Budapest 1972
+ 72CHANDG        15.Nucl.and Solid State Physics Symp. Chandigarh 1972
+ 72DENVER        18.Conf.on Magnetism and Magnetic Mat.,Denver 1972
+ 72GRENOBLE      Neutron Inelastic Scattering Symp., Grenoble 1972
+ 72KIAMESHA      Conf.on Developm.in Reactor Phys.,Kiamesha Lake 1972
+ 72KIEV          22. Nuclear Spectroscopy Conf, Kiev 1972
+ 72LANZH         Conf.on Low Energy Nucl.Phys.,Lanzhou,1972
+ 72LOSANG        Conf. on Few-Particle Problems, Los Angeles 1972
+ 72NEUHER        1.Symp.on Neutron Dosimetry,Munich-Neuherberg,May1972
+ 72PARIS         4.Int.Reactor Shielding Conf., Paris 1972
+ 72PREDEAL       Summer School Nucl.Data and React.Phys.,Predeal 1972
+ 72SENDAI        Conf.Nucl.Structure Studies, Sendai, Japan, 1972
+ 72VIENNA        Panel on Neutron Standard Reference Data,Vienna,1972
+ 73BANGLO        16.Nucl.and Solid State Physics Symp.,Bangalore,1973
+ 73BOLOGNA       IAEA Panel on Fission-Product Nuclear Data
+ 73BOSTON        19.Conf.on Magnetism and Magnetic Mat.,Boston 1973
+ 73DUBNA         13. Nuclear Spectroscopy Symp., Dubna 1973
+ 73GAUSSIG       3.Sem.on Interact.of Fast Neutrons,Gaussig 1973
+ 73KARLSR        Capture Cross-Sections Panel, Karlsruhe 1973
+ 73KIEV          2.Conf.on Neutron Physics, Kiev 1973
+ 73MUNICH        Int.Conf.on Nuclear Physics,Munich 1973
+ 73PACIFI        Int.Conf.on Photonucl.Reactions,Pacific Grove 1973
+ 73PARIS         Applications of Nuclear Data Symp., Paris 1973
+ 73PETTEN        Nuclear Physics Symp., Petten 1973
+ 73ROCH          3.Physics+Chemistry of Fission Symp., Rochester 1973
+ 73TBILISI       23. Nuclear Spectroscopy Conf., Tbilisi 1973
+ 73TOKAI         Meeting on Fast Reactor Physics, Tokai 1973
+ 73TRIEST        Int.Extend.Sem.on Nucl.Physics,Trieste 1973
+ 74AMSTER        Conf.on Nucl.Struct.and Spectroscopy,Amsterdam 1974
+ 74BOMBAY        17.Nucl.and Solid State Physics Symp.,Bombay 1974
+ 74CALCUT        Int.Symp.on Radiation Physics, Calcutta 1974
+ 74COLUMB        2.Conf.on Nucl.Meth.in Envir.Res.,Columbia 1974
+ 74DACCA         Physics Symp., Dhaka,18-21 Nov.1974
+ 74GAUSSIG       5.Sem.on Interact.of Fast Neutrons,Gaussig 1974
+ 74KHARKOV       24.Conf.on Nucl.Spectr.and Nucl.Struct.,Kharkov 1974
+ 74KHARKV        24.Conf.on Nucl.Spectr.and Nucl.Struct.,Kharkov 1974
+ 74NASH          Int.Conf.on React.Betw.Complex Nuclei,Nashville 1974
+ 74PETTEN        2.Symp.on Neutr.Capt.Gamma Ray Spectrosc.,Petten 1974
+ 74SHANGH        Conf.on Nucl.Physics,Shanghai 1974
+ 74SMOLEN        Int.Symp.on Neutron Induced Reactions,Smolenice 1974
+ 75CALCUTTA      18.Nucl.and Solid State Physics Symp.,Calcutta,1975
+ 75DEBREC        Symp.on Fast Neutr.Interactions,Debrecen 1975
+ 75DELHI         7.Conf.on Few-Body Problems,Delhi Dec.1975/Jan.1976
+ 75GAUSSIG       5.Sem.on Interact.of Fast Neutrons,Gaussig 1975
+ 75GOTHEN        Conf.in Physics,Gothenburg,10-12 Jun 1975
+ 75HARWELL       Europhysics Conf.on Nucl.Interactions, Harwell 1975
+ 75KARLSR        Seminar on Aspects of Cf-252,Karlsruhe 1975
+ 75KIEV          3.All Union Conf.on Neutron Phys.,Kiev,9-13 Jun 1975
+ 75LENING        25.Conf.on Nucl.Spect.and Nucl.Struct.,Leningrad 1975
+ 75MRYLND        2.Conf.on Clustering Phen.in Nuclei,Maryland 1975
+ 75WASH          Conf.on Nucl.Cross-Sect.and Techn.,Washington 1975
+ 75ZUERI         7.Int.Conf.on Cyclotrons,Zuerich 1975
+ 75ZURICH        4.Int.Symp.on Polarization Phen.,Zuerich 1975
+ 76AHMEDABA      19.Nucl.Phys.Solid State Phys.Symp.,Ahmedabad,1976
+ 76ANL           Meet.Fast Neutr.Cross Sect.of U and Pu,Argonne 1976
+ 76ANL-2         Symp.on Macrosc.React.of Heavy Ion Coll.,Argonne 1976
+ 76BAKU          Conf.on Nucl.Spectr.and Nucl.Struct.,Baku 1976
+ 76BOMBAY        Symp.on Reactor Physics, Bombay, 1-3 Mar 1976
+ 76CAEN          European Conf.on Nucl.Phys.with Heavy Ions,Caen 1976
+ 76CORSICA       3.Int.Conf.on Nuclei Far from Stability,Cargese,1976
+ 76GARMIS        9th Symp. on Fusion Technology, Garmisch 1976
+ 76LOWELL        Int.Conf.on Interact.of Neutr.with Nuclei,Lowell 1976
+ 76NEUHER        9.Conf.Solid State Nucl.Track Detect.,Neuherberg 1976
+ 76RIGA          School on Neutron Metrology, Riga, 22 Nov-3 Dec 1976
+ 77BNL           Symp.on Neutr.Cross-Sect. 10 - 40 Mev,Brookhaven 1977
+ 77BNL-2         Meeting on Accelerator Breeding,Brookhaven 1977
+ 77GEEL          Meet.on Neutr.Data of Struct.Mat.,Geel 1977
+ 77KIEV          4.All Union Conf.on Neutron Phys.,Kiev,18-22 Apr 1977
+ 77MANNHE        Reaktortagung 1977, Mannheim, Germany, Mar 1977
+ 77NBS           Symp.on Neutron Standards,Gaithersburg 1977
+ 77PARIS         Meeting on Natural Fission Reactors,Paris 1977
+ 77PUNE          20.Nucl.Phys.and Solid State Phys.Symp.,Poona 1977
+ 77TASHKENT      27.Conf.on Nucl.Spectr.and Nucl.Struct.,Tashkent 1977
+ 77TENN          Conf.on Heavy Ion Collisions,Falls Creek,Tenn. 1977
+ 77TOKYO         Int.Conf.on Nuclear Structure, Tokyo, 5-10 Sep 1977
+ 77VIENNA        Symp.on Neutron Inelastic Scattering, Vienna 1977
+ 78ALMAATA       28.Conf.on Nucl.Spectr.and Nucl.Struct.,Alma-Ata 1978
+ 78ALUSHTA       3.Int.School on Neutron Physics, Alushta 1978
+ 78BNL           3.Symp.Neutr.Capt.Gamma Ray Spectr.,Brookhaven 1978
+ 78BNL-2         Meet.Nucl.Data Higher Pu and Am Isot.,Brookhaven 1978
+ 78BOMBAY        21.Nucl.Phys.and Solid State Phys.Symp., Bombay 1978
+ 78GRAZ          Int.Conf.on Few Body Syst.and Nucl.Forces,Graz 1978
+ 78HARWELL       Int.Conf.on Neutr.Phys.and Nucl.Data,Harwell 1978
+ 78HEIDLB        Meet.on Nucl.and High Energy Physics,Heidelberg 1978
+ 78LUSHAN        3.Chinese Nucl.Phys.Conf.,Lushan,China,Aug.1978
+ 78MAYAG         Conf.on Computers in Activ.Analysis,Mayaguez 1978
+ 79AIX           Symp.on Fast Reactor Physics,Aix-en-Provence 1979
+ 79BOLOGN        Meet.Neutr.Cross Sect.of Fiss.Prod.Nucl.,Bologna 1979
+ 79GAUSSIG       9.Symp.on Interact.of Fast Neutrons,Gaussig 1979
+ 79GEEL          Meet.on Neutr.Cross Sect.For Struct.Mat.,Geel 1979
+ 79GHENT         Meeting on Nuclear Physics, Ghent, 26-30 Mar 1979
+ 79INNSBR        17.Meet.of the Ges.f.Nuklearmedizin,Innsbruck 1979
+ 79JUELICH       IAEA Symp.on Phys.and Chem.of Fission,Juelich 1979
+ 79KNOX          Conf.on Nucl.Cross Sections F.Techn.,Knoxville 1979
+ 79LYON          10.Conf.on Solid State Nucl.Track Detect.,Lyon 1979
+ 79MADRAS        22.Nucl.Phys.and Solid State Phys.Symp.,Madras 1979
+ 79RHODES        Conf.on Structure of Medium-Heavy Nuclei, Rhodes 1979
+ 79RIGA          29.Conf.on Nucl.Spectr.and Nucl.Struct.,Riga 1979
+ 79SMOLENIC      2.Symp.on Neutron Induced Reactions,Smolenice 1979
+ 80BEIJING       Theories and Meth.of Nucl.Reactions,Beijing 1980
+ 80BERKELEY      Int.Conf.Nuclear Physics, Berkeley,California,1980
+ 80BNL           Symp.on Neutr.Cross Sect.10-50 MeV,Brookhaven 1980
+ 80BNL-2         Conf.on Nucl.Data Eval.Methods,Brookhaven 1980
+ 80DELHI         23.Nucl.Phys.A.Solid State Phys.Symp.,New Delhi 1980
+ 80KIEV          5.All Union Conf.on Neutron Phys.,Kiev,15-19 Sep 1980
+ 80KOPPENN       Meet.Technol.Contr.Nucl.Fusion,King of Prussia 1980
+ 80LANZHO        4.Chinese Nucl.Phys.Conf.,Lanzhou,China,Oct.1980
+ 80LENGRD        30.Conf.Nucl.Spectr.and Nucl.Struct.,Leningrad 1980
+ 80MUNICH        Meeting on Nuclear Physics, Munich, 17-22 Mar 1980
+ 80SANTA FE      5.Symp.on Polar.Phen.in Nucl.Phys.,Santa Fe 1980
+ 80WALTAI        Nucl.Chem.and Radiochem.Symp.,Waltair,India 1980
+ 81ANL           Neutron Scattering Conf.,Argonne Nat.Lab. 1981
+ 81BOMBAY        24.Nucl.Phys.and Solid State Phys.Symp.,Bombay 1981
+ 81GRENOB        4.Symp.Neutr.Capt.Gamma-Ray Spectrosc.,Grenoble 1981
+ 81NEUHERBG      4.Symp.on Neutron Dosimetry, Munich-Neuherberg 1981
+ 81SAMAR         31.Conf.Nucl.Spectr.and Nucl.Struct.,Samarkand 1981
+ 82ANTWER        Conf.on Nucl.Data for Sci.and Technol.,Antwerp 1982
+ 82KIAMES        Meet.on Adv.in Reactor Phys.,Kiamesha Lake 1982
+ 82KIEV          32.Conf.on Nucl.Spectr.and Nucl.Struct.,Kiev 1982
+ 82SMOLEN        Conf.on Neutron Induced Reactions,Smolenice 1982
+ 82VARANA        25.Nucl.Phys.A.Solid State Phys.Symp.,Varanasi 1982
+ 82WASH          4.Symp.on Radiation Dosimetry,Washington D.C. 1982
+ 83GAUSSG        13.Int.Conf.on Nucl.Phys., Gaussig 1983
+ 83KIEV          6.All-Union Conf.on Neutron Physics,Kiev,2-6 Oct.1983
+ 83MOSCOW        33.Conf.on Nucl.Spectr.and Nucl.Struct.,Moscow 1983
+ 83MOSKVA        3.Meet.on Neutron Radiation Metrology,Moscow 1983
+ 83MYSORE        26.Nucl.Phys.and Solid State Phys.Symp.,Mysore 1983
+ 83TOKYO         Symp.on High Energy Photonucl.Reactions, Tokyo 1983
+ 83TURKU         3.Symp.on Med.Appl.of Cyclotrons, Turku, Finland,1983
+ 83WASH          Symp.Ultrashort-Lived Radionucl.,Washington D.C.1983
+ 84ALMAAT        34.Conf.on Nucl.Spectr.A.Nucl.Struct.,Alma-Ata 1984
+ 84DEBREC        Int.Symp.on In-Beam Nucl.Spectroscopy, Debrecen 1984
+ 84FUJI          Int.Symp.on Heavy Ion Nuclear Physics,Fuji 1984
+ 84GAUSSIG       14.Symp.on Nucl.Phys.,Gaussig,DDR,1984
+ 84GEESTH        5.Symp.on Reactor Dosimetry,Geesthacht,1984
+ 84KNOX          Symp.on Capt.Gamma Ray Spectroscopy,Knoxville 1984
+ 84OHIO          Conf.on Neutron-Nucleus Collisions,Glouster 1984
+ 84OSAKA         Symp.on Nucl.Spectr.and Nucl.Interact.,Osaka 1984
+ 84UPPSAL        Conf.on Transactinium Isotope Nucl.Data,Uppsala 1984
+ 84TRIUMF        TRIUMF-ISOL Workshop, Mont Gabriel, Quebec, 1984
+ 84VARESE        13th Symposium on Fusion Technology, Varese,Sept.1984
+ 84VENICE        6.Symp.Safeguards and Nucl.Mat.Managem.,Venice 1984
+ 85CHIANG        Fast Neutrons in Sci.and Techn.Symp.,Chiang Mai 1985
+ 85CHICAG        Nuclei Off Line of Stability Symp.,Chicago,1985
+ 85GAUSSI        15.Symp.on Nucl.Phys.,Nucl.Fission,Gaussig,DDR,1985
+ 85JAIPUR        Symp.on Nucl.Phys.,Jaipur,16-20 Dec.1985
+ 85JUELIC        Conf.on Neutron Scatt.in the Nineties,Juelich 1985
+ 85LENING        35.Conf.Nucl.Spectr.and Nucl.Struct.,Leningrad 1985
+ 85SANTA         Conf.on Nucl.Data f.Basic a.Appl.Sci.,Santa Fe 1985
+ 86BEIJIN        Int.Conf.Nucl.Radiochemistry, Beijing, 1-5 Sept.1986
+ 86BIRMIN        Delayed Neutr.Prop.Meeting, Birmingham 1986
+ 86DUBRO2        Conf.Nucl.Struct.,Reactions,Symmetries,Dubrovnik 1986
+ 86DUBROV        Int.Conf.on Fast Neutr.Phys.,Dubrovnik,26-31 May 1986
+ 86HABAY         Sem.on Fission, Habay-la-Neuve,Belgium,22-23 May 1986
+ 86HARROG        Int.Nucl.Phys.Conf., Harrogate,U.K.,25-30 Aug.1986
+ 86KHARKO        36.Conf.Nucl.Spectrosc.and Nucl.Struct.,Kharkov 1986
+ 86TEL-AV        Nucl.Soc.of Israel Meeting,Tel Aviv,17-18 Feb.1986
+ 86TURKU         4.Symp.on Med.Appl.of Cyclotrons, Turku, Finland,1986
+ 86WASH          Conf.3-Body Force in 3-Nucleon Syst.,Washington D.C.
+ 87BADHON        Symp.on Dynamics of Collective Phen.,Bad Honnef 1987
+ 87JURMAL        37.Conf.Nucl.Spectrosc.and Nucl.Struct.,Jurmala 1987
+ 87KIEV          1.Int.Conf.on Neutron Physics, Kiev,14-18 Sep 1987
+ 87LEUVEN        6.Conf.on Capture Gamma-ray Spectroscopy, Leuven 1987
+ 87ROSSEA        5.Conf.on Nuclei Far from Stability,Rosseau Lake 1987
+ 87VIENNA        IAEA Meet.on Fusion Eval.Nucl.Data,Vienna,Nov.1987
+ 88BADHON        Conf.on Nucl.Struct.of the Zr Region,Bad Honnef 1988
+ 88BAKU          38.Conf.Nucl.Spectrosc.and Nucl.Struct., Baku 1988
+ 88BOMBAY        31.Nuclear Physics Symp., Bombay, 27 - 31 Dec.1988
+ 88GAUSSI        18.Int.Conf.on Nucl.Phys., Gaussig 1988
+ 88JACKHO        Int.Reactor Phys.Conf.,Jackson Hole,18-22 Sep.1988
+ 88MITO          Conf.on Nucl.Data For Sci.and Technol.,Mito 1988
+ 88SMOLEN        Symp.on Nucleon Induced Reactions, Smolenice 1988
+ 88TRIEST        Worksh.on Applied Nucl.Theory, Trieste 1988
+ 89ALBUQU        High En.&Heavy Ion Beams in Mat.An.,Albuquerque 1989
+ 89ALIGAR        32nd Nuclear Physics Symp., Aligarh, 26-30 Dec.1989
+ 89BERLIN        Int.Conf.on 50 Years Res.in Nucl.Fiss., Berlin 1989
+ 89BRAUNS        Nuclear Decay Data Symp., Braunschweig 1989
+ 89LENING        Int.Conf.50th Anniv.of Nucl.Fission, Leningrad 1989
+ 89TASHKE        39.Conf.Nucl.Spectrosc.and Nucl.Struct.,Tashkent 1989
+ 89TURKU         5.Symp.on Med.Appl.of Cyclotrons, Turku, Finland,1989
+ 89WASH          50 Years Nucl.Fission Conf., Washington D.C., 1989
+ 90ASILOM        7.Symp.on Capture Gamma Ray Spectrosc.,Asilomar 1990
+ 90BOMBAY        Indo-Japan Sem.on Thorium Utilization,Bombay 1990
+ 90LENING        40.Conf.Nucl.Spectroscopy Nucl.Struct.,Leningrad 1990
+ 90MARSEI        Int.Conf.on the Physics of Reactors, Marseille 1990
+ 91BEIJIN        Symp.on Fast Neutron Physics, Beijing, 9-13 Sep 1991
+ 91GAUSSG        21.Int.Symp.on Nucl.Phys., Gaussig 1991
+ 91JUELIC        Conf.on Nucl.Data for Sci.and Technol.,Juelich 1991
+ 91MINSK         41.Conf.Nucl.Spectroscopy Nucl.Struct.,Minsk 1991
+ 92ADELAI        13.Int.Conf.on Few Body Problems,Adelaide,Jan.1992
+ 92ALMAAT        Int.Conf.Nucl.Spectroscopy Nucl.Struct.,Alma-Ata 1992
+ 92BNL           Int.Symp.on Nucl.Data Eval.Methodology, BNL, Oct.1992
+ 92BOMBAY        35.Nuclear Physics Symp., Bombay, 21 - 24 Dec.1992
+ 92KARLSR        Conf.on Nuclei in the Cosmos, Karlsruhe, July 1992
+ 92TRIEST        Workshop on Comput.and Anal.of Nucl.Data,Trieste 1992
+ 92TURKU         6.Symp.on Med.Appl.of Cyclotrons, Turku, Finland,1992
+ 93DUBNS         43.Int.Conf.Nucl.Spectrosc.Nucl.Struct.,Dubna 1993
+ 93FRIBOU        8.Int.Conf.Capture Gamma-Ray Spectrosc.,Fribourg 1993
+ 94BOLOGN        Meas.,Calc.and Eval.of Photon Prod.Data,Bologna 1994
+ 94DENTON        Conf.on Appl.of Accel.in Res.and Ind.,Denton,USA,1994
+ 94GATLIN        Conf.on Nucl.Data for Sci.and Techn.,Gatlinburg 1994
+ 94PETRBG        Conf.Nucl.Spectrosc.Nucl.Struct.,St.Petersburg 1994
+ 95ARLES         Conf.Exotic Nuclei and Atomic Masses, Arles, 1995
+ 95OBNIN         13.Meeting on Physics of Nucl.Fission, Obninsk 1995
+ 95PETRBG        Conf.Nucl.Spectrosc.Nucl.Struct.,St.Petersburg 1995
+ 95TURKU         7.Symp.on Med.Appl.of Cyclotrons, Turku, Finland,1995
+ 96BUDA          9.Symp.on Capture Gamma Ray Spect., Budapest, 1996
+ 96DENTON        Conf.on Appl.of Accel.in Res.and Ind.,Denton,USA,1996
+ 96MITO          Conf.on the Physics of Reactors, Mito, Japan 1996
+ 96MOSCOW        Conf.Nucl.Spectrosc.Nucl.Struct., Moscow, June 1996
+ 96NOTRED        Conf.on Nuclei in the Cosmos IV, Notre Dame, 1996
+ 96SAROV         Worksh.Exact Meas.in Nucl.Spect., Sarov, Russia 1996
+ 97OBNIN         Conf.Nucl.Spectrosc.Nucl.Struct., Obninsk 1997
+ 97PHILAD        Symp.Synth.Isot.Labelled Comp.,Philadelphia,PA 1997
+ 97SANIB         Fission,Prop.of Neutron-Rich Nucl.,Sanibel,USA,1997
+ 97TOKYO         Symp. New Facet of Spin of Giant Res.,Tokyo 1997
+ 97TRIEST        Conf.on Nucl.Data for Sci.and Techn., Trieste 1997
+ 98BELAIR        Conf.Exotic Nuclei & At.Masses, Bellaire, USA, 1998
+ 98CAEN          15.Conf.on Cyclotrons and Appl., Caen, France, 1998 
+ 98DENTON        Conf.on Appl.of Accel.in Res.and Ind.,Denton,TX,1998
+ 98GATLIN        Nuclear Structure 98 Conf., Gatlinburg, USA, 1998
+ 98MARSEI        20.Symp.on Fusion Technology, Marseille,France, 1998
+ 98MOSCOW        Conf.Nucl.Spectrosc.Nucl.Struct., Moscow, June 1998
+ 98VOLOS         5. Nuclei in the Cosmos Conf., Volos, Greece, 1998
+ 98SEYSS         Nucl.Fiss.&Fiss.-Prod.Spectr.,Seyssins,France, 1998
+ 99BUCHAR        Symp.on Adv.in Nucl.Phys., Bucharest, Romania, 1999
+ 99HABAY         Sem.on Fission, Habay-la-Neuve, Belgium, 1999 
+ 99PRAHA         Conf.on Accelerator Driven Transmutation, Prague 1999
+ 99RAB           Conf.Cluster.Aspects of Nucl.Struct.& Dynam.,Rab 1999 
+ 99SANTA         Symp.on Capt.Gamma Ray Spectroscopy, Santa Fe,NM 1999
+ 99SARAT         Workshop on Beam Dynamics and Optimiz, Saratov 1999
+ 99ST.AND        Conf.on Fission+Neutron-Rich Nucl.,St.Andrews, 1999
+ 99TSUKUB        Conf.on Radiation Shielding, Tsukuba, Japan, 1999
+ 99VANCOU        Int.Conf.on Isotopes (3ICI), Vancouver, Sept.1999
+ 2000PITTSB      PHYSOR 2000, Pittsburgh, PA, 2000
+ 2001SAROV       Conf.Nucl.Spectrosc.Nucl.Struct.,Sarov, Russia,2001
+ 2001TSUKUB      Conf.on Nucl.Data for Sci.and Techn., Tsukuba 2001
+ 2000STPETR      Conf.Nucl.Spectr.Nucl.Struct.,St.Petersbg.,June 2000 
+ 2001BERKEL      Nucl.Physics in the 21st Cent.,Berkeley, CA,USA,2001 
+ 2001CASTAP      Dyn.Aspects of Nucl.Fiss.,Casta-Papiernicka 2001
+ 2001DUBNA       Interaction of Neutrons with Nuclei, Dubna 2001 
+ 2001SARAT       Workshop on Beam Dynamics and Optimiz, Saratov 2001
+ 2002BERKEL      Conf. on Frontier of Nuclear Physics, Berkeley 2002
+ 2002DUBNA       Int.Sem.Interaction of Neutrons w.Nuclei,Moscow,2002
+ 2002MOSCOW      Conf.Nucl.Spectrosc.Nucl.Struct.,Moscow,Russia,2002 
+ 2002PRUHON      Symp.on Capt.Gamma Ray Spectroscopy, Pruhonice, 2002
+ 2002SANIB       Fission,Prop.of Neutron-Rich Nucl.,Sanibel,USA,2002
+ 2002SANTA       Meeting on Radiation Shielding,Santa Fe,NM,USA, 2002
+ 2002SEOUL       PHYSOR 2002, Physics of Reactors, Seoul, Korea, 2002
+ 2003DARMST      Worksh.Nucl.Data for Transmutation, Darmstadt, 2003
+ 2003HABAY       Sem.on Fission, Habay-la-Neuve, Belgium, 2003
+ 2003MOSCOW      Conf.Nucl.Spectrosc.Nucl.Struct.,Moscow,Russia,2003
+ 2003SDIEGO      Int.Meet.on Nucl.Appl.of Accel.Tech., San Diego 2003
+ 2004ARGON       Conf.on Nuclei at the Limits, Argonne, July 2004
+ 2004BELGOR      Conf.Nucl.Spectrosc.Nucl.Struct.,Belgorod,Russia,2004
+ 2004BORMIO      Int.Meeting on Nucl.Physics, Bormio, Italy, 2004
+ 2004EURAD       Conf.Manag.and Disposal of Rad.Waste,Luxembourg 2004
+ 2004SANTA       Conf.on Nucl.Data for Sci.and Techn., Santa Fe 2004
+ 2005BRUSS       Int.Conf.on Isotopes (5ICI), Brussels, April 2005
+ 2005KOS         Frontiers in Nucl.Structure,Kos,Greece,Sept.2005
+ 2005NOTRED      Symp.on Capt.Gamma Ray Spectroscopy, Notre Dame 2005
+ 2005PAVIA       Nucl.Phys.Divisional Conf., Pavia, Italy, Sept.2005
+ 2005SANTA       Int.Collab.on Adv.Neutron Sources,Santa Fe,April 2005
+ 2005SEVILL      Int.Conf.on Ion Beam Analysis, Sevilla, 2005
+ 2006BOROVE      Workshop Neutron Meas., Eval.& Appl., Borovets, 2006
+ 2006CERN        9.Int.Symp.Nuclei in the Cosmos, CERN, Geneva, 2006
+ 2006MANGAL      Nucl.data f.adv.nucl.systems, Mangalore, India, 2006
+ 2006VANCOU      Advances in Nucl.Analysis and Simul.,Vancouver 2006
+ 2007NICE        Conf.on Nucl.Data for Sci. and Technology, Nice 2007
+ 2007TOKAI       Symp.on Nuclear Data, Tokai, Japan, Jan. 2007
+ ABAGJAN         Abagjan Group Constants
+ ACT.EL          Actinide Elements
+ ANCIPOV         Ancipov et al,Nucl.Data for Pu Isotopes,Minsk 1982
+ ANDERSEN        H.H.Andersen,H Stopping Powers and Ranges,Pergamon 77
+ BAARD           Baard et al.,Nuclear Data Guide,Kluwer Acad.Publ.1989
+ BELANOVA        Belanova et al.,Neutron Capt.Cross Sect.,Moscow 1986
+ BROND           V.N.Manokhin: BROND Documentation, Obninsk 1986
+ BRUNE           Activation Analysis Handbook, D.Brune
+ BYCHKOV         Bychkov et al,Cross Sect.f.Thresh.React.,Moskva 1982
+ CDFE/FIS        Fotojad.Dannye - Fission of Heavy Nuclei,Moscow 1983
+ CDFE/FIS2       Fotojad.Dannye-Photofission of U-235,238, Moscow 1987
+ CDFE/LI         Fotojad.Dannye - Photodisintegr.of Li, Moscow 1984
+ CDFE/LI2        Fotojad.Dannye - Photodisint.of Li,Suppl.,Moscow 1986
+ CDFE/XG         Fotojad.Dannye - Gamma,X Gamma'Reactions, Moscow 1985
+ DEMIDOV         Demidov, Excited States of Nuclei, Alma Ata 1986
+ DMITRIEV        Dmitriev,Yields of Radionuclides,Moskva 1986
+ EXP.NUC.P.      Experimental Nuclear Physics
+ FAST N.PH.      Fast Neutron Physics
+ FRC             Fast Reactor Cross-Sections, Pergamon 1960
+ GAMMAATLAS      Atlas of Gamma-Ray Spectra, Moskva 1978
+ GRUEBLER        Gruebler,Reactions Induced by Deuterons, Zurich 1973
+ GUSEV           Gusev,Quant.Emiss.of Radionuclides,Moscow 1977
+ HB.SPEC         Handbook of Spectroscopy, Crc Press, Florida, 1981
+ KONSHIN         Konshin,Eval.of Nucl.Data for Pu-242,Minsk 1979
+ LANDOLT         Landolt-Boernstein,New Series,Springer 1973
+ LAPENAS         Lapenas,Neutron Spect.Meas.by Activ.,Riga 1975
+ LEDERER-7       C.M.Lederer,Table of Isotopes,7th Ed.,1978
+ LEVKOVSKIJ      Levkovskij,Act.Cs.By Protons and Alphas,Moscow 1991
+ N.REAC.DES      Theory and Method of Nucl.Reactor Design,Moscow 1962
+ NB.GS.COMP      Noble Gas Compounds, Chicago Press 1963
+ NEA-DISCR       NEA Discrepancy File 1983
+ NEJTRONFIZ      Neitronnaya Fizika, Moskva 1961
+ NEUT.CS 1A      Neutron Cross Sections,Vol.1,Part A, Res.Par., 1981
+ NEUT.CS 1B      Neutron Cross Sections,Vol.1,Part B, Res.Par., 1984
+ NEUT.CS 2       Neutron Cross Sections,Vol.2, Curves, 1984
+ NEUTRDIFFR      G.E.Bacon= Neutron Diffraction. 2nd ed, Oxford 1962
+ NIKOL84         Nikolaev,Multigr.Approx.in Neutr.Transp.,Moskva 1984
+ NIKOLAEV        Nikolaev,Anisotr.of Elast.Scatt.Neutr.,Moskva 1972
+ NRLME           Nucl.Reactions at Low and Middle Energies,Moscow 1962
+ NRLMEN          Nucl.Reactions at Low and Middle Energies,Moscow 1958
+ OKAMOTO         Handbook on Nucl.Activation Data, IAEA 1987
+ PERFILOV        Perfilov,Nucl.React.Ind.by High En.Part.,USSR 1962
+ PFN             Fast Neutron Physics Conf., Houston 1963
+ PH-DAT          Physik Daten/Physics Data,Series,Karlsruhe
+ PNS             Proc. Nucl.and Solid State Phys. Symp., India
+ PR.NUC.EN.      Progress in Nucl.Energy
+ PROKOFJEV       Prokofjev,Therm.Neutr.Capt.for A=143-193,Riga 1973
+ RCS             Radiochemical Studies, Fission Products, USA, 1951
+ REAC.CALC.      Maruk,Theory and Meth.of Nucl.Reactor Calc.,1964
+ RISR            Radioisotopes in Scient.Res., UNESCO, Paris 1957
+ SEGRAVE         Segrave,The Three-Body Problem,Amsterdam 1970
+ SIEGBAHN        Siegbahn, Beta and Gamma-Ray Spectroscopy, 1955
+ SPN             Sov.Progr.in Neutr.Phys.,New York 1961
+ TRANSU.EL.      Transuranium Elements
+ WAGEMANS        Wagemans, The Nuclear Fission Process, CRC Press 1991

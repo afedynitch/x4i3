@@ -1,0 +1,169 @@
+ENTRY            12898     860114              20050926       0000
+SUBENT        12898001     860114              20050926       0000
+BIB                 17         44
+INSTITUTE  (1USAANL)
+REFERENCE  (J,ANE,11,623,8412)
+           (P,ANL-NDM-85,8406)
+AUTHOR     (D.L.SMITH,J.W.MEADOWS,I.KANNO)
+TITLE      MEASURED ACTIVATION CROSS SECTIONS BELOW 10 MEV FOR THE
+            51-V(N,P)51-TI AND 51-V(N,ALPHA)48-SC REACTIONS.
+FACILITY         ANL FAST NEUTRON GENERATOR FACILITY
+METHOD     (ACTIV)
+MONITOR    (92-U-238(N,F),,SIG) ENDF/B-V FISSION CROSS SECTION
+                    WAS USED TO OBTAIN THE ABSOLUTE CROSS SECTION
+DETECTOR   (GELI)
+DECAY-DATA (22-TI-51,348.SEC,DG,320.,0.934)
+SAMPLE     METALLIC SAMPLE 99.8+-0.2 V BY WEIGHT.
+           ISOTOPIC ABUNDANCE OF 51-V ASSUMED TO BE 99.750 PERCENT
+ANALYSIS   SEE ANL-NDM-9(74) AND ANL-7989(73) FOR DETAILS.
+ERR-ANALYS THE ENERGY UNCERTAINTY WAS ABOUT 20 PERCENT
+                    OF FWHM RESOLUTIONS FOR THE NEUTRON ENERGY
+                    DISTRIBUTIONS,15-55 KEV.
+           (ERR-T) TOTAL UNCERTAINTY
+                   DETAILED ERROR CORRELATION MATRIX IS GIVEN
+                     IN THE ANL REPORT
+          1(ERR-S) RANDOM UNCERTAINTY
+                     SEVEN SOURCES OF RANDOM ERRORS
+           (ERR-1) SYSTEMATIC UNCERTAINTY
+                     TWELVE SOURCES OF SYSTEMATIC ERRORS
+CORRECTION CORRECTIONS WERE MADE FOR-
+             . DETECTOR EFFICIENCY
+             . DEAD-TIME
+             . BACKGROUND EFFECTS
+             . FISSION EVENTS OF LOW-ENERGY
+             . FISSION PRODUCED BY BACKGROUND NEUTRONS
+             . NEUTRON MULTIPLE SCATTERING
+             . GEOMETRY FACTORS
+             . NEUTRON SOURCE PROPERTIS
+             . NEUTRON ABSORPTION
+             . SECONDARY NEUTRONS FROM LI(P,N) AND D(D,N) SOURCES
+ADD-RES    U-235 FISSION SPECTRUM AVERAGED CROSS SECTION=0.5366 MB
+           CF-252 FISSION SPECTRUM AVERAGED CROSS SECTION=0.6878MB
+COMMENT    SEE DATA SET 12904 FOR 51-V(N,ALPHA).
+STATUS     (APRVD) D.L.SMITH, 84/10/3.
+HISTORY    (840830C)
+           (850212A) REFERENCE UPDATE.
+           (860114A) ENERGY RESOLUTION HEADING UPDATED, BIB
+                     CORRECTION.
+ENDBIB              44
+NOCOMMON             0          0 3
+ENDSUBENT           47
+SUBENT        12898002     860114              20050926       0000
+BIB                  2          3
+REACTION  1((23-V-51(N,P)22-TI-51,,SIG)/(92-U-238(N,F),,SIG))
+          2(23-V-51(N,P)22-TI-51,,SIG)
+INC-SOURCE (P-LI7)
+ENDBIB               3
+NOCOMMON             0          0
+DATA                10         18
+EN         EN-RSL-FW  DATA      1ERR-S      ERR-1     1ERR-T     1
+MONIT     2MONIT-ERR 2DATA      2ERR-T     2
+MEV        MEV        NO-DIM     PER-CENT   PER-CENT   PER-CENT
+MB         PER-CENT   MB         PER-CENT
+ 2.856      0.095      9.075  -06 47.9       15.6       50.4
+ 528.8      3.0        0.004799   50.5
+ 2.957      0.094      1.966  -05 20.6        9.2       22.6
+ 524.4      3.0        0.01031    22.8
+ 3.057      0.094      2.575  -05 15.9       20.1       25.6
+ 522.7      2.5        0.01346    25.7
+ 3.158      0.092      7.369  -05  6.7       15.5       16.9
+ 524.2      2.5        0.03863    17.1
+ 3.258      0.090      1.441  -04  4.9       11.2       12.2
+ 526.7      2.5        0.07588    12.5
+ 3.359      0.087      2.354  -04  3.6        8.1        8.9
+ 529.2      2.5        0.1246      9.2
+ 3.459      0.087      3.210  -04  3.4        6.7        7.5
+ 531.7      2.5        0.1707      7.9
+ 3.560      0.087      4.130  -04  3.2        7.8        8.4
+ 536.1      2.5        0.2214      8.8
+ 3.661      0.087      6.140  -04  3.0        7.2        7.8
+ 541.7      2.5        0.3326      8.2
+ 3.761      0.082      7.917  -04  2.9        8.4        8.9
+ 544.3      2.5        0.4309      9.2
+ 3.861      0.084      1.281  -03  2.8        5.9        6.5
+ 544.9      2.5        0.6979      7.0
+ 3.861      0.084      1.282  -03  2.8        5.9        6.5
+ 544.9      2.5        0.6986      7.0
+ 3.962      0.081      1.348  -03  2.8        4.9        5.6
+ 545.5      2.5        0.7353      6.1
+ 4.063      0.081      1.552  -03  2.8        5.1        5.8
+ 546.3      2.4        0.8476      6.3
+ 4.264      0.075      1.967  -03  2.7        6.7        7.2
+ 547.4      2.4        1.007       7.6
+ 4.464      0.076      2.692  -03  2.7        5.2        5.9
+ 549.0      2.4        1.478       6.4
+ 4.664      0.076      4.136  -03  2.8        4.7        5.5
+ 544.0      2.4        2.250       6.0
+ 4.865      0.076      4.996  -03  2.8        4.8        5.6
+ 537.6      2.4        2.686       6.1
+ENDDATA             40
+ENDSUBENT           48
+SUBENT        12898003     860114              20050926       0000
+BIB                  2          3
+REACTION  1((23-V-51(N,P)22-TI-51,,SIG)/(92-U-238(N,F),,SIG))
+          2(23-V-51(N,P)22-TI-51,,SIG)
+INC-SOURCE (D-D)
+ENDBIB               3
+NOCOMMON             0          0
+DATA                10         27
+EN         EN-RSL-FW  DATA      1ERR-S      ERR-1     1ERR-T     1
+MONIT     2MONIT-ERR 2DATA      2ERR-T     2
+MEV        MEV        NO-DIM     PER-CENT   PER-CENT   PER-CENT
+MB         PER-CENT   MB         PER-CENT
+ 4.643      0.276      4.105  -03  2.7        5.1        5.8
+ 544.7      2.4        2.236       6.3
+ 4.893      0.248      5.315  -03  2.6        6.2        6.7
+ 536.8      2.4        2.853       7.1
+ 5.139      0.211      6.049  -03  2.4        5.2        5.7
+ 537.3      2.6        3.250       6.3
+ 5.374      0.194      6.696  -03  2.4        5.0        5.5
+ 543.9      2.6        3.642       6.1
+ 5.600      0.180      7.571  -03  2.4        5.6        6.1
+ 560.4      2.6        4.243       6.6
+ 5.819      0.174      8.559  -03  2.4        5.3        5.8
+ 589.0      2.6        5.041       6.4
+ 5.822      0.167      8.870  -03  2.5        5.2        5.8
+ 589.4      2.6        5.228       6.4
+ 6.040      0.162      9.600  -03  2.3        4.9        5.4
+ 627.4      3.9        6.023       6.7
+ 6.254      0.153      1.006  -02  2.3        4.8        5.3
+ 710.0      3.9        7.142       6.6
+ 6.465      0.146      9.435  -03  2.3        4.7        5.2
+ 796.7      3.9        7.517       6.5
+ 6.675      0.149      9.317  -03  2.3        4.7        5.2
+ 860.0      3.9        8.013       6.5
+ 6.881      0.144      1.003  -02  2.3        4.6        5.1
+ 904.9      3.9        9.077       6.4
+ 6.882      0.141      9.969  -03  2.3        4.6        5.1
+ 905.1      3.9        9.023       6.4
+ 7.087      0.141      1.003  -02  2.3        4.6        5.1
+ 933.2      3.9        9.362       6.4
+ 7.290      0.144      1.089  -02  2.3        4.6        5.1
+ 959.7      3.9       10.45        6.4
+ 7.494      0.144      1.182  -02  2.6        4.6        5.3
+ 986.3      3.9       11.66        6.6
+ 7.694      0.152      1.189  -02  2.5        4.6        5.2
+ 988.6      3.9       11.72        6.5
+ 7.893      0.155      1.285  -02  2.9        4.6        5.4
+ 990.1      3.9       12.72        6.7
+ 7.893      0.156      1.337  -02  2.9        4.6        5.4
+ 990.1      3.9       13.24        6.7
+ 8.092      0.161      1.331  -02  2.9        4.6        5.4
+ 991.7      2.9       13.20        6.1
+ 8.290      0.169      1.403  -02  2.9        4.6        5.4
+ 993.1      2.9       13.93        6.1
+ 8.486      0.173      1.452  -02  3.3        4.5        5.6
+ 994.6      2.9       14.44        6.3
+ 8.683      0.181      1.571  -02  3.3        4.6        5.7
+ 996.0      2.9       15.65        6.4
+ 8.684      0.179      1.578  -02  3.3        4.5        5.6
+ 996.0      2.9       15.72        6.3
+ 8.879      0.184      1.598  -02  3.4        4.5        5.6
+ 997.5      2.9       15.94        6.3
+ 9.071      0.189      1.778  -02  3.8        4.6        6.0
+ 997.3      2.9       17.73        6.7
+ 9.267      0.195      1.850  -02  3.8        4.6        6.0
+ 994.0      2.9       18.39        6.7
+ENDDATA             58
+ENDSUBENT           66
+ENDENTRY             3

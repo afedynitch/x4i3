@@ -1,0 +1,36 @@
+Title = "Facility"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+ACCEL       Accelerator
+BETAT       Betatron
+CCW         Cockcroft-Walton accelerator
+CYCLO       Cyclotron
+CYCTM       Tandem cyclotrons
+CYGFF       Cyclograaff
+DYNAM       Dynamitron
+ESTRG       Electron storage ring
+FNS         Fusion neutron source  
+FRS         Fragment separator
+ICTR        Insulated core transformer accelerator
+INTFM       Interferometer
+ISOCY       Isochronous cyclotron (incl. AVF-cyclotron)                                   
+LASER       Laser system 
+LINAC       Linear accelerator
+MESON       Meson facility
+MICRT       Microtron
+OLMS        On-line mass separator
+PRJFS       Secondary beam from projectile fragment separator
+SPECC       Crystal spectrometer
+SPECD       Double mass spectrometer
+SPECM       Mass spectrometer
+SRING       Storage ring
+SYNCH       Synchrotron
+SYNCY       Synchro cyclotron
+VDG         Van de Graaff
+VDGT        Tandem van de Graaff
+CHOPF       Fast chopper
+CHOPS       Slow chopper
+OSCIP       Pile oscillator
+REAC        Reactor
+SELVE       Velocity selector

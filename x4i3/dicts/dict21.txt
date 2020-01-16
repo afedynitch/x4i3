@@ -1,0 +1,55 @@
+Title = "Method codes"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+ACTIV       Activation
+AMS         Accelerator mass spectrometry
+ASEP        Separation by mass-separator
+ASSOP       Associated particle
+BCINT       Beam current integrated (Code used only if values given in the data section are based on this measurement)                          
+BGCT        Beta-gamma coincidence technique
+BSPEC       Beta ray spectrometry
+CHSEP       Chemical separation
+COINC       Coincidence
+DSCAT       Double scattering
+EDE         Particle identification by 'E/Delta E' measurement
+EDEG        Energy degradation by foils (The projectile energy was considerably degraded before hitting the target. The initial projectile energy and the reference of the energy loss relation used should be stated.)                                          
+EXTB        Irradiation with external beam
+GSPEC       Gamma ray spectrometry
+HEJET       Collection by He jet
+INTB        Irradiation with internal beam
+JET         Collection by gas jet
+LRASY       Left-right asymmetry
+MAGFR       Magnetic field rotation
+MASSP       Mass spectrometry of a product
+MOMIX       Mixed monitor (Monitor and target combined as chemical compound or mixture, or monitor reaction has the same target nuclide as the reaction given under 'REACTION')      
+MOSEP       Separate monitor foil
+OLMS        On-line mass separation
+PHD         Pulse-height discrimination
+PLSED       Pulse die-away
+PSD         Pulse-shape discrimination
+REC         Collection of recoils
+RINGR       Ring ratio method
+SFLIP       Spin flip
+SITA        Single target irradiation
+STATD       Statistically determined
+STTA        Stacked target irradiation
+TOF         Time-of-flight
+BURN        Burn-up
+CADMB       Cadmium bath
+CHRFL       Christiansen filter
+DIFFR       Diffraction
+MANGB       Manganese bath
+REAC        Reactivity measurement
+REFL        Total reflection from mirrors
+SHELT       Shell transmission
+SLODT       Slowing-down time
+ABSFY       Absolute fission yield measurement (i.e., not relative to another fission yield, though may be relative to a monitor cross section)           
+FISCT       Absolute fission counting (of the total number of fissions with a detector to be specified)                                          
+FLUX        Neutron flux monitoring (by a reaction to be coded under MONITOR)              
+FPGAM       Direct gamma-ray spectrometry (of unseparated fission products)                       
+HADT        Heavy atom difference technique (by mass spectrometry )                                 
+HATOM       Hot atom method
+RCHEM       Radiochemical separation
+RELFY       Relative fission yield measurement (i.e., relative to another fission yield value)         
+RVAL        R-value measurement (see LEXFOR under Fission Yields)                      

@@ -1,0 +1,41 @@
+Title = "Detectors"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+BGO         Bismuth-Germanate crystal detector
+CEREN       Cerenkov detector
+COIN        Coincidence counter arrangement
+CSICR       Cesium-Iodide crystal
+D4PI        4pi detector
+FISCH       Fission chamber
+GE-IN       Germanium intrinsic detector
+GLASD       Glass detector
+IOCH        Ionization chamber
+MAGSP       Magnetic spectrometer or spectograph                                        
+MTANK       Moderating tank detector
+MWDC        Multi-wire drift chamber
+MWPC        Position sensitive multi-wire proportional counter
+NAICR       Sodium-Iodide crystal
+PGAC        Parallel-grid avalanche detector
+PLATE       Nuclear plates
+PROPC       Proportional counter
+PSSCN       Position sensitive scintillator
+PSSSD       Position sensitive solid state detector
+SCIN        Scintillation detector
+SIBAR       Silicon surface barrier detector
+SOLST       Solid-state detector
+STANK       Scintillator tank
+SWPC        Position sensitive single-wire proportional counter
+TELES       Counter telescope
+THRES       Threshold detector
+TRD         Track detector
+BPAIR       Electron-pair spectrometer
+GELI        Germanium-Lithium detector
+GEMUC       Geiger-Mueller counter
+HPGE        Hyperpure Germanium detector
+MOXR        Moxon-Rae detector
+SILI        Silicon-Lithium detector
+BF3         Boron Trifluoride neutron detector
+HE3SP       He-3 spectrometer
+HORBU       Hornyak button detector
+LONGC       Long counter

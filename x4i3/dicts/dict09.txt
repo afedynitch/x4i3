@@ -1,0 +1,129 @@
+Title = "Chemical Compounds"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+1-D-D2O     Heavy Water === Obsolete, use 1-H-D2O                               
+1-D-DXX     Deuterium Compound  === Obsolete, use 1-H-DXX                               
+1-H-ARM
+1-H-BNZ     Benzene, benzyl compounds: C6-H6                                                 
+1-H-BUT     Butane, butyl compounds: C4-H10                                                
+1-H-CMP     Hydrogen Compound except water, metal-hydrides, organic or ammonium compound                                              
+1-H-CXX     Organic Compound except BNZ, MTH, PFN, PHL, PLE                        
+1-H-D2O     Heavy Water
+1-H-DXX     Deuterium Compound including mixed H-D compunds and excluding heavy water and Zr-deuteride                                      
+1-H-ETH     Ethane, ethyl compounds: C2-H6                                                 
+1-H-MTH     Methane, methyl compounds: C-H4                                                  
+1-H-PFN     Paraffin
+1-H-PHL     Phenol, phenyl compounds: C6-H5-OH. Di-, Ter-, Poly-                            
+1-H-PLE     Polyethylene
+1-H-PRO     Propane, propyl compounds: C3-H8                                                 
+1-H-TXX     Tritium Compound including mixed H-T or D-T compounds and excluding Zr-tritide                                            
+1-H-WTR     Water, Ice, Steam
+1-T-TXX     Tritium Compound === Obsolete, use 1-H-TXX                               
+2-HE-CMP    Helium Compound
+3-LI-CMP    Lithium Compound
+4-BE-CMP    Beryllium Compound
+4-BE-OXI    Beryllium oxide
+5-B-CMP     Boron compound
+5-B-OXI     Boron oxide
+6-C-CMP     Carbon Compound except carbonates and hydro-carbons                   
+7-N-AIR     Air
+7-N-AMM     Ammonium Compound
+7-N-CMP     Nitrogen compound
+8-O-CMP     Oxygen compound
+9-F-CMP     Fluorine compound
+11-NA-CMP   Sodium compound
+12-MG-CMP   Magnesium compound
+12-MG-OXI   Magnesium compound
+13-AL-CMP   Aluminium compound
+13-AL-OXI   Aluminium Oxide
+14-SI-CMP   Silicon compound
+14-SI-OXI   Silicon Oxide: Si-O2, glass, quartz                                  
+15-P-CMP    Phosphorus compound
+16-S-CMP    Sulphur compound
+17-CL-CMP   Chlorine compound
+19-K-CMP    Potassium compound
+20-CA-CMP   Calcium compound
+20-CA-OXI   Calcium oxide
+22-TI-CMP   Titanium compound
+22-TI-OXI   Titanium oxide
+23-V-CMP    Vanadium compound
+24-CR-CMP   Chromium compound
+25-MN-CMP   Manganese compound
+26-FE-CMP   Iron Compound, steel to be entered under 26-FE-0                     
+26-FE-OXI   Iron oxide
+27-CO-CMP   Cobalt compound
+27-CO-OXI   Cobalt oxide
+28-NI-CMP   Nickel compound
+29-CU-CMP   Copper compound
+30-ZN-CMP   Zinc compound
+32-GE-CMP   Germanium compound
+32-GE-OXI   Germanium oxide
+33-AS-CMP   Arsenic compound
+33-AS-OXI   Arsenic oxide
+34-SE-CMP   Selenium compound
+35-BR-CMP   Bromine compound
+37-RB-CMP   Rubidium compound
+38-SR-CMP   Strontium compound
+39-Y-CMP    Yttrium compound
+40-ZR-ALY   Zircalloy
+40-ZR-CMP   Zirconium compound
+40-ZR-HYD   Zirconium Hydride including deuteride and tritide                       
+40-ZR-OXI   Zirconium Oxide
+41-NB-CMP   Niobium compound
+44-RU-CMP   Ruthenium compound
+44-RU-OXI   Ruthenium oxide
+45-RH-CMP   Rhodium compound
+46-PD-CMP   Palladium compound
+47-AG-CMP   Silver compound
+48-CD-CMP   Cadmium compound
+48-CD-OXI   Cadmium oxide
+49-IN-CMP   Indium compound
+50-SN-CMP   Tin compound
+50-SN-OXI   Tin oxide
+51-SB-CMP   Antimony compound
+52-TE-CMP   Tellurium compound
+52-TE-OXI   Tellurium oxide
+53-I-CMP    Iodine compound
+55-CS-CMP   Cesium compound
+56-BA-CMP   Barium compound
+57-LA-CMP   Lanthanum compound
+57-LA-OXI   Lanthanum oxide
+58-CE-CMP   Cerium compound
+58-CE-OXI   Cerium oxide
+59-PR-CMP   Praseodymium compound
+59-PR-OXI   Praseodymium oxide
+60-ND-CMP   Neodymium compound
+62-SM-CMP   Samarium compound
+63-EU-CMP   Europium compound
+63-EU-OXI   Europium oxide
+65-TB-CMP   Terbium compound
+65-TB-OXI   Terbium oxide
+66-DY-CMP   Dysprosium compound
+66-DY-OXI   Dysprosium oxide
+67-HO-CMP   Holmium  compound
+67-HO-OXI   Holmium  oxide
+68-ER-CMP   Erbium compound
+68-ER-OXI   Erbium oxide
+69-TM-OXI   Thulium oxide
+70-YB-CMP   Ytterbium compound
+71-LU-OXI   Lutetium oxide
+72-HF-CMP   Hafnium compound
+73-TA-CMP   Tantalum compound
+73-TA-OXI   Tantalum oxide
+74-W-CMP    Tungsten compound
+74-W-OXI    Tungsten oxide
+75-RE-CMP   Rhenium compound
+78-PT-CMP   Platinum compound
+79-AU-CMP   Gold compound
+80-HG-CMP   Mercury compound
+81-TL-CMP   Thallium compound
+81-TL-OXI   Thallium oxide
+82-PB-CMP   Lead compound
+83-BI-CMP   Bismuth compound
+83-BI-OXI   Bismuth oxide
+90-TH-CMP   Thorium compound
+90-TH-OXI   Thorium oxide
+92-U-CMP    Uranium compound
+92-U-OXI    Uranium Oxide
+94-PU-CMP   Plutonium compound

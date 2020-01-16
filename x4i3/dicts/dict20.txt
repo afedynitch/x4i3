@@ -1,0 +1,22 @@
+Title = "Additional Results code"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+A-DIS       Mass distribution
+AMFF        Angular momentum of fission fragments
+ANGD        Angular distribution
+COMP        Comparison with calculated values
+DECAY       Decay properties investigated
+E-DIS       Energy distribution
+G-SPC       Gamma spectra
+LD          Level density
+N-SPC       Neutron spectra
+POT         Parameters of nuclear potential (e.g., barrier heights  or deformation)
+P-SPC       Proton spectra
+RANGE       Range of recoils measured
+RECIP       Calculated data for reciprocal reaction
+STRUC       Nuclear structure data
+THEO        Theory
+TRCS        Total reaction cross section
+TTY-C       Calculated thick target yield
+Z-DIS       Charge distribution

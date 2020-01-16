@@ -1,0 +1,1123 @@
+Title = "Institute codes used in CINDA and EXFOR"
+NumFields = 3
+FieldBreaks = [ 7, 63 ]
+
+ AAA    Groupe Atomique Alsacien Atlant., H/Seine                FR
+ AAU    Aarhus University, Aarhus                                DEN
+ ABA    Abo Akademi, Turku                                       SF
+ ABC    Academia Brasileira de Ciencias, Rio de Janeiro          BZL
+ ABD    U.S. Army Aberdeen Res.+ Develop.Center, Aberdeen, MD    USA
+ ACC    Exxon Nuclear Idaho Co., ID                              USA
+ AE     Studsvik Energiteknik AB                                 SWD
+ AEC    U.S. Atomic Energy Commission, Washington, DC            USA
+ AEP    Inst.of Atomic Energy, Beijing                           CHP
+ AEP    Inst.of Atomic Energy, Beijing                           CPR
+ AFG    Afghanistan                                              AFG
+ AFT    Air Force Inst. Technology, Wright-Patterson AFB, OH     USA
+ AFW    Air Force Weapons Lab., Kirkland AFB, Albuquerque, NM    USA
+ AGN    Aerojet-General Nucleonics, San Ramon, CA                USA
+ AI     Rockwell Int., Energy Systems Group, Canoga Park, CA     USA
+ AIF    Argonne National Laboratory - West, Idaho Falls, ID      USA
+ AIN    A.I.N.S.E., Lucas Heights, NSW                           AUL
+ AIP    American Institute of Physics, New York, NY              USA
+ ALA    Univ. of Alberta, Edmonton, Alberta                      CAN
+ ALB    State University of New York, Albany, NY                 USA
+ ALD    Awre, Aldermaston, England                               UK
+ ALG    Algeria                                                  ALG
+ ALK    Alkem GMBH, Leopoldshafen                                GER
+ ALS    Alabama State University, Montgomery, AL                 USA
+ ALU    Allahabad Univ., Allahabad                               IND
+ AMH    Amherst College, Amherst, MA                             USA
+ AML    Univ. of Melbourne, Parkville, Victoria                  AUL
+ AMS    Univ. of Amsterdam, Amsterdam                            NED
+ AMU    Arya-Mehr Univ.of Technology (A.M.U.T.), Tehran          IRN
+ AMW    American Universit, Washington, DC                       USA
+ ANA    U.S. Naval Academy, Annapolis, MD                        USA
+ AND    Andrews Univ., Berrien Springs, MI                       USA
+ ANG    Angola                                                   ANG
+ ANK    Ankara Univ. + Middle East Technical Univ., Ankara       TUK
+ ANL    Argonne National Laboratory, Argonne, IL                 USA
+ ANR    Ankara Nucl. Res. and Training Centre                    TUK
+ AOY    Aoyama Gakuin Univ., Tokyo                               JPN
+ APD    Atomic Power Development Associates, Detroit, MI         USA
+ ARC    Atlantic Richfield Hanford Company, Richland, WA         USA
+ ARF    Armour Research Foundation, Chicago, IL                  USA
+ ARG    Argentina                                                ARG
+ ARK    Univ. of Arkansas, Fayetteville, AR                      USA
+ ARL    Aerospace Res. Labs, Wright-Patterson A.F. Base, OH      USA
+ ARM    Inst. Fiziki A.N. Armenian SSR, Jerevan                  CCP
+ ARM    Armenia                                                  ARM
+ ARS    Aerospace Research Labs.                                 USA
+ AST    Astra Inc., Raleigh, NC                                  USA
+ ASU    Arizona State University, Tempe, AZ                      USA
+ ASY    Univ. of Sydney, Sydney                                  AUL
+ ATH    NRC Demokritos, Athens                                   GRC
+ ATI    Atominst. der Oesterreichischen Hochschulen, Vienna      AUS
+ AUA    Australian Nucl.Sci.and Techn.Org., Lucas Heights,NSW    AUL
+ AUB    Auburn University, Auburn, AL                            USA
+ AUF    Flinders Univ., Bedford Park, Adelaide                   AUL
+ AUI    University of Illinois, Urbana-Champaign, IL             USA
+ AUL    Australia                                                AUL
+ AUS    Austria                                                  AUS
+ AUW    Andhra Univ., Nuclear Research Lab., Waltair             IND
+ AZR    Azerbaydzhan                                             AZR
+ B+W    Babcock and Wilcox, Lynchburgh, VA                       USA
+ BAG    Univ. Baghdad                                            IRQ
+ BAN    Bangla Desh                                              BAN
+ BAR    Bartol Research Foundation, Swarthmore, PA               USA
+ BAS    Basel Univ.                                              SWT
+ BAT    Battelle Memorial Institute, Columbus, OH                USA
+ BAU    Bari, University                                         ITY
+ BBC    Brown-Boveri/Krupp, Mannheim                             GER
+ BBU    Babes-Bolyai University, Cluj                            RUM
+ BCC    J.T.Baker Chemical Company, Phillipsburg, NJ             USA
+ BCM    Boston College, Chestnut Hill, MA                        USA
+ BCT    Battersea College of Technology, London                  UK
+ BEH    Humboldt Univ. Berlin + DAW Zeuthen                      DDR
+ BEL    AT&T Bell Laboratories, Murray Hill, NJ                  USA
+ BEP    VEB Atomkraft, Berlin-Pankow                             DDR
+ BER    Hahn-Meitner-Inst., Berlin                               GER
+ BET    Bettis Atomic Power Lab., Westinghouse, Pittsburgh,PA    USA
+ BFR    Bergakademie Freiberg                                    DDR
+ BGK    Office of the Atomic Energy for Peace, Bangkok           TAI
+ BGN    Univ. of Bergen                                          NOR
+ BHU    Banaras Hindu Univ., Varanasi                            IND
+ BIA    Univ.of Aston, Birmingham                                UK
+ BIO    Biophysical Inst., Moscow                                RUS
+ BIO    Biophysical Inst., Moscow                                CCP
+ BIP    Bureau Intern.des Poids et Mesures, Sevres               ZZZ
+ BIR    Univ. of Birmingham, England                             UK
+ BJG    Beijing Univ., Beijing                                   CHP
+ BJG    Beijing Univ., Beijing                                   CPR
+ BKB    Inst. Boris Kidrich, Vinca                               YUG
+ BLA    Sofia, Inst. of Nuclear Res. and Nuclear Energy          BUL
+ BLF    Univ. of Belfast, N.Ireland                              UK
+ BLG    Belgium                                                  BLG
+ BLN    Brooklyn College of the C.U.N.Y., Brooklyn, NY           USA
+ BLR    Belarus                                                  BLR
+ BLV    Bolivia                                                  BLV
+ BN     Belgonucleaire                                           BLG
+ BNG    Bandung Reactor Center, Bandung                          INS
+ BNL    Brookhaven National Laboratory, Upton, NY                USA
+ BNT    Beijing National Tandem Accelerator Lab., Beijing        CPR
+ BNU    Beijing Normal Univ., Beijing                            CHP
+ BNU    Beijing Normal Univ., Beijing                            CPR
+ BNW    Pacific Northwest Laboratories, Richland, WA             USA
+ BOC    Ruhr-Universitaet Bochum                                 GER
+ BOE    Boeing Scientific Research Labs, Seattle, WA             USA
+ BOL    ENEA Centro Ricerche Energia di Bologna                  ITY
+ BOM    Bombay                                                   IND
+ BON    Univ. of Bonn                                            GER
+ BOR    Bordeaux, Univ. + C.E.A.                                 FR
+ BOS    Bose Institute, Calcutta                                 IND
+ BRC    CEN Bruyere-le-Chatel                                    FR
+ BRD    Univ. of Bradford, England                               UK
+ BRI    Univ. of Bristol, England                                UK
+ BRK    Univ. of Calif. Lawrence Berkeley Lab., Berkeley, CA     USA
+ BRL    Ballistic Research Labs, Aberdeen Proving Grounds, MD    USA
+ BRN    Brown University, Providence, RI                         USA
+ BRU    Univ.Libre de Bruxelles, Bruxelles                       BLG
+ BSP    IEA and University, Sao Paulo                            BZL
+ BSU    Ball State Univ., Muncie, IN                             USA
+ BUC    Inst. de Fizica si Inginerie Nucleara, Bucharest         RUM
+ BUL    Bulgaria                                                 BUL
+ BUQ    Bishop University, Lennoxville, Quebec                   CAN
+ BUR    Myanmar (fromerly Burma)                                 BUR
+ BUU    Univ.of Bucuresti                                        RUM
+ BYU    Brigham Young University, Provo, UT                      USA
+ BZL    Brazil                                                   BZL
+ CAB    Inst.Balseiro y Centro Atomico Bariloche, Bariloche      ARG
+ CAD    C.E.N. Cadarache                                         FR
+ CAE    Caen Univ.                                               FR
+ CAF    Centro Latin.Americ.de Fisica, Rio de Janeiro            BZL
+ CAG    Univ. of Cagliari                                        ITY
+ CAI    AEE Cairo                                                EGY
+ CAL    California Institute of Technology, Pasadena, CA         USA
+ CAN    Canada                                                   CAN
+ CAR    Carnegie Inst. of Technology, Pittsburgh, PA,            USA
+ CAS    Centro di Studi Nucleari della Casaccia, Rome            ITY
+ CAT    Univ. of Catania                                         ITY
+ CAU    Calcutta, University                                     IND
+ CAV    Cavendish Lab., Cambridge, Engl.                         UK
+ CAW    Carnegie Institute, Washington, DC                       USA
+ CBE    Combustion Engineering, Windsor, CN                      USA
+ CBF    Jefferson Laboratory (CEBAF), Newport News, VA           USA
+ CBR    Australian Natl.Univ., Canberra                          AUL
+ CCH    UKAEA Reactor Materials Lab., Warrington                 UK
+ CCP    Union of Soviet Socialist Republics                      CCP
+ CDO    Centro de Documentacion Cientifica, Buenos Aires         ARG
+ CDT    Centre de Devel. des Techn.Nucl., H.C.R., Alger          ALG
+ CEC    Comision de Energia Nuclear, Santiago                    CHL
+ CEG    Central Electricity Generating Board, Berkeley Labs      UK
+ CEL    C.E.N. Limeil                                            FR
+ CER    CERN, Geneva                                             ZZZ
+ CFN    California State University, Northridge, CA              USA
+ CGO    Zaire                                                    CGO
+ CHE    Inst. of High Energy Physics, Prague                     CZR
+ CHE    Inst.of High En.Phys., Prague                            CSR
+ CHF    China, Taiwan                                            CHF
+ CHI    University of Chicago, IL                                USA
+ CHL    Chile                                                    CHL
+ CHM    Chiang Mai Univ.                                         TAI
+ CHP    China Nucl.Inf.Centre, Beijing                           CHP
+ CHU    Charles Univ.,Facult.of Mathem.and Physics, Prague       CSR
+ CHU    Charles Univ., Faculty of Math. and Physics, Prague      CZR
+ CIN    Centro Nacional de Investigacion, Buenos Aires           ARG
+ CIP    Central Inst.of Physics, Bucharest                       RUM
+ CIS    C.I.S.E., Milan                                          ITY
+ CJD    Centr po Yadernym Dannym, Obninsk                        CCP
+ CJD    Centr po Yadernym Dannym, Obninsk                        RUS
+ CLA    University of California, Los Angeles, CA                USA
+ CLC    Calcutta                                                 IND
+ CLE    Universite de Clermont, Clermont-Ferrand                 FR
+ CLI    Clinton Labs, Knoxville, TN                              USA
+ CLK    Clark University, Worcester, MA                          USA
+ CLM    Columbia, Rep.                                           CLM
+ CLS    Cleveland State University, Cleveland, OH                USA
+ CLU    Colorado University, Boulder, CO                         USA
+ CMR    Cameroon                                                 CMR
+ CMU    Carnegie-Mellon University, Pittsburgh, PA               USA
+ CNA    Cekmece Nucl. Res. Centre, Istanbul                      TUK
+ CNE    Comision Nacional de Energia Atomica, Buenos Aires       ARG
+ CNI    China Nucl.Inf.Centre, Beijing                           CPR
+ CNM    Centro Nucl. de Mexico, Salazar                          MEX
+ COL    Columbia University, New York, NY                        USA
+ CON    Convair, San Diego, CA                                   USA
+ COP    Univ. of Copenhagen, Copenhagen                          DEN
+ COR    Cornell University, Ithaca, NY                           USA
+ COS    Costa Rica                                               COS
+ COU    Courant Inst. of Mathematical Sciences, New York, NY     USA
+ CPO    A.E.C.L. Commercial Products, Ottawa, Ontario            CAN
+ CPR    China, People's Rep.                                     CPR
+ CRB    Centr.Nacional de Rad. Cosmica, Buenos Aires             ARG
+ CRC    A.E.C.L., Chalk River, Ontario                           CAN
+ CRD    California Research and Development Co., Livermore,CA    USA
+ CRL    Carleton University, Ottawa, Ontario                     CAN
+ CRN    Royal Military Coll.of Sci.,Cranfield Univ.,Swindon      UK
+ CRO    Croatia                                                  CRO
+ CSD    University of California, San Diego, CA                  USA
+ CSE    Case Western Reserve University, Cleveland, OH           USA
+ CSI    Columbia Scientific Industries Corp., Lafayette, LA      USA
+ CSM    Colorado School of Mines, Golden, CO                     USA
+ CSN    Centre de Spectrom.Nucl.et de Spectrom.de Masse,Orsay    FR
+ CSR    Czechoslovakia                                           CSR
+ CST    California State University, Los Angeles, CA             USA
+ CSU    Colorado State University, Fort Collins, CO              USA
+ CTA    Inst. de Estudos Avancados, Sao Jose dos Campos          BZL
+ CTH    Chalmers Univ. of Tech., Gothenburg                      SWD
+ CTI    Czech Technical Univ., Prague                            CZR
+ CTI    Czech.Technical Univ., Prague                            CSR
+ CUA    Catholic University of America, Washington, DC           USA
+ CUB    Cuba                                                     CUB
+ CUW    Curtiss-Wright Corp., Quehanna, PA                       USA
+ CWR    Curtiss-Wright Corp., Quehanna, Pa                       USA
+ CZA    Czech.Acad.of Sciences, Prague                           CSR
+ CZA    Czech Acad.of Sciences, Prague                           CZR
+ CZR    Czech Republic                                           CZR
+ DAC    Dhaka, University                                        BAN
+ DAE    Dhaka, Atomic Energy Centre                              BAN
+ DAL    Nuclear Research Inst., Dalat                            VN
+ DAV    University of California, Davis, CA                      USA
+ DDR    German Democratic Republic                               DDR
+ DEB    Inst.of Nuclear Research, ATOMKI, Debrecen               HUN
+ DEL    Technical Univ., Delft                                   NED
+ DEN    Denmark                                                  DEN
+ DGE    CEC Dosimetry Group, Geel                                ZZZ
+ DHA    Univ.of Petroleum and Minerals, Dhahran                  SAR
+ DKE    Duke University, Durham, NC                              USA
+ DKZ    Deutsches Krebsforschungszentrum, Heidelberg             GER
+ DLH    Delhi Univ., Delhi                                       IND
+ DLS    Univ. of Dallas, Irving, TX                              USA
+ DNS    Denison University, Granville, OH                        USA
+ DOD    Dept. of Defense, DASA, Washington, DC                   USA
+ DOE    Department of Energy, Washington, DC                     USA
+ DOF    Diamond Ordnance Fuse Laboratory                         USA
+ DOR    Dortmund Univ., F.R.Germany                              GER
+ DOU    Dounreay Experimental Reactor Establishment, Thurso      UK
+ DRE    Dresden, Techn.Univ.                                     GER
+ DRF    Dow Chemical Co., Rocky Flats, CO                        USA
+ DUB    Joint Inst.for Nucl.Res., Dubna                          ZZZ
+ DUR    Univ. of Durham, England                                 UK
+ DWU    Univ.of Durban-Westville, Durban                         SAF
+ EC     European Community                                       ZZZ
+ ECU    Ecuador                                                  ECU
+ EDF    Electricite de France, Paris                             FR
+ EDG    Univ. of Edinburgh, Scotland                             UK
+ EE     Engl.Elec.Co., Wheatstone, Leics                         UK
+ EGG    E G+G Energy Measurements, Santa Barbara, CA             USA
+ EGY    Egypt                                                    EGY
+ EIR    Ireland                                                  EIR
+ ELU    Eotvos Lorand Univ., Budapest                            HUN
+ EMY    Emory University, Atlanta, GA                            USA
+ ENI    ENI, San Donato, Milan                                   ITY
+ ENS    Ecole Normale Superieure, Paris                          FR
+ ENT    Eindhoven Univ. of Technology                            NED
+ EPA    Experimental Physics Inst., Arzamas                      RUS
+ ERD    U.S. Energy Res. & Development Adm., Washington, DC      USA
+ EST    Estonia                                                  EST
+ ETH    Eidgenossische Technische Hochschule, Zuerich            SWT
+ ETP    Ethiopia                                                 ETP
+ ETS    East Texas State University                              USA
+ FAR    CEA Fontenay-aux-Roses, Seine                            FR
+ FE     Fuji Electric                                            JAP
+ FE     Fuji Electric                                            JPN
+ FEI    Fiziko-Energeticheskii Inst., Obninsk                    CCP
+ FEI    Fiziko-Energeticheskii Inst., Obninsk                    RUS
+ FIR    Univ.of Florence                                         ITY
+ FLA    University of Florida, Gainesville, FL                   USA
+ FNL    Centro de Fisica Nuclear, Lisboa                         PRT
+ FOA    Research Inst. for National Defence, Stockholm           SWD
+ FR     France                                                   FR
+ FRA    Laboratori Nazionali di Frascati                         ITY
+ FRB    Freiburg im Breisgau, Universitaet                       GER
+ FRI    Central Fuel Research Inst., FRI, Bihar                  IND
+ FRK    J.W.Goethe Univ., Frankfurt/Main                         GER
+ FRS    Univ. of Fribourg                                        SWT
+ FRT    Fiziko-Tekh. i Radio-Tekh. Izmerenii, Mendeleevo         RUS
+ FRT    Inst. Fiziko-Tekh. i Radio-tekh. Izmerenii, Meneleevo    CCP
+ FSU    Florida State University, Tallahassee, FL                USA
+ FTI    Fiz.-Tekhnicheskiy Inst.Ioffe, St.Petersburg+Gatchina    RUS
+ FTI    Fiziko-Tekhnicheskii Inst. Ioffe, Leningrad+Gatchina     CCP
+ FUD    Fudan Univ., Shanghai                                    CHP
+ FUD    Fudan Univ., Shanghai                                    CPR
+ FUK    Fukuoka Univ., Fukuoka                                   JPN
+ FUL    Vrije Universiteit te Amsterdam, De Boelelaan            NED
+ FVE    High-Energy Physics Inst., Serpukhov                     RUS
+ FVE    High-Energy Physics Inst.,Serpukhov                      CCP
+ GA     Gulf Energy and Environmental Systems, San Diego, CA     USA
+ GAC    Inst. for Geo- and Analytical Chemistry, Moscow          RUS
+ GAC    Inst. for Geo and Analytical Chemistry, Moscow           CCP
+ GAR    Max-Planck-Institut fuer Plasmaphysik, Garching          GER
+ GAT    Fiziko-Tekhnicheskii Inst. Ioffe, Gatchina               CCP
+ GCL    Nuc.Res.Lab.,Gov't College, Lahore                       PAK
+ GDT    General Dynamics, Fort Worth, TX                         USA
+ GEA    General Electric, Aircraft Nucl.Prop.Dept., Ohio         USA
+ GEB    General Electric Breeder React.Dev.Op., Sunnyvale, CA    USA
+ GEC    General Electric Company, San Jose, CA                   USA
+ GEE    Geesthacht, GKSS                                         GER
+ GEF    General Electric, Space Science Lab., PA                 USA
+ GEL    Inst. for Ref. Mat. and Meas. (IRNM), Geel               ZZZ
+ GEN    General Electric, Nuclear Materials, PA                  USA
+ GEO    University of Georgia, Athens, GA                        USA
+ GEP    General Electric, Nucleonics Lab., Pleasanton, CA        USA
+ GER    Germany                                                  GER
+ GES    General Electric, Schenectady, NY                        USA
+ GEV    General Electric, Vallecitos Atomic Lab., CA             USA
+ GFK    Gesellschaft zur Foerderung der Kernenergie, Graz        AUS
+ GGA    Gulf General Atomic, San Diego, CA                       USA
+ GHA    Ghana                                                    GHA
+ GHT    Ghent, Rijks Universiteit                                BLG
+ GIT    Georgia Institiute of Technology, Atlanta, GA            USA
+ GKS     State Committee on Standards, Moscow                    CCP
+ GKS    State Committee on Standards, Moscow                     RUS
+ GLS    Univ. of Glasgow, Glasgow, Scotland                      UK
+ GOE    Univ. of Goettingen                                      GER
+ GOR    Univ.of Gorkiy, Gorkiy                                   RUS
+ GOR    Univ. of Gorkii, Gorkii                                  CCP
+ GRA    Centre d'Etudes Nucleaires de Bordeaux-Gradignan         FR
+ GRC    Greece                                                   GRC
+ GRE    Grenoble, Isere (CEA and Univ.)                          FR
+ GRG    Georgia                                                  GRG
+ GRN    Groningen                                                NED
+ GRT    Gulf Radiation Technology, San Diego, CA                 USA
+ GSF    Nasa Goddard Space Flight Center, Greenbelt, MD          USA
+ GSI    Gesellschaft fuer Schwerionenforschung, Darmstadt        GER
+ GSU    Georgia State University, Atlanta, GA                    USA
+ GUA    Guatemala                                                GUA
+ GUE    Univ. of Guelph, Guelph, Ontario                         CAN
+ GUL    Gulmarg Res.Observat., Kashmir                           IND
+ GVA    U.+INFN., Genova                                         ITY
+ GVE    Univ. of Geneva                                          SWT
+ GWU    George Washington University, Washington, DC             USA
+ HAB    Inst. for Nuclear Sci. and Technol., Ciudad Habana       CUB
+ HAL    Halden, Inst.for Energiteknikk                           NOR
+ HAM    Hamburg, Universitaet                                    GER
+ HAN    Hanford Atomic Products, Richland, WA                    USA
+ HAR    AERE, Harwell, Berks, England                            UK
+ HEB    Hebrew Univ., Jerusalem                                  ISL
+ HED    Hanford Engineering Development Lab., Richland, WA       USA
+ HEI    Heidelberg, Universitaet                                 GER
+ HFA    Technion Haifa                                           ISL
+ HHL    M.R.C.Cyclotron Unit, Hammersmith Hospital, London       UK
+ HIR    Hiroshima, University of Hiroshima                       JPN
+ HIR    Hiroshima, University of Hiroshima                       JAP
+ HIT    Himeji Inst. of Technology, Himeji                       JPN
+ HKG    Hongkong                                                 HKG
+ HKU    Chinese Univ.of Hongkong                                 HKG
+ HLS    Univ. of Helsinki, Helsinki                              SF
+ HLT    Helsinki Tech.Univ., Otaniemi                            SF
+ HNS    Hazelton Nuclear Science Corp., Palo Alto, CA            USA
+ HOE    OECD Halden React.Proj.                                  ZZZ
+ HOS    Hosei University, Tokyo                                  JAP
+ HOS    Hosei University, Tokyo                                  JPN
+ HOU    UNiversity of Houston, Houston, TX                       USA
+ HPE    Hope College, Holland, MI                                USA
+ HRV    Harvard University, Cambridge, MA                        USA
+ HSL    U.S.A.E.C. Health and Safety Lab., NY                    USA
+ HST    Chinese Univ. of Sci. and Tech., Hefei                   CPR
+ HUN    Hungary                                                  HUN
+ HYO    Hyogo Agricult.Univ., Sasayama                           JAP
+ HYO    Hyogo Agricult.Univ., Sasayama                           JPN
+ IAC    Ind.Ass.Cult.of Sc., Calcutta                            IND
+ IAE    IAEA, Vienna                                             ZZZ
+ IAK    Inst.fuer Angewandte Kernphysik, Karlsruhe               GER
+ IAN    Inst.de Asuntos Nucl., Bogota                            CLM
+ IAP    Institute for Advanced Studies, Princeton, NJ            USA
+ IBC    Inst.Boliviano de Ciencia y Tecnologia Nucl., La Paz     BLV
+ IBJ    Inst. Badan Jadr., Swierk and Warszawa                   POL
+ IBM    I B M Research Lab., San Jose, CA                        USA
+ ICD    Inf. Centr po Yadern. Dannym, Obninsk                    CCP
+ ICE    Iceland                                                  ICE
+ ICP    Inst.of Chemical Phys., Moscow                           RUS
+ ICP    Inst. of Chemical Physics, Moscow                        CCP
+ IDF    Inst.de Fisica,Univ.do Rio Grande do Sul,Porto Alegre    BZL
+ IEA    Instituto de Energia Atomica, Sao Paulo                  BZL
+ IEN    Instit. de Engenharia Nuclear, Rio de Janeiro            BZL
+ IEP    Inst.of Electron Physics, Ukrain.Acad.Sci., Uzhgorod     UKR
+ IFB    Inst. Fiz. AN Belorus.SSR, Minsk                         CCP
+ IFB    Inst.Fiz. Belorus. AN, Minsk                             BLR
+ IFG    Inst. Fiziki Akad. Nauk Gruzinskoi SSR, Tbilisi          CCP
+ IFG    Inst.Fiziki Gruzinskoi Akad.Nauk, Tbilisi                GRG
+ IFJ    Inst.Fiz.Jadr., Krakow                                   POL
+ IFL    Inst. Fiziki A.N. Latviiskoi SSR, Riga                   CCP
+ IFL    Inst. Fiziki Latviyskoi A.N., Riga                       LAT
+ IFM    Univ.de Mexico, Inst.de Fisica, Mexico City              MEX
+ IFP    Inst. Fizicheskikh Problem, Moscow                       CCP
+ IFP    Inst. Fizicheskikh Problem, Moscow                       RUS
+ IFS    Inst.fuer Strahlenphysik, Stuttgart                      GER
+ IFU    Inst. Fiziki A.N. Ukrainskoi SSR, Kiev                   CCP
+ IFU    Inst. Fiziki Ukrainskoi A.N., Kiev                       UKR
+ IHP    Inst.of High-Energy Physics, Acad. Sinica, Beijing       CPR
+ IHP    Inst.of High-Energy Physics, Acad.Sinica, Beijing        CHP
+ II     Mta Izotop Intezete, Budapest                            HUN
+ IIA    Inst.de Investig.Aeronaut.y Espacial, Buenos Aires       ARG
+ IIB    Ind.Inst.of Technology, bombay                           IND
+ IID    Ind.Inst.of Technology, Delhi                            IND
+ IIK    Ind.Inst.of Technol., Kharagpur                          IND
+ IIT    Illinois Institute of Technology, Chicago, IL            USA
+ IIU    Inst. of Information of USSR State A.E.Comm., Moscow     CCP
+ IIU    Inst.of Information of Russ.State A.E.Comm., Moscow      RUS
+ IJE    Inst. Yad. Energetiki A.N. Byeloruss.SSR, Minsk          CCP
+ IJE    Inst. Yad. Energetiki Byeloruss.A.N., Minsk              BLR
+ IJI    Inst.Yadernykh Issledovaniy Ukrainskoi A.N., Kiev        UKR
+ IJI    Inst. Yadernykh Issledovanii A.N. Ukrainskoi SSR,Kiev    CCP
+ IJS    Inst. Jozef Stefan, Ljubljana                            SLN
+ IKA    Informationssystem Karlsruhe,                            GER
+ IKE    Inst.fuer Kernenergetik,Stuttgart Univ.                  GER
+ IKO    Nat'l Inst. for Nucl. and High Energy Physics, Sect.K    NED
+ ILL    Institut Laue-Langevin, Grenoble                         FR
+ IMP    Inst.of Modern Physics, Acad.Sinica, Lanzhou             CHP
+ IMP    Inst.of Modern Physics, Acad. Sinica, Lanzhou            CPR
+ INA    Interatom, Bensberg                                      GER
+ IND    India                                                    IND
+ INI    Laboratorio del Accelerador Tandem, Inin                 MEX
+ INL    Idaho National Engineering Lab., Idaho Falls, ID         USA
+ INR    Inst.Badan Jadr., Swierk+Warszawa                        POL
+ INS    Indonesia                                                INS
+ INT    Northwest Inst.of Nuclear Technology, Xian               CPR
+ INU    Indiana University, Bloomington, IN                      USA
+ IOW    University of Iowa, Iowa City, IA                        USA
+ IPB    Inst.of Physics, Bhubaneswar                             IND
+ IPC    Inst.of Physical and Chemical Res. (RIKEN), Wakou        JPN
+ IPE    Inst.de Pesquisas Energeticas e Nucleares, Sao Paulo     BZL
+ IPH    Inst.of Physics, Acad.of Science, Hanoi                  VN
+ IPJ    Soltan Inst.Probl.Jadr., Swierk+Warszawa                 POL
+ IPM    Inst.of Applied Phys.and Computational Math., Beijing    CPR
+ IPN    Inst.Politec.Nac.,Mexico City                            MEX
+ IPR    Instit. de Pesquisas Radioativas, Belo Horizonte         BZL
+ IPS    Res.Inst.of Physics (form.Nobel Inst.), Stockholm        SWD
+ IRE    Inst. Radiofiziki i Elektroniki (I.R.E.), Kharkov        CCP
+ IRE    Inst. Radiofiziki i Elekroniki, Ukrain. AN, Kharkov      UKR
+ IRK    Inst. fuer Isotopenforschung und Kernphysik, Vienna      AUS
+ IRN    Iran                                                     IRN
+ IRQ    Iraq                                                     IRQ
+ IRT    Intelcom Radiation Technology, San Diego, CA             USA
+ IRV    University of California, Irvine, CA                     USA
+ ISB    Indiana University, South Bend, IN                       USA
+ ISE    Instituto Superior de Energia Nuclear, Lima              PER
+ ISI    Ind.Statistical Inst., Calcutta                          IND
+ ISL    Israel                                                   ISL
+ ISP    CEC Ispra                                                ZZZ
+ ISS    Inst.of Solid State Physics, Univ. of Tokyo              JAP
+ ISS    Inst.of Solid State Physics, Univ. of Tokyo              JPN
+ IST    Imp.Coll.of Sci.+Techn., London                          UK
+ ISU    Idaho State University, Pocatello, ID                    USA
+ ITA    Instit. Technic. de Aeronautica, Sao Paulo               BZL
+ ITB    Ind.Inst.of Technol., Banglore                           IND
+ ITE    Inst. Teoret. + Experiment. Fiziki, Moscow               RUS
+ ITE    Inst. Teoret. i Experiment. Fiziki, Moscow               CCP
+ ITF    Inst. of Theor. Physics, Ukrainian Acad.Sci., Kiev       CCP
+ ITF    Bogolyubov Inst.of Theor.Phys.,Ukrain.Acad.Sci., Kiev    UKR
+ ITJ    Inst. Fiz. Tech. Jadr., Krakow                           POL
+ ITK    Ind.Inst.of Technol., Kanpur                             IND
+ ITL    C.E.A.,Centre d'Etudes de Valduc,Is-sur-Tille            FR
+ ITM    Inst.Tecnol.de Monterrey                                 MEX
+ ITR    Inst.of Innovation and Thermonuclear Res., Troitsk       RUS
+ ITU    CEC Institute for Transuranium Elements, Karlsruhe       ZZZ
+ ITY    Italy                                                    ITY
+ IVC    Ivory Coast                                              IVC
+ IVI    Inst.Venezual. de Investigacion Cientifica, Caracas      VEN
+ JAD    Swierk+Warszawa, Inst.Badan Jadr.                        POL
+ JAE    JAERI, Tokai                                             JPN
+ JAE    JAERI,rTokaib., Inst. of Phys.+ Chem. Res., Saitama      JAP
+ JAM    Jamaica                                                  JAM
+ JAP    Japan                                                    JAP
+ JAS    Research Centre of Phys., Jassy                          RUM
+ JCB    Janta College, Bakewar                                   IND
+ JCL    Cyclotron Lab., Inst. of Phys.+ Chem. Res., Saitama      JPN
+ JCL    Cyclotron Lab., Inst. of Phys.+ Chem. Res., Saitama      JAP
+ JEL    Elect.Pow.Dev.Corp., AED, Tokyo                          JAP
+ JEL    Elect.Pow.Dev.Corp., AED, Tokyo                          JPN
+ JEN    Inst.for Atomenergi, Kjeller                             NOR
+ JER    Inst. Fiziki Armen. A.N., Jerevan                        ARM
+ JES    Junta de Energia Nuclear, Sacavem                        PRT
+ JHU    Johns Hopkins University, Baltimore, MD                  USA
+ JIA    Inst. Yadernych Issledovanii A.N. SSSR, Moscow           CCP
+ JIA    Inst. Yadernych Issledovaniy Rossiiskoi A.N., Moscow     RUS
+ JIL    Jilin Univ., Changchin                                   CPR
+ JLU    Justus Liebig Univ., Giessen                             GER
+ JNA    Jena, Univ.                                              DDR
+ JNC    Japan Nucl.Cycle Development Inst., Tokai-mura           JPN
+ JNE    Junta Energia Nuclear, Madrid                            SPN
+ JNU    Jawaharlal Nehru Univ., New Delhi                        IND
+ JOR    Jordan                                                   JOR
+ JPN    Japan                                                    JPN
+ JSU    Jerevan State Univ., Jerevan                             ARM
+ JTD    Juntendo Univ., Chiba                                    JPN
+ JUL    Kernforschungsanlage Juelich                             GER
+ JYV    Jyvaeskylae, University                                  SF
+ KAE    Korean Atomic Energy Res. Inst., Yusong, Taejon          KOR
+ KAL    Indira Gandhi Centre for Atomic Research, Kalpakkam      IND
+ KAN    University of Kansas, Lawrence, KS                       USA
+ KAP    Knolls Atomic Power Laboratory, Schenectady, NY          USA
+ KAS    Kazakhstan                                               KAS
+ KAZ    Inst. Yadernoi Fiziki, Alma-Ata, Kazakhstan              CCP
+ KAZ    Inst.Yadernoi Fiziki, Alma-Ata                           KAS
+ KBU    National Kyong-Buk Univ., Taegu                          KOR
+ KCL    King's College London, London                            UK
+ KDR    Democratic People's Rep. of Korea                        KDR
+ KEK    High Energy Accelerator Res. Org. (KEK), Tsukuba         JPN
+ KEN    Univ. of Kent, Canterbury, England                       UK
+ KFI    Central Research Inst. for Physics, KFKI, Budapest       HUN
+ KFK    Kernforschungszentrum, Karlsruhe                         GER
+ KFT    Kharkovskii Fiziko-Tekhnicheskii Inst., Kharkov          UKR
+ KFT    Kharkovskii Fiziko-Tekhnicheskii Inst., Kharkov          CCP
+ KGU    Gosudarstvennyi Univ. (State Univ.), Kiev                CCP
+ KGU    Gosudarstvennyi Univ. (State Univ.), Kiev                UKR
+ KHA    Univ.of Khartoum                                         SUD
+ KHU    Kharkovskii Gosudarstvennii Univ.                        CCP
+ KHU    Kharkovskii Gosudarstvennyi Univ.                        UKR
+ KIG    GKSS, Geesthacht                                         GER
+ KIL    Univ. of Kiel, Kiel                                      GER
+ KIT    Univ.of Occupat.and Environmental Health, Kitakyushu     JPN
+ KJL    Inst.for Atomenergi, Kjeller                             NOR
+ KLN    Universitaet Koeln                                       GER
+ KNK    Kinki Univ.,Higashi Osaka                                JPN
+ KNT    Kent State University, Kent, OH                          USA
+ KNU    Kyungpook National University                            KOR
+ KON    Konan Univ., Kobe                                        JPN
+ KON    Konan Univ., Kobe                                        JAP
+ KOR    Republic of Korea                                        KOR
+ KOS    Inst. for Experimental Physics, Kossuth U., Debrecen     HUN
+ KPI    Wyzsza Szkola Pedagogiczna, Kielce                       POL
+ KPS    Wyzsza Szkola Pedagogiczna, Katowice                     POL
+ KQU    Queen's University, Kingston, Ontario                    CAN
+ KRI    Inst. of Crystallography, Leningrad                      CCP
+ KRI    Inst.of Crystallography, St.Petersburg                   RUS
+ KRK    Inst.Fiz.Jadr. + Univ., Krakow                           POL
+ KRU    Karlsruhe, Univ.                                         GER
+ KSR    Korea Standards Res.Inst.,Taedok Science Town, Taejon    KOR
+ KSU    Kansas State University, Manhattan, KS                   USA
+ KTH    Royal Inst.of Tech., Stockholm                           SWD
+ KTJ    Kobe Tokiwa Junior College, Kobe                         JPN
+ KTO    Kyoto Univ.                                              JPN
+ KTO    Kyoto Univ.                                              JAP
+ KTU    Khabarovsk State Technical Univ., Khabarovsk             RUS
+ KTY    University of Kentucky, Lexington, KY                    USA
+ KUD    Karnatak University, Dharwar                             IND
+ KUK    Kurukshetra Univ., Kurukshetra                           IND
+ KUL    Johannes-Kepler-Universitaet, Linz                       AUS
+ KUR    Inst. At.En. I.V. Kurchatova, Moscow                     CCP
+ KUR    Inst.At.En. I.V.Kurchatova, Moskva                       RUS
+ KUS    Korea Univ., Seoul                                       KOR
+ KUW    Kuwait                                                   KUW
+ KYA    Kenya                                                    KYA
+ KYO    Kyoritsu College of Pharmacy, Tokyo                      JPN
+ KYU    Kyushu Univ., Dept.of Nucl.Eng., Fukuoka                 JPN
+ KYU    Kyushu Univ., Dept.of Nucl.Eng., Fukuoka                 JAP
+ LAH    Atomic Energy Centre, Lahore                             PAK
+ LAN    Langley Research Center, NASA Langley Station, VA        USA
+ LAS    Los Alamos National Laboratory, NM                       USA
+ LAT    Latvia                                                   LAT
+ LAU    Univ. of Lausanne                                        SWT
+ LBL    Lawrence Berkeley Lab, Berkeley, CA                      USA
+ LDD    Lab.de Dosimetria, Rio de Janeiro                        BZL
+ LE     Lebanon                                                  LE
+ LEB    Fiz. Inst. Lebedev (FIAN), Moscow                        CCP
+ LEB    Fiz.Inst. Lebedev (FIAN), Moskva                         RUS
+ LEE    Univ. of Leeds, Leeds, England                           UK
+ LEI    Univ. of Leiden                                          NED
+ LEP    Nat.lab.for High Energy Physics, Oho, Ibaraki            JPN
+ LFC    Laboratorio de Fisica Cosmica, Chacaltaya                BLV
+ LFE    Labor. de Fisica e Engeneria Nucleares, Sacavem          PRT
+ LIB    Libya                                                    LIB
+ LIE    Univ.of Liege, Liege                                     BLG
+ LIM    C.E.N. Limeil                                            FR
+ LIN    Leningrad Inst. Yad. Fiz., Russ. A.N., Gatchina          RUS
+ LIN    Leningrad Inst. Nucl. Phys., USSR Acad.Sci., Gatchina    CCP
+ LIS    Universidade de Lisboa, Lisboa                           PRT
+ LIT    Lithuania                                                LIT
+ LMS    Lockheed Missiles and Space Div., Palo Alto, CA          USA
+ LMU    Ludwig-Maximilians Universitaet Muenchen                 GER
+ LND    Lund Univ.+ Tech.Univ.                                   SWD
+ LNS    Laboratori Nazionali del Sud-INFN, Catania               ITY
+ LNZ    Lanzhou Univ., Lanzhou                                   CPR
+ LNZ    Lanzhou Univ., Lanzhou                                   CHP
+ LOK    Lockheed Aircraft Corp., Sunnyvale, CA                   USA
+ LON    Univ. of London, London, England                         UK
+ LOU    Univ. of Lodz, Lodz                                      POL
+ LOW    Lowell Technological Institute, Lowell, MA               USA
+ LOY    Loyola University, Los Angeles, CA                       USA
+ LPI    Leningradskiy Politekhnicheskiy Inst.                    RUS
+ LPI    Leningradskii Politekhnicheskii Inst.                    CCP
+ LRC    NASA-Lewis Research Center, Cleveland, OH                USA
+ LRL    Lawrence Livermore National Laboratory, Livermore, CA    USA
+ LRM    Lab.de Recherche des Musees de France, Paris             FR
+ LSU    Louisiana State University, Baton Rouge, LA              USA
+ LTI    University of Lowell, Lowell, MA                         USA
+ LUL    Lucknow Univ., Lucknow                                   IND
+ LUQ    Laval University, Sainte-Foy, Quebec                     CAN
+ LUX    Luxembourg                                               LUX
+ LVL    UNiversity of Louisville, Louisville, KY                 USA
+ LVN    Catholic Univ. of Louvain, Louvain-la-Neuve              BLG
+ LVP    Univ. of Liverpool, England                              UK
+ LYO    Univ. of Lyon, Villeurbanne, Rhone                       FR
+ MA     Madagascar                                               MA
+ MAD    Ind.Inst.of Technology, Madras                           IND
+ MAG    MAGI, Elmsford, NY                                       USA
+ MAK    Macedonia                                                MAK
+ MAL    Malaysia                                                 MAL
+ MAN    Univ. of Manchester, England                             UK
+ MAR    Marquette University, Milwaukee, WI                      USA
+ MBG    Univ. of Marburg                                         GER
+ MBP    Inst. Mediko-Biologicheskikh Problem, Moscow             CCP
+ MBP    Inst.Mediko-Biologicheskikh Problem, Moscow              RUS
+ MCG    McGill University, Montreal,Quebec                       CAN
+ MCM    McMaster University, Hamilton, Ontario                   CAN
+ MCO    Monaco                                                   MCO
+ MES    Univ.of Messina                                          ITY
+ MEX    Mexico                                                   MEX
+ MFT    Moskovskii Fiziko-Tekhnicheskii Inst., Moscow            CCP
+ MFT    Moskovskiy Fiziko-Tekhnicheskiy Inst., Moskva            RUS
+ MGA    Mahatma Ghandi Science Inst.of Technology, Ahmedabad     IND
+ MGL    Mongolia                                                 MGL
+ MGT    Michigam Technological University, Houghton, MI          USA
+ MGW    Sir George Williams Univ., Montreal, Quebec              CAN
+ MHD    University of Michigan, Dearborn, MI                     USA
+ MHG    University of Michigan, Ann Arbor, MI                    USA
+ MIF    Moscow Inst. of Engineering Physics, Moscow              CCP
+ MIF    Moscow Inst.of Engineering Physics, Moscow               RUS
+ MIL    Univ. of Milan                                           ITY
+ MIM    Vsesoyuznyi Nauchno-Issl.Inst. Metrol., St.Petersburg    RUS
+ MIM    Vsesoyuzniy Nauchno-Issl. Inst. Metrologii, Leningrad    CCP
+ MIN    University of Minnesota, Minneapolis, MN                 USA
+ MIP    Politecnico di Milano                                    ITY
+ MIS    University of Missouri, Columbia, MO                     USA
+ MIT    Massachusetts Institute of Technology, Cambridge, MA     USA
+ MLI    Mali                                                     MLI
+ MNA    Univ. of Manitoba, Cyclotron Lab., Winnipeg, Manitoba    CAN
+ MND    Mound Laboratory, Miamisburg, OH                         USA
+ MNZ    Univ. of Mainz                                           GER
+ MO     Int.Lab.of Marine Radioactivity                          ZZZ
+ MOH    Univ. Mohammed V, Rabat                                  MOR
+ MOL    C.E.N., Mol                                              BLG
+ MON    Univ. of Montreal, Montreal, Quebec                      CAN
+ MOR    Morocco                                                  MOR
+ MOS    Moscow State Univ., Nuclear Physics Inst., Moscow        CCP
+ MOS    Moscow State Univ.,Nuclear Physics Inst., Moscow         RUS
+ MOU    Monash University                                        AUL
+ MPH    Max-Planck-Institut fuer Kernphysik, Heidelberg          GER
+ MPM    Max-Planck-Institut fuer Chemie, Mainz                   GER
+ MPT    Ecole Polytechnique de Montreal, Quebec                  CAN
+ MRC    National Research Council, Montreal Lab., Quebec         CAN
+ MRD    Maryland University, College Park, MD                    USA
+ MRY    Maryland University, College Park, MD                    USA
+ MSM    Mount Sinai Medical Center, Miami Beach, FL              USA
+ MSS    Mississippi State University, Mississippi State, MS      USA
+ MST    Mississippi State University, Mississippi State, MS      USA
+ MST    Univ. of Muenster                                        GER
+ MSU    Michigan State University, East Lansing, MI              USA
+ MTR    Idaho Nuclear Corp., Idaho Falls, ID                     USA
+ MTS    Middle Tennessee State University, Murfreesboro, TN      USA
+ MTU    Montana State University, Missoula, MT                   USA
+ MUA    Muslim Univ., Aligarh                                    IND
+ MUE    Muenchen, Techn.Univ.                                    GER
+ MUN    Technische Universitaet Muenchen                         GER
+ MUR    Murray State University, Murray, KY                      USA
+ MUU    Univ. of Munich, Munich                                  GER
+ MVE    Metropolitan-Vickers Electrical H.V. Lab.                UK
+ NAC    Nat.Accelerator Centre, Faure                            SAF
+ NAG    Univ.of Nagoya                                           JAP
+ NAG    Univ.of Nagoya                                           JPN
+ NAI    University College, Nairobi                              KYA
+ NAL    Fermi National Laboratory, Batavia, IL                   USA
+ NAM    University "Notre Dame de la Paix", Namur                BLG
+ NAN    Nanjing Univ., Nanjing                                   CPR
+ NAP    Univ. of Naples                                          ITY
+ NAS    NASA, Washington, DC                                     USA
+ NBI    Niels Bohr Inst., Copenhagen                             DEN
+ NBM    National Bureau of Measurements, Budapest                HUN
+ NBS    National Bureau of Standards, Washington, DC             USA
+ NCA    University of North Carolina, Chapel Hill, NC            USA
+ NCS    North Carolina State College, Raleigh, NC                USA
+ NCT    Oita National College of Technology, Oita                JPN
+ NDA    Nuclear Development Associates Inc.                      USA
+ NDC    NEA Data Bank, Paris                                     ZZZ
+ NDL    U.S. Army Nuclear Defence Lab., Edgewood Arsenal, MD     USA
+ NDS    Nuclear Data Section, IAEA, Vienna                       ZZZ
+ NEA    OECD Nuclear Energy Agency (NEA)                         ZZZ
+ NEB    North Eastern University, Boston, MA                     USA
+ NED    Netherlands                                              NED
+ NEG    Ben Gurion Univ. of the Negev, Beer-Sheva                ISL
+ NEL    U.S. Nuclear Effects Lab., Edgewood Arsenal, MD          USA
+ NER    Niger                                                    NER
+ NEU    Univ. of Neuchatel                                       SWT
+ NEW    Univ. of Newcastle-on-Tyne                               UK
+ NGC    North Georgia College, Dahlonega, NC                     USA
+ NI     Nigeria                                                  NI
+ NIG    Toshiba Corporation                                      JAP
+ NIG    Toshiba Corporation                                      JPN
+ NIH    National Institutes of Health, Bethesda, MD              USA
+ NII    Niigata Univ., Niigata                                   JPN
+ NII    Niigata Univ., Niigata                                   JAP
+ NIK    Moscow Scient.and Res. Project Inst.in En.and Techn.     RUS
+ NIL    PINSTECH, Nilore, Rawalpindi                             PAK
+ NIN    Rutherford Lab., Chilton, Berks                          UK
+ NIR    NIIAR Dimitrovgrad                                       CCP
+ NIR    NIIAR Dimitrovgrad                                       RUS
+ NIS    National Inst.of Standards & Techn., Gaithersburg, MD    USA
+ NIU    Northern Illinois University, Dekalb, IL                 USA
+ NIX    Northwest Inst.of Nucl.Technology, Xian                  CPR
+ NJS    Inst. Jozef Stefan, Ljubljana                            YUG
+ NLP    National Physical Research Lab., Pretoria                SAF
+ NMS    New Mexico State University, Las Cruces, NM              USA
+ NMX    University of New Mexico, Albuquerque, NM                USA
+ NNR    Nat.Inst.f.Nucl.Res., Vietnam                            VN
+ NOL    U.S. Navy Ordinance Lab., Silver Springs, MD             USA
+ NOR    Norway                                                   NOR
+ NOT    University of Notre Dame, Notre Dame, IN                 USA
+ NOV    Universidade Nova de Lisboa, Lisboa                      PRT
+ NPL    National Phys.Lab., Teddington                           UK
+ NPT    Inst.of Nucl.Physics, Tirana                             SHQ
+ NRD    U.S. Naval Radiolog. Defense Lab., San Francisco, CA     USA
+ NRI    Nucl.Research Center, Baghdad                            IRQ
+ NRL    U.S. Naval Research Lab., Washington, DC                 USA
+ NRP    National Radiological Protection Board, Harwell          UK
+ NRS    Inst.of Nucl.Research, Acad.Sinica, Shanghai             CPR
+ NSU    Natl.Seoul Univ., Seoul                                  KOR
+ NSW    Univ.of New South Wales                                  AUL
+ NTA    Nordita, Denmark                                         DEN
+ NTS    North Texas State University, Denton, TX                 USA
+ NTU    Nat.Taiwan Univ., Taipei                                 CHF
+ NWU    Northwestern University, Evanston, IL                    USA
+ NYB    State University of New York, Buffalo, NY                USA
+ NYU    New York University, New York, NY                        USA
+ NZA    Univ. of Auckland, Auckland                              NZL
+ NZH    Inst.of Nuclear Sciences, Lower Hutt                     NZL
+ NZL    New Zealand                                              NZL
+ NZW    Victoria University of Wellington, Wellington            NZL
+ OAU    Oak Ridge Associated Universities, Oak Ridge, TN         USA
+ OBR    Oberlin College, Oberlin, OH                             USA
+ OFI    Inst. Optiko-Fizicheskikh Izmerenii, Moscow              RUS
+ OFI    Inst. Optiko-Fizicheskikh Izmerenii, Moscow              CCP
+ OHO    Ohio University, Athens, OH                              USA
+ OIE    Inst. of Atomic Energetics, Obninsk                      CCP
+ OIE    Inst.of Atomic Energetics, Obninsk                       RUS
+ OKL    University of Oklahoma, Norman, OK                       USA
+ ORD    Nuclear Data Project, ORNL, Oak Ridge, TN                USA
+ ORE    University of Oregon, Eugene, OR                         USA
+ ORL    Oak Ridge National Laboratory, Oak Ridge, TN             USA
+ ORS    Radiation Shielding Inf. Center, ORNL, Oak Ridge, TN     USA
+ ORU    Oregon State University, Corvallis, OR                   USA
+ OSA    Osaka Univ., Osaka                                       JAP
+ OSA    Osaka Univ., Osaka                                       JPN
+ OSL    Univ. of Oslo, Oslo                                      NOR
+ OSM    Osmania University, Hyderabad                            IND
+ OSP    Radiation Centre of Osaka Prefecture, Sakai, Osaka       JAP
+ OSP    Radiation Centre of Osaka Prefecture, Sakai, Osaka       JPN
+ OSU    Ohio State University, Columbus, OH                      USA
+ OTC    National Research Council, Ottawa, Ontario               CAN
+ OTU    Univ. of Ottawa, Ottawa, Ontario                         CAN
+ OUL    University of Oulu, Oulu                                 SF
+ OXF    Univ. of Oxford, Oxford                                  UK
+ OZT    Omsk Inst. of Railroad Engineers                         RUS
+ PAD    Padua, University and Lab. Naz. Legnaro                  ITY
+ PAH    Pahlavi Univ., Daneshgah, Shiraz                         IRN
+ PAK    Pakistan                                                 PAK
+ PAR    Univ. of Paris, (incl.Orsay), Paris                      FR
+ PAT    Punjabi Univ., Patiala                                   IND
+ PAU    Dept. de Recherches Physiques, St.Paul-les-Durance       FR
+ PAV    Univ. of Pavia                                           ITY
+ PCB    Inst. Rad.Phys.Chem.Probl., Belarus Acad.Sci., Minsk     BLR
+ PCF    College de France, Paris                                 FR
+ PCL    Inst.de Physique Corpusculaire, Louvain-la-Neuve         BLG
+ PCT    Picatinny Arsenal, Dover, NJ                             USA
+ PEL    Atomic Energy Corp.of South Africa, Pelindaba            SAF
+ PEN    University of Pennsylvania, Philadelphia, PA             USA
+ PER    Peru                                                     PER
+ PFU    Pf Univ., Nuclear Physics Dept., Bratislava              CSR
+ PHI    Philippines                                              PHI
+ PIC    Pedagogical Inst., Constantza                            RUM
+ PIN    A.E.C.L., Whiteshell Nuc.Res.Establ.,Pinaua,Manitoba     CAN
+ PIT    Inst. of Nuclear Power Reactors (I.R.N.E.)               RUM
+ PNC    Power Reactor and Nuclear Fuel Devel. Corp., Tokai       JAP
+ PNC    Power Reactor and Nuclear Fuel Devel. Corp., Tokai       JPN
+ POL    Poland                                                   POL
+ POO    Poona, University                                        IND
+ POT    Univ. of Potchefstrom, Potchefstrom                      SAF
+ PPO    Phillips Petroleum Co., Bartletsville, OK                USA
+ PR     Puerto Rico                                              USA
+ PRA    Phys.Res.Laboratory, Ahmedabad                           IND
+ PRG    Paraguay                                                 PRG
+ PRT    Portugal                                                 PRT
+ PRW    Pratt + Whitney, Middletown, CT                          USA
+ PSI    Paul Scherrer Inst., Villigen                            SWT
+ PSU    Pennsylvania State University, University Park, PA       USA
+ PTB    Physikal. Techn. Bundesanst., Braunschweig               GER
+ PTN    Princeton University, Princeton, NJ                      USA
+ PUC    Punjab Univ., Chandigarh                                 IND
+ PUE    Pohang Univ. of Science and Technology, Pohang           KOR
+ PUJ    Pontif. Universidad Catolica, Rio de Janeiro             BZL
+ PUP    University of Pittsburgh, Pittsburgh, PA                 USA
+ PUR    Purdue University, West Lafayette, IN                    USA
+ PVI    Inst.fuer Experimentalphysik, Universitaet Wien          AUS
+ PWA    Politechnika Warszawska                                  POL
+ QAT    Qatar                                                    QAT
+ QML    Queen Mary College, London                               UK
+ QU     Queen's Univ., Kingston, Ontario                         CAN
+ QUC    Univ.Coll., Townsville, Queensl.                         AUL
+ QUE    Univ.of Queensland                                       AUL
+ RAB    Lab.de Phys. Nucleaire, Faculte des Sciences, Rabat      MOR
+ RAJ    Univ.of Rajshahi                                         BAN
+ RAM    Dhaka, Atomic Energy Centre, Ramna                       BAN
+ RAN    The Rand Corporation, Santa Monica, CA                   USA
+ RAS    Rangoon Arts and Science Univ., Rangoon                  BUR
+ RBZ    Inst.Rudjer Boskovic, Zagreb                             CRO
+ RBZ    Inst.Rudjer Boskovic, Zagreb                             YUG
+ RCN    Netherland's Energy Research Foundation, Petten          NED
+ RDI    Radiation Dynamics, Inc., Westbury, NY                   USA
+ RDL    University of Redlands, Redlands, CA                     USA
+ REA    Univ. of Reading                                         UK
+ RED    Redstone Arsenal, AL                                     USA
+ REH    Rehovoth Lab., Israel AEC.                               ISL
+ REN    Reno Metallurgical Research Center, Reno, NV             USA
+ RES    Division of Research, USAEC, Washington, DC              USA
+ RGU    Rostovskiy Gosudarstvennyi Univ., Rostov-na-Donu         RUS
+ RGU    Rostovskii Gosudarstvennyi Univ., Rostov-na-Donu         CCP
+ RHI    Rhode Island University, Kingston, RI                    USA
+ RI     Khlopin Radiev. Inst., Leningrad                         CCP
+ RI     Khlopin Radievij Inst., St.Petersburg                    RUS
+ RIC    Rice University, Houston, TX                             USA
+ RIO    Centro Brazil.de Pesquisas Fisicas, Rio de Janeiro       BZL
+ RIP    Res.Inst.of Phys., Stockholm                             SWD
+ RIS    Riso, Roskilde                                           DEN
+ RIY    Univ.of Riyadh, Saudi Arabia                             SAR
+ RL     Richland Operations Office, Richland, WA                 USA
+ RLY    UKAEA, Risley                                            UK
+ ROC    University of Rochester, Rochester, NY                   USA
+ ROM    Univ. of Rome                                            ITY
+ ROS    Zentralinst.f.Kernforschung, Rossendorf                  DDR
+ RPI    Rensselaer Polytechnic Institute, Troy, NY               USA
+ RR     Rolls-Royce                                              UK
+ RUM    Romania                                                  RUM
+ RUS    Russia                                                   RUS
+ RUT    Rutgers University, New Brunswick, NJ                    USA
+ SAC    C.E.N. Saclay                                            FR
+ SAE    Sumitomo Atomic Energy Industries                        JPN
+ SAE    Sumitomo Atomic Energy Industries                        JAP
+ SAF    South Africa, Rep.                                       SAF
+ SAH    Saha Institute, Calcutta                                 IND
+ SAI    Science Applications Internat. Corp., San Diego, CA      USA
+ SAL    Sorin Nuc.Res.Centre Saluggia                            ITY
+ SAN    Universidad de Chile, Santiago                           CHL
+ SAR    Saudi Arabia                                             SAR
+ SAS    Univ. of Saskatchewan, Saskatoon, Saskatchewan           CAN
+ SAT    Laboratoire National SATURNE, Gif-sur-Yvette             FR
+ SAU    Univ.de Santiago de Compostela                           SPN
+ SAV    Inst.Nucl.Sci.and Tech., AERE, Savar                     BAN
+ SBL    Dept.of Physics, Polytechnic of South Bank, London       UK
+ SBU    Univ. of Saarland, Saarbruecken                          GER
+ SC     Sandia National Laboratory, Albuquerque, NM              USA
+ SCA    University of South Carolina, Columbia, SC               USA
+ SCT    Univ. of Capetown, Cape Town                             SAF
+ SCU    Ussr State Comm.on the Use of Atomic Energy, Moscow      RUS
+ SCU    USSR State Comm. on the Use of Atomic Energy, Moscow     CCP
+ SDC    San Diego State College, San Diego, CA                   USA
+ SEO    Advanced Energy Res.Inst., Seoul                         KOR
+ SF     Finland                                                  SF
+ SFU    Simon Frazer University, Burnaby, B.C.                   CAN
+ SGA    Oest.Forschungszentrum Seibersdorf, Wien+Seibersdorf     AUS
+ SGU    Saratov Gosudarstvennyi Univ.                            RUS
+ SGU    Saratov Gosudarstvennyi Univ.                            CCP
+ SHE    Univ. of Sheffield                                       UK
+ SHI    Instit. of Nuclear Energy Research, Lung Tan             CHF
+ SHN    Shaanxi Normal Univ., Xian                               CPR
+ SHQ    Albania                                                  SHQ
+ SHR    Ship Research Inst., Ministry of Transport, Japan        JAP
+ SHR    Ship Research Inst., Ministry of Transport, Japan        JPN
+ SHZ    Shizuoka Univ., Shizuoka                                 JPN
+ SIB    Inst. Yad. Fiz., Sib. A.N., Novosibirsk                  RUS
+ SIB    Inst. Yad. FIiz, Novosibirsk                             CCP
+ SIC    Centro Sicil.di Fisica Nucl.CSFNSM, Catania              ITY
+ SIE    Siemens, Erlangen                                        GER
+ SIG    National Nuclear Data Center, BNL, Upton, NY             USA
+ SIL    Sierra Leone                                             SIL
+ SIN    Singapore                                                SIN
+ SIR    Council for Scientific and Industrial Res., Pretoria     SAF
+ SIU    Sichuan Univ., Chengdu                                   CPR
+ SJS    San Jose State University, San Jose, CA                  USA
+ SKU    Curie-Sklodowska University, Lublin                      POL
+ SLK    Slovakia                                                 SLK
+ SLN    Slovenia                                                 SLN
+ SLO    Slovak Academy of Sciences, Physics Inst., Bratislava    CSR
+ SLO    Slovak Academy of Sciences, Physics Inst., Bratislava    SLK
+ SLU    Saint Louis University, Saint Louis, MO                  USA
+ SMU    Southern Methodist University, Dallas, TX                USA
+ SN     Senegal                                                  SN
+ SNI    Southern University Nuclear Inst., Baton Rouge, LA       USA
+ SNP    Space Nuclear Propulsion Office, Cleveland, OH           USA
+ SOC    Socony Mobil Oil Co., Dallas, TX                         USA
+ SOF    Univ.of Sofia                                            BUL
+ SOR    Soreq Research Centre, Yavne                             ISL
+ SPC    SPire Corp., Bedford, MA                                 USA
+ SPN    Spain                                                    SPN
+ SR     Sri Lanka                                                SR
+ SRC    Scottish Reactor Centre, E.Kilbride, Scotland            UK
+ SRE    Space Radiation Effects Lab., Newport News, VA           USA
+ SRI    Stanford Research Inst., Menlo Park, CA                  USA
+ SRL    Savannah River Lab., E.I. Dupont, Aiken, SC              USA
+ SST    Shanghai Univ. of Science and Technology                 CPR
+ SSU    Samarkand State Univ., Samarkand                         UZ
+ SSX    Univ. of Sussex, Brighton                                UK
+ STA    Science and Technology Agency, Chiyoda-ku, Tokyo         JPN
+ STB    State University of New York, Stony Brook, NY            USA
+ STF    Stanford University, Stanford, CA                        USA
+ STK    Stockholm                                                SWD
+ STL    Univ. of Stellenbosch                                    SAF
+ STM    Saint Mary's College of Maryland, St. Mary's City, MD    USA
+ STR    Nucl.Res.Centre, Strasbourg                              FR
+ STU    Istanbul University                                      TUK
+ SUB    State University of New York, Binghamtom, NY             USA
+ SUD    Sudan                                                    SUD
+ SUI    Iowa State University, Ames, IA                          USA
+ SUK    Shivaji Univ., Kolhapur                                  IND
+ SUL    Gosudarstvennyi Univ. (State Univ.), St.Petersburg       RUS
+ SUL    Gosudarstvennyi Univ. (State Univ.), Leningrad           CCP
+ SUN    Nuclear Inst., Southern Univ., Faure, Cape Prov.         SAF
+ SUR    Univ. of Surrey, Guilford                                UK
+ SUT    Science University of Tokyo                              JPN
+ SWD    Sweden                                                   SWD
+ SWL    University of Southwestern Louisiana, Lafayette, LA      USA
+ SWR    Studsvik Science Research Laboratory                     SWD
+ SWT    Switzerland                                              SWT
+ SY     Syria                                                    SY
+ SYR    Syracuse University, Syracuse, NY                        USA
+ TAI    Thailand                                                 TAI
+ TAJ    Tajura Nuclear Res. Center, Tripoli                      LIB
+ TAM    Texas A & M University, College Station, TX              USA
+ TAS    Univ.of Tasmania                                         AUL
+ TAT    Tata Institute, Bombay                                   IND
+ TEH    Tehran University Nuclear Centre, Tehran                 IRN
+ TEL    Tel Aviv University                                      ISL
+ TEM    Temple University, Philadelphia, PA                      USA
+ TEN    University of Tennessee, Knoxville, TN                   USA
+ TEX    University of Texas, Austin, TX                          USA
+ TGU    Tbilisskiy Gosudarstvennyi Univ., Tbilisi                GRG
+ TGU    Tbilisskii Gosudarstvennyi Univ., Tbilisi                CCP
+ THA    Tech.Hochschule, Aachen                                  GER
+ THB    Tech.Hochschule, Braunschweig                            GER
+ THD    Tech.Universitaet, Darmstadt                             GER
+ THO    Thoubal College, Thouba                                  IND
+ THS    Universitaet Stuttgart                                   GER
+ THU    National Tsing Hua Univ., Hsin-Chu                       CHF
+ THV    Inst.f.Experimentelle Kernphysik, Techn.Univ.,Vienna     AUS
+ TID    Div. of Technical Info., USAEC, Oak Ridge, TN            USA
+ TIL    Leningradskiy Tekhnologicheskiy Inst. Im.Lensoveta       RUS
+ TIL    Leningradskii Tekhnologicheskii Inst. Im.Lensoveta       CCP
+ TIT    Tokyo Inst.of Technology, Tokyo                          JPN
+ TIT    Tokyo Inst.of Technology, Tokyo                          JAP
+ TKS    Tokushima Univ., Tokushima                               JPN
+ TKU    Turku University                                         SF
+ TLU    Tandem Laboratory, Uppsala                               SWD
+ TMF    Tri University Meson Facility, Vancouver, B.C.           CAN
+ TMO    Inst. Teplo-Massoobmena A.N. Byeloruss.SSR, Minsk        CCP
+ TMO    Inst. Teplo-Massoobmena Byeloruss. A.N., Minsk           BLR
+ TNC    Texas Nuclear Corp., Austin, TX                          USA
+ TNL    Triangle Universities Nuclear Lab., Durham, NC           USA
+ TOH    Tohoku Univ., Sendai                                     JAP
+ TOH    Tohoku Univ., Sendai                                     JPN
+ TOI    Tohoku Inst. of Technology, Sendai                       JPN
+ TOK    Tokyo Univ., Tokyo                                       JPN
+ TOK    Tokyo Univ., Tokyo                                       JAP
+ TOR    Univ. of Toronto, Toronto, Ontario                       CAN
+ TOU    Univ.of Toulouse, Haute-Garonne                          FR
+ TPC    Technical Physics Inst., Chelyabinsk                     RUS
+ TPG    Inst.fuer Theoretische Physik der Univ. Graz, Graz       AUS
+ TPI    Tomskiy Politekhnicheskiy Inst., Tomsk                   RUS
+ TPI    Tomskii Politekhnicheskii Inst., Tomsk                   CCP
+ TPT    Intern.Centre for Theoretical Physics, Trieste           ZZZ
+ TRI    Univ. of Trieste                                         ITY
+ TRM    Bhabha Atomic Res. Centre, Trombay                       IND
+ TRW    T R W, Redondo Beach, CA                                 USA
+ TSI    Tsinghua Univ., Beijing                                  CPR
+ TSU    Univ. of Tsukuba, Ibaraki                                JPN
+ TSU    Univ. of Tsukuba, Ibaraki                                JAP
+ TTU    Tennessee Technical Univ., Cookeville, TN                USA
+ TUB    Tech.Univ., Berlin                                       GER
+ TUD    Dresden, Techn.Univ. at Dresden and Pirna                DDR
+ TUE    Universitaet Tuebingen                                   GER
+ TUH    Techn. Univ. Hannover                                    GER
+ TUK    Turkey                                                   TUK
+ TUL    Tulane University, New Orleans, LA                       USA
+ TUN    Tunisia                                                  TUN
+ TUP    Politecnico di Torino                                    ITY
+ TUR    Univ.of Turin                                            ITY
+ TVU    Tver' State Univ., Tver'                                 RUS
+ UAE    United Arab Emirates                                     UAE
+ UAG    Universite d'Alger                                       ALG
+ UAL    University of Alabama, AL                                USA
+ UAZ    Arizona Univ., Tucson, AZ                                USA
+ UB     Komenskeho (Comenius) Univ., Bratislava                  SLK
+ UB     Komenskeho (Comenius) Univ., Bratislava                  CSR
+ UBA    Universidad de Buenos Aires                              ARG
+ UBC    Univ. of British Columbia, Vancouver, B.C.               CAN
+ UBE    Bern, Univ.                                              SWT
+ UBO    Bologna, Univ. + Ist. Naz. di Fis. Nucl.                 ITY
+ UCB    United Nuclear Corp., Tuxedo, NY                         USA
+ UCC    Univ.de Chile, Fac.de Ciencias, Santiago                 CHL
+ UCD    University College, Dublin                               EIR
+ UCN    University of Cincinnati, Cincinnati, OH                 USA
+ UCS    Union Carbide, Sterling Forest Res. Center, Tuxedo,NY    USA
+ UCV    Univ. Central de Venezuela, Caracas                      VEN
+ UEC    Univ.Estadual de Campinas, Inst.de Fisica, Campinas      BZL
+ UEF    Univ.Central de Ecuador, Dept.de Fisica, Quito           ECU
+ UEN    Univ. of Erlangen-Nuernberg                              GER
+ UFF    Univ. Federal Fluminense, Niteroi                        BZL
+ UFP    Univ. Federal de Pernambuco, Recife                      BZL
+ UFR    Univ. Federal do Rio de Janeiro                          BZL
+ UFT    Ukrainskii Fiziko-Tekhnicheskii Inst., Kharkov           CCP
+ UFT    Ukrainskiy Fiziko-Tekhnicheskiy Inst., Kharkov           UKR
+ UGB    University of Garyounis, Benghazi                        LIB
+ UGD    Uganda                                                   UGD
+ UGM    Univ.de Guanajuato                                       MEX
+ UH     Univ. Hannover (previously Tech.Univ.Hannover)           GER
+ UI     University of Illinois, Urbana-champaign, IL             USA
+ UIA    Univ. Instelling, Anvers                                 BLG
+ UID    University of Idaho, Moscow, ID                          USA
+ UJF    Inst. of Nucl. Phys. of Czech Acad. Sci., Rez u Prahy    CZR
+ UJF    Inst.of Nucl.Phys.of Czech.Acad.Sci., Rez u Prahy        CSR
+ UJK    Krakow, Jagellonian Univ                                 POL
+ UJV    Inst.of Nucl.Res., Rez u Prahy                           CSR
+ UJV    Inst. of Nuclear Research, Rez u Prahy                   CZR
+ UK     United Kingdom                                           UK
+ UKM    Univ. Kebangsaan Malaysia, Bangi                         MAL
+ UKR    Ukraine                                                  CCP
+ UKR    Ukraine                                                  UKR
+ UKW    Windscale Reactor Development Labs., UKAEA               UK
+ ULS    Univ. of Ulsan, Ulsan                                    KOR
+ UMA    University of Massachusetts, Amhurst, MA                 USA
+ UMK    Union Miniere du Haut Katanga, Bruxelles                 BLG
+ UMT    University of Montana, Helena, MT                        USA
+ UMX    Univ.Nacl.Autonoma de Mexico                             MEX
+ UN     U.N. Organizations                                       ZZZ
+ UNB    University of Nebraska, Lincoln, NE                      USA
+ UNC    United Nuclear Corp., Elmsford, NY                       USA
+ UNE    Univ.of New England                                      AUL
+ UNH    University of New Hampshire, Durham, NH                  USA
+ UPA    Universidad de La Plata, Buenos Aires                    ARG
+ UPP    Univ. of Uppsala                                         SWD
+ UPR    Univ.of Pretoria, Hatfield, Pretoria                     SAF
+ URJ    Univ.of Rajestan, Jaipur                                 IND
+ URM    Montevideo, Universidad de la Republica                  URU
+ URR    Univ.of Roorkee, Roorkee                                 IND
+ URU    Uruguay                                                  URU
+ USA    United States of America                                 USA
+ USC    University of Southern California, Los Angeles, CA       USA
+ USF    Univ. of South Africa, Pretoria                          SAF
+ USM    Univ.Sains Malaysia, Penang                              MAL
+ USP    Univ.de Sao Paulo, Sao Paulo                             BZL
+ UST    Stockholm University                                     SWD
+ USU    Utah State University, Loagn, UT                         USA
+ UTR    Univ. of Utrecht                                         NED
+ UWA    Univ. of Western Australia, Nedlands                     AUL
+ UWI    West-Indies Univ., Kingston                              JAM
+ UWO    Univ. of Western Ontario, London, Ontario                CAN
+ UWY    University of Wyoming, Laramie, WY                       USA
+ UZ     Uzbekistan                                               UZ
+ UZB    Inst. Yadernoi Fiziki Uzbekskoi A.N., Tashkent           UZ
+ UZB    Inst. Yadernoi Fiziki A.N. Uzbekskoi SSR, Tashkent       CCP
+ UZH    Uzhgorod State Univ.                                     CCP
+ UZH    Uzhgorod State Univ.                                     UKR
+ VAL    Valencia, University                                     SPN
+ VBT    Vanderbilt University, Nashville, TN                     USA
+ VDN    Central Bureau der V.D.E.N., Arnhem                      NED
+ VEN    Venezuela                                                VEN
+ VIL    Swiss.Inst.for Nucl.Phys.Res., Villigen                  SWT
+ VIP    Virginia Polytechnic Inst.,Blacksburg, VA                USA
+ VIR    University of Virginia, CharlottsvilleE, VA              USA
+ VLD    U.de Valladolid                                          SPN
+ VN     Vietnam                                                  VN
+ VNI    USSR Scient. and Technical Inform. Inst., Moscow         CCP
+ VNI    Scient.and Technical Inform.Inst., Moscow                RUS
+ VNV    Centre d'Etudes de Limeil, Villeneuve-Saint-Georges      FR
+ VUB    Vrije Univ., Bruxelles, Cyclotron Dept.                  BLG
+ WAD    Wright Air Development Center, OH                        USA
+ WAI    Western Australian Inst. of Tech., West Bentley          AUL
+ WAL    Westinghouse Astronuclear Lab., Pittsburgh, PA           USA
+ WAP    Westinghouse Atomic Power Div., Pittsburgh, PA           USA
+ WAS    Washington University, St.Louis, MO                      USA
+ WAT    Watertown Arsenal, Watertown, MA                         USA
+ WAU    University of Washington, Seattle, WA                    USA
+ WAY    Wayne State University, Detroit, MI                      USA
+ WDA    Waseda Univ., Tokyo                                      JAP
+ WDA    Waseda Univ., Tokyo                                      JPN
+ WES    Westinghouse Research Lab., Pittsburgh, PA               USA
+ WEW    Westinghouse Advanced Reactor Div., Pittsburgh, PA       USA
+ WGC    West Georgia College, Carrolton, GA                      USA
+ WIN    AEE, Winfrith, Dorset, England                           UK
+ WIS    University of Wisconsin, Madison, WI                     USA
+ WIT    Univ.of Witwatersrand, Johannesburg                      SAF
+ WKU    Western Kentucky University, Bowling Green, KY           USA
+ WLY    Wesleyan University, Middletown, CT                      USA
+ WMC    College of William and Mary, Williamsburg, VA            USA
+ WMU    Western Michigan University, Kalamazoo, MI               USA
+ WPI    Worcester Polytechnic Institute, Worcester, MA           USA
+ WRO    Univ.of Wroclaw, Wroclaw                                 POL
+ WRU    Western Reserve University, Cleveland, OH                USA
+ WSA    White Sands Missile Range, White Sands, NM               USA
+ WSU    Washington State University, Pullman, WA                 USA
+ WUC    Wollongong University College, Wollongong                AUL
+ WUR    Eidgenossisches Inst.fuer Reakt.Forsch., Wuerenlingen    SWT
+ WUU    Wuerzburg, Universitaet                                  GER
+ WVU    University of West Virginia, Morgentown, WV              USA
+ WWA    Warszawa, University                                     POL
+ WWS    Western Washington State College, Bellingham, WA         USA
+ WZI    Weizmann Inst., Rehovoth                                 ISL
+ YAL    Yale University, New Haven, CT                           USA
+ YAM    Yamanashi Univ., Kofu                                    JPN
+ YAM    Yamanashi Univ., Kofu                                    JAP
+ YOK    Rikkyo (St.Paul) Univ., Yokosuka and Tokyo               JAP
+ YOK    Rikkyo (St.Paul) Univ., Yokosuka and Tokyo               JPN
+ YON    Yonsei Univ., Seoul                                      KOR
+ YTU    Yildiz Technical University, Istanbul                    TUK
+ YUG    Yugoslavia                                               YUG
+ ZAG    Univ. of Zagreb, Zagreb                                  CRO
+ ZAG    Univ. of Zagreb, Zagreb                                  YUG
+ ZAI    Zaire                                                    ZAI
+ ZAM    Zambia                                                   ZAM
+ ZFI    Zentralinst. Isotopen- und Strahlenforschung, Leipzig    DDR
+ ZFK    Zentralinst. f. Kernforschung, Rossendorf                GER
+ ZHN    Zheng-Zhou Univ.                                         CHP
+ ZHN    Zheng-Zhou Univ.                                         CPR
+ ZIM    Zimbabwe                                                 ZIM
+ ZUR    Zurich                                                   SWT

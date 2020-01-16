@@ -1,0 +1,17 @@
+[filters]
+
+# Projectiles choose from :  [ 'n', 'p', 'g', 'a', 't', 'd', 'He-3', '0' ]
+projectiles = [ 'n' ]                  
+
+# Targets are of the form 'Sym-A[m]' where 'Sym' must be capitalized and 
+# A is either the atomic number or '0' for an element and 'm' is an optional 
+# isomer e.g. 'm1' or 'g' or just plain 'm'.
+targets = [ 'C-0', 'N-0', 'F-0', 'O-0' ]
+
+# Observables choose from : [ '', 'PAR', 'MLT', 'FY', 'DE', 'DA', 'ETA', 'SIG', 
+#                 'SIF', 'DT', 'MLT/DA', 'AKE', 'WID/STR', 'PR', 'TTY', 
+#                 'INT/DE', 'PY', 'SGV', 'FY/CRL', 'LDP', 'SPC/DA', 'SPC', 
+#                 'RI', 'EN', 'D', 'FY/DE', 'SCO', 'DA/DA/DE', 'IPA', 'NU/DE', 
+#                 'POL/DA', 'DA/RAT', 'WID', 'KE', 'INT', 'WID/RED', 'MLT/DE', 
+#                 'NU', 'ALF', 'DA/DE' ]
+observables = [ 'SIG' ]

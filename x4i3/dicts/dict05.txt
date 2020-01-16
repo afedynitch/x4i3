@@ -1,0 +1,432 @@
+Title = "Journal codes used in CINDA and EXFOR"
+NumFields = 3
+FieldBreaks = [ 10, 59 ]
+
+ AAA       Astronomy and Astrophysics                       GER
+ AAB       Anais da Academia Brasileira de Ciencias         BZL
+ AAF       Annales Acad. Sci. Fennicae, Series A6: Physica  SF
+ AANL      Atti Acad. Naz. Lincei,Rend.,Sci.Fis.,Mat.Nat.   ITY
+ AAST      Atti Acad. Sci. Torino, Cl.Sci.Fis.Mat.Nat.      ITY
+ ABS       Memoires de l'Acad. Roy.Belg.,Cl.Sci.            BLG
+ AC        Analytical Chemistry                             USA
+ ACA       Analitica Chimica Acta                           NED
+ ACH       Angewandte Chemie                                GER
+ ACJ       Acta Chemica Scandinavica                        DEN
+ ACR       Acta Crystallographica                           DEN
+ ACR/A     Acta Crystallographica, Part A                   DEN
+ ACR/B     Acta Crystallographica, Part B                   DEN
+ ACS       Journal of the American Chemical Society         USA
+ ADC       Annales de Chimie                                FR
+ ADP       Annalen der Physik                               DDR
+ AE        Atomnaya Energiya                                RUS
+ AE/S      Atomnaya Energiya, Supplement                    RUS
+ AE/T      Atomic Energy                                    USA
+ AEA       Atomic Energy in Australia                       AUL
+ AEJ       Journal of the Atomic Energy Society of Japan    JPN
+ AF        Arkiv foer Fysik                                 SWD
+ AHP       Acta Physica Hungarica                           HUN
+ AHT       Acta Technica (Budapest)                         HUN
+ AIF       Anales del Instituto de Fisica                   MEX
+ AIP       Advances in Physics                              UK
+ AJ        Astrophysical Journal                            USA
+ AJ/L      Astrophysical Journal, Letters                   USA
+ AJ/S      Astrophysical Journal, Supplement                USA
+ AJN       Arab Journal of Nuclear Sci.and Application      EGY
+ AJP       American Journal of Physics                      USA
+ AJS       Australian Journal of Science                    AUL
+ AJSE      Arabian J.for Science and Engineering            SAR
+ AK         Atomki Koezlemenyek                             HUN
+ AKE       Atomkernenergie                                  GER
+ AKS       Atomki Kozlemenyek Supplement                    HUN
+ ANA       Analyst (London)                                 UK
+ AND       Atomic Data and Nuclear Data Tables              USA
+ ANE       Annals of Nuclear Energy                         UK
+ ANP       Annalen der Physik (Leipzig).                    GER
+ ANS       Transactions of the American Nuclear Society     USA
+ AP        Annals of Physics (New York)                     USA
+ APA       Acta Physica Austriaca                           AUS
+ APH       Annales de Physique (Paris)                      FR
+ APL       Applied Physics Letters                          USA
+ APP       Acta Physica Polonica                            POL
+ APP/A     Acta Physica Polonica, Part A                    POL
+ APP/B     Acta Physica Polonica, Part B                    POL
+ APS       Acta Polytechnica Scandinavica                   SWD
+ ARI       Applied Radiation and Isotopes                   UK
+ ARN       Annual Review of Nuclear and Part.Sci.           USA
+ ARS       Anales de Fisica y Quimica                       SPN
+ ASI       Acta Physica Sinica                              CPR
+ ASL       Acta Physica Slovaca                             SLK
+ ASP       Astrophysics and Space Science                   NED
+ ASS       Annales de la Societe Scientifique de Bruxelles  BLG
+ AT        Atomes                                           FR
+ ATP       Atompraxis                                       GER
+ ATT       Atomtechnikai Tajekoztato                        HUN
+ ATW       Atomwirtschaft, Atomtechnik                      GER
+ AUJ       Australian Journal of Physics                    AUL
+ BAP       Bulletin of the American Physical Society        USA
+ BAS       Bull.Russian Academy of Sciences - Physics       USA
+ BCF       Bulletin de la Societe Chimique de France        FR
+ BCI       Bull.Research Council of Israel, Sect. F         ISL
+ BCJ       Bull.of the Chemical Soc.of Japan                JPN
+ BCR       Bull.of Inst.Chemical Research, Kyoto Univ.      JPN
+ BCS       Bull.de la Classe des Sci.,Acad.Roy.Belgique     BLG
+ BIP       Bull. of the Israel Physical Society             ISL
+ BIS       Bull.d'Informations Scientifiques et Techniques  FR
+ BJA       British Journal of Applied Physics               UK
+ BJA/S     British J.of Applied Physics, Suppl.             UK
+ BJE       Bezpecnost Jaderne Energie                       CZR
+ BJP       Bulgarian J.of Physics                           BUL
+ BKE       Bull.Boris Kidrich Inst.Nucl.Sci., Electron.     YUG
+ BKN       Bull. Boris Kidrich Inst.Nucl.Sci., Nucl.Eng.    YUG
+ BKP       Bull. Boris Kidrich Inst.Nucl.Sci., Physics      YUG
+ BNE       Journal of the British Nuclear Energy Society    UK
+ BOS       Transactions of the Bose Research Inst.,Calcutta IND
+ BPC       Bull.de l'Acad.Pol.Sci., Chimique                POL
+ BPP       Bull.de l'Acad.Pol.Sci.,Math.,Astr.,Phys.        POL
+ BPT       Bull.de l'Acad.Pol.Sci.,Ser.Sci.Techniques       POL
+ BSI       Bolletino della Societa Italiana di Fisica       ITY
+ BSL       Bull.Societe Royale des Sciences de Liege        BLG
+ BTI       Bull.of the Tokyo Inst.of Technology             JPN
+ CA        Chemia Analityczna                               POL
+ CDP       Cahiers de Physique                              FR
+ CEC       Ciencia e Cultura (Sao Paulo)                    BZL
+ CHP       Chinese Journal of Physics (Taiwan)              CHF
+ CJC       Canadian Journal of Chemistry                    CAN
+ CJP       Canadian Journal of Physics                      CAN
+ CJR       Canadian Journal of Research                     CAN
+ CJR/A     Canadian Journal Research, Part A                CAN
+ CJR/B     Canadian Journal Research, Part B                CAN
+ CNP       Chinese J.of Nuclear Physics (Beijing).          CPR
+ CNDP      Communication of Nuclear Data Progress           CPR
+ CNST      Nuclear Science and Techniques (Shanghai).       CPR
+ CNT       Canadian Nuclear Technology                      CAN
+ CP        Chinese Physics                                  USA
+ CPC       Computer Physics Communications
+ CR        Comptes Rendus, Serie B, Physique                FR
+ CR/B      Comptes Rendus, Serie B, Physique                FR
+ CR/C      Comptes rendus, Serie C, Chimie                  FR
+ CRB       Comptes Rendus Acad.Bulgare Sci.                 BUL
+ CS        Current Science                                  IND
+ CSA       Abstracts of papers, American Chemical Soc.      USA
+ CST       Atomic Energy Science and Technology             CPR
+ CZC       Collection of Czech.Chemical Communications      CZR
+ CZJ       Czechoslovak Journal of Physics                  CZR
+ CZJ/A     Ceskoslovensky Casopys pro Fyziku                CZR
+ CZJ/B     Czech.J.of Physics, Part B                       CZR
+ DA        Dissertation Abstracts                           USA
+ DA/B      Dissertation Abstracts B (Sciences)              USA
+ DOK       Doklady Akademii Nauk                            CCP
+ EAF       Energie Atomique                                 FR
+ EARR      European Applied Research Reports                ZZZ
+ EAT       Energia es Atomtechnika                          HUN
+ EEN       Ergebnisse der Exakten Naturwissenschaften       GER
+ EN        Energia Nucleare (Milan)                         ITY
+ ENF       Energie Nucleaire                                FR
+ EON       Euronuclear                                      UK
+ EPJ/A     European Physical Journal A: Hadrons and Nuclei  GER
+ EPJ/C     Europ. Physical Journal C: Particles and Fields  GER
+ EPL       Earth and Planetary Sci.Letters                  NED
+ ESJ       J.of Engineering Sciences, Univ. of Riyadh       SAR
+ ETP       Experimentelle Technik der Physik                GER
+ EUL       Europhysics Letters                              FR
+ EXP       Experientia                                      SWT
+ FBS       Few-Body Systems                                 GER
+ FCY       Fizika Elementarnykh Chastic i Atomnogo Yadra    RUS
+ FDP       Fortschritte der Physik                          GER
+ FIZ       Fizika                                           CRO
+ FIZ/B     Fizika B                                         CRO
+ FIZ/S     Fizika, Supplement                               CRO
+ FMM       Fizika Metallov i Metallovedeniya                RUS
+ FT        Fysisk Tidsskrift                                DEN
+ FTT       Fizika Tverdogo Tela                             RUS
+ GCA       Geochimica et Cosmochimica Acta                  UK
+ GK        Genshiryoku Kogyo                                JPN
+ GUS       Godishnik na Sofijskija Univ. 'Kliment Ohridski' BUL
+ HCA       Helvetica Chimica Acta                           SWT
+ HEN       High Energy Physics and Nucl.Phys.,Engl.ed.      USA
+ HFH       He Huaxue yu Fangshe Huaxue                      CPR
+ HI        Hyperfine Interactions                           SWT
+ HP        Health Physics                                   USA
+ HPA       Helvetica Physica Acta                           SWT
+ IAB       Int.Atomic Energy Agency Bulletin                ZZZ
+ IAC       Proc.Indian Assoc.for Cultiv.of Sci.             IND
+ IBK       Bull.Boris Kidrich Inst.of Nucl.Sci.             YUG
+ IET       Instruments and Experimental Techniques          USA
+ IFG       Trudy Inst.Fiziki Gruzinskoi Akad.Nauk           GRG
+ IFI       Izvestiya na Fizicheskija Institut s ANEB        BUL
+ IJM       Israel Journal of Mathematics                    ISL
+ IJP       Indian Journal of Physics                        IND
+ IJP/A     Indian Journal of Physics, Part A                IND
+ IMP/E     Int. Journal of Modern Physics, Part E           USA
+ INC       Inorganic and Nuclear Chemistry Letters          UK
+ IP        Isotopenpraxis                                   GER
+ IPA       Indian Journal of Pure and Applied Physics       IND
+ IPC       Int.Journal for Radiation Physics and Chemistry  UK
+ IRE       IEE Transactions on Nuclear Science              USA
+ ISA       Indian Science Abstracts                         IND
+ ISC       Israel J.of Chemistry                            ISL
+ ISP       Israel J.of Physics                              ISL
+ IVU       Izv.Vysshikh Uchebnykh Zavedenii,Ser.Fizika      RUS
+ IV/Y      Izv.Vysshikh Uchebnykh Zavedenii,Ser.Yad.En.     RUS
+ IZA       Izv.Azerb.Akad.Nauk,Ser.Fiz.-Tekh.i Mat.         AZR
+ IZK       Izv.Kaz.Akad.Nauk,Ser.Fiz.-Mat.                  KAS
+ IZL       Izv.Latviiskoi Akad.Nauk                         LAT
+ IZV       Izv. Rossiiskoi Akademii Nauk, Ser.Fiz.          RUS
+ JAC       J.of Applied Crystallography                     DEN
+ JAE       Yadernaya Energetika                             RUS
+ JAP       Journal of Applied Physics                       USA
+ JBAS      J.of the Bangladesh Academy of Sciences          BAN
+ JBS       J.of Research of Nat.Bureau of Standards         USA
+ JCP       J.Chemical Physics                               USA
+ JE        Jaderna Energie (Prague).                        CZR
+ JEB       Jaderna Energiya, Bulgarian Acad.Sci.            BUL
+ JEL       JETP Letters                                     USA
+ JES       J.of the Electro-Chemical Society Belgium        BLG
+ JET       Soviet Physics - JETP                            USA
+ JFI       Journal of the Franklin Institute                USA
+ JGR       Journal of Geophysical Research                  USA
+ JGR/A     Journal of Geophysical Research, Part A          USA
+ JGR/B     Journal of Geophysical Research, Part B          USA
+ JGR/C     Journal of Geophysical Research, Part C          USA
+ JIN       Journal of Inorganic and Nuclear Chemistry       UK
+ JLCR      J.of Labelled Compounds and Radiopharmaceut.     UK
+ JMJ       Proc.Physico-Mathematical Society of Japan       JPN
+ JMM       Journal of Magnetism and Magnetic Materials      NED
+ JMS       J.of Mass Spectrom.and Ion Physics               NED
+ JNC       Journal of Non-Crystalline Solids                NED
+ JNE       Journal of Nuclear Energy                        UK
+ JNE/A     Reactor Science (J.Nucl.Energy, Part A)          UK
+ JNE/AB    J. Nuclear Energy, Part A+B (Reactor Sci.Techn.) UK
+ JNE/B     Reactor Technology (J.Nucl.Energy, Part B)       UK
+ JNM       Journal of Nuclear Materials                     NED
+ JP/A      Jour. of Physics, Part A (Mathematical+General)  UK
+ JP/AL     Jour.of Physics, Part A, Letters to the editor   UK
+ JP/C      Jour.of Physics, Part C (Solid State Physics)    UK
+ JP/D      Jour. of Physics, Part D (Applied Physics)       UK
+ JP/E      Jour. of Physics, Part E (Sci.Instruments)       UK
+ JP/F      Jour. of Physics, Part F (Metal Physics)         UK
+ JP/G      Jour. of Physics, Part G (Nucl.and Part.Phys.)   UK
+ JP/GL     Jour. of Physics, Part G, Letters to the editor  UK
+ JP/S      Jour. of Physics, Part G, Supplement             UK
+ JPC       J.de Chimie Physique et Physicochimie Biol.      FR
+ JPJ       Journal of the Physical Society of Japan         JPN
+ JPR       Journal de Physique                              FR
+ JPR/A     Journal de Physique, Suppl.A, Physique Appliquee FR
+ JPR/C     Journal de Physique - Colloque                   FR
+ JPR/L     Journal de Physique - Lettres                    FR
+ JPR/S     Journal de Physique, Suppl.S, Soc.Francaise      FR
+ JR        J.of Research of Nat.Inst.Stand.+Technology      USA
+ JRC       J.of Radioanalytical Chemistry                   HUN
+ JRN       J.of Radioanalytical and Nuclear Chemistry       HUN
+ JRN/L     J. Radioanalytical and Nucl. Chem., Letters      HUN
+ JSIU      J.of Sichuan Univ., Natural Science Ed.          CPR
+ KDV       Kgl.Danske Videns.Selskab.Mat.-Fys.Medd.         DEN
+ KE        Kernenergie                                      DDR
+ KFI       KFKI Kozlemenyek                                 HUN
+ KFKN      KFK-Nachrichten                                  GER
+ KNS       Journal of the Korean Nuclear Society            KOR
+ KPS       Journal of the Korean Physical Society           KOR
+ KRI       Kristallografiya                                 RUS
+ KSF       Kratkie Soobshcheniya po Fizike                  RUS
+ KT        Kerntechnik                                      GER
+ KUV       Vestnik Kiev State Univ.                         UKR
+ KXT       Kexue Tongbao (Chinese Sci.Letters)              CPR
+ LEB       Issled.po Neitr.Fiz., Trudy Fiz. Inst. Lebedeva  RUS
+ LPS       Lunar and Planetary Science Conferences          USA
+ MAB       Monatsber.d.Deutschen Akad.Wiss.Berlin           GER
+ MED       Medical Physics                                  USA
+ MET       Metrologia                                       GER
+ MFC       Matematicko-Fyzikalny Casopis                    CSR
+ MFF       Magyar Fizikai Folyoirat                         HUN
+ MSK/A     Memoirs of Faculty of Science, Kyoto Univ.,Ser.A JPN
+ MSL       Memoires de la Soc.Royale des Sci.de Liege       BLG
+ MUPB      Moscow Univ.Physics Bulletin                     USA
+ NAP       Nuclear Applications                             USA
+ NAT       Nature (London)                                  UK
+ NAW       Proc.Koninklijke Nederlandse Akad.Wetenschappen  NED
+ NC        Nuovo Cimento                                    ITY
+ NC/A      Nuovo Cimento A                                  ITY
+ NC/B      Nuovo Cimento B                                  ITY
+ NCL       Lettere al Nuovo Cimento                         ITY
+ NCR       Rivista del Nuovo Cimento                        ITY
+ NCS       Nuovo Cimento, Suppl.                            ITY
+ ND/A      Nuclear Data Tables (Nuclear Data Sect.A)        USA
+ ND/B      Nuclear Data Sheets (Nuclear Data Sect.B)        USA
+ NDF       Notas de Fisica                                  BZL
+ NE        Nuclear Engineering International                UK
+ NEN       Nuklearna Energija                               YUG
+ NF        Nuclear Fusion (IAEA)                            ZZZ
+ NIM       Nuclear Instrum.and Methods in Physics Res.      NED
+ NIM/A     Nucl. Instrum. Methods in Physics Res., Sect.A   NED
+ NIM/B     Nucl. Instrum. Methods in Physics Res., Sect.B   NED
+ NIN       Nuclear India                                    IND
+ NKA       Nukleonika                                       POL
+ NKK       Nippon Kagaku Kaishi                             JPN
+ NKN       Nukleon                                          CSR
+ NM        Nuklearmedizin                                   GER
+ NMB       Int. Journal of Nuclear Medicine and Biology     UK
+ NP        Nuclear Physics                                  NED
+ NP/A      Nuclear Physics, Section A                       NED
+ NP/B      Nuclear Physics, Section B                       NED
+ NPW       Nuclear Power                                    UK
+ NSA       Nuclear Science Abstracts                        USA
+ NSB       Nuclear Science and Applications (Dhaka)         BAN
+ NSD       Nuclear Science and Applications (Dhaka).        BAN
+ NSD/A     Nuclear Science and Applications, Series A       BAN
+ NSD/B     Nuclear Science and Applications, series B       BAN
+ NSE       Nuclear Science and Engineering                  USA
+ NSF       Nuclear Science, Taiwan                          CHF
+ NSJ       Nuclear Science Abstracts of Japan               JPN
+ NSP       Nuclear Science and Applications                 BAN
+ NSP/A     Nuclear Science and Applications A               BAN
+ NSP/B     Nuclear Science and Applications B               BAN
+ NST       J. of Nuclear Science and Technology, Tokyo      JPN
+ NSTS      J.Nucl.Science and Technol.Tokyo,Supplement      JPN
+ NT        Nuclear Technology                               USA
+ NTC       (Chinese J.of) Nuclear Techniques, Shanghai.     CPR
+ NTF       Fusion Technology                                USA
+ NTN       Nederlands Tijdschrift voor Natuurkunde          NED
+ NUC       Nucleonics                                       USA
+ NUK       Nukleonik                                        GER
+ NWS       Naturwissenschaften                              GER
+ NYA       Transactions of the New York Academy of Sciences USA
+ OAW       Oesterr.Akad.Wiss.,Math-Naturw.Kl.,Sitzungsber.  AUS
+ OAWA      Oesterr.Akad.Wiss.,Math-Naturw.Kl.,Anzeiger      AUS
+ OAWS      Oesterr.Akad.Wiss.,Math-Naturw.Kl.,Sitzungsber.  AUS
+ OE        Onde Electrique                                  FR
+ OSA       Oesterr.Akad.Wiss.,Math-Naturw.Kl.,Anzeiger      AUS
+ PA        Physics Abstracts                                UK
+ PAC       Pure and Applied Chemistry                       UK
+ PAN       Physics of Atomic Nuclei                         USA
+ PAS       Phys. Abhandlungen aus der Sowjetunion           GER
+ PB        Physikalische Blaetter                           GER
+ PC        Physics in Canada                                CAN
+ PCJ       Journal of Physical Chemistry                    USA
+ PCM       Physics of Condensed Matter                      GER
+ PCP       Proceedings of the Cambridge Philosophical Soc.  UK
+ PCS       Journal of Physics and Chemistry of Solids       UK
+ PF        Postepy Fizyki                                   POL
+ PHCL      Physicalia (Journal of the Belgian Phys.Soc.)    BLG
+ PHE       High Energy Physics and Nucl.Physics,Chinese ed. CPR
+ PHF       Physica Fennica                                  SF
+ PHN       Notes Scientifiques de l'Universite de Grenoble  FR
+ PHY       Physica (Utrecht)                                NED
+ PIA       Proc. of the Indian Acad. Sciences, Sect. A      IND
+ PJA       Proceedings of the Japan Academy                 JPN
+ PJS       Prikladnaya Yadernaya Spektroskopiya             CCP
+ PKL       Problemy Yadernoj Fiziki i Kosmicheskikh Luchej  CCP
+ PL        Physics Letters                                  NED
+ PL/A      Physics Letters, Section A                       NED
+ PL/B      Physics Letters,Section B                        NED
+ PL/C      Phys.Letters,Sect.C, Physics Reports             NED
+ PLY       Polyhedron                                       UK
+ PM        Philosophical Magazine                           UK
+ PMB       Physics in Medicine and Biology                  UK
+ PNA       Proc. of the National Academy of Sciences U.S.A. USA
+ PNE       Progress in Nuclear Energy                       UK
+ PNJ       Philippines Nuclear Journal                      PHP
+ PNP       Progress in Particle and Nuclear Physics         UK
+ PNV       Physica Norvegica                                NOR
+ PPA       Proceedings of the Pakistan Academy of Sciences  PAK
+ PPS       Proceedings of the Physical Society (London),    UK
+ PPS/A     Proc.Physical Society (London), Section A        UK
+ PQR       Quarterly Rev.Scientific Publ.Polish Acad.Sci.   POL
+ PR        Physical Review                                  USA
+ PR/A      Physical Review, Part A, General Physics         USA
+ PR/B      Physical Review, Part B, Condensed Matter        USA
+ PR/C      Physical Review, Part C, Nuclear Physics         USA
+ PR/D      Physical Review, Part D, Particles and Fields    USA
+ PRE       Proceedings of the Royal Society Edinburgh       UK
+ PRE/A     Proc. Royal Society of Edinburgh, Series A       UK
+ PRL       Physical Review Letters                          USA
+ PRM       Pramana                                          IND
+ PRS       Proc. of the Royal Society (London)              UK
+ PRS/A     Proc. Royal Society (London), Series A           UK
+ PS        Physica Scripta                                  SWD
+ PSS       Physica Status Solidi                            GER
+ PT        Physics Today                                    USA
+ PTE       Pribory i Tekhnika Eksperimenta                  CCP
+ PTP       Progress of Theoretical Physics                  JPN
+ PZ        Physikalische Zeitschrift                        DDR
+ RAK       Radiokhimiya                                     RUS
+ RBF       Brasilian Journal of Physics                     BZL
+ RCA       Radiochimica Acta                                GER
+ RE        Radiation Effects                                UK
+ REA       Atomic Energy Review, IAEA                       ZZZ
+ REF       Referativnyi Zhurnal, Fizika                     CCP
+ RFT       Reactor and Fuel-Processing Technology           USA
+ RIC       Ricerca Scientifica                              ITY
+ RIZ       Radioaktivni Izotopi i Zracenja.                 YUG
+ RJP       Romanian Journal of Physics                      RUM
+ RJP/S     Romanian Journal of Physics, Supplement          RUM
+ RMF       Revista Mexicana de Fisica                       MEX
+ RMP       Review of Modern Physics.                        USA
+ RPA       Revue de Physique Appliquee                      FR
+ RPC       RPCC Newsletter                                  USA
+ RPP       Reports on Progress in Physics                   UK
+ RPQ       Revista Portugesa de Qimica                      PRT
+ RR        Radiation Research                               USA
+ RRIP      Romanian Reports in Physics                      RUM
+ RRL       Radiochem. and Radioanal. Letters                HUN
+ RRP       Revue Roumaine de Physique                       RUM
+ RSA       Rumanian Scientific Abstracts, Natural Sciences  RUM
+ RSE       Transactions of the Royal Society Edinburgh      UK
+ RSI       Review of Scientific Instruments                 USA
+ RSR       Review of Science Research                       CZR
+ RST       Reactor Science and Technology                   UK
+ SAJ       South African Journal of Science                 SAF
+ SAP       South African Journal of Physics                 SAF
+ SCF       Studii si Cercetari de Fizica                    RUM
+ SCI       Science                                          USA
+ SCP       Scient.Papers Inst.Phys.Chem.Res.,Tokyo          JPN
+ SCS       Science in China, Series A                       CPR
+ SJA       Soviet Atomic Energy                             USA
+ SJA/S     Soviet Atomic Energy, Supplement                 USA
+ SJPN      Soviet Journal of Particles and Nuclei           USA
+ SNP       Soviet Journal of Nuclear Physics                USA
+ SPC       Soviet Physics-Cristallography                   USA
+ SPD       Soviet Physics-Doklady                           USA
+ SPL       Soviet Physics - Lebedev Inst.Report             USA
+ SPS       Soviet Physics-Solid State                       USA
+ SPT       Soviet Physics-Technical Physics                 USA
+ SPU       Soviet Physics-Uspekhi                           USA
+ SRA       Soviet Radiochemistry                            USA
+ SSC       Solid State Communications                       UK
+ TAL       Talanta                                          UK
+ TMF       Teoreticheskaya i Matematicheskaya Fizika        RUS
+ TNS       The Nucleus (Lahore)                             PAK
+ TRS/A     Philosophical Transactions, Series A             UK
+ TUG       Chalmers Tekniska Hoegskolas Handlingar          SWD
+ UFN       Uspekhi Fizicheskikh Nauk                        CCP
+ UFZ       Ukrainskii Fizichnii Zhurnal                     UKR
+ UPJ       Ukrainian Physics Journal                        USA
+ VAN       Vestnik Akademii Nauk SSSR                       RUS
+ VAT/F     Voprocy Atomnoy Nauki i Tekhniki, Seriya Fiziki  RUS
+ VAT/O     Voprocy Atomnoy Nauki i Tekhniki, Seriya Obshch. RUS
+ VAT/R     Voprocy Atomnoy Nauki i Tekhniki, Seriya Reak.   RUS
+ VBF       Vestsi Ak.Navuk, Ser.Fiz.En.                     BLR
+ VDPG      Verhandlung.Deutsch.Physik.Ges.                  GER
+ VLU       Vestnik Leningradskogo Univ., Fizika, Khimiya    RUS
+ VMU       Vestnik Moskovskogo Univ., Seriya Fiz.Astron.    RUS
+ VTYF      Voprosy Teoreticheskoy i Yadernoy Fiziki         RUS
+ WULI      Wuli (Physics)                                   CPR
+ WZD       Wiss.Zeitschr.der Univ.Dresden                   DDR
+ YF        Yadernaya Fizika                                 RUS
+ YK        Vop. At.Nauki i Tekhn.,Ser.Yadernye Konstanty    RUS
+ YTN       Yuan Tzu Neng (Atomic Energy)                    CPR
+ ZAP       Zeitschrift fuer Angewandte Physik               GER
+ ZEC       Zeitschrift fuer Elektrochemie                   GER
+ ZEP       Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt.  RUS
+ ZET       Zhurnal Eksperimental'noi i Teoret. Fiziki       RUS
+ ZK        Z.fuer Kristallographie                          GER
+ ZMM       Z.fuer Angewandte Mathematik und Mechanik        GER
+ ZMP       Zeit. fuer Angewandte Mathematik und Physik      SWT
+ ZN        Zeitschrift fuer Naturforschung                  GER
+ ZN/A      Zeitschrift fuer Naturforschung, Section A       GER
+ ZN/B      Zeitschrift fuer Naturforschung, Section B       GER
+ ZP        Zeitschrift fuer Physik                          GER
+ ZP/A      Zeitschrift fuer Physik, Section A               GER
+ ZP/B      Zeitschrift fuer Physik, Section B               GER
+ ZPC       Z. Physikalische Chemie (Leipzig)                GER
+ ZPF       Z. Physikalische Chemie (Frankfurt)              GER
+ ZTF       Zhurnal Tekhnicheskoi Fiziki                     RUS

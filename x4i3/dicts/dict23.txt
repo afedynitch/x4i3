@@ -1,0 +1,25 @@
+Title = "Analysis codes"
+NumFields = 2
+FieldBreaks = [ 11 ]
+
+4PI1A       4pi times differential cross section at one angle
+AREA        Area analysis
+CORAB       Correction on isotopic abundance
+DECAY       Decay curve analysis
+DTBAL       Detailed balance (For analysis of inverse reactions)                     
+INTAD       Integration of angular distribution
+INTED       Integration of energy distribution
+MLA         Multilevel analysis
+RFN         R-function formalism
+SHAPE       Shape analysis
+SLA         Single level analysis
+TTUNF       Calculated from thick target using unfolding proced.
+UNFLD       Unfolding procedure
+DIFFR       Difference spectrum
+LEAST       Least structure method
+PHDIF       Photon difference
+PLA         Penfold-Leiss method
+REDUC       Reduction method
+REGUL       Regularization method
+THIES       Thies's method
+WSP         Woods-Saxon potential

@@ -1,0 +1,18 @@
+Title = "Reference Types"
+NumFields = 3
+FieldBreaks = [ 1, 6 ]
+
+0 DATA Experimental data library                         
+3 DATA Evaluated data library                            
+4 DATA Experimental data library                         
+A CONF Abstract of conference                 
+B BOOK Book                                  
+C CONF Conference                            
+J JOUR Journal                               
+K JOUR Abstract of journal                    
+P PROG Progress report                       
+R REPT Report other than progress report     
+S REPT Report containing conference proc.    
+T THES Thesis or dissertation                
+W PRIV Private communication                             
+X PREP Preprint
