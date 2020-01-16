@@ -329,21 +329,26 @@ __data = '''
   92 235 U    0.720400  0.000600
   92 238 U   99.274200  0.001000
   '''
-  
-def __getAbundanceTuple( line ):
+
+
+def __getAbundanceTuple(line):
     sline = line.split()
-    Z = int( sline[0] )
-    A = int( sline[1] )
-    abund = float( sline[3] )
-    dAbund = float( sline[4] )
-    return ( ( Z, A ), ( abund, dAbund ) )
-  
-abundances = dict( [ __getAbundanceTuple( __line ) for __line in __data.split('\n')[5:-1] ] )
-  
-def getAbundance( Z, A ):
-    return abundances.get( ( Z, A ), ( 0.0, 0.0 ) )
-  
+    Z = int(sline[0])
+    A = int(sline[1])
+    abund = float(sline[3])
+    dAbund = float(sline[4])
+    return ((Z, A), (abund, dAbund))
+
+
+abundances = dict([__getAbundanceTuple(__line)
+                   for __line in __data.split('\n')[5:-1]])
+
+
+def getAbundance(Z, A):
+    return abundances.get((Z, A), (0.0, 0.0))
+
+
 if __name__ == "__main__":
-    print getAbundance(1,2)
-    print getAbundance(92,238)
-    print getAbundance(94,239)
+    print getAbundance(1, 2)
+    print getAbundance(92, 238)
+    print getAbundance(94, 239)
