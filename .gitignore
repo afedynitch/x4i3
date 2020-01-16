@@ -1,9 +1,9 @@
 # x4i3 specific
 .vscode
-data/db
-data/*.pickle
-data/*.tbl
-x4i/test/data
+x4i3/data/db
+x4i3/data/*.pickle
+x4i3/data/*.tbl
+x4i3/test/data
   
 # Byte-compiled / optimized / DLL files
 __pycache__/
