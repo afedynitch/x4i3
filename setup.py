@@ -43,6 +43,7 @@
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 import os
+import setuptools
 from distutils.core import setup
 
 setup(
@@ -60,13 +61,13 @@ setup(
     },
     package_data={
         'x4i3': [
-            os.path.join(['dicts', '*.txt']),
-            os.path.join(['data', 'README.data'])],
+            os.sep.join(['dicts', '*.txt']),
+            os.sep.join(['data', 'README.data'])],
         'x4i3.test': [
             '*.x4',
-            os.path.join(['x4i4','test', 'test_data.tar.gz'])]},
+            os.sep.join(['test_data.tar.gz'])]},
     url='https://github.com/afedynitch/x4i3/',
-    install_requires=[
+    requires=[
         'six',
         'tqdm',
         'requests',
@@ -75,7 +76,7 @@ setup(
     ],
     license=open('LICENSE.txt').read(),
     description='A "simple" python interface to the EXFOR library',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
@@ -88,6 +89,6 @@ setup(
         'Topic :: Scientific/Engineering :: Physics',
         'Intended Audience :: Science/Research',
         'Development Status :: 4 - Beta',
-        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)'
+        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
     ]
 )
