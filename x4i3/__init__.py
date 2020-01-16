@@ -76,27 +76,22 @@ __disclaimer__ = \
 # Common filenames
 indexFileName = 'index.tbl'
 dictionaryFileName = 'dictionaries.tbl'
-compressedDictName = 'x4_file_db.pickle.gz'
 doiFileName = 'doi.tbl'
 errorFileName = 'error-entries.pickle'
 coupledFileName = 'coupled-entries.pickle'
 monitoredFileName = 'monitored-entries.pickle'
 reactionCountFileName = 'reaction-count.pickle'
-dbZipFileName = 'exfor-current.zip'
 dbPath = 'db'
 
 # Paths for standard usage
 DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
-fullCompressedDictName = DATAPATH + os.sep + compressedDictName
-fullIndexFileName = DATAPATH + os.sep + indexFileName
-fullDictionaryFileName = DATAPATH + os.sep + dictionaryFileName
-fullDoiFileName = DATAPATH + os.sep + doiFileName
-fullErrorFileName = DATAPATH + os.sep + errorFileName
-fullCoupledFileName = DATAPATH + os.sep + coupledFileName
-fullMonitoredFileName = DATAPATH + os.sep + monitoredFileName
-fullReactionCountFileName = DATAPATH + os.sep + reactionCountFileName
-fullDBZipFileName = DATAPATH + os.sep + dbZipFileName
-fullDBPath = DATAPATH + os.sep + dbPath
+fullIndexFileName = os.path.join(DATAPATH, indexFileName)
+fullDoiFileName = os.path.join(DATAPATH, doiFileName)
+fullErrorFileName = os.path.join(DATAPATH, errorFileName)
+fullCoupledFileName = os.path.join(DATAPATH, coupledFileName)
+fullMonitoredFileName = os.path.join(DATAPATH, monitoredFileName)
+fullReactionCountFileName = os.path.join(DATAPATH, reactionCountFileName)
+fullDBPath = os.path.join(DATAPATH, dbPath)
 
 # Paths for unit testing only
 TESTDATAPATH = os.sep.join(__path__ + ['test', 'data'])  # Mock db for testing

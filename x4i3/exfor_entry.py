@@ -52,7 +52,7 @@ import exfor_dataset
 import exfor_exceptions
 import os
 from exfor_utilities import COMMENTSTRING
-from x4i3 import DATAPATH, fullCompressedDictName, fullDBPath
+from . import DATAPATH, fullDBPath
 
 
 def x4EntryFactory(enum, subentsList=None, rawEntry=False):
