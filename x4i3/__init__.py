@@ -86,7 +86,7 @@ dbZipFileName = 'exfor-current.zip'
 dbPath = 'db'
 
 # Paths for standard usage
-DATAPATH = os.path.abspath(os.path.join(__path__[0], '..', 'data'))
+DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
 fullCompressedDictName = DATAPATH + os.sep + compressedDictName
 fullIndexFileName = DATAPATH + os.sep + indexFileName
 fullDictionaryFileName = DATAPATH + os.sep + dictionaryFileName
