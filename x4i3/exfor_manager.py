@@ -54,7 +54,7 @@ import subprocess
 import zipfile
 import glob
 from x4i3 import DATAPATH, fullIndexFileName, fullDBPath
-from .exfor_utilities import *
+from .exfor_utilities import unique
 
 EntryLetterConversion = {
     '10': 'A',

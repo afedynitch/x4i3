@@ -349,6 +349,6 @@ def getAbundance(Z, A):
 
 
 if __name__ == "__main__":
-    print getAbundance(1, 2)
-    print getAbundance(92, 238)
-    print getAbundance(94, 239)
+    print(getAbundance(1, 2))
+    print(getAbundance(92, 238))
+    print(getAbundance(94, 239))

@@ -22,11 +22,27 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-from endl_Z import *
-from exfor_exceptions import *
-from exfor_utilities import *
-from exfor_grammers import *
-from exfor_particle import *
+from .endl_Z import endl_ZSymbol
+from .exfor_exceptions import (
+    ReactionParsingError,
+    ResidualNucleusError,
+    IsomerMathParsingError)
+from .exfor_utilities import x4Dictionaries
+from .exfor_grammers import (
+    x4process,
+    x4particle,
+    x4reaction,
+    x4compound_expression,
+    x4reactionfield,
+    x4nucleus)
+from .exfor_particle import (
+    X4Particle,
+    X4Element,
+    X4Nucleus,
+    X4Isomer,
+    X4ChemicalCompound,
+    X4VariableParticle)
+import pyparsing
 
 # ------------------------------------------------------
 # Global data
@@ -58,12 +74,12 @@ class X4Process:
             xl = self.parse(xl)
         if not isinstance(xl, pyparsing.ParseResults):
             raise TypeError(
-                "__init__ takes pyparsing.ParseResults as argument, got " + str(type(x)))
+                "__init__ takes pyparsing.ParseResults as argument, got " + str(type(xl)))
         self.parse_results = xl
         self.IgnoreIsomerMath = IgnoreIsomerMath
         self.targ = self.setParticleType(xl[0])
         self.proj = self.setParticleType(xl[1])
-        self.products = map(self.setProduct, xl[2:])
+        self.products = list(map(self.setProduct, xl[2:]))
         self.setResidual()
         self.setProcessType()
 
@@ -123,7 +139,7 @@ class X4Process:
 
     def setProduct(self, i):
         """Figures out what the product of a reaction is, whether it is one or more particles or whether it is a catch-all (e.g. Nonelastic)"""
-        if i in x4ReactionMap.keys():
+        if i in list(x4ReactionMap.keys()):
             return i
         return self.setParticleType(i)
 
@@ -146,7 +162,7 @@ class X4Process:
         Aout = 0
         for prod in self.products:
             if (isinstance(prod, X4Nucleus) or isinstance(prod, X4Particle)) and Ain > Zin:
-                Zout += prod.getZ()
+                Zout += prod.getZ() # TODO: Probably a bug 
                 Aout += prod.getA()
             else:
                 can_compute_residual = False
@@ -179,7 +195,7 @@ class X4Process:
             if i in x4ReactionMap:
                 return x4ReactionMap[i]
             return i
-        self.processType = '+'.join(map(str, map(swapit, self.products)))
+        self.processType = '+'.join(map(str, list(map(swapit, self.products))))
 
 
 class X4Measurement:
@@ -224,18 +240,18 @@ class X4Reaction(X4Process, X4Measurement):
     def getReactionType(self):
         # Try most general quantity
         result = ','.join(self.quantity)
-        if result in x4QuantityMap.keys():
+        if result in list(x4QuantityMap.keys()):
             return x4QuantityMap[result][0]
         # Didn't work, try taking list apart
         result = ''
         for i in self.quantity:
-            if i in x4ModifierMap.keys():
+            if i in list(x4ModifierMap.keys()):
                 result = x4ModifierMap[i][0] + ' '
                 break
 
         def addcomma(x): return ',' + x
-        for i in self.quantity + map(addcomma, self.quantity):
-            if i in x4QuantityMap.keys():
+        for i in self.quantity + list(map(addcomma, self.quantity)):
+            if i in list(x4QuantityMap.keys()):
                 result += x4QuantityMap[i][0]
                 break
         return result
@@ -248,7 +264,7 @@ class X4ReactionCombination(X4Measurement):
         if isinstance(x, str):
             x = self.parse(x)
         # Extract part of line contained in either a reaction or mathematical expression
-        self.data = map(self.getStrOrX4Reaction, x)
+        self.data = list(map(self.getStrOrX4Reaction, x))
         self.reaction_list = self.getReactionList()
         self.quantity = "Coupled"
         self.processType = 'Coupled'
@@ -270,7 +286,7 @@ class X4ReactionCombination(X4Measurement):
         else:
             try:
                 return X4Reaction(i)
-            except (IsomerMathParsingError) as err:
+            except (IsomerMathParsingError):
                 return X4ReactionIsomerCombination(i)
 
     def getReactionList(self):
@@ -382,38 +398,38 @@ class X4ReactionIsomerCombination(X4ReactionCombination):
 # ------------------------------------------------------
 if __name__ == "__main__":
     # ---------------------------------
-    print
-    print 10 * '*' + ' parse nuclei ' + 10 * '*'
+    print()
+    print(10 * '*' + ' parse nuclei ' + 10 * '*')
     for i in ["94-PU-240", "94-Pu-240", "94-PU-240-",
               "94-PU-240-M", "94-Pu-240-M2", "94-Pu-240-G+M"]:
         il = x4nucleus.parseString(i)
         za = X4Nucleus(il)
-        print i.ljust(20), str(il).ljust(40), repr(za).ljust(
-            20), za.endlZAStyle().ljust(20), za.exforStyle().ljust(20)
+        print(i.ljust(20), str(il).ljust(40), repr(za).ljust(
+            20), za.endlZAStyle().ljust(20), za.exforStyle().ljust(20))
     # ---------------------------------
-    print
-    print 10 * '*' + ' process particle ' + 10 * '*'
+    print()
+    print(10 * '*' + ' process particle ' + 10 * '*')
     for i in ["PI", "N", "A", "HE3"]:
         il = x4particle.parseString(i)
-        print i.ljust(10), str(il).ljust(15), X4Particle(il)
+        print(i.ljust(10), str(il).ljust(15), X4Particle(il))
     # ---------------------------------
-    print
-    print 10 * '*' + ' parse process ' + 10 * '*'
+    print()
+    print(10 * '*' + ' parse process ' + 10 * '*')
     for i in ["(N,2n)", "(N,N)94-PU-240", "(N,TOT)", "(N,F)", "(P,2p+4n)", "(94-PU-240,X)",
               '(0,F)', '(P,A+6-C-14+4N)', '(P,A+6-C-14+4N+X)']:  # has trouble with isomer targets
         ii = "94-PU-240" + i
         il = x4process.parseString(ii)
-        print ii.ljust(30), str(il).ljust(70), X4Process(il)
+        print(ii.ljust(30), str(il).ljust(70), X4Process(il))
     # ---------------------------------
-    print
-    print 10 * '*' + ' parse reactions ' + 10 * '*'
+    print()
+    print(10 * '*' + ' parse reactions ' + 10 * '*')
     for i in ["(94-PU-239(N,F),,SIG)", "(92-U-238-M(0,F),TER,AKE,LCP)",
               "(94-PU-239(N,ABS),,SIG,,MXW)", "(94-PU-239(P,A+6-C-14+4N),,SIG)", "(94-PU-240(N,0),,EN)"]:
         res = x4reaction.parseString(i)
-        print i.ljust(35), str(res).ljust(70), X4Reaction(res)
+        print(i.ljust(35), str(res).ljust(70), X4Reaction(res))
     # ---------------------------------
-    print
-    print 10 * '*' + ' parse compound ' + 10 * '*'
+    print()
+    print(10 * '*' + ' parse compound ' + 10 * '*')
     # def test( str ):
     #    global exprStack
     #    exprStack = []
@@ -424,12 +440,12 @@ if __name__ == "__main__":
     for i in [
             "(((94-PU-239(N,F),,SIG)-(92-U-238-M(0,F),TER,AKE,LCP))/(94-PU-239(N,ABS),,SIG,,MXW))"]:
         #    test(i)
-        print i, '\n', x4compound_expression.parseString(i)
+        print(i, '\n', x4compound_expression.parseString(i))
         for j in x4compound_expression.parseString(i):
-            print j
+            print(j)
     # ---------------------------------
-    print
-    print 10 * '*' + ' process compound ' + 10 * '*'
+    print()
+    print(10 * '*' + ' process compound ' + 10 * '*')
     for i in [
             "(((94-PU-239(N,F),,SIG)-(92-U-238-M(0,F),TER,AKE,LCP))/(94-PU-239(N,ABS),,SIG,,MXW))"]:
         #    test(i)
@@ -439,10 +455,10 @@ if __name__ == "__main__":
                 ans += j
             else:
                 ans += '( ' + str(X4Reaction(j)) + ' )'
-        print ans
+        print(ans)
     # ---------------------------------
-    print
-    print 10 * '*' + ' REAL TEST ' + 10 * '*'
+    print()
+    print(10 * '*' + ' REAL TEST ' + 10 * '*')
     infile = file('Testing/test_rxn_strings.txt', mode='r')
     lines = infile.readlines()
     infile.close()
@@ -462,8 +478,8 @@ if __name__ == "__main__":
 
     for line in rxnfieldlist:
         iline = rxnfieldlist.index(line)
-        print 'Reaction field #', iline, ':'
-        if iline in pointers.keys():
-            print 'has pointer ', pointers[iline]
-        print line
-        print x4reactionfield.parseString(line)
+        print('Reaction field #', iline, ':')
+        if iline in list(pointers.keys()):
+            print('has pointer ', pointers[iline])
+        print(line)
+        print(x4reactionfield.parseString(line))

@@ -23,7 +23,6 @@
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 import math
-from exfor_exceptions import *
 from functools import reduce
 
 energyUnitConversionFactors = {'GEV': 1.0e+3, 'MEV': 1.0, 'KEV': 1.0e-3,
@@ -42,17 +41,17 @@ nubarUnitConversionFactors = {'PRT/FIS': 1.0}
 energyDistUnitConversionFactors = {'1/GEV': 1.0e-3, '1/MEV': 1.0,
                                    '1/KEV': 1.0e+3, '1/EV': 1.0e+6, '1/MILLI-EV': 1.0e+9, '1/MeV': 1.0}
 
-energyUnits = energyUnitConversionFactors.keys()
-tempUnits = energyUnitConversionFactors.keys()
-crossSectionUnits = crossSectionUnitConversionFactors.keys()
-momUnits = momUnitConversionFactors.keys()
+energyUnits = list(energyUnitConversionFactors.keys())
+tempUnits = list(energyUnitConversionFactors.keys())
+crossSectionUnits = list(crossSectionUnitConversionFactors.keys())
+momUnits = list(momUnitConversionFactors.keys())
 percentUnits = ['PER-CENT']
-sqrtEnCrossSectUnits = sqrtEnCrossSectUnitConversionFactors.keys()
-noUnits = noUnitConversionFactors.keys()
-angUnits = angleUnitConversionFactors.keys()
-angDistUnits = angularDistUnitConversionFactors.keys()
-nubarUnits = nubarUnitConversionFactors.keys()
-energyDistUnits = energyDistUnitConversionFactors.keys()
+sqrtEnCrossSectUnits = list(sqrtEnCrossSectUnitConversionFactors.keys())
+noUnits = list(noUnitConversionFactors.keys())
+angUnits = list(angleUnitConversionFactors.keys())
+angDistUnits = list(angularDistUnitConversionFactors.keys())
+nubarUnits = list(nubarUnitConversionFactors.keys())
+energyDistUnits = list(energyDistUnitConversionFactors.keys())
 
 baseIncidentEnergyKeys = ['EN']
 baseOutgoingEnergyKeys = ['E']
@@ -175,8 +174,8 @@ class X4ColumnParser:
         }
         if not isinstance(units, str):
             raise TypeError
-        for unit_map in unit_map_of_maps.items():
-            if units in unit_map[1].keys():
+        for unit_map in list(unit_map_of_maps.items()):
+            if units in list(unit_map[1].keys()):
                 return unit_map[1][units], unit_map[0]
         return 1.0, units
 
@@ -292,7 +291,7 @@ class X4IndependentColumnPair(X4MissingErrorColumnPair):
                     err[i] = col[i] * err[i] / 100.0
                 else:
                     err[i] = None
-        return map(absOrNone, err)
+        return list(map(absOrNone, err))
 
 
 class X4ConstantPercentColumnPair(X4MissingErrorColumnPair):
@@ -313,7 +312,7 @@ class X4ConstantPercentColumnPair(X4MissingErrorColumnPair):
         for i in range(2, len(col)):
             if col[i] is not None:
                 col[i] = col[i] * self.percentError / 100.0
-        return map(absOrNone, col)
+        return list(map(absOrNone, col))
 
 
 class X4HighLowColumnPair(X4IndependentColumnPair):
@@ -391,7 +390,7 @@ class X4HighLowColumnPair(X4IndependentColumnPair):
                 ans.append(None)
             else:
                 ans.append(0.5 * abs(x1 - x2))
-        return map(absOrNone, ans)
+        return list(map(absOrNone, ans))
 
 
 class X4HighMidLowColumnPair(X4IndependentColumnPair):
@@ -490,7 +489,7 @@ class X4HighMidLowColumnPair(X4IndependentColumnPair):
                 ans.append(None)
             else:
                 ans.append(abs(0.5 * ((x1 - x2) - (x1 + x3))))
-        return map(absOrNone, ans)
+        return list(map(absOrNone, ans))
 
 
 class X4AddErrorBarsColumnPair(X4HighMidLowColumnPair):
@@ -545,7 +544,7 @@ class X4AddErrorBarsColumnPair(X4HighMidLowColumnPair):
                 if x3 is None:
                     x3 = 0.0
                 ans.append(math.sqrt(x2 * x2 + x3 * x3))
-        return map(absOrNone, ans)
+        return list(map(absOrNone, ans))
 
 
 class X4BarnsSqrtEColumnPair(X4IndependentColumnPair):
@@ -615,7 +614,7 @@ class X4BarnsSqrtEColumnPair(X4IndependentColumnPair):
                 ans.append(None)
             else:
                 ans.append(x3 / math.sqrt(x1 * 1e6))
-        return map(absOrNone, ans)
+        return list(map(absOrNone, ans))
 
 
 class X4CosineAngleColumnPair(X4IndependentColumnPair):

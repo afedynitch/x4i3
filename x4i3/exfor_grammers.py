@@ -28,8 +28,9 @@ exfor_grammers module - Collection of pyparsing grammers for parsing Exfor objec
 """
 __version__ = "0.0.1"
 __author__ = "David Brown <brown170@llnl.gov>"
-
-from pyparsing import *
+from pyparsing import (Literal, Optional, Word, Combine, Group,
+    delimitedList, alphanums, ZeroOrMore, Forward, restOfLine,
+    OneOrMore, nestedExpr, alphas, commaSeparatedList)
 from .exfor_dicts import X4DictionaryServer
 
 # ------------------------------------------------------
@@ -67,14 +68,14 @@ altaddop = plus | minus
 x4isomer_modifier = Word('mMgGTL', max=1) + Optional(Word(nums))
 
 x4basicparticle = Optional(Literal(
-    'X')) + eval('^'.join(['Literal( \"' + x + '\" )' for x in X4DictionaryServer()["Particles"].keys()]))
+    'X')) + eval('^'.join(['Literal( \"' + x + '\" )' for x in list(X4DictionaryServer()["Particles"].keys())]))
 x4particle = Combine(Word(alphas) + Optional(Word(nums)))
 x4element = Word(capsStar, alphas, min=1, max=2) ^ Literal(
     "PI") ^ Literal("K0") ^ Literal("PIM") ^ Literal("PIP") ^ Literal("P0")
 x4nucleus = Word(nums) + dash + x4element + dash + Word(nums) + \
     ZeroOrMore(mathop + x4isomer_modifier)
 x4chemical_compound = eval(
-    '^'.join(['Literal( \"' + x + '\" )' for x in X4DictionaryServer()["Compounds"].keys()]))
+    '^'.join(['Literal( \"' + x + '\" )' for x in list(X4DictionaryServer()["Compounds"].keys())]))
 
 x4projectile = Group(x4nucleus) ^ x4particle ^ Literal('0')
 x4target = Group(x4chemical_compound | x4nucleus) ^ Literal(

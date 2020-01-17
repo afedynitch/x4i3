@@ -22,11 +22,15 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-from exfor_utilities import unique, COMMENTSTRING
-from exfor_exceptions import *
-from exfor_section import X4BibMetaData
-from exfor_column_parsing import *
-from exfor_reactions import X4ReactionCombination
+from .exfor_utilities import unique, COMMENTSTRING
+from .exfor_exceptions import NoValuesGivenError, NoUncertaintyGivenError
+from .exfor_section import X4BibMetaData
+from .exfor_column_parsing import (condenseColumn,
+    incidentEnergyParserList, csDataParserList,
+    nubarParserList, spectrumArgumentParserList,
+    angleParserList, angDistParserList, outgoingEnergyParserList,
+    energyDistParserList)
+from .exfor_reactions import X4ReactionCombination
 import copy
 from functools import reduce
 
@@ -73,8 +77,7 @@ class X4DataSet(X4BibMetaData):
             if d is None:
                 continue
             other_pointers_columns = []
-            for p in filter(lambda x: x != pointer, d.pointers.keys()
-                            ): other_pointers_columns += d.pointers[p]
+            for p in [x for x in list(d.pointers.keys()) if x != pointer]: other_pointers_columns += d.pointers[p]
             for icol in range(d.numcols):
                 if d.pointers == {} or not icol in other_pointers_columns:
                     column_filter.append(True)
@@ -256,7 +259,7 @@ class X4DataSet(X4BibMetaData):
             if self.monitor != other.monitor:
                 why += "Monitors don't match: " + \
                     str(self.monitor) + ", " + str(other.monitor)
-            print "Can't add datasets because " + why
+            print("Can't add datasets because " + why)
         return
 
     def csv(self, f):

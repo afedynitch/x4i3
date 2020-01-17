@@ -26,8 +26,8 @@
 """
 exfor_utils module - Classes, Methods and Utility functions to aid in parsing Exfor formatted data
 """
-from exfor_dicts import *
-from exfor_exceptions import BrokenNumberError
+from .exfor_dicts import X4DictionaryServer
+from .exfor_exceptions import BrokenNumberError
 
 # ------------------------------------------------------
 # Common data
@@ -42,7 +42,7 @@ VERBOSE = False
 
 # ---------- formatExceptionInfo ----------
 def formatExceptionInfo(maxTBlevel=5):
-    import traceback
+    import traceback, sys
     cla, exc, trbk = sys.exc_info()
     excName = cla.__name__
     try:
@@ -71,8 +71,8 @@ def timeit(method):
         result = method(*args, **kw)
         te = time.time()
 
-        print '%r (%r, %r) %2.2f sec' % \
-              (method.__name__, args, kw, te - ts)
+        print('%r (%r, %r) %2.2f sec' % \
+              (method.__name__, args, kw, te - ts))
         return result
     return timed
 
@@ -183,6 +183,6 @@ def latex_format_table(cols, table): pass
 
 
 def prettyprint_table(colLabels, table, colwidth=20):
-    print ' '.join([str(x).ljust(colwidth) for x in colLabels])
+    print(' '.join([str(x).ljust(colwidth) for x in colLabels]))
     for row in table:
-        print ' '.join([str(x).ljust(colwidth) for x in row])
+        print(' '.join([str(x).ljust(colwidth) for x in row]))

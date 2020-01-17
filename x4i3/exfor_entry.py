@@ -47,11 +47,11 @@
 """
 exfor_entry module 
 """
-import exfor_subentry
-import exfor_dataset
-import exfor_exceptions
+from . import exfor_subentry
+from . import exfor_dataset
+from . import exfor_exceptions
 import os
-from exfor_utilities import COMMENTSTRING
+from .exfor_utilities import COMMENTSTRING
 from . import DATAPATH, fullDBPath
 
 
@@ -151,7 +151,7 @@ class X4Entry(dict):
             try:
                 subent = exfor_subentry.X4SubEntry(x)
                 self[subent.accnum] = subent
-            except IndexError, err:
+            except IndexError as err:
                 raise IndexError(
                     str(err)+' while processing "'+str(x[:22])+'"')
 
@@ -221,20 +221,20 @@ class X4Entry(dict):
         main_reactions = {}
         main_monitors = {}
         main_common = None
-        if self[1].has_key('BIB'):
+        if 'BIB' in self[1]:
             main_meta = self[1]['BIB'].meta(subent=self.accnum + '001')
-            if self[1]['BIB'].has_key('REACTION'):
+            if 'REACTION' in self[1]['BIB']:
                 main_reactions = self[1]['BIB']['REACTION'].reactions
-            if self[1]['BIB'].has_key('MONITOR'):
+            if 'MONITOR' in self[1]['BIB']:
                 main_monitors = self[1]['BIB']['MONITOR'].reactions
-        if self[1].has_key('COMMON'):
+        if 'COMMON' in self[1]:
             main_common = self[1]['COMMON']
 
         # Loop through the subents in self & make (the correct) X4DataSets for each dataset found
-        for subent in self.values():
+        for subent in list(self.values()):
 
             # Skip processing if there is no data section in subent
-            if not subent.has_key('DATA'):
+            if 'DATA' not in subent:
                 continue
 
             # Get the bibliography & common data for this subentry
@@ -242,13 +242,13 @@ class X4Entry(dict):
             subent_reactions = {}
             subent_monitors = {}
             subent_common = None
-            if subent.has_key('BIB'):
+            if 'BIB' in subent:
                 subent_meta = subent['BIB'].meta(subent=subent.accnum)
-                if subent['BIB'].has_key('REACTION'):
+                if 'REACTION' in subent['BIB']:
                     subent_reactions = subent['BIB']['REACTION'].reactions
-                if subent['BIB'].has_key('MONITOR'):
+                if 'MONITOR' in subent['BIB']:
                     subent_monitors = subent['BIB']['MONITOR'].reactions
-            if subent.has_key('COMMON'):
+            if 'COMMON' in subent:
                 subent_common = subent['COMMON']
             meta_list = [main_meta, subent_meta]
             common_list = [main_common, subent_common]
@@ -258,16 +258,16 @@ class X4Entry(dict):
             for p in main_reactions:
                 k = (self.accnum, subent.accnum, p)
                 try:
-                    if main_monitors.has_key(p):
+                    if p in main_monitors:
                         datasets[k] = exfor_dataset.X4DataSetFactory(
                             quant=main_reactions[p][0].quantity, meta=meta_list, common=common_list, reaction=main_reactions[p], monitor=main_monitors[p], data=subent['DATA'], pointer=p)
                     else:
                         datasets[k] = exfor_dataset.X4DataSetFactory(
                             quant=main_reactions[p][0].quantity, meta=meta_list, common=common_list, reaction=main_reactions[p], data=subent['DATA'], pointer=p)
-                except NotImplementedError, err:
+                except NotImplementedError as err:
                     self.errors[k] = 'Encountered NotImplementedError: ' + \
                         str(err)
-                except IndexError, err:
+                except IndexError as err:
                     self.errors[k] = 'Encountered IndexError:' + str(err)
 
             # Build the datasets corresponding to this subentry's reaction list; this handles the case where all the
@@ -275,16 +275,16 @@ class X4Entry(dict):
             for p in subent_reactions:
                 k = (self.accnum, subent.accnum, p)
                 try:
-                    if subent_monitors.has_key(p):
+                    if p in subent_monitors:
                         datasets[k] = exfor_dataset.X4DataSetFactory(
                             quant=subent_reactions[p][0].quantity, meta=meta_list, common=common_list, reaction=subent_reactions[p], monitor=subent_monitors[p], data=subent['DATA'], pointer=p)
                     else:
                         datasets[k] = exfor_dataset.X4DataSetFactory(
                             quant=subent_reactions[p][0].quantity, meta=meta_list, common=common_list, reaction=subent_reactions[p], data=subent['DATA'], pointer=p)
-                except NotImplementedError, err:
+                except NotImplementedError as err:
                     self.errors[k] = 'Encountered NotImplementedError: ' + \
                         str(err)
-                except IndexError, err:
+                except IndexError as err:
                     self.errors[k] = 'Encountered IndexError:' + str(err)
         return datasets
 
@@ -294,11 +294,11 @@ class X4Entry(dict):
             try:
                 datasets[k] = datasets[k].getSimplified(
                     makeAllColumns=makeAllColumns)
-            except NotImplementedError, err:
+            except NotImplementedError as err:
                 self.errors[k] = 'Encountered NotImplementedError: ' + str(err)
-            except exfor_exceptions.NoValuesGivenError, err:
+            except exfor_exceptions.NoValuesGivenError as err:
                 self.errors[k] = 'Encountered NoValuesGivenError: ' + str(err)
-            except exfor_exceptions.NoUncertaintyGivenError, err:
+            except exfor_exceptions.NoUncertaintyGivenError as err:
                 # typicalNoErrorIndicators = [\
                     # 'no information on uncertainties',\
                     # 'errors are not specified',\
@@ -324,21 +324,21 @@ class X4Entry(dict):
                 # else : raise NodyInCrossSectionError(self.accnum)
                 self.errors[k] = 'Encountered NoUncertaintyGivenError: ' + \
                     str(err)
-            except exfor_exceptions.BrokenNumberError, err:
+            except exfor_exceptions.BrokenNumberError as err:
                 self.errors[k] = 'Encountered BrokenNumberError:' + str(err)
-            except TypeError, err:
+            except TypeError as err:
                 self.errors[k] = 'Encountered TypeError:' + str(err)
-            except IndexError, err:
+            except IndexError as err:
                 self.errors[k] = 'Encountered IndexError:' + str(err)
         return datasets
 
     def sortedKeys(self):
-        k = self.keys()
+        k = list(self.keys())
         k.sort()
         return k
 
     def deleted(self):
-        if self[1]['BIB'].has_key('HISTORY'):
+        if 'HISTORY' in self[1]['BIB']:
             return 'ENTRY DELETED' in self[1]['BIB']['HISTORY']
         return False
 

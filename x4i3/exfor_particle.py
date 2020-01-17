@@ -32,9 +32,9 @@ __author__ = "David Brown <brown170@llnl.gov>"
 
 import sys
 
-from exfor_exceptions import ParticleParsingError, IsomerMathParsingError
-from exfor_grammers import x4particle, x4nucleus, x4chemical_compound
-from exfor_dicts import X4DictionaryServer
+from .exfor_exceptions import ParticleParsingError, IsomerMathParsingError
+from .exfor_grammers import x4particle, x4nucleus, x4chemical_compound
+from .exfor_dicts import X4DictionaryServer
 import pyparsing
 
 # ------------------------------------------------------
@@ -150,7 +150,7 @@ class X4ParticleBase:
             l = self.parse_results
         else:
             l = self.parse_results.asList()
-        return map(lambda x: x.upper(), l)
+        return [x.upper() for x in l]
 
     def __str__(self):
         """Pretty string for print statements"""
@@ -187,7 +187,7 @@ class X4Particle(X4ParticleBase):
             elif isinstance(x, pyparsing.ParseResults):
                 X4ParticleBase.__init__(self, 'N')
                 self.parse_results = x
-                x = map(lambda y: y.lower(), x.asList())
+                x = [y.lower() for y in x.asList()]
             else:
                 raise TypeError(str(type(x)) +
                                 ' is not a valid type for X4particle.__init__, x = ' +
@@ -393,7 +393,7 @@ class X4ChemicalCompound(X4ParticleBase):
         return -3000
 
     def asList(self):
-        return map(lambda x: x.upper(), list(self.parse_results))
+        return [x.upper() for x in list(self.parse_results)]
 
     def endlZAStyle(self):
         raise NotImplementedError("ENDL doesn't do chemical compounds")

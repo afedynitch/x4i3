@@ -22,12 +22,12 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-import exfor_utilities
-import exfor_reactions
-import exfor_dicts
-import exfor_grammers
-import exfor_reference
-import exfor_exceptions
+from . import exfor_utilities
+from . import exfor_reactions
+from . import exfor_dicts
+from . import exfor_grammers
+from . import exfor_reference
+from . import exfor_exceptions
 import pyparsing
 import copy
 
@@ -83,7 +83,7 @@ class X4SubField(list):
 
     def __str__(self):
         '''Pretty version of subfield (if one exists)'''
-        return ' '.join(map(lambda x: x.strip(), self))
+        return ' '.join([x.strip() for x in self])
 
     def __repr__(self):
         '''exfor formatting back'''
@@ -106,7 +106,7 @@ class X4PlainField(dict):
             if not pointer in self:
                 self[pointer] = X4SubField()
             self[pointer].append(line[11:66].rstrip())
-        self.sorted_keys = self.keys()
+        self.sorted_keys = list(self.keys())
         self.sorted_keys.sort()
 
     def total_len(self): return sum([len(self[p]) for p in self])
@@ -152,7 +152,7 @@ class X4ReactionField(X4PlainField):
                 if i in x:
                     return exfor_reactions.X4ReactionCombination(x)
             return exfor_reactions.X4Reaction(x[0])
-        except (exfor_exceptions.IsomerMathParsingError) as err:
+        except (exfor_exceptions.IsomerMathParsingError):
             return exfor_reactions.X4ReactionIsomerCombination(x)
 
     def getEquation(self, key, schematic=False):
@@ -342,7 +342,7 @@ class X4ReferenceField(X4PlainField):
                 for xx in refs:
                     if hastautology and '=' in xx:
                         try:
-                            xref = exfor_reference.x4refcodetautology.parseString(
+                            xref = exfor_grammers.x4refcodetautology.parseString(
                                 xx).asList()
                         except pyparsing.ParseException as err:
                             raise exfor_exceptions.ReferenceParsingError(
@@ -358,7 +358,7 @@ class X4ReferenceField(X4PlainField):
                                 raise exfor_exceptions.ReferenceParsingError(
                                     'Can not parse reference "' + xx + '",\n    got error "' + str(err) + '"\n   ')
                     else:
-                        xref = exfor_reference.x4refcode.parseString(xx).asList()
+                        xref = exfor_grammers.x4refcode.parseString(xx).asList()
                         refcomment = xref[-1]
                         try:
                             self.refs[p].append(
@@ -485,7 +485,7 @@ class X4InstituteField(X4PlainField):
             for i in il:
                 tok = i[0][0]
                 comment = (' '.join(i[1:])).title()
-                if tok[-3:] in self.exfor_institutes_dictionary.keys():
+                if tok[-3:] in list(self.exfor_institutes_dictionary.keys()):
                     self.institutes.append(
                         (tok, self.exfor_institutes_dictionary[tok[-3:]][0], comment))
                 else:

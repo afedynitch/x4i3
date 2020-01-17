@@ -25,9 +25,9 @@
 import string
 import os
 import copy
-from exfor_utilities import *
-from exfor_grammers import *
-from exfor_exceptions import ReferenceParsingError
+import pyparsing
+from .exfor_utilities import x4Dictionaries
+from .exfor_exceptions import ReferenceParsingError
 
 
 def parseX4Year(date):
@@ -73,9 +73,9 @@ class X4ReferenceCode:
         if not str:
             raise TypeError("X4ReferenceCode.__init__ takes a string as an argument")
         try:
-            self.refcode = commaSeparatedList.parseString(x).asList()
+            self.refcode = pyparsing.commaSeparatedList.parseString(x).asList()
         except pyparsing.ParseException as err:
-            raise exfor_exceptions.ReferenceParsingError(
+            raise ReferenceParsingError(
                 'Can not parse reference code "' + x + '",\n    got error "' + str(err) + '"\n   ')
         self.reftype = self.refcode[0]
         self.name = self.refcode[1]

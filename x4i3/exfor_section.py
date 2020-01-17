@@ -27,9 +27,9 @@
 exfor_sections module -
 """
 
-import exfor_utilities
-import exfor_field
-import exfor_reactions
+from . import exfor_utilities
+from . import exfor_field
+from . import exfor_reactions
 
 
 class X4Section:
@@ -129,7 +129,7 @@ class X4BibMetaData:
             bib = kw['bib']
             if not isinstance(bib, X4BibSection):
                 raise TypeError(
-                    "X4BibMetaData.__init__ takes an X4BibSection as the argument, got an " + str(type(entry)))
+                    "X4BibMetaData.__init__ takes an X4BibSection as the argument, got an " + str(type(bib)))
             try:
                 self.author = bib['AUTHOR'].authors
             except KeyError:
@@ -225,17 +225,17 @@ class X4DataSection(X4Section):
             if len(unprocessed_section) == 2 + (self.numrows) * self.LPR:
                 self.numrows -= 2
                 if self.VERBOSELEVEL > 1:
-                    print 'Column headings were included in datafield size count'
+                    print('Column headings were included in datafield size count')
             elif len(unprocessed_section) == 2 + self.numrows:
                 self.numrows = self.numrows / self.LPR - 2
                 if self.VERBOSELEVEL > 1:
-                    print 'Datafield size count was set to number of lines in section'
+                    print('Datafield size count was set to number of lines in section')
             else:
-                print "Additional debugging information:"
-                print "   Num. cols.:", self.numcols
-                print "   Num. rows:", self.numrows
-                print "   Lines in each logical row:", self.LPR
-                print "   The unprocess section:\n" + '\n'.join(unprocessed_section)
+                print("Additional debugging information:")
+                print("   Num. cols.:", self.numcols)
+                print("   Num. rows:", self.numrows)
+                print("   Lines in each logical row:", self.LPR)
+                print("   The unprocess section:\n" + '\n'.join(unprocessed_section))
                 raise IndexError('Number of lines in x4DataSection incompatible with information in section tag: ' +
                                  str(len(unprocessed_section)) +
                                  ' vs. ' +
@@ -248,7 +248,6 @@ class X4DataSection(X4Section):
         self.raw_data = []
         self.data = []
         # collapse multi-line rows
-        iline = 0
         collapsed_section = []
         for i in range(1, len(unprocessed_section) - 1,
                        self.LPR):  # skip begin & end of section tags
@@ -274,7 +273,7 @@ class X4DataSection(X4Section):
                 field = collapsed_section[2 + i][11 * j: 11 * (j + 1)].strip()
                 row.append(field)
             self.raw_data.append(row)
-            self.data.append(map(exfor_utilities.parseFORTRANNumber, row))
+            self.data.append(list(map(exfor_utilities.parseFORTRANNumber, row)))
 
     def __str__(self):
         result = self.tag.ljust(11) + str(self.numcols).rjust(11) + \

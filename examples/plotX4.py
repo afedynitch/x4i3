@@ -51,15 +51,15 @@ if __name__ == "__main__":
     fileList = []
     i = 0
     subents = db.retrieve(target=isotope, reaction=reaction, quantity=observable)
-    print subents
-    print 'Retrieving entries:'
+    print(subents)
+    print('Retrieving entries:')
     for e in subents:
-        print '    Entry:', e
+        print('    Entry:', e)
         if e == '22208':
             continue
         ds = exfor_entry.X4Entry(subents[e]).getSimplifiedDataSets(makeAllColumns=True)
         for d in ds:
-            print '       ', d
+            print('       ', d)
             result = str(ds[d])
             fileList.append('junk' + str(i) + '.dat')
             open(fileList[-1], mode='w').writelines(result)
@@ -70,6 +70,6 @@ if __name__ == "__main__":
         + outfile + ' -hdevice ' + outtype + ' '\
         + ' '.join(['-settype xydxdy ' + fname for fname in fileList]) \
         + ' -saveall ' + outfile.replace(outtype.lower(), 'agr')
-    print command
+    print(command)
     os.system(command)
     os.system('rm -f ' + ' '.join(fileList))

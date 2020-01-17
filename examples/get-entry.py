@@ -153,7 +153,7 @@ if __name__ == "__main__":
             else:
                 if args.subent not in searchResult[theEntry]:
                     raise KeyError("SUBENT " + args.subent + " not found!")
-                for k in searchResult[theEntry].keys():
+                for k in list(searchResult[theEntry].keys()):
                     if k.endswith('001') or k == args.subent:
                         continue
 #                    print 'removing',k
@@ -161,9 +161,9 @@ if __name__ == "__main__":
 
     # Just print out the SUBENT keys
     if args.ent is not None:
-        print "This ENTRY:      ", searchResult.keys()[0]
-        for i in searchResult[searchResult.keys()[0]]:
-            print "   ", i.split('\n')[0][0:22]
+        print("This ENTRY:      ", list(searchResult.keys())[0])
+        for i in searchResult[list(searchResult.keys())[0]]:
+            print("   ", i.split('\n')[0][0:22])
 
     # Examine a SUBENT
     if args.subent is not None:
@@ -171,28 +171,28 @@ if __name__ == "__main__":
         keys = sorted(searchResult.keys())
         if not args.nada:
             if args.raw:
-                print '\n\n'
+                print('\n\n')
                 for k in keys:
-                    print '\n'.join(searchResult[k])
+                    print('\n'.join(searchResult[k]))
             if args.rawdoc:
-                print '\n\n'
-                print repr(searchResult[keys[0]][1])
+                print('\n\n')
+                print(repr(searchResult[keys[0]][1]))
             if args.doc:
-                print '\n\n'
-                print searchResult[keys[0]][1]
+                print('\n\n')
+                print(searchResult[keys[0]][1])
             if args.rawdata:
                 if args.subent.endswith('001'):
                     raise ValueError(
                         "Documentation SUBENTs (those ending in '001') do not have DATA sections")
-                print 10 * '-', 'Raw Data', 10 * '-'
-                print searchResult[keys[-1]][args.subent]['DATA']
-                print 10 * '-', 'Errors', 10 * '-'
-                print searchResult[keys[-1]].errors
+                print(10 * '-', 'Raw Data', 10 * '-')
+                print(searchResult[keys[-1]][args.subent]['DATA'])
+                print(10 * '-', 'Errors', 10 * '-')
+                print(searchResult[keys[-1]].errors)
             if args.data:
                 if args.subent.endswith('001'):
                     raise ValueError(
                         "Documentation SUBENTs (those ending in '001') do not have DATA sections")
-                print 10 * '-', 'Data', 10 * '-'
-                print searchResult[keys[-1]].getDataSets()
-                print 10 * '-', 'Errors', 10 * '-'
-                print searchResult[keys[-1]].errors
+                print(10 * '-', 'Data', 10 * '-')
+                print(searchResult[keys[-1]].getDataSets())
+                print(10 * '-', 'Errors', 10 * '-')
+                print(searchResult[keys[-1]].errors)

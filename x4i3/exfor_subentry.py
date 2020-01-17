@@ -26,7 +26,7 @@
 """
 exfor_subentry module -
 """
-import exfor_section
+from . import exfor_section
 
 
 def extractX4SubEntryIndex(subentry):
@@ -77,7 +77,7 @@ class X4SubEntry(dict):
             else:
                 raise KeyError(tag + " is not a valid EXFOR Section name")
         self.hascommon = 'COMMON' in self and self['COMMON'] is not None
-        self.sorted_keys = self.keys()
+        self.sorted_keys = list(self.keys())
         self.sorted_keys.sort()
 
     def __repr__(self):

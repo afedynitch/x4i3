@@ -41,7 +41,7 @@ def getDictionary(filename, VERBOSELEVEL=0):
         f = open(filename)
     except IOError:
         if VERBOSELEVEL > 0:
-            print "Dictionary file " + filename + " not found"
+            print("Dictionary file " + filename + " not found")
         return None
 
     # Initialize variables (they should get overwritten in the exec()
@@ -55,7 +55,7 @@ def getDictionary(filename, VERBOSELEVEL=0):
     exec(f.readline().strip())
     exec(f.readline().strip())
     if VERBOSELEVEL > 1:
-        print "*** " + Title + " ***"
+        print("*** " + Title + " ***")
     FieldBreaks.insert(0, 0)
 
     # rest of file is dictionary
@@ -190,7 +190,7 @@ class X4DictionaryServer:
         @return: map of dictionaries, key is dictionary name
         """
         if VERBOSELEVEL > 1:
-            print 'Loading EXFOR Dictionaries:'
+            print('Loading EXFOR Dictionaries:')
         dictmap = {}
         for i in self.DictionaryNames:
             tmp = self.getDictionary(i[0], VERBOSELEVEL=VERBOSELEVEL)
