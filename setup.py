@@ -53,16 +53,16 @@ setup(
     author_email='dbrown@bnl.gov',
     maintainer='Anatoli Fedynitch',
     maintainer_email='afedynitch@gmail.com',
-    packages=['x4i3', 'x4i3.test'],
-    package_dir={
-        'x4i3': 'x4i3',
-        'x4i3.test': 'x4i3/test',
-    },
+    packages=['x4i3', 'x4i3.tests'],
+    # package_dir={
+    #     'x4i3': 'x4i3',
+    #     'x4i3.tests': 'x4i3/tests',
+    # },
     package_data={
         'x4i3': [
             os.sep.join(['dicts', '*.txt']),
             os.sep.join(['data', 'README.data'])],
-        'x4i3.test': [
+        'x4i3.tests': [
             '*.x4',
             os.sep.join(['test_data.tar.gz'])]},
     url='https://github.com/afedynitch/x4i3/',
@@ -72,6 +72,7 @@ setup(
         'requests',
         'pyparsing',
     ],
+    extras_require={"tests": ["pytest"]},
     license=open('LICENSE.txt').read(),
     description='A "simple" python interface to the EXFOR library',
     long_description=open('README.md').read(),
