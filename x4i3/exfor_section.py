@@ -220,14 +220,14 @@ class X4DataSection(X4Section):
         self.numrows = int(firstline[2])
         self.VERBOSELEVEL = 0
         # number lines in a DATA block per row of real data!
-        self.LPR = (self.numcols - 1) / 6 + 1
+        self.LPR = (self.numcols - 1) // 6 + 1
         if len(unprocessed_section) != 2 + (self.numrows + 2) * self.LPR:
             if len(unprocessed_section) == 2 + (self.numrows) * self.LPR:
                 self.numrows -= 2
                 if self.VERBOSELEVEL > 1:
                     print('Column headings were included in datafield size count')
             elif len(unprocessed_section) == 2 + self.numrows:
-                self.numrows = self.numrows / self.LPR - 2
+                self.numrows = self.numrows // self.LPR - 2
                 if self.VERBOSELEVEL > 1:
                     print('Datafield size count was set to number of lines in section')
             else:

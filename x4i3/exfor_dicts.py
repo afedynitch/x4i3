@@ -50,10 +50,13 @@ def getDictionary(filename, VERBOSELEVEL=0):
     FieldBreaks = []
     NumFields = 0
 
-    # first 3 lines contain important header information
-    exec(f.readline().strip())
-    exec(f.readline().strip())
-    exec(f.readline().strip())
+    # Replace the exec statements from x4i with string ops
+    # since exec behavior is inconsistent between Python 2 and 3
+    Title = f.readline().split('=')[-1].strip()
+    NumFields = int(f.readline().split('=')[-1].strip())
+    s = f.readline().split('=')[-1].strip().replace('[','').replace(']','').split(',')
+    FieldBreaks = [int(c) for c in s]
+    
     if VERBOSELEVEL > 1:
         print("*** " + Title + " ***")
     FieldBreaks.insert(0, 0)
