@@ -1,3 +1,24 @@
+# Modifications to this file have this license
+# Copyright (c) 2020, Anatoli Fedynitch <afedynitch@gmail.com>
+
+# This file is part of the fork (x4i3) of the EXFOR Interface (x4i)
+
+# Please read the LICENCE.txt included in this distribution including "Our [LLNL's]
+# Notice and the GNU General Public License", which applies also to this fork.
+
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License (as published by the
+# Free Software Foundation) version 2, dated June 1991.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the IMPLIED WARRANTY OF
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# terms and conditions of the GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
 # Copyright (c) 2011, Lawrence Livermore National Security, LLC. Produced at
 # the Lawrence Livermore National Laboratory. Written by David A. Brown
 # <brown170@llnl.gov>.
@@ -296,7 +317,7 @@ class X4DBManagerPlainFS(X4DBManager):
         return result
 
 
-class X4DBManagerCompressedDictionary(X4DBManagerPlainFS):
+class X4DBManagerMemoryCached(X4DBManagerPlainFS):
     """This derived manager class uses the compressed dictionary instead of the
     plain file system for access to entry x4 files."""
 
