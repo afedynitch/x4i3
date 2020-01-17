@@ -53,11 +53,10 @@ setup(
     author_email='dbrown@bnl.gov',
     maintainer='Anatoli Fedynitch',
     maintainer_email='afedynitch@gmail.com',
-    packages=['x4i3', 'x4i3.test', 'x4i3.graphs'],
+    packages=['x4i3', 'x4i3.test'],
     package_dir={
         'x4i3': 'x4i3',
         'x4i3.test': 'x4i3/test',
-        'x4i3.graphs':'x4i3/graphs'
     },
     package_data={
         'x4i3': [
@@ -72,7 +71,6 @@ setup(
         'tqdm',
         'requests',
         'pyparsing',
-        'networkx'
     ],
     license=open('LICENSE.txt').read(),
     description='A "simple" python interface to the EXFOR library',
