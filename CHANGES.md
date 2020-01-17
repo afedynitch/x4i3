@@ -15,6 +15,8 @@
 - moved test directory to project root
 - removed graph tools from distribution and moved into [x4i3_tools](https://github.com/afedynitch/x4i3_tools) (because I don't yet understand what they do)
 - check if all data files are available
+- removed "quick access" functions from __init__.py of x4i3 since this is bad practice and can result in circular dependencies
+- added get-entry.py to examples but not debugged
 
 ### x4i - 1.0.3, 15/02/2011
 - Original release of x4i by David A. Brown (LLNL)
