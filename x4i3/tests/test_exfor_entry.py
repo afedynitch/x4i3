@@ -172,7 +172,7 @@ class TestX4Entry(unittest.TestCase):
 
     def test_getDataSets(self):
         ds = exfor_entry.X4Entry(self.entry).getDataSets()
-        self.assertEqual(dict([(k, v.legend()) for (k, v) in ds.iteritems()]), {
+        self.assertEqual(dict([(k, v.legend()) for (k, v) in ds.items()]), {
                          ('E0783', 'E0783002', ' '): '(1983) K.Hatanaka, N.Matsuoka, et al.'})
         ds[('E0783', 'E0783002', ' ')].csv('junk3.csv')
         self.assertEqual(open('junk3.csv').readlines(),
@@ -212,7 +212,7 @@ class TestX4Entry(unittest.TestCase):
         ds = exfor_entry.X4Entry(self.entry_2).getDataSets()
         self.assertEqual(dict([(k,
                                 v.legend()) for (k,
-                                                 v) in ds.iteritems()]),
+                                                 v) in ds.items()]),
                          {('12898',
                            '12898003',
                            '2'): '(1984) D.L.Smith, J.W.Meadows, et al.',
@@ -266,7 +266,7 @@ class TestX4Entry(unittest.TestCase):
         ds = exfor_entry.X4Entry(self.entry_2).getSimplifiedDataSets()
         self.assertEqual(dict([(k,
                                 v.legend()) for (k,
-                                                 v) in ds.iteritems()]),
+                                                 v) in ds.items()]),
                          {('12898',
                            '12898003',
                            '2'): '(1984) D.L.Smith, J.W.Meadows, et al.',
@@ -314,8 +314,8 @@ class TestX4Entry(unittest.TestCase):
         self.assertEqual(len(left), len(right))
         self.assertEqual(left[:2], right[:2])
         for i in range(2, len(left)):
-            leftRow = map(float, left[i].split(','))
-            rightRow = map(float, right[i].split(','))
+            leftRow = list(map(float, left[i].split(',')))
+            rightRow = list(map(float, right[i].split(',')))
             for j in range(len(leftRow)):
                 self.assertAlmostEqual(leftRow[j], rightRow[j])
         os.remove('junk5.csv')
@@ -400,5 +400,5 @@ if __name__ == "__main__":
         unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-results'))
     except ImportError:
         unittest.main()
-        print
-        print
+        print()
+        print()

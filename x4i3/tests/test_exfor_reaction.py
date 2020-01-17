@@ -241,5 +241,5 @@ if __name__ == "__main__":
         unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-results'))
     except ImportError:
         unittest.main()
-        print
-        print
+        print()
+        print()

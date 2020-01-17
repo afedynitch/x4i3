@@ -42,7 +42,7 @@ class TestX4DataSet(unittest.TestCase):
 
     def test_append(self):
         d = exfor_dataset.X4DataSet()
-        for k in self.ds.keys():
+        for k in list(self.ds.keys()):
             d.append(self.ds[k])
         d.sort()
         answer = '''#  Authors:   N, o, n, e
@@ -100,5 +100,5 @@ if __name__ == "__main__":
         unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-results'))
     except ImportError:
         unittest.main()
-        print
-        print
+        print()
+        print()

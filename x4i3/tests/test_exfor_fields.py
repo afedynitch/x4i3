@@ -259,7 +259,7 @@ class TestX4MonitorField(unittest.TestCase):
         self.assertEqual(
             str(X),
             "[((62-SM-147(N,A)60-ND-144,SIG), 'Data were normalized over the interval 300-2500 eV to the data given in monitor reference', None)]")
-        self.assertEqual(X.reactions.keys(), [' '])
+        self.assertEqual(list(X.reactions.keys()), [' '])
         self.assertEqual(
             X.reactions[' '][0][1],
             'Data were normalized over the interval 300-2500 eV to the data given in monitor reference')
@@ -287,7 +287,7 @@ class TestX4MonitorField(unittest.TestCase):
         self.assertEqual(repr(X), self.another_long_example)
         self.assertEqual(str(
             X.reactions), "{' ': [((22-TI-0(D,X+23-V-48),SIG), '21 MeV', None), ((13-AL-27(D,X+11-NA-22),SIG), '40 MeV', None), ((13-AL-27(D,X+11-NA-24),SIG), '40 MeV', None)]}")
-        self.assertEqual(X.reactions.keys(), [' '])
+        self.assertEqual(list(X.reactions.keys()), [' '])
         self.assertEqual(X.reactions[' '][0][1], '21 MeV')
 
     def test_two_monitors_many_lines(self):
@@ -599,5 +599,5 @@ if __name__ == "__main__":
     #        unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-results'))
     #    except ImportError:
     unittest.main()
-    print
-    print
+    print()
+    print()

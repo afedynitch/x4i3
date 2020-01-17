@@ -656,10 +656,10 @@ class TestTheWorks(unittest.TestCase):
                                     continue
                                 if not didreaction:
                                     #print s,repr(ent[ s ][ 'BIB' ][ 'REACTION' ]),
-                                    print s, str(ent[s]['BIB']['REACTION'])
+                                    print(s, str(ent[s]['BIB']['REACTION']))
                                     didreaction = False
-                                print '   ', qlist
-        print ' '.join(['X4all/' + x[:-2] + '/' + x + '.x4' for x in flist])
+                                print('   ', qlist)
+        print(' '.join(['X4all/' + x[:-2] + '/' + x + '.x4' for x in flist]))
 
 
 if __name__ == "__main__":
@@ -668,5 +668,5 @@ if __name__ == "__main__":
         unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-results'))
     except ImportError:
         unittest.main()
-        print
-        print
+        print()
+        print()
