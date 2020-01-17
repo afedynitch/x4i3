@@ -52,11 +52,11 @@ MAJOR_VERSION = 1
 MINOR_VERSION = 0
 PATCH = 0
 
-__package_name__ = "x4i -- The Exfor Interface"
+__package_name__ = "x4i3 -- The Exfor Interface"
 __version__ = '.'.join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
-__author__ = 'David Brown <brown170@llnl.gov>'
-__url__ = 'http://nuclear.llnl.gov/'
-__license__ = 'not assigned yet'
+__author__ = 'David Brown <brown170@llnl.gov>, Anatoli Fedynitch <afedynitch@gmail.com>'
+__url__ = 'https://github.com/afedynitch/x4i3'
+__license__ = 'GPLv2'
 __disclaimer__ = \
     """LLNL Disclaimer:
   This work was prepared as an account of work sponsored by an agency of the
@@ -75,8 +75,8 @@ __disclaimer__ = \
 
 # Common filenames
 indexFileName = 'index.tbl'
-dictionaryFileName = 'dictionaries.tbl'
-doiFileName = 'doi.tbl'
+# dictionaryFileName = 'dictionaries.tbl'
+# doiFileName = 'doi.tbl'
 errorFileName = 'error-entries.pickle'
 coupledFileName = 'coupled-entries.pickle'
 monitoredFileName = 'monitored-entries.pickle'
@@ -86,7 +86,7 @@ dbPath = 'db'
 # Paths for standard usage
 DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
 fullIndexFileName = os.path.join(DATAPATH, indexFileName)
-fullDoiFileName = os.path.join(DATAPATH, doiFileName)
+# fullDoiFileName = os.path.join(DATAPATH, doiFileName)
 fullErrorFileName = os.path.join(DATAPATH, errorFileName)
 fullCoupledFileName = os.path.join(DATAPATH, coupledFileName)
 fullMonitoredFileName = os.path.join(DATAPATH, monitoredFileName)
@@ -97,8 +97,6 @@ fullDBPath = os.path.join(DATAPATH, dbPath)
 TESTDATAPATH = os.sep.join(__path__ + ['test', 'data'])  # Mock db for testing
 testDBPath = TESTDATAPATH + os.sep + dbPath
 testIndexFileName = TESTDATAPATH + os.sep + indexFileName
-
-from x4i3 import exfor_manager, exfor_entry
 
 def _download_and_unpack_file(url, outfile):
     """Downloads the database files created with setup-exfor-db.py as
@@ -130,11 +128,19 @@ def _download_and_unpack_file(url, outfile):
     # Add tqdm to requirements
 
 
-__databaseManager = exfor_manager.X4DBManagerDefault()
+def check_if_exists(path):
+    if not os.path.exists(path):
+        raise IOError('File/Directory', path, 'not found. Check installation.')
 
-# In case many entries are queried subsequently, use an in-memory
-# dictionary that contains all .x4 files from the db folder "-c" flag
-# in get-entry.py
+
+# Check if all files can be located
+_ = [check_if_exists(p) for p in [
+    DATAPATH, fullIndexFileName, fullErrorFileName,
+    fullCoupledFileName, fullMonitoredFileName,
+    fullReactionCountFileName, fullDBPath]]
+
+# Applications that query multiple entries subsequently using an in-memory
+# dictionary that contains all .x4 files from the db folder can improve performance
 
 
 class DataBaseCache(dict):
@@ -158,21 +164,26 @@ class DataBaseCache(dict):
         return dict.__getitem__(self, key)
 
 
+# Does lazy initialization, only loads x4 files into memory on access
 database_dict = DataBaseCache()
 
+# The stuff below is not well placed here, bad practice, and will be removed soon.
+# from x4i3 import exfor_manager, exfor_entry
 
-def query(**kw): return __databaseManager.query(**kw)
+# __databaseManager = exfor_manager.X4DBManagerDefault()
+
+# def query(**kw): return __databaseManager.query(**kw)
 
 
-def raw_retrieve(**kw): return __databaseManager.retrieve(**kw)
+# def raw_retrieve(**kw): return __databaseManager.retrieve(**kw)
 
 
-def retrieve(**kw):
-    rr = {}
-    r = __databaseManager.retrieve(**kw)
-    for k, v in r.items():
-        rr[k] = exfor_entry.X4Entry(v)
-    return rr
+# def retrieve(**kw):
+#     rr = {}
+#     r = __databaseManager.retrieve(**kw)
+#     for k, v in r.items():
+#         rr[k] = exfor_entry.X4Entry(v)
+#     return rr
 
 
 __all__ = [
