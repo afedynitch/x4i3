@@ -20,7 +20,7 @@ This code is distributed as it is, without any warranty or guaranty for proper o
 
 ## Support tools
 
-To reduce the weight of this package, the database management tools have been moved to a different project since these are for advanced users anyways.
+To reduce the weight of this package, the database management tools have been moved to a different project [`x4i3_tools`](https://github.com/afedynitch/x4i3_tools) since these are for advanced users anyways.
 
 ## Documentation
 

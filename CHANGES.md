@@ -9,9 +9,12 @@
 - default database manager continues to use the non-cached version X4DBManagerPlainFS
 - get-entry.py flag -c (cached) for using the cached access
 - removal of the 2012 copy of pyparsing.py adding the pip package pyparsing to the requirements
-- Removal of database maintenance tools and separate distributions as [x4i3_tools]()  
+- Removal of database maintenance tools and separate distributions as [x4i3_tools](https://github.com/afedynitch/x4i3_tools)  
 - mock database in x4i3/tests compressed as tar.gz to reduce the size and number of files
 - automatic API documentation api-doc tar.gzipped, since users typically read source code these days
+- moved test directory to project root
+- removed graph tools from distribution and moved into [x4i3_tools](https://github.com/afedynitch/x4i3_tools) (because I don't yet understand what they do)
+- check if all data files are available
 
 ### x4i - 1.0.3, 15/02/2011
 - Original release of x4i by David A. Brown (LLNL)
