@@ -32,11 +32,9 @@ __author__ = "David Brown <brown170@llnl.gov>"
 
 import sys
 
-from endl_Z import *
-from exfor_utilities import *
-from exfor_exceptions import *
-from exfor_grammers import *
-from exfor_dicts import *
+from exfor_exceptions import ParticleParsingError, IsomerMathParsingError
+from exfor_grammers import x4particle, x4nucleus, x4chemical_compound
+from exfor_dicts import X4DictionaryServer
 import pyparsing
 
 # ------------------------------------------------------
