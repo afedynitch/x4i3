@@ -1,0 +1,444 @@
+ENTRY            12884     910722              20050926       0000
+SUBENT        12884001     910722              20050926       0000
+BIB                 11         17
+INSTITUTE  (1CANTMF)
+REFERENCE  (J,NP/A,377,529,82)
+           (J,DA/B,42,(6),2426,8112)
+AUTHOR     (R.K.KEELER,R.DUBIOS,E.G.AULD,D.A.AXEN,M.COMYN,
+           G.LUDGATE,L.P.ROBERTSON,J.R.RICHARDSON,D.V.BUGG,
+           J.A.EDDINGTON,W.R.GIBSON,A.S.CLOUCH,N.M.STEWART,
+           B.DIETERLE)
+TITLE      NEUTRON-PROTON SCATTERING CROSS SECTIONS BETWEEN
+           200 AND 500 MEV.
+FACILITY   TRIUMPH FAST NEUTRON FACILITY
+METHOD     (TOF)
+INC-SOURCE (P-D) PROTONS ON 1-H-2
+DETECTOR   (SCIN) SCINTILLATION COUNTER TELESCOPES
+SAMPLE     LIQUID HYDROGEN TARGET
+STATUS     NO REPLY TO AUTHOR PROOF, 84/12/27.
+HISTORY    (841002C)
+           (910722U) INSTITUTE UPDATED
+ENDBIB              17
+NOCOMMON             0          0
+ENDSUBENT           20
+SUBENT        12884002     850619              20050926       0000
+BIB                  5         23
+REACTION   (1-H-1(N,TOT),,SIG)
+ANALYSIS   QUASI-ELASTIC NEUTRONS DETECTED WERE SELECTED OFF-LINE
+           BY SUMMING COUNTS IN CHANNELS WITHIN 3 NS OF THE PEAK
+           IN THE TOF SPECTRA
+ERR-ANALYS (ERR-S)
+CORRECTION . CORRECTIONS APPLIED AT EACH ENERGY FOR THE EFFECT OF
+             ELASTICALLY SCATTERED NEUTRONS ENTERING THE DETECTOR
+             SOLID ANGLE. THE CORRECTION WAS 0.14 PERCENT.
+           . THE CORRECTION FOR INELASTICALLY SCATTERED NEUTRONS
+             WAS LESS THAN 0.01 PERCENT
+           . A SIGNIFICANT CORRECTION WAS NECESSARY AT 495 MEV
+             ARISING FROM THE PRESENCE UNDER QUASI-ELASTIC PEAK OF
+             SLOWER NEUTRONS PRODUCED BY THE PRECEDING PROTON
+             BUNCH, 43NS EARLIER. THE UNCERTAINTY IN THIS
+             SYSTEMATIC CORRECTION WAS ADDED IN QUADRATURE TO
+             THE STATISTICAL UNCERTAINTY IN TOTAL SIGMA.
+           . IN-SCATTERING CORRECTIONS WERE NEGLIGIBLE.
+           . OVERALL NORMALISATION UNCERTAINTIES OF 0.6 AND 0.5
+             PERCENT ARISE FROM THE UNCERTAINTY IN THE DENSITY AND
+             LENGTH OF THE HYDROGEN TARGET. THEIR SUM 0.8 PERCENT
+             IS TO BE ADDEDED TO EACH OF THE STATISTICAL
+             UNCERTAINTIES LISTED.
+HISTORY    (850619U) REACTION PRODUCT REMOVED.
+ENDBIB              23
+COMMON               1          3
+ERR-1
+PER-CENT
+ 0.8
+ENDCOMMON            3
+DATA                 3          6
+EN         DATA       ERR-S
+MEV        MB         MB
+ 212.       42.46      1.20
+ 268.       38.13      0.48
+ 319.       36.14      0.27
+ 369.       35.05      0.65
+ 417.       34.53      0.73
+ 495.       35.15      0.59
+ENDDATA              8
+ENDSUBENT           40
+SUBENT        12884003     841005              20050926       0000
+BIB                  3         30
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ERR-ANALYS (DATA-ERR)
+           POINT-TO-POINT UNCERTAINTIES-----
+              COUNTING STATISTICS      1 TO 6 PERCENT
+              CORRECTIONS              0.4 PERCENT
+              EFFICIENCY RATIO         SEE FIG. 6
+              MONITOR VARIABILITY      0.5 PERCENT AT 212,319 MEV
+                                       1.2 PERCENT AT 418 MEV
+                                       1.0 PERCENT AT 493 MEV
+           COMMON TO ALL ANGLES---
+              SOLID ANGLE              1.0 PERCENT
+              CUTS ON DATA             0.6 PERCENT
+             -WRAP-AROUND CORRECTION   0.6 PERCENT AT 493 MEV
+           ZERO DEGREE NEUTRONS-------
+              COUNTING STATISTICS      0.9 PERCENT
+              CUTS ON DATA             0.6 PERCENT
+              CORRECTIONS              0.2 PERCENT
+           ZERO-DEGREE MON. BACKGROUND 0.8 PERCENT
+           DENSITY OF LIQUID HYDROGEN  0.6 PERCENT
+           LENGTH OF LIQUID HYDROGEN   0.5 PERCENT
+           NORMAL1ZATION UNCERTAINTIES----
+                                       2.0 PERCENT AT 212,319,418
+                                       2.2 PERCENT AT 493 MEV
+CORRECTION RENORMALIZTION             +1.3 PERCENT AT 212 MEV
+                                      -1.2 PERCENT AT 319 MEV
+                                      +1.1 PERCENT AT 418 MEV
+                                      +0.0 PERCENT AT 493 MEV
+           THE RENORMALIZATION VALUES REPRESENT THE AMOUNT THE
+             DATA WERE RENORMALIZED IN THE PHASE SHIFT SOLUTIONS
+             -REF,NUCL.PHYS. 377,554,1982.
+ENDBIB              30
+COMMON               2          3
+EN-ERR     ANG-ERR
+MEV        ADEG
+ 3.0        2.0
+ENDCOMMON            3
+DATA                 4         22
+EN         ANG-CM     DATA-CM    DATA-ERR
+MEV        ADEG       MB/SR      MB/SR
+ 212.       15.82      5.811      0.228
+ 212.       31.57      4.244      0.083
+ 212.       47.21      2.993      0.081
+ 212.       72.91      1.912      0.116
+ 319.       11.13      5.117      0.420
+ 319.       16.42      4.845      0.184
+ 319.       32.43      3.957      0.106
+ 319.       48.33      3.096      0.080
+ 319.       62.98      2.331      0.049
+ 319.       74.32      1.934      0.100
+ 319.       94.52      1.585      0.156
+ 418.       22.07      4.560      0.081
+ 418.       27.56      4.073      0.099
+ 418.       49.22      2.922      0.067
+ 418.       80.63      1.642      0.055
+ 418.       95.76      1.339      0.059
+ 493.       17.06      5.672      0.322
+ 493.       22.59      4.995      0.237
+ 493.       28.12      4.523      0.201
+ 493.       50.01      3.154      0.140
+ 493.       66.03      2.109      0.099
+ 493.       96.75      1.256      0.079
+ENDDATA             24
+ENDSUBENT           63
+SUBENT        12884004     841005              20050926       0000
+BIB                  4         41
+REACTION   (1-H-1(N,EL)1-H-1,,DA,P)
+FLAG       (1.) SECOND MEASUREMENT AT A LATER TIME-
+ERR-ANALYS (DATA-ERR)
+           POINT-TO-POINT UNCERTAINTIES-----
+              COUNTING STATISTICS      0.5 TO 2 PERCENT
+              CORRECTIONS              0.5 PERCENT
+              MONITOR VARIABILITY      0.5 PERCENT AT 212,319 MEV
+                                       1.2 PERCENT AT 418 MEV
+                                       1.0 PERCENT AT 493 MEV
+           COMMON TO ALL ANGLES---
+              SOLID ANGLE              0.6 PERCENT
+              CUTS ON DATA             0.6 PERCENT
+              EFFICIENCY               2.5 PERCENT AT 212,493 MEV
+                                       1.1 PERCENT AT 319 MEV
+                                       0.8 PERCENT AT 418 MEV
+              -WRAP-AROUND CORRECTION  0.6 PERCENT AT 493 MEV
+              MONITOR STABILITY        0.9 PERCENT AT 212 MEV
+                                       3.0 PERCENT AT 319 MEV
+                                       2.7 PERCENT AT 418 MEV
+                                       1.4 PERCENT AT 493 MEV
+              DENSITY OF TARGET GAS    0.4 PERCENT
+           ZERO DEGREE NEUTRONS-------
+              COUNTING STATISTICS      0.9 PERCENT
+              CUTS ON DATA             0.6 PERCENT
+              CORRECTIONS              0.2 PERCENT
+           ZERO-DEGREE MON. BACKGOUND  0.8 PERCENT
+           DENSITY OF LIQUID HYDROGEN  0.6 PERCENT
+           LENGTH OF LIQUID HYDROGEN   0.5 PERCENT
+           NORMALIZATION UNCERTAINTIES----
+                                       3.2 PERCENT AT 212 MEV
+                                       3.9 PERCENT AT 319 MEV
+                                       3.3 PERCENT AT 418 MEV
+                                       4.2 PERCENT AT 493 MEV
+CORRECTION RENORMALIZTION -           +5.8 PERCENT AT 212 MEV
+                                      +4.3 PERCENT AT 319 MEV
+                                      +1.1 PERCENT AT 418 MEV
+                                      +3.5 PERCENT AT 418 MEV
+                                      +3.0 PERCENT AT 493 MEV
+           THE RENORMALIZATION VALUES REPRESENT THE AMOUNT THE
+             DATA WERE RENORMALIZED IN THE PHASE SHIFT SOLUTIONS
+             -REF,NUCL.PHYS. 377,554,1982.
+ENDBIB              41
+COMMON               2          3
+EN-ERR     ANG-ERR
+MEV        ADEG
+ 3.0        2.0
+ENDCOMMON            3
+DATA                 5        259
+EN         ANG-CM     DATA-CM    DATA-ERR   FLAG
+MEV        ADEG       MB/SR      MB/SR      NO-DIM
+ 212.       88.57      1.613      0.034
+ 212.       90.45      1.592      0.034
+ 212.       92.34      1.641      0.034
+ 212.       94.29      1.651      0.034
+ 212.       98.77      1.873      0.030
+ 212.      100.66      1.922      0.031
+ 212.      102.58      1.977      0.031
+ 212.      104.55      2.075      0.033
+ 212.      108.83      2.407      0.041
+ 212.      110.75      2.524      0.042
+ 212.      112.68      2.643      0.044
+ 212.      114.66      2.733      0.044
+ 212.      119.18      3.048      0.061
+ 212.      121.11      3.300      0.064
+ 212.      121.11      3.096      0.061
+ 212.      123.06      3.339      0.064
+ 212.      123.06      3.253      0.062
+ 212.      125.06      3.461      0.066
+ 212.      125.06      3.393      0.065
+ 212.      129.50      3.912      0.060
+ 212.      131.44      4.099      0.062
+ 212.      133.40      4.246      0.063
+ 212.      135.42      4.408      0.065
+ 212.      140.27      4.998      0.076
+ 212.      142.23      5.118      0.077
+ 212.      144.20      5.337      0.080
+ 212.      146.23      5.604      0.083
+ 212.      150.73      5.977      0.091
+ 212.      152.69      6.216      0.093
+ 212.      154.68      6.392      0.095
+ 212.      156.72      6.677      0.098
+ 212.      161.43      7.487      0.109
+ 212.      163.40      7.853      0.114
+ 212.      165.50      8.369      0.120
+ 212.      167.40      9.012      0.129
+ 212.      171.80     10.392      0.186
+ 212.      173.70     11.032      0.196
+ 212.      175.60     11.386      0.200
+ 212.      177.40     11.702      0.205
+ 319.       66.73      1.948      0.026
+ 319.       66.74      1.989      0.026
+ 319.       68.62      1.903      0.025
+ 319.       68.65      1.972      0.026
+ 319.       70.47      1.835      0.025
+ 319.       70.50      1.889      0.025
+ 319.       72.32      1.768      0.023
+ 319.       72.33      1.770      0.023
+ 319.       76.59      1.653      0.023
+ 319.       78.40      1.602      0.022
+ 319.       80.33      1.565      0.022
+ 319.       82.26      1.574      0.022
+ 319.       86.62      1.453      0.024
+ 319.       88.45      1.507      0.025
+ 319.       90.29      1.487      0.024
+ 319.       92.26      1.479      0.024
+ 319.       96.55      1.486      0.021
+ 319.       98.53      1.539      0.021
+ 319.      100.47      1.576      0.022
+ 319.      102.45      1.581      0.021
+ 319.      106.83      1.694      0.025
+ 319.      108.83      1.753      0.025
+ 319.      110.80      1.845      0.025
+ 319.      112.79      1.918      0.027
+ 319.      117.27      2.088      0.032
+ 319.      119.30      2.231      0.033
+ 319.      121.30      2.295      0.033
+ 319.      123.34      2.447      0.035
+ 319.      127.99      2.796      0.038
+ 319.      128.51      2.792      0.050
+ 319.      130.05      2.899      0.039
+ 319.      130.51      3.011      0.052
+ 319.      132.10      3.101      0.041
+ 319.      132.57      3.185      0.053
+ 319.      134.16      3.237      0.043
+ 319.      134.50      3.413      0.056
+ 319.      138.64      3.727      0.053
+ 319.      139.12      3.806      0.051
+ 319.      140.74      3.862      0.054
+ 319.      141.20      4.028      0.054
+ 319.      142.79      4.038      0.056
+ 319.      143.14      4.146      0.054
+ 319.      144.85      4.247      0.058
+ 319.      145.23      4.406      0.057
+ 319.      149.39      4.662      0.062
+ 319.      149.90      4.623      0.081
+ 319.      151.48      4.859      0.064
+ 319.      152.02      4.897      0.084
+ 319.      153.54      5.054      0.066
+ 319.      153.90      5.174      0.088
+ 319.      155.62      5.328      0.070
+ 319.      155.97      5.328      0.090
+ 319.      160.10      5.904      0.074
+ 319.      160.69      6.089      0.075
+ 319.      162.21      6.202      0.077
+ 319.      162.72      6.438      0.079
+ 319.      164.26      6.750      0.083
+ 319.      164.81      6.941      0.084
+ 319.      166.34      7.391      0.090
+ 319.      166.91      7.622      0.092
+ 319.      170.00      8.849      0.124
+ 319.      172.99      9.797      0.135
+ 319.      175.02     10.513      0.144
+ 319.      177.02     10.873      0.152
+ 418.       57.20      2.429      0.055     1.
+ 418.       57.30      2.416      0.045     1.
+ 418.       59.00      2.317      0.052     1.
+ 418.       59.10      2.349      0.044     1.
+ 418.       60.80      2.295      0.052     1.
+ 418.       60.80      2.350      0.043     1.
+ 418.       62.70      2.164      0.049     1.
+ 418.       62.70      2.189      0.041     1.
+ 418.       65.90      2.169      0.046
+ 418.       66.90      1.991      0.042     1.
+ 418.       67.70      2.076      0.044
+ 418.       68.70      1.936      0.041     1.
+ 418.       69.50      1.991      0.043
+ 418.       70.50      1.829      0.039     1.
+ 418.       71.40      1.917      0.041
+ 418.       72.40      1.743      0.037     1.
+ 418.       76.80      1.644      0.035     1.
+ 418.       78.60      1.567      0.035     1.
+ 418.       80.50      1.527      0.034     1.
+ 418.       82.40      1.516      0.033     1.
+ 418.       86.50      1.483      0.042     1.
+ 418.       88.40      1.349      0.040     1.
+ 418.       90.30      1.298      0.039     1.
+ 418.       92.20      1.359      0.040     1.
+ 418.       95.70      1.361      0.027
+ 418.       97.60      1.322      0.027
+ 418.       99.50      1.385      0.028
+ 418.      101.50      1.390      0.027
+ 418.      106.50      1.392      0.028
+ 418.      108.50      1.408      0.028
+ 418.      110.40      1.501      0.029
+ 418.      112.40      1.494      0.029
+ 418.      116.60      1.609      0.032
+ 418.      118.60      1.728      0.034
+ 418.      120.60      1.774      0.035
+ 418.      122.60      1.918      0.036
+ 418.      126.90      2.177      0.041
+ 418.      127.90      2.231      0.040     1.
+ 418.      128.90      2.381      0.044
+ 418.      129.90      2.327      0.041     1.
+ 418.      131.00      2.502      0.046
+ 418.      132.00      2.505      0.043     1.
+ 418.      133.00      2.678      0.048
+ 418.      134.00      2.621      0.044     1.
+ 418.      138.20      3.046      0.055
+ 418.      138.60      3.069      0.048     1.
+ 418.      140.20      3.212      0.058
+ 418.      140.60      3.252      0.049     1.
+ 418.      142.30      3.368      0.060
+ 418.      142.70      3.414      0.051     1.
+ 418.      144.40      3.670      0.064
+ 418.      144.80      3.608      0.054     1.
+ 418.      149.30      4.007      0.072
+ 418.      149.40      3.948      0.061     1.
+ 418.      151.30      4.226      0.076
+ 418.      151.50      4.143      0.063     1.
+ 418.      153.40      4.418      0.079
+ 418.      153.60      4.301      0.065     1.
+ 418.      155.50      4.724      0.083
+ 418.      155.70      4.538      0.067     1.
+ 418.      160.30      5.093      0.093
+ 418.      160.40      5.188      0.075     1.
+ 418.      162.40      5.435      0.098
+ 418.      162.50      5.435      0.078     1.
+ 418.      164.5       5.924      0.105
+ 418.      164.60      5.749      0.082     1.
+ 418.      165.70      6.131      0.120
+ 418.      166.50      6.481      0.112
+ 418.      166.60      6.457      0.090     1.
+ 418.      167.80      6.619      0.128
+ 418.      169.80      7.769      0.147
+ 418.      171.30      7.976      0.180
+ 418.      171.30      7.998      0.131     1.
+ 418.      171.90      8.446      0.159
+ 418.      173.40      8.734      0.200
+ 418.      173.40      8.913      0.143     1.
+ 418.      175.40      9.835      0.218
+ 418.      175.40      9.681      0.152     1.
+ 418.      176.60     10.173      0.209
+ 418.      177.20     10.130      0.227
+ 418.      177.20     10.354      0.160     1.
+ 418.      178.00     10.260      0.211
+ 418.      182.10     10.540      0.215
+ 418.      183.60     10.004      0.206
+ 493.       57.43      2.487      0.051
+ 493.       57.49      2.451      0.053
+ 493.       59.26      2.372      0.049
+ 493.       59.32      2.561      0.053
+ 493.       61.07      2.313      0.047
+ 493.       61.12      2.149      0.048
+ 493.       62.85      2.137      0.044
+ 493.       62.96      2.079      0.047
+ 493.       64.74      2.093      0.040
+ 493.       66.59      1.980      0.038
+ 493.       66.97      1.969      0.041
+ 493.       68.36      1.953      0.037
+ 493.       68.84      1.851      0.040
+ 493.       70.24      1.832      0.035
+ 493.       70.68      1.783      0.038
+ 493.       72.54      1.754      0.037
+ 493.       74.60      1.700      0.033
+ 493.       76.48      1.618      0.031
+ 493.       78.37      1.547      0.030
+ 493.       80.22      1.510      0.029
+ 493.       84.47      1.318      0.027
+ 493.       84.55      1.366      0.028
+ 493.       86.34      1.297      0.026
+ 493.       86.50      1.356      0.028
+ 493.       86.64      1.332      0.031
+ 493.       88.22      1.263      0.026
+ 493.       88.33      1.261      0.026
+ 493.       88.55      1.324      0.031
+ 493.       90.14      1.271      0.026
+ 493.       90.29      1.268      0.026
+ 493.       90.48      1.194      0.028
+ 493.       92.34      1.267      0.029
+ 493.       94.50      1.155      0.023
+ 493.       96.48      1.133      0.023
+ 493.       96.82      1.150      0.025
+ 493.       98.43      1.128      0.023
+ 493.       98.77      1.155      0.025
+ 493.      100.44      1.101      0.023
+ 493.      100.64      1.098      0.024
+ 493.      102.66      1.111      0.024
+ 493.      104.96      1.138      0.024
+ 493.      106.89      1.104      0.023
+ 493.      108.87      1.161      0.024
+ 493.      110.91      1.171      0.024
+ 493.      115.66      1.276      0.027
+ 493.      117.56      1.333      0.028
+ 493.      117.81      1.380      0.030
+ 493.      119.61      1.402      0.029
+ 493.      119.79      1.430      0.031
+ 493.      121.68      1.482      0.030
+ 493.      121.86      1.496      0.032
+ 493.      123.83      1.607      0.033
+ 493.      128.46      1.894      0.039
+ 493.      130.57      1.987      0.041
+ 493.      132.64      2.118      0.043
+ 493.      134.76      2.350      0.047
+ 493.      137.47      2.408      0.050
+ 493.      139.42      2.722      0.058
+ 493.      139.55      2.563      0.052
+ 493.      141.54      2.921      0.061
+ 493.      141.65      2.810      0.057
+ 493.      143.65      3.128      0.065
+ 493.      143.80      3.004      0.060
+ 493.      145.75      3.333      0.069
+ 493.      153.71      4.020      0.084
+ 493.      155.89      4.265      0.089
+ 493.      158.00      4.562      0.094
+ 493.      160.15      4.682      0.097
+ 493.      165.12      5.547      0.120
+ 493.      167.29      5.922      0.128
+ 493.      169.39      6.876      0.145
+ 493.      171.55      7.763      0.161
+ENDDATA            261
+ENDSUBENT          311
+ENDENTRY             4

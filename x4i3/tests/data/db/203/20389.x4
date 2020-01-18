@@ -1,0 +1,119 @@
+ENTRY            20389   20051121   20060202   20051225       2174
+SUBENT        20389001   20051121   20060202   20051225       2174
+BIB                 12         22
+INSTITUTE  (2ZZZGEL)
+REFERENCE  (J,PL/B,29,562,196908)
+           (W,LISKIEN,197009) Data
+AUTHOR     (A.Paulsen, H.Liskien)
+TITLE      -Search for a fluctuating anisotropy in the N-P
+            scattering process at a few MeV neutron energies.-
+FACILITY   (VDG)      Van de Graaff accelerator.
+INC-SOURCE (P-T)      T(P,N)He3 reaction for e(N) = 1.2 to 2.2 MeV
+           (D-D)      D(d,N)He3 reaction for e(N) = 3.8 to 6.2 MeV
+INC-SPECT   Neutron energy spread due to target thickness is less
+            than 5 per-cent.
+METHOD     .Counter ratio, the ratio of differential N-P
+            scattering cross sections at C.M. Angles 10 and 45 deg
+            by means of a recoil proton telescope.
+DETECTOR   (TELES)    Telescope counter.
+           (PROPC)    Recoil proportinal counter.
+MONITOR    .Ratio.
+HISTORY    (19711209C)
+           (19741011E)
+           (20051110A) Date is corrected. Headings changed
+           (20051121U) Last checking has been done.
+ERR-ANALYS (ERR-T) Total experimental uncertainties of 3 percent.
+ENDBIB              22
+NOCOMMON             0          0
+ENDSUBENT           25
+SUBENT        20389002   20051121   20060202   20051225       2174
+BIB                  5         13
+REACTION   ((1-H-1(N,EL)1-H-1,,DA)//(1-H-1(N,EL)1-H-1,,DA))
+            Ratio of the differential C.M.Scattering at C.M.Angles
+            10 deg and 45 deg.
+PART-DET   (P)        Protons.
+COMMENT     If the fluctuations in the total N-P scattering cross-
+            sections really exist, they are not caused by a
+            fluctuating strong anisotropy for forward scattered
+            protons.
+STATUS     .Data from liskien, 09/03/70.
+HISTORY    (19711209C)
+           (19741011E)
+           (20051110A)   Data headings changed
+           (20051121U) Last checking has been done.
+ENDBIB              13
+COMMON               2          3
+ANG-CM-NM  ANG-CM-DN
+ADEG       ADEG
+     1.E+01    4.5E+01
+ENDCOMMON            3
+DATA                 4         36
+EN         EN-RSL     DATA       ERR-T
+MEV        PER-CENT   NO-DIM     PER-CENT
+        1.2        2.5   9.54E-01         3.
+        1.3        2.5   9.86E-01         3.
+        1.4        2.5   9.35E-01         3.
+        1.5        2.5      1.038         3.
+        1.6        2.5    9.8E-01         3.
+        1.7        2.5      1.009         3.
+        1.8        2.5      1.026         3.
+        1.9        2.5   9.87E-01         3.
+         2.        2.5   9.82E-01         3.
+        2.1        2.5      1.008         3.
+        2.2        2.5      1.007         3.
+        3.8        2.5   9.79E-01         3.
+        3.9        2.5    9.9E-01         3.
+         4.        2.5   9.77E-01         3.
+        4.1        2.5      1.011         3.
+        4.2        2.5   9.77E-01         3.
+        4.3        2.5   9.69E-01         3.
+        4.4        2.5   9.75E-01         3.
+        4.5        2.5   9.86E-01         3.
+        4.6        2.5      1.022         3.
+        4.7        2.5   9.83E-01         3.
+        4.8        2.5      1.002         3.
+        4.9        2.5   9.94E-01         3.
+         5.        2.5   9.93E-01         3.
+        5.1        2.5   9.76E-01         3.
+        5.2        2.5    9.8E-01         3.
+        5.3        2.5      1.022         3.
+        5.4        2.5      1.044         3.
+        5.5        2.5   9.92E-01         3.
+        5.6        2.5      1.002         3.
+        5.7        2.5      1.006         3.
+        5.8        2.5   9.93E-01         3.
+        5.9        2.5         1.         3.
+         6.        2.5   9.95E-01         3.
+        6.1        2.5       1.02         3.
+        6.2        2.5    9.8E-01         3.
+ENDDATA             38
+ENDSUBENT           60
+SUBENT        20389003   20051121   20060202   20051225       2174
+BIB                  5         13
+REACTION   ((1-H-1(N,EL)1-H-1,,DA,,AV)//
+           (1-H-1(N,EL)1-H-1,,DA,,AV))  Averaged over energy
+            interval ratio of the differential C.M.Scattering at
+            C.M.Angles 10 deg and 45 deg.
+PART-DET   (P)        Protons.
+COMMENT     If the fluctuations in the total N-P scattering cross-
+            sections really exist, they are not caused by a
+            fluctuating strong anisotropy for forward scattered
+            protons.
+STATUS     .Data from liskien, 09/03/70.
+HISTORY    (19711209C)
+           (19741011E)
+           (20051121U) Last checking has been done.
+ENDBIB              13
+COMMON               2          3
+ANG-CM-NM  ANG-CM-DN
+ADEG       ADEG
+     1.E+01    4.5E+01
+ENDCOMMON            3
+DATA                 4          2
+EN-MAX     EN-MIN     DATA       ERR-T
+MEV        MEV        NO-DIM     PER-CENT
+        2.2        1.2   9.92E-01         3.
+        6.2        3.8   9.95E-01         3.
+ENDDATA              4
+ENDSUBENT           26
+ENDENTRY             3

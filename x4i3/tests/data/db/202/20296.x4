@@ -1,0 +1,180 @@
+ENTRY            20296   20110611   20120705   20120704       2229
+SUBENT        20296001   20110611   20120705   20120704       2229
+BIB                 15         28
+TITLE      On the differential cross section for neutron-proton
+            scattering at 14.1 MeV
+AUTHOR     (S.Shirato, K.Saitoh)
+INSTITUTE  (2JPNYOK)
+REFERENCE  (J,JPJ,36,331,1974) Revised data given
+           (J,JPJ,28,11,1970)
+REL-REF    (O,20404001,S.Shirato+,J,JPJ,36,331,1974)
+            Experimental result with another (CH2)n radiator
+            (8.29 +/- 0.03 mg/cm2)
+FACILITY   (CCW,2JPNYOK) 200 kV Cockcroft-Walton accelerator
+INC-SOURCE (D-T) Ti-T target
+INC-SPECT  E(n) = 14.1 MeV, energy spread (FWHM) = 300 +/- 50 keV
+SAMPLE      5.34 mg/cm2 polyethylene (CH2)n.
+METHOD     (COINC) RCA p-n junction alpha particle monitor
+           (ASSOP)
+DETECTOR   (TELES,PROPC,SILI) 3 proportional and 1 Si(Li)
+                              counter telescope
+PART-DET   (P,A)
+COMMENT    The ratio of the cross-sections measured at 180 deg
+           and 90 deg is 1.093 +/- 0.022 (cf. JPJ,28,11,1970)
+STATUS     (APRVD) Approved by the authors
+HISTORY    (19711010C)
+           (19740626E)
+           (19840106U) A.P.T. Japan code changed to JPN
+           (19840106E)
+           (19850401U) HH. Keyword N-SOURCE changed to INC-SOURCE
+           (19850419E)
+           (20110611A) On. Revised values added
+ENDBIB              28
+COMMON               2          3
+EN         EN-RSL-FW
+MEV        MEV
+ 14.1       0.30
+ENDCOMMON            3
+ENDSUBENT           35
+SUBENT        20296002   20110611   20120705   20120704       2229
+BIB                  4         10
+REACTION   (1-H-1(N,EL)1-H-1,,SIG)
+HISTORY    (19711010C)
+           (19740626E)
+           (19850401U) HH. ISO-QUANT keyword replaced
+           (19850419E)
+           (20110611A) On. Superseded. ED. DATA deleted
+ANALYSIS   (INTAD) Integration of fitting coefficient
+STATUS     (TABLE) Table II of J.Phys.Soc.Jpn.28(1970)11
+           (DEP,20296004) Fitting coefficient to angular dist.
+           (SPSDD,20296006) Neutron flux correction revised
+ENDBIB              10
+NOCOMMON             0          0
+NODATA               0          0
+ENDSUBENT           14
+SUBENT        20296003   20110611   20120705   20120704       2229
+BIB                  5         16
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+CORRECTION Degraded neutron correction +/- 0.4 to +/- 1.3%
+            between 0 and 64 deg.
+ERR-ANALYS (ERR-T) The cross-section errors given are the overall
+            probable errors including the systematic errors.
+           (ERR-S,1.,2.4) Counting at 0 to 64 deg (1-2.4%)
+           (ERR-1) Neutron flux                     (1.5%)
+           (ERR-2) Geometry                           (1%)
+           (ERR-3) Radiator thickness                 (1%)
+STATUS     (TABLE) Table I of J.Phys.Soc.Jpn.28(1970)11
+           (SPSDD,20296008) Neutron flux correction revised
+HISTORY    (19711010C)
+           (19740626E)
+           (19850401U) HH. ISO-QUANT keyword replaced
+           (19850419E)
+           (20110611A) On. Superseded. ED. DATA deleted
+ENDBIB              16
+COMMON               3          3
+ERR-1      ERR-2      ERR-3
+PER-CENT   PER-CENT   PER-CENT
+ 1.5        1.         1.
+ENDCOMMON            3
+NODATA               0          0
+ENDSUBENT           24
+SUBENT        20296004   20110611   20120705   20120704       2229
+BIB                  3          9
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,COS)
+STATUS     (TABLE) Table II of J.Phys.Soc.Jpn.28(1970)11
+           (DEP,20296003) Least square fit to angular dist.
+           (SPSDD,20296009) Neutron flux correction revised
+HISTORY    (19711010C)
+           (19740626E)
+           (19850401U) HH. ISO-QUANT keyword replaced
+           (19850419E)
+           (20110611A) On. Superseded. ED. DATA deleted
+ENDBIB               9
+NOCOMMON             0          0
+NODATA               0          0
+ENDSUBENT           13
+SUBENT        20296005   20110611   20120705   20120704       2229
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA,P)
+STATUS     (TABLE) Table I of J.Phys.Soc.Jpn.28(1970)11
+           (SPSDD,20296007) Neutron flux correction revised
+HISTORY    (20110611C) On. ED. DATA deleted
+ENDBIB               4
+NOCOMMON             0          0
+NODATA               0          0
+ENDSUBENT            8
+SUBENT        20296006   20110611   20120705   20120704       2229
+BIB                  4          5
+REACTION   (1-H-1(N,EL)1-H-1,,SIG)
+ANALYSIS   (INTAD) Integration of fitting coefficient
+STATUS     (TABLE) Text (p334) of J.Phys.Soc.Jpn.36(1974)331
+           (DEP,20296008) Fitting coefficient to angular dist.
+HISTORY    (20110611C) On
+ENDBIB               5
+NOCOMMON             0          0
+DATA                 2          1
+DATA       ERR-T
+MB         MB
+ 686.       11.
+ENDDATA              3
+ENDSUBENT           13
+SUBENT        20296007   20110611   20120705   20120704       2229
+BIB                  4          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA,P)
+MISC-COL   (MISC) Angle of counter telescope
+STATUS     (TABLE) Table II of J.Phys.Soc.Jpn.36(1974)331
+HISTORY    (20110611C) On
+ENDBIB               4
+NOCOMMON             0          0
+DATA                 6          8
+ANG        +ANG-RSL   -ANG-RSL   DATA       ERR-T      MISC
+ADEG       ADEG       ADEG       MB/SR      MB/SR      ADEG
+  4.0       2.3        2.3        238.9      4.0         0.0
+ 10.4       4.3        4.4        228.9      3.7        10.0
+ 20.1       4.3        4.4        215.2      3.7        20.0
+ 29.9       4.2        4.3        193.9      3.4        30.0
+ 39.8       3.9        3.9        167.7      3.3        40.0
+ 49.8       3.6        3.7        140.4      3.1        50.0
+ 58.8       3.2        3.3        108.4      2.8        59.0
+ 63.7       3.3        3.3         93.2      2.7        64.0
+ENDDATA             10
+ENDSUBENT           19
+SUBENT        20296008   20110611   20120705   20120704       2229
+BIB                  4          5
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MISC-COL   (MISC) Angle of counter telescope
+STATUS     (TABLE) Table II of J.Phys.Soc.Jpn.36(1974)331
+           (DEP,20296006) recoil proton angular distribution
+HISTORY    (20110611C) On
+ENDBIB               5
+NOCOMMON             0          0
+DATA                 6          8
+ANG-CM     +ANG-RSL   -ANG-RSL   DATA-CM    ERR-T      MISC
+ADEG       ADEG       ADEG       MB/SR      MB/SR      ADEG
+ 172.0      4.6        4.6        59.9       1.0         0.0
+ 159.2      8.6        8.8        58.2       0.9        10.0
+ 139.8      8.6        8.8        57.3       1.0        20.0
+ 120.1      8.4        8.6        55.9       1.0        30.0
+ 100.3      7.8        7.8        54.6       1.1        40.0
+  80.4      7.2        7.4        54.4       1.2        50.0
+  62.5      6.4        6.6        52.3       1.4        59.0
+  52.5      6.6        6.6        52.6       1.5        64.0
+ENDDATA             10
+ENDSUBENT           20
+SUBENT        20296009   20110611   20120705   20120704       2229
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,COS)
+STATUS     (TABLE) Text (p334) of J.Phys.Soc.Jpn.36(1974)331
+           (DEP,20296007) Least square fit to angular dist.
+HISTORY    (20110611C) On
+ENDBIB               4
+NOCOMMON             0          0
+DATA                 2          3
+NUMBER-CM  DATA-CM
+NO-DIM     MB/SR
+ 0.         54.1
+ 1.         -3.46
+ 2.          1.56
+ENDDATA              5
+ENDSUBENT           14
+ENDENTRY             9

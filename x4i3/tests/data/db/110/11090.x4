@@ -1,0 +1,56 @@
+ENTRY            11090   20110914   20120207   20111126       1377
+SUBENT        11090001   20110914   20120207   20111126       1377
+BIB                  9         19
+INSTITUTE  (1USAORL)
+REFERENCE  (J,PR,100,121,1955)
+AUTHOR     (A.Galonsky,J.P.Judish)
+TITLE      Angular distributions of n-p scattering at 17.9 MeV.
+FACILITY   (VDG,1USAORL) 2.5-MV electrostatic generator
+INC-SOURCE (D-T) Deuterons accelerated to 1.96 MeV by the 2.5-MV
+           electrostatic generator entered a 1.5-in. long
+           tritium gas target through a 0.05-mil nickel foil.
+DETECTOR   (TELES,PROPC,NAICR) The polyethylene radiator, two
+           proportional counters, and the NaI spectrometer.
+           (LONGC) A long propane recoil counter biased above
+           D-D neutrons was the neutron flux monitor.
+STATUS     (SCSRS)
+HISTORY    (19760628T) Translated from SCISRS
+           (19820106A) converted to REACTION formalism
+           (20110914A) SD:Updated to new date formats,lower case.
+                corrected according to last EXFOR rules and Dict.
+                BIB updated; SF1, SF4 in REACTION and MONITOR
+                          codes changed (H-0 => H-1) in Subent.2
+ENDBIB              19
+NOCOMMON             0          0
+ENDSUBENT           22
+SUBENT        11090002   20110914   20120207   20111126       1377
+BIB                  3          6
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG)
+HISTORY    (19860326A) REACTION product added, COMMON,
+                                           DATA heading updated.
+           (20110914A) SD: SF1, SF4 in REACTION and MONITOR
+                                       codes changed (H-0 => H-1)
+ENDBIB               6
+COMMON               4          3
+EN         EN-RSL     ANG-RSL    MONIT
+MEV        MEV        ADEG       MB
+ 17.9        0.1         3.         535.
+ENDCOMMON            3
+DATA                 3         11
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.15600    38.4
+ 0.00000    42.3
+-0.1730     40.6
+-0.3420     43.3
+-0.5000     39.4
+-0.6420     43.2
+-0.7660     43.3
+-0.8660     44.0
+-0.9390     45.0
+-0.9840     44.0
+-0.9970     45.0        1.0
+ENDDATA             13
+ENDSUBENT           28
+ENDENTRY             2

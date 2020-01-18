@@ -1,0 +1,184 @@
+ENTRY            E2346   20120130   20120207   20120130       E067
+SUBENT        E2346001   20120130   20120207   20120130       E067
+BIB                 11         33
+TITLE      Three nucleon force effects in intermediate-energy
+           deuteron analyzing powers for d p elastic scattering
+AUTHOR     (K.Sekiguchi, H.Okamura, N.Sakamoto, H.Suzuki,
+            M.Dozono, Y.Maeda, T.Saito, S.Sakaguchi, H.Sakai,
+            M.Sasano, Y.Shimizu, T.Wakasa, K.Yako, H.Witala,
+            W.Glockle, J.Golak, H.Kamada, A.Nogga)
+INSTITUTE  (2JPNTOH) Department of Physics
+           (2JPNOSA) Research Center for Nuclear Physics
+           (2JPNIPC)
+           (2JPNTSU) Graduate School of Pure and Applied Sciences
+           (2JPNKYU) Department of Physics
+           (2JPNMZK) Faculty of Engineering
+           (2JPNTOK) Department of Physics
+           (2JPNTOK) Center for Nuclear Study
+           (3POLUJK) Institute of Physics
+           (2GERBOC) Institut fur theoretische Physik II
+           (2JPNJPN) Department of Physics, Kyushu Institute of
+                     Technology
+           (2GERJUL) Institut fur Kernphysik
+REFERENCE  (J,PR/C,83,(6),061001,201106)
+PART-DET   (P,D)
+SAMPLE     - Target is natural.
+           - Chemical-form of target is CH2.
+           - Physical-form of target is solid.
+           - Target-thickness is 330 mg/cm**2.
+METHOD     (COINC) Detect proton and deuteron in coincidence.
+FACILITY   (CYCLO,2JPNIPC) Super conducting cyclotron SRC
+DETECTOR   Solid angle: +-1 degree
+           (SCIN) Four pairs of plastic scintillators
+STATUS     (APRVD) Proofread by K.Sekiguchi (2011.09.26)
+           (TABLE) Plotted in Fig.2 of J,PR/C,83,061001,2011
+HISTORY    (20110924R) Received by e-mail from K.Sekiguchi
+           (20110926C) MO and MA
+ENDBIB              33
+COMMON               1          3
+EN
+MEV/A
+ 250.
+ENDCOMMON            3
+ENDSUBENT           40
+SUBENT        E2346002   20120130   20120207   20120130       E067
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and deuteron
+ERR-ANALYS (ERR-S) Statistical uncertainty
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 3         25
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+       36.2      0.277      0.007
+       39.9      0.216      0.003
+       45.4      0.114      0.003
+       50.1      0.040      0.005
+       54.8     -0.037      0.004
+       59.5     -0.100      0.006
+       64.3     -0.165      0.004
+       69.1     -0.218      0.006
+       74.0     -0.235      0.003
+       78.9     -0.248      0.004
+       84.8     -0.258      0.006
+       91.2     -0.250      0.005
+       93.9     -0.236      0.008
+       99.0     -0.211      0.006
+      104.1     -0.199      0.005
+      114.5     -0.197      0.009
+      119.8     -0.205      0.019
+      125.1     -0.181      0.005
+      130.5     -0.151      0.006
+      135.9     -0.126      0.005
+      141.3     -0.087      0.006
+      146.8     -0.053      0.005
+      152.3     -0.011      0.006
+      157.8      0.016      0.006
+      161.1      0.043      0.006
+ENDDATA             27
+ENDSUBENT           35
+SUBENT        E2346003   20120130   20120207   20120130       E067
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,20,POL/DA,,TAP)
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and deuteron
+ERR-ANALYS (ERR-S) Statistical uncertainty
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 3         25
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+       36.2      0.086      0.009
+       39.9      0.092      0.006
+       45.4      0.128      0.005
+       50.1      0.161      0.010
+       54.8      0.178      0.008
+       59.5      0.223      0.011
+       64.3      0.241      0.008
+       69.1      0.254      0.011
+       74.0      0.233      0.006
+       78.9      0.207      0.008
+       84.8      0.182      0.011
+       91.2      0.130      0.008
+       93.9      0.138      0.011
+       99.0      0.108      0.012
+      104.1      0.155      0.010
+      114.5      0.154      0.007
+      119.8      0.173      0.016
+      125.1      0.183      0.009
+      130.5      0.123      0.011
+      135.9     -0.004      0.009
+      141.3     -0.122      0.010
+      146.8     -0.242      0.010
+      152.3     -0.382      0.011
+      157.8     -0.462      0.011
+      161.1     -0.527      0.011
+ENDDATA             27
+ENDSUBENT           35
+SUBENT        E2346004   20120130   20120207   20120130       E067
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,21,POL/DA,,TAP)
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and deuteron
+ERR-ANALYS (ERR-S) Statistical uncertainty
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 3         17
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+       36.2      0.001      0.005
+       39.9      0.000      0.004
+       45.4     -0.018      0.005
+       54.8     -0.065      0.007
+       64.3     -0.169      0.012
+       74.0     -0.272      0.015
+       78.9     -0.330      0.018
+       91.2     -0.345      0.018
+       93.9     -0.323      0.018
+      104.1     -0.278      0.023
+      114.5     -0.220      0.019
+      125.1     -0.240      0.014
+      135.9     -0.355      0.020
+      146.8     -0.443      0.024
+      152.3     -0.450      0.023
+      157.8     -0.478      0.027
+      161.1     -0.427      0.024
+ENDDATA             19
+ENDSUBENT           27
+SUBENT        E2346005   20120130   20120207   20120130       E067
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,22,POL/DA,,TAP)
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and deuteron
+ERR-ANALYS (ERR-S) Statistical uncertainty
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 3         25
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+       36.2     -0.183      0.004
+       39.9     -0.214      0.003
+       45.4     -0.260      0.002
+       50.1     -0.294      0.004
+       54.8     -0.323      0.003
+       59.5     -0.354      0.005
+       64.3     -0.391      0.003
+       69.1     -0.385      0.004
+       74.0     -0.364      0.002
+       78.9     -0.341      0.003
+       84.8     -0.297      0.005
+       91.2     -0.233      0.003
+       93.9     -0.161      0.004
+       99.0     -0.107      0.005
+      104.1     -0.059      0.004
+      114.5      0.003      0.003
+      119.8      0.018      0.007
+      125.1     -0.005      0.004
+      130.5     -0.027      0.004
+      135.9     -0.043      0.004
+      141.3     -0.060      0.004
+      146.8     -0.066      0.004
+      152.3     -0.075      0.004
+      157.8     -0.071      0.005
+      161.1     -0.081      0.004
+ENDDATA             27
+ENDSUBENT           35
+ENDENTRY             5

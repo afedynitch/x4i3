@@ -1,0 +1,152 @@
+ENTRY            22886   20051208   20060217   20060213       2175
+SUBENT        22886001   20051208   20060217   20060213       2175
+BIB                 14         50
+TITLE      .Forward-angle neutron-proton scattering at 96 MeV
+AUTHOR     (C.JOHANSSON, J.BLOMGREN, A.ATAC, B.BERGENWALL,
+           S.DANGTIP, K.ELMGREN, A.HILDEBRAND, O.JONSSON, J.KLUG,
+           P.MERMOD, P.NADEL-TURONSKI, L.NILSSON, N.OLSSON,
+           S.POMP, A.V.PROKOFIEV, P.-U.RENBERG, U.TIPPAWAN,
+           M.OESTERLUND)
+INSTITUTE  (2SWDUPP) .Johansson, Blomgren, Bergenwall, Dangtip,
+                      Elmgren, Hildebrand, Klug, Mermod,
+                      Nilsson, Olsson, Pomp, Tippawan,
+                      Oesterlund - Department of Neutron Research
+                     .Jonsson, Nilsson, Prokofiev, Renberg -
+                       The Swedberg Laboratory
+                     .Nadel-Turonski - Dept of Radiation Science
+           (2SWDFOI) .Elmgren, Olsson
+           (3TAICHM) .Dangtip, Tippawan
+           (1USAGWU) .Nadel-Turonski
+REFERENCE  (J,PR/C,71,024002,2005)    Main reference, data given
+           (J,NIM/A,489,282,2002) Description of the experimental
+             arrangements, including SCANDAL detector system
+           (J,PR/C,57,1077,1998)  Experimental Details
+FACILITY   (CYCLO,2SWDUPP)  Gustaf Werner proton cyclotron
+                            of the Swedberg lab
+INC-SOURCE (P-LI7)  427 mg/cm2 thick lithium target enriched to
+                    99.98% by 7Li
+DETECTOR   (TELES,PROPC,PROPC) Nine multiwire proportional
+                               chambers (MWPC)
+           (TELES,SCIN,CSICR)  SCANDAL set-up:
+            - proton detection with 35 MeV energy threshold in
+              the angular range 10-140 degrees
+            - particle identification using E-DE technique
+            - proton energy measured using 24 CsI(Na) detectors
+            - proton trajectory calculated with drift chambers
+            - count rate increased using a sandwiched multitarget
+              system
+            - events associated with 96 MeV neutrons from the
+              beam are selected using a time-of-flight technique
+            - energy resolution ~3.7 MeV
+            - angular resolution  aprx. 10 degree
+           (TFBC)  For neutron flux monitoring
+METHOD     (TOF)
+PART-DET   (N,P)
+MONITOR    .Absolute measurements
+SAMPLE     .Target box containes cylinders of C-H2 16 mm high and
+            8 mm diameter, mass 748.2 gram, and C-12 targets, the
+            latter for subtraction of the carbon contribution
+            to the C-H2 spectra, containing 98.9% of C-12, weight
+            1225 gram
+CORRECTION .For energy loss in the subsequent targets
+STATUS     .Data from main reference
+HISTORY    (20051205C)    S.M.
+ENDBIB              50
+COMMON               3          3
+EN         EN-ERR     EN-RSL-FW
+MEV        MEV        MEV
+    95.6     0.5        1.6
+ENDCOMMON            3
+ENDSUBENT           57
+SUBENT        22886002   20051209   20060217   20060213       2175
+BIB                  2          3
+REACTION   (1-H-1(N,EL)1-H-1,,DA)   Neutron  angdist
+STATUS     .Data from Table I of main reference
+           (APRVD)  J.Blomgren, 2005-06-27
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 6         12
+ANG-CM     DATA-CM    ERR-S      ERR-S      ERR-SYS    ERR-SYS
+ADEG       MB/SR      MB/SR      PER-CENT   MB/SR      PER-CENT
+19.9       10.68        0.37       3.5        1.31      12.3
+27.0        9.82        0.32       3.3        0.65       6.6
+34.2        7.39        0.17       2.3        0.31       4.2
+42.5        7.63        0.13       1.7        0.30       3.9
+50.0        5.70        0.11       1.9        0.23       4.0
+51.6        6.31        0.16       2.5        0.25       4.0
+58.2        5.08        0.09       1.8        0.21       4.1
+58.9        4.54        0.12       2.6        0.18       4.0
+66.5        4.33        0.11       2.5        0.18       4.2
+66.9        4.48        0.08       1.8        0.18       4.0
+74.6        4.28        0.10       2.3        0.18       4.2
+75.6        4.03        0.07       1.7        0.18       4.5
+ENDDATA             14
+ENDSUBENT           22
+SUBENT        22886003   20051208   20060217   20060213       2175
+BIB                  3          5
+REACTION   (1-H-1(N,EL)1-H-1,,DA)  Neutron angdist
+REL-REF    (R,22668002,J.RAHM+,J,PR/C,63,044001,2001)
+STATUS     .From Table II of main reference
+           (RNORM,22668002)
+           (APRVD)  J.Blomgren, 2005-06-27
+ENDBIB               5
+NOCOMMON             0          0
+DATA                 4         53
+ANG-CM     DATA-CM    ERR-T      ERR-T
+ADEG       MB/SR      MB/SR      PER-CENT
+ 75.         4.10      0.11        2.7
+ 77.         3.99      0.11        2.7
+ 79.         3.99      0.11        2.8
+ 81.         4.11      0.11        2.8
+ 83.         4.13      0.11        2.7
+ 85.         4.02      0.10        2.7
+ 87.         4.11      0.10        2.5
+ 89.         4.07      0.10        2.4
+ 91.         4.16      0.10        2.5
+ 93.         4.14      0.10        2.4
+ 95.         4.20      0.10        2.4
+ 97.         4.14      0.10        2.4
+ 99.         4.36      0.06        1.4
+101.         4.47      0.06        1.4
+103.         4.59      0.06        1.3
+105.         4.69      0.06        1.3
+107.         4.82      0.06        1.2
+109.         4.93      0.06        1.2
+111.         5.02      0.07        1.4
+113.         5.22      0.07        1.3
+115.         5.28      0.07        1.3
+117.         5.43      0.06        1.1
+119.         5.60      0.06        1.1
+121.         5.88      0.07        1.2
+123.         6.12      0.07        1.1
+125.         6.24      0.07        1.1
+127.         6.41      0.07        1.1
+129.         6.68      0.12        1.8
+131.         7.17      0.13        1.8
+133.         7.31      0.13        1.8
+135.         7.44      0.14        1.9
+137.         7.51      0.14        1.8
+139.         7.70      0.14        1.8
+141.         8.01      0.14        1.7
+143.         8.10      0.14        1.7
+145.         8.34      0.14        1.7
+147.         8.55      0.15        1.8
+149.         8.95      0.10        1.1
+151.         9.19      0.10        1.1
+153.         9.47      0.10        1.1
+155.        10.14      0.12        1.2
+157.        10.60      0.12        1.1
+159.        11.00      0.14        1.3
+161.        11.26      0.14        1.2
+163.        11.92      0.14        1.2
+165.        12.42      0.15        1.2
+167.        13.15      0.16        1.2
+169.        13.62      0.12        0.9
+171.        14.04      0.13        0.9
+173.        14.53      0.13        0.9
+175.        14.89      0.14        0.9
+177.        15.19      0.15        1.1
+179.        15.05      0.17        1.0
+ENDDATA             55
+ENDSUBENT           65
+ENDENTRY             3

@@ -1,0 +1,126 @@
+ENTRY            22914   20080701   20080828   20080828       2200
+SUBENT        22914001   20080701   20080828   20080828       2200
+BIB                 16         70
+TITLE       Search for three-body force effects in neutron-
+            deuteron scattering at 95 MeV.
+AUTHOR     (P.Mermod, J.Blomgren, B.Bergenwall, A.Hildebrand,
+           C.Johansson, J.Klug, L.Nilsson, N.Olsson, M.Osterlund,
+           S.Pomp, U.Tippawan, O.Jonsson,A.Prokofiev,P.-U.Renberg,
+           P.Nadel-Turonski, Y.Maeda, H.Sakai, A.Tamii)
+INSTITUTE  (2SWDUPP) Klug, Blomgren, Bergenwall, Hildebrand,
+                      Johansson, Mermod, Nilsson, Pomp, Tippawan,
+                      Olsson, Osterlund -
+                      Dept.of Neutron Research, Uppsala University
+                     Jonsson, Prokofiev, Renberg, Nilsson -
+                      Swedberg Lab.,
+                     Nadel-Turonski- Dept. of Radiation Sciences
+           (2SWDFOI) Olsson - Swedish Defence Res.Agency
+           (2JPNTOK) Maeda, Sakai, Tamii -Dep.of Physics
+REFERENCE  (J,PL/B,597,243,2004) Main Ref.
+           (J,NIM/A,489,282,2002) Details of neutron beam facility
+           (J,NIM/A,452,484,2000) MEDLEY exp.setup description
+           (C,2004SANTA,1,688,200409)     Graphs.
+           (J,PR/C,74,054002,2006) Data confirmed in Fig.15.
+            Details of experiment and data analysis.
+FACILITY   (CYCLO,2SWDUPP)  MEDLEY experimental setup at the
+                            Swedberg Laboratory - TSL
+INC-SOURCE (P-LI7) 98 MeV proton beam of about 5 microA struck
+            8 mm thick Li-7 target.
+INC-SPECT  .Full-energy peak neutrons of 94.8 MeV and 2.7 MeV FWHM
+            Intensity about 5.E4 n/(cm2*sec) at target position.
+            Relative neutron fluences were determined by two
+            independent fission-based monitors.
+DETECTOR   (TELES,SIBAR,CSICR) Eight detector telescopes,each can
+            be equipped with one or two silicon detectors and one
+            CsI detector. For light ion detection in energy range
+            3-130 MeV.Telescopes were placed in forward hemisphere
+            at various angles. Energy resolution from 3 to 15 MeV
+            (FWHM) varying from telescope to telescope.
+            CsI detection efficiency between 0.92 and 1.00 with
+            uncertainty up to 2%.
+SAMPLE     .Polyethylene C-D2 of 280 microm thickness,
+            C-H2 of 1 mm or 195 microm thickness foils for
+            nd and np measurements respectively.
+            C target of 150 microm thickness for carbon background
+            subtraction. Empty target frame for instrumental
+            background subtraction.
+METHOD     (EDE) Protons and deuterons were identified by
+                 selection in deltaE/E Two-dimensional plot.
+           (TOF) Events due to low-energy neutrons were partly
+                 rejected by time-of-flight techniques.
+CORRECTION .Correction factor for energy resolution from 0.99 to
+            0.74 with uncertainty up to 2%.
+            Correction for CsI detection efficiency.
+            Correction for energy loses inside target at smallest
+            neutron c.m. angle by about factor 2.
+MONITOR    (1-H-1(N,EL)1-H-1,,DA)
+MONIT-REF  (22668002,J.RAHM+,J,PR/C,63,044001,2001)  - Absolute
+            cross-sections are obtained by normalization to the
+            H(N,P) elastic scattering differential cross-section
+            at 96 MeV, obtained by LISA magnetic spectrometer.
+ERR-ANALYS (ERR-S) Counting Statistics uncertainty about 4.%
+           (ERR-SYS) Systematic uncertainty(including ERR-1,ERR-2,
+                    ERR-3) about 5.%
+           (ERR-1) Absolute normalization uncertainty,
+           (ERR-2) Uncertainty in setup geometry and detector
+                   response,
+           (ERR-3) Event identification uncertainty.
+           (ERR-4) Uncertainty in absolute neutron flux given by
+                   neutron monitors.
+COMMENT    Corresponding author e-mail : jan.blomgren@tsl.uu.se
+HISTORY    (20060518C) M.M. / S.M.
+           (20070628A)  4th Reference was added.   M.M.
+           (20080701A) 5th Reference was added.    M.M.
+ENDBIB              70
+COMMON               7          6
+EN         EN-RSL-FW  ANG-ERR    ERR-1      ERR-2      ERR-3
+ERR-4
+MEV        MEV        ADEG       PER-CENT   PER-CENT   PER-CENT
+PER-CENT
+94.8        2.7        0.5           4.         2.         3.
+ 10.
+ENDCOMMON            6
+ENDSUBENT           80
+SUBENT        22914002   20080701   20080828   20080828       2200
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (TABLE) From Table 1 of main Ref.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 4         10
+ANG-CM     DATA-CM    ERR-S      ERR-SYS
+ADEG       MB/SR      MB/SR      MB/SR
+  27.5       7.66       0.38        0.41
+  50.6       5.53       0.11        0.30
+  58.9       4.69       0.08        0.21
+  69.7       4.63       0.07        0.25
+  87.2       4.13       0.04        0.24
+  98.6       4.16       0.06        0.19
+ 107.0       4.89       0.05        0.28
+ 127.6       6.41       0.05        0.37
+ 139.1       7.83       0.10        0.43
+ 150.0       9.25       0.11        0.54
+ENDDATA             12
+ENDSUBENT           19
+SUBENT        22914003   20080701   20080828   20080828       2200
+BIB                  2          2
+REACTION   (1-H-2(N,EL)1-H-2,,DA)
+STATUS     (TABLE) From Table 1 of main Ref.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 4         10
+ANG-CM     DATA-CM    ERR-S      ERR-SYS
+ADEG       MB/SR      MB/SR      MB/SR
+  29.5      17.1        0.2         2.2
+  49.6       3.87       0.06        0.20
+  58.3       1.86       0.03        0.10
+  69.5       1.31       0.03        0.07
+  88.8       0.668      0.015       0.038
+  99.2       0.490      0.016       0.027
+ 107.6       0.495      0.017       0.029
+ 128.7       0.506      0.016       0.029
+ 139.5       0.483      0.027       0.026
+ 150.0       0.746      0.049       0.043
+ENDDATA             12
+ENDSUBENT           19
+ENDENTRY             3

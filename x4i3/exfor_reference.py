@@ -25,7 +25,7 @@
 import string
 import os
 import copy
-import pyparsing
+from .pyparsing import commaSeparatedList, ParseException
 from .exfor_utilities import x4Dictionaries
 from .exfor_exceptions import ReferenceParsingError
 
@@ -73,8 +73,8 @@ class X4ReferenceCode:
         if not str:
             raise TypeError("X4ReferenceCode.__init__ takes a string as an argument")
         try:
-            self.refcode = pyparsing.commaSeparatedList.parseString(x).asList()
-        except pyparsing.ParseException as err:
+            self.refcode = commaSeparatedList.parseString(x).asList()
+        except ParseException as err:
             raise ReferenceParsingError(
                 'Can not parse reference code "' + x + '",\n    got error "' + str(err) + '"\n   ')
         self.reftype = self.refcode[0]

@@ -1,0 +1,97 @@
+ENTRY            11079     820106              20050926       0000
+SUBENT        11079001     820106              20050926       0000
+BIB                  6          8
+INSTITUTE  (1USARIC)
+REFERENCE  (J,PR,95,730,54)
+AUTHOR     (J.R.SMITH)
+TITLE      SCATTERING OF 14.1-MEV NEUTRONS IN HELIUM, HYDROGEN AND
+           NITROGEN.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+ENDBIB               8
+NOCOMMON             0          0
+ENDSUBENT           11
+SUBENT        11079002     820106              20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,REL)
+DETECTOR   (TRD) CLOUD CHAMBER
+ENDBIB               2
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 14.1       0.1
+ENDCOMMON            3
+DATA                 2         12
+ANG-CM     DATA
+ADEG       ARB-UNITS
+ 15.        108.
+ 25.        105.
+ 35.         88.
+ 45.        106.
+ 55.         76.
+ 65.        101.
+ 75.        101.
+ 90.        102.
+110.         96.
+130.         87.
+150.         88.
+170.         85.
+ENDDATA             14
+ENDSUBENT           25
+SUBENT        11079003     820106              20050926       0000
+BIB                  2          2
+REACTION   (2-HE-4(N,EL)2-HE-4,,DA,,REL)
+DETECTOR   (TRD) CLOUD CHAMBER
+ENDBIB               2
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 14.1       0.1
+ENDCOMMON            3
+DATA                 2         10
+ANG-CM     DATA
+ADEG       ARB-UNITS
+ 29.        0.238
+ 40.        0.194
+ 60.        0.150
+ 70.        0.110
+ 80.        0.065
+ 95.        0.023
+105.        0.013
+120.        0.023
+135.        0.018
+155.        0.053
+ENDDATA             12
+ENDSUBENT           23
+SUBENT        11079004     860326              20050926       0000
+BIB                  4          5
+REACTION   (7-N-0(N,EL)7-N-0,,SIG)
+DETECTOR   (TRD)      CLOUD CHAMBER
+MONITOR    (7-N-0(N,TOT),,SIG)
+            BASED ON NITROGEN TOTAL=1.59B.
+HISTORY    (860326A) REACTION PRODUCT ADDED.
+ENDBIB               5
+NOCOMMON             0          0
+DATA                 3          1
+EN         EN-RSL     DATA
+MEV        MEV        B
+ 1.41   +01 1.     -01 8.2    -01
+ENDDATA              3
+ENDSUBENT           13
+SUBENT        11079005     860120              20050926       0000
+BIB                  4          5
+REACTION   (7-N-0(N,INL)7-N-0,,SIG)
+DETECTOR   (TRD)      CLOUD CHAMBER
+MONITOR    (7-N-0(N,TOT),,SIG)
+            BASED ON NITROGEN TOTAL=1.59B.
+HISTORY    (860120A) REACTION PRODUCT ADDED.
+ENDBIB               5
+NOCOMMON             0          0
+DATA                 3          1
+EN         EN-RSL     DATA
+MEV        MEV        B
+ 1.41   +01 1.     -01 4.8    -01
+ENDDATA              3
+ENDSUBENT           13
+ENDENTRY             5

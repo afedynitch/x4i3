@@ -1,0 +1,202 @@
+ENTRY            40177   20021225   20030502   20050926       0000
+SUBENT        40177001   20021225   20030502   20050926       0000
+BIB                 12         44
+INSTITUTE  (4RUSFEI)
+REFERENCE  (J,AE,33,825,197210)     Table of Data and Graph are
+                                  Given
+AUTHOR     (YU.G.PANITKIN,V.A.TOLSTIKOV)
+TITLE       Radiative Capture of Neutrons by U-238 in the Neutron
+            Energy Range 5-20 MeV
+FACILITY   (VDG) Two Van De Graaff Accelerators with a Maximum
+                Of Energy 2.5 MeV and 5 MeV Respectively
+INC-SOURCE (D-D)      Deuteron-Deuterium Reaction in Neutron
+                  Energy Range 5-7 MeV
+           (D-T)  Deuteron-Tritium Reaction in the Neutron Energy
+                  Range 17-20 MeV
+METHOD     (ACTIV)    Activation
+DETECTOR   (GELI)     Germanium-Lithium Detector For Gammas
+           (FISCH)    Fission Chamber For the Neutron Flux
+                     Measurements
+ANALYSIS   (AREA)     Area Analysis
+CORRECTION Correction For Background of Neutron(1-2 PERCENTS),
+           Neutrons Inelastic Scattering on Construction Materials
+            (10-12 PERCENTS FOR THE SAMPLE AND 2 PERCENTS FOR THE
+            FISSION CHAMBER),Neutrons Emitting from the Target'S
+           Backing(10-80 PERCENTS FOR U-238 AND 2-25 PERCENTS FOR
+           THE FISSION CHAMBER)And Admixture of the Other Fissible
+           Nuclei(4 PERCENTS) Were Taken Into Account For the
+           First Region of the Measurements
+           For the Second One were Induced the Corrections For
+           Background of Neutrons(2 PERCENTS),Inelastic Scattering
+            (10 PERCENTS) And Neutrons Emitting from the Target
+           Backing(10-80 PERCENTS FOR U-238 AND 2-20 PERCENTS FOR
+           AL FOIL)
+ERR-ANALYS (ERR-T)           Mean Square Error of the Experiment
+           For the First Part of the Experiment All Errors of the
+           Corrections Except That in Fission Cross Section of
+           U-235 and Capture Cross Section of U-238 were Taken
+           Into Account
+           For the Second Part the Errors of (N,P) Cross Section
+           For Al were Introduced Besides That
+HISTORY    (19731122C)  Compiled at the Centre
+           (19750210A) Corrections in Data-Section of Subentry 002
+           (19870608A) Subent 40177003 Inserted Containing
+            Renormalized Set of Data For Sigma(NG) U-238
+           (20010314U)  Dates and Bib-Information Corrected
+           (20021225A)  Corrected at CJD
+           (20021225U) Last checking has been done.
+ENDBIB              44
+NOCOMMON
+ENDSUBENT           47
+SUBENT        40177002   20021225   20030502   20050926       0000
+BIB                  7         24
+REACTION   (92-U-238(N,G)92-U-239,,SIG)
+MONITOR    ((MONIT1)92-U-238(N,G)92-U-239,,SIG) Normalis. Capture
+            Cross-Section at 24.4 KeV are Taken from Nucl.Sci.And
+            Engng.,33,24,1968
+           ((MONIT2)92-U-235(N,F),,SIG)         For Neutron Flux
+            Measurement Fission  Cross Section of U-235 are Taken
+            From W.Hart, Parer Uk-10,Uk-Ussr Seminar, June, 1968
+           ((MONIT3)13-AL-27(N,P)12-MG-27,,SIG)    For Neutron
+              Flux Measurement N-P Cross-Sections  are Taken from
+              G.Calvi Et Al, Nucl.Phys,39,621,1962 and
+                G.Mani Et Al, Nucl.Phys.,19,535,1960
+MONIT-REF  ((MONIT1),,J,NSE,33,24,1968)
+           ((MONIT2),W.HART+,W,HART,1968)
+           ((MONIT3),G.CALVI+,J,NP,39,621,1962)
+SAMPLE     Powder of the Oxide of U-238
+           Before the Activity Measurement the Sample was Purified
+           From Fission Fragments
+STATUS     .Data from J,Ae,33,(4),825,7210
+ERR-ANALYS (EN-ERR)  The Errors was Conditioned by Accelerator
+            Beam Attenuation and Dependence of Neutrons Energy
+            Upon40177001 the Angle of Incidence
+HISTORY    (20010314U)    Monitor Keyword Inserted
+           (20021225A)   Bib-Info Specified
+           (20021225U) Last checking has been done.
+ENDBIB              24
+COMMON               2          3
+EN-NRM     MONIT1
+KEV        MB
+       24.4       516.
+ENDCOMMON            3
+DATA                 7          7
+EN         EN-ERR     DATA       ERR-T      MONIT2     MONIT3
+MONIT3-ERR
+MEV        MEV        MB         MB         B          MB
+MB
+         5.      0.115       8.3         1.        1.09
+
+         6.      0.136       6.8         0.9       1.11
+
+         7.      0.16        5.8         1.1       1.59
+
+        17.      0.26        3.7         1.3                   50.
+        10.
+        18.      0.235       3.3         1.2                   40.
+         8.
+        19.      0.25        2.9         1.4                   40.
+         8.
+        20.      0.285       3.36        1.9                   25.
+         5.
+ENDDATA             18
+ENDSUBENT           51
+SUBENT        40177003   20021225   20030502   20050926       0000
+BIB                  5         15
+REACTION   (92-U-238(N,G)92-U-239,,SIG)
+MONITOR    ((MONIT4)92-U-235(N,F),,SIG)
+ERR-ANALYS (ERR-1)  Error of the Cross-Section Energy
+                    Dependence
+STATUS     (APRVD)   Tolstikov, 1987-06
+           (COREL,40121002) /* Data Contaned in References    */
+           (COREL,40177002) /* 1. C,70Helsinki,Vol.2,51,1970  */
+           (COREL,40431002) /* 2. C,70Helsinki,Vol.2,57,1970  */
+                            /* 3. J,Ae,Vol.33,782, 1972       */
+                            /* 4. J,Ae,Vol.33,825, 1972       */
+               /*     are Renormalized by Tolstikov in 1976   */
+HISTORY    (19870608C) Compiled at the Center - CJD
+            Renormalized Set of Data For Sigma(NG) U-238
+           (20021225A)   Corrected at CJD. Bib-Info Added
+           (20021225U) Last checking has been done.
+ENDBIB              15
+NOCOMMON
+DATA                 8         36
+EN         EN-RSL-FW  DATA       ERR-S      ERR-1      ERR-T
+MONIT4     MONIT4-ERR
+KEV        KEV        MB         PER-CENT   PER-CENT   PER-CENT
+B          PER-CENT
+  24.         8.       478.        2.5        3.        5.9
+     2.21        2.3
+  30.         6.       454.                             4.4
+     2.11        2.2
+  35.         8.       419.        3.1        3.5       6.1
+     2.04        2.4
+  45.         8.5      372.        2.2        2.7       5.8
+     1.89        2.4
+  55.         9.       364.        2.7        2.7       5.8
+     1.82        2.4
+  65.        10.       307.        2.         2.5       5.8
+     1.76        2.4
+  75.        10.5      279.        2.5        2.5       5.8
+     1.67        2.4
+  85.        11.       242.        2.1        3.1       6.
+     1.62        2.4
+ 105.        11.5      211.        2.1        3.9       6.5
+     1.57        3.8
+ 125.        12.5      187.        2.1        3.7       6.3
+     1.51        3.5
+ 145.        13.5      168.        2.2        4.6       6.6
+     1.45        4.5
+ 200.        18.       148.        2.2        2.7       5.8
+     1.36        2.4
+ 250.        19.       136.        2.2        3.4       6.2
+     1.30        3.2
+ 300.        19.       125.        2.2        3.5       6.3
+     1.26        3.3
+ 400.        19.5      117.5       2.2        4.        6.5
+     1.21        3.7
+ 500.        22.       114.5       2.2        4.3       6.7
+     1.16        4.1
+ 600.        34.       113.5       2.2        4.2       6.7
+     1.14        4.
+ 700.        35.       119.5       2.2        3.9       6.5
+     1.12        3.7
+ 800.        36.       119.5       2.2        3.8       6.5
+     1.14        3.6
+ 900.        36.       122.5       2.2        4.5       7.
+     1.18        4.3
+1000.        39.       118.5       2.2        3.3       6.1
+     1.23        3.
+1100.        41.       113.5       2.3        3.3       6.1
+     1.24        3.
+1200.        43.        99.        2.4        4.4       6.8
+     1.25        4.1
+1300.        45.        85.5       2.6        3.1       6.
+     1.24        2.4
+1500.        49.        63.        2.7        3.1       6.1
+     1.24        2.6
+1800.        54.        52.        2.9        3.        6.
+     1.28        2.
+2000.        57.        44.        2.6        2.9       6.
+     1.28        2.2
+2200.        61.        36.5       3.3        4.        6.3
+     1.28        2.4
+2500.        67.        28.5       3.4        3.8       6.4
+     1.24        2.5
+2800.        73.        23.5       3.8        4.2       6.6
+     1.22        2.5
+3000.        78.        20.        3.6        3.9       6.5
+     1.21        2.3
+3500.        94.        17.2       8.2                 10.
+     1.18        2.9
+4000.       110.        14.8       7.2                  9.2
+     1.14        2.9
+5000.       115.         9.3      12.2                 13.5
+     1.09        3.
+6000.       136.         7.8      13.3                 14.3
+     1.14        2.9
+7000.       160.         6.1      18.7                 20.
+     1.52        5.3
+ENDDATA             76
+ENDSUBENT           96
+ENDENTRY             3

@@ -1,0 +1,52 @@
+ENTRY            14129   20070404   20070719   20070713       1343
+SUBENT        14129001   20070404   20070719   20070713       1343
+BIB                 12         20
+INSTITUTE  (1USALAS,1USALRL)
+REFERENCE  (J,NSTS,2,(1),620,2002)
+AUTHOR     (J.A.Becker,L.A.Bernstein,W.Younes,D.P.McNabb,
+            P.E.Garrett,D.E.Archer,C.A.McGrath,M.A.Stoyer,H.Chen,
+            W.E.Ormand,R.O.Nelson,M.B.Chadwick,G.D.Johns,D.Drake,
+            P.G.Young,M.Devlin,N.Fotiades,W.S.Wilburn)
+TITLE      Partial gamma-ray cross sections for the reaction
+           239Pu(n,2ng) and the 239Pu(n,2n) cross section
+FACILITY   (ACCEL,1USALAS) LANSCE accelerator at Los Alamos
+INC-SPECT  WNR center, spallation target, Flight path 60R, 20.34 m
+DETECTOR   (GE) GEANIE detector, 4pi Germanium
+SAMPLE     High enriched 239Pu target, low 241Am contaminant (
+            1.2 +/- 0.5 ppm)
+METHOD     (TOF)
+           Partial reaction measured. Total (n,2n) reconstructed
+            with GNASH calculations
+ANALYSIS   Preliminary Results
+MONITOR    238U and 235U fission chamber used as neutron flux
+            monitor
+HISTORY    (20070404C) DR
+ENDBIB              20
+NOCOMMON             0          0
+ENDSUBENT           23
+SUBENT        14129002   20070404   20070719   20070713       1343
+BIB                  3          3
+REACTION   (94-PU-239(N,2N)94-PU-238,,SIG)
+ERR-ANALYS (ERR-T) Total uncertainties
+STATUS     (CURVE) Data taken from Fig. 2
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 4         13
+EN         EN-ERR     DATA       ERR-T
+MEV        MEV        B          B
+  6.481E+00  2.239E-01  1.009E-01  3.081E-02
+  6.942E+00  1.894E-01  1.261E-01  2.015E-02
+  7.490E+00  2.412E-01  1.525E-01  1.422E-02
+  8.084E+00  2.582E-01  2.263E-01  1.540E-02
+  8.751E+00  2.930E-01  2.669E-01  1.659E-02
+  9.504E+00  3.446E-01  3.029E-01  1.659E-02
+  1.034E+01  3.961E-01  3.508E-01  2.014E-02
+  1.134E+01  4.307E-01  3.561E-01  2.015E-02
+  1.245E+01  5.340E-01  2.951E-01  1.776E-02
+  1.377E+01  6.030E-01  2.284E-01  1.539E-02
+  1.533E+01  7.231E-01  1.558E-01  1.540E-02
+  1.719E+01  8.438E-01  1.178E-01  8.262E-03
+  1.934E+01  1.068E+00  1.025E-01  7.097E-03
+ENDDATA             15
+ENDSUBENT           23
+ENDENTRY             2

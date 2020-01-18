@@ -1,0 +1,259 @@
+ENTRY            E2159   20100816   20100915   20100816       E063
+SUBENT        E2159001   20100816   20100915   20100816       E063
+BIB                 10         28
+TITLE      Tensor analyzing powers of pd radiative capture
+AUTHOR     (Y.Tameshige, K.Hatanaka, K.Sagara, M.Dozono, K.Fujita,
+           E.Ihara, T.Kaneda, M.Kato, T.Kawabata, S.Kuroita,
+           Y.Maeda, H.Matsubara, H.Okamura, Y.Sakemi,
+           K.Sekiguchi, Y.Shimizu, T.Sugimoto, A.Tamii,
+           T.Wakasa)
+INSTITUTE  (2JPNOSA) Research Center for Nuclear Physics
+           (2JPNKYU) Department of Physics
+           (2JPNTOK) Center for Nuclear Study
+           (2JPNTOH) Cyclotron and Radioisotope Center
+           (2JPNIPC)
+REFERENCE  (C,2007TOKYO,2,458,200706)
+           Main reference. See also TITLE and AUTHOR.
+           (T,TAMESHIGE,200805) Y.Tameshige, Doctor Dissertation
+PART-DET   (HE3)
+INC-SOURCE (POLIS) POL-BM: Monitored by using p-d elastic
+                   scattering
+SAMPLE     - Physical-form of target is liquid.
+           - Target-thickness is 9.6 mg/cm**2. 1.2 mm thickness
+           - Backing: thin aramide window foils
+           - Backing-thickness is 0.82 mg/cm**2. 6 micro meters
+             thickness
+FACILITY   (CYCLO,2JPNOSA)
+DETECTOR   (MAGSP,MWDC,SCIN) Large acceptance spectrograph(LAS).
+                             3He recoils were detected by four
+                             sets of multi-wire vertical drift
+                             chambers(VDC)
+HISTORY    (20091126C) Compiled by Ayano Makinaga
+ENDBIB              28
+NOCOMMON             0          0
+ENDSUBENT           31
+SUBENT        E2159002   20100816   20100915   20100816       E063
+BIB                  4          4
+REACTION   (1-H-1(D,EL)1-H-1,,DA)
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and 3He
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties
+STATUS     (TABLE) Table A.1 of Tameshige's Thesis
+ENDBIB               4
+COMMON               1          3
+EN
+MEV
+ 196.
+ENDCOMMON            3
+DATA                 3         33
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       MB/SR      MB/SR
+ 15.37      15.2269    0.1054
+ 23.12      11.5713    0.0589
+ 30.96      8.4206     0.0276
+ 37.32      5.9901     0.0210
+ 43.79      3.8739     0.0111
+ 50.41      2.5394     0.0089
+ 57.21      1.7463     0.0074
+ 64.27      1.2470     0.0064
+ 71.68      0.9377     0.0054
+ 81.50      0.6628     0.0075
+ 85.48      0.5878     0.0068
+ 89.47      0.5581     0.0062
+ 93.48      0.5402     0.0062
+ 97.50      0.4878     0.0055
+ 101.53     0.4908     0.0055
+ 105.58     0.4619     0.0051
+ 109.63     0.4693     0.0044
+ 113.70     0.4415     0.0049
+ 117.78     0.4351     0.0047
+ 119.83     0.4582     0.0048
+ 121.87     0.4477     0.0049
+ 123.92     0.4536     0.0048
+ 125.98     0.4720     0.0044
+ 130.09     0.4626     0.0048
+ 134.21     0.4903     0.0051
+ 138.34     0.4842     0.0054
+ 142.48     0.5395     0.0062
+ 146.63     0.6011     0.0061
+ 150.79     0.7520     0.0071
+ 154.95     0.9538     0.0078
+ 159.11     1.0913     0.0090
+ 164.33     1.5532     0.0107
+ 169.55     2.0597     0.0111
+ENDDATA             35
+ENDSUBENT           48
+SUBENT        E2159003   20100816   20100915   20100816       E063
+BIB                  4          4
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and 3He
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties
+STATUS     (TABLE) Table A.1 of Tameshige's Thesis
+ENDBIB               4
+COMMON               1          3
+EN
+MEV
+ 196.
+ENDCOMMON            3
+DATA                 3         33
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+ 15.37      0.1341     0.0258
+ 23.12      0.2049     0.0090
+ 30.96      0.2267     0.0132
+ 37.32      0.2522     0.0139
+ 43.79      0.2607     0.0096
+ 50.41      0.1981     0.0075
+ 57.21      0.1122     0.0050
+ 64.27      -0.0173    0.0036
+ 71.68      -0.1617    0.0066
+ 81.50      -0.3264    0.0122
+ 85.48      -0.3978    0.0140
+ 89.47      -0.4162    0.0140
+ 93.48      -0.4348    0.0152
+ 97.50      -0.4588    0.0146
+ 101.53     -0.4659    0.0152
+ 105.58     -0.4673    0.0158
+ 109.63     -0.4273    0.0131
+ 113.70     -0.3818    0.0134
+ 117.78     -0.3691    0.0135
+ 119.83     -0.3108    0.0118
+ 121.87     -0.2967    0.0116
+ 123.92     -0.2375    0.0097
+ 125.98     -0.2059    0.0087
+ 130.09     -0.1249    0.0080
+ 134.21     -0.0379    0.0072
+ 138.34     0.0252     0.0079
+ 142.48     0.1543     0.0098
+ 146.63     0.2080     0.0101
+ 150.79     0.2308     0.0108
+ 154.95     0.2251     0.0102
+ 159.11     0.1761     0.0090
+ 164.33     0.1513     0.0077
+ 169.55     0.1060     0.0053
+ENDDATA             35
+ENDSUBENT           48
+SUBENT        E2159004   20100816   20100915   20100816       E063
+BIB                  4          9
+REACTION   (1-H-1(D,G)2-HE-3,SS,POL/DA,HE3,ANA)
+EN-SEC     ANG is polar angle (lab.) between beam and 3He
+ERR-ANALYS (ERR-T) Total uncertainty
+           (ERR-SYS) Total systematic uncertainty
+           (ERR-1) Analyzing power of deuteron polarimeter
+                   (D-POL)
+           (ERR-2) Yield of deuteron polarimeter (D-POL)
+           (ERR-3) Efficiency of vertical drift chamber (VDC)
+STATUS     (TABLE) Tables B.1 and B.3 of Tameshige's thesis
+ENDBIB               9
+COMMON               4          3
+ERR-SYS    ERR-1      ERR-2      ERR-3
+PER-CENT   PER-CENT   PER-CENT   PER-CENT
+ 2.0        1.8        0.3        0.3
+ENDCOMMON            3
+DATA                 4         20
+EN         ANG        DATA       ERR-T
+MEV        ADEG       NO-DIM     NO-DIM
+ 137.       0.0        0.1591     0.0196
+ 137.       40.5       -0.1189    0.0221
+ 137.       70.5       -0.2293    0.0218
+ 137.       88.5       -0.2413    0.0203
+ 137.       100.5      -0.2909    0.0151
+ 137.       115.5      -0.2722    0.0177
+ 137.       130.5      -0.2210    0.0160
+ 137.       145.5      -0.2040    0.0151
+ 137.       160.5      -0.1569    0.0130
+ 137.       180.0      -0.0183    0.0172
+ 196.       0.         0.018      0.045
+ 196.       22.5       -0.209     0.043
+ 196.       41.        -0.158     0.042
+ 196.       59.        -0.247     0.041
+ 196.       78.        -0.385     0.040
+ 196.       96.        -0.315     0.035
+ 196.       115.       -0.283     0.029
+ 196.       133.       -0.411     0.028
+ 196.       151.       -0.214     0.023
+ 196.       180.       -0.054     0.026
+ENDDATA             22
+ENDSUBENT           40
+SUBENT        E2159005   20100816   20100915   20100816       E063
+BIB                  4          9
+REACTION   (1-H-1(D,G)2-HE-3,NN,POL/DA,HE3,ANA)
+EN-SEC     ANG is polar angle (lab.) between beam and 3He
+ERR-ANALYS (ERR-T) Total uncertainty
+           (ERR-SYS) Total systematic uncertainty
+           (ERR-1) Analyzing power of deuteron polarimeter
+                   (D-POL)
+           (ERR-2) Yield of deuteron polarimeter (D-POL)
+           (ERR-3) Efficiency of vertical drift chamber (VDC)
+STATUS     (TABLE) Tables B.2 and B.4 of Tameshige's thesis
+ENDBIB               9
+COMMON               4          3
+ERR-SYS    ERR-1      ERR-2      ERR-3
+PER-CENT   PER-CENT   PER-CENT   PER-CENT
+ 1.9        1.8        0.2        0.5
+ENDCOMMON            3
+DATA                 4         22
+EN         ANG        DATA       ERR-T
+MEV        ADEG       NO-DIM     NO-DIM
+ 137.       30.        0.1250     0.0450
+ 137.       40.        -0.0417    0.0454
+ 137.       50.        -0.0902    0.0410
+ 137.       60.        -0.1805    0.0381
+ 137.       70.        -0.1917    0.0359
+ 137.       80.        -0.2351    0.0324
+ 137.       90.        -0.2103    0.0289
+ 137.       100.       -0.2337    0.0286
+ 137.       110.       -0.2272    0.0256
+ 137.       120.       -0.1579    0.0254
+ 137.       130.       -0.1280    0.0229
+ 137.       140.       -0.0922    0.0232
+ 137.       150.       -0.0398    0.0282
+ 137.       160.       -0.0479    0.0266
+ 196.       30.        -0.010     0.041
+ 196.       47.        -0.059     0.041
+ 196.       64.        -0.170     0.040
+ 196.       81.        -0.233     0.038
+ 196.       99.        -0.319     0.035
+ 196.       116.       -0.286     0.030
+ 196.       133.       -0.286     0.027
+ 196.       150.       -0.273     0.023
+ENDDATA             24
+ENDSUBENT           42
+SUBENT        E2159006   20100816   20100915   20100816       E063
+BIB                  4         13
+REACTION  1(1-H-1(D,G)2-HE-3,LL,POL/DA,HE3,ANA)
+           Measured with inclined slit
+          2(1-H-1(D,G)2-HE-3,LL,POL/DA,HE3,ANA)
+           Measured with longitudinal polarized beam
+EN-SEC     ANG is polar angle (lab.) between beam and 3He
+ERR-ANALYS (ERR-T) Total uncertainty
+           (ERR-SYS) Total systematic uncertainty
+           (ERR-1) Analyzing power of deuteron polarimeter
+                   (D-POL)
+           (ERR-2) Yield of deuteron polarimeter (D-POL)
+           (ERR-3) Efficiency of vertical drift chamber (VDC)
+           (DATA-ERR) No information on source of uncertainties
+STATUS     (TABLE) Tables B.5 and B.6 of Tameshige's thesis
+ENDBIB              13
+COMMON               4          3
+ERR-SYS    ERR-1      ERR-2      ERR-3
+PER-CENT   PER-CENT   PER-CENT   PER-CENT
+ 1.8        1.8        0.3        0.3
+ENDCOMMON            3
+DATA                 6         12
+EN         ANG        DATA      1DATA-ERR  1DATA      2ERR-T     2
+MEV        ADEG       NO-DIM     NO-DIM     NO-DIM     NO-DIM
+ 196.       30.0       0.238      0.031
+ 196.       43.3       0.354      0.032
+ 196.       56.7       0.334      0.031
+ 196.       70.0       0.490      0.030
+ 196.       83.3       0.491      0.026
+ 196.       96.7       0.548      0.025
+ 196.       110.0      0.567      0.023
+ 196.       123.3      0.595      0.020
+ 196.       136.7      0.468      0.017
+ 196.       143.                             0.2893     0.28
+ 196.       150.0      0.429      0.015
+ 196.       162.                             0.124      0.223
+ENDDATA             14
+ENDSUBENT           36
+ENDENTRY             6

@@ -1,0 +1,174 @@
+ENTRY            13883   20031104   20031222   20050926       0000
+SUBENT        13883001   20031104   20031222   20050926       0000
+BIB                  8         12
+INSTITUTE  (1USALRL)
+REFERENCE  (J,RCA,90,833,2002)
+AUTHOR     (R.W.Lougheed,W.Webster,M.N.Namboodiri,D.R.Nethaway,
+           K.J.Moody,J.H.Landrum,R.W.Hoff,R.J.Dupzyk,J.H.McQuaid,
+           R.Gunnink,E.D.Watkins)
+TITLE      239Pu and 241Am(n,2n) cross-section measurements near
+            E(n) = 14 MeV
+FACILITY   (ICTR,1USALRL)
+INC-SOURCE (D-T)
+STATUS     Data taken from table in reference.
+           No reply from R.W.Lougheed to author proof.
+HISTORY    (20030910C)
+ENDBIB              12
+NOCOMMON             0          0
+ENDSUBENT           15
+SUBENT        13883002   20030911   20031222   20050926       0000
+BIB                  8         19
+REACTION   (94-PU-239(N,2N)94-PU-238,,SIG)
+SAMPLE     High purity mass-separated 239Pu sample with
+            238Pu/239Pu ratio of about 6E-10.
+METHOD     (CHSEP) Irradiated samples dissolved and ion-exchange
+            spearations performed using Dowex anion-exchange
+            resin to remove any excess mass. Resulting Pu
+            fractions electroplated onto Pt disks, which were
+            heated to fix deposits.
+           (ACTIV) Counts performed for 1 year after irradiation.
+MONITOR    (79-AU-197(N,2N)79-AU-196,,SIG) Flux monitor.
+           Neutron energy determined using 54Fe(n,p) reaction.
+DECAY-DATA (94-PU-238,87.75YR,A,5500.)
+           (94-PU-239,2.41E+4YR)
+CORRECTION Data corrected for pileup in alpha spectrum and
+            for background.
+ERR-ANALYS (DATA-ERR) Uncertainties given include counting errors
+            from determining 238Pu/239Pu ratios, and neutron
+            fluence errors.
+EXP-YEAR   (1978) Irradiations in 1977 and 1978.
+ENDBIB              19
+NOCOMMON             0          0
+DATA                 4          3
+EN         DATA       DATA-ERR   MONIT
+MEV        MB         PER-CENT   MB
+ 13.8      228.         2.8      2112.
+ 14.0      219.         3.6      2112.
+ 14.8      214.         1.4      2136.
+ENDDATA              5
+ENDSUBENT           29
+SUBENT        13883003   20030911   20031222   20050926       0000
+BIB                  9         16
+REACTION   (95-AM-241(N,2N)95-AM-240,,SIG)
+SAMPLE     High purity AmO2 sample, 99.95% 241Am, in quartz tubes.
+            238Pu/239Pu ratio of about 6E-10.
+METHOD     (ACTIV) Data irradiated for 15 hrs. Counts done
+            starting 2 days and continued until 30-40 days after
+            irradiation.
+DETECTOR   (GELI)
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG) Flux monitor.
+           Neutron energy determined using Ni foils.
+DECAY-DATA (95-AM-240,50.8HR,DG,988.)
+           (95-AM-241,432.7YR,DG,662.,, DG,722.)
+CORRECTION Corrected for decay during irradiation.
+ERR-ANALYS (DATA-ERR) Uncertainties given include counting errors
+            from determining 220Am/241Am ratios, and neutron
+            fluence errors.
+EXP-YEAR   (1973)
+ENDBIB              16
+NOCOMMON             0          0
+DATA                 4          5
+EN         DATA       DATA-ERR   MONIT
+MEV        MB         PER-CENT   MB
+ 13.67     260.         1.4      124.5
+ 13.98     259.         1.8      120.9
+ 14.29     251.         1.7      119.1
+ 14.77     233.         1.8      111.4
+ 15.12     222.         1.6      107.6
+ENDDATA              7
+ENDSUBENT           28
+SUBENT        13883004   20030911   20031222   20050926       0000
+BIB                  9         13
+REACTION   (95-AM-241(N,F)ELEM/MASS,CUM,SIG)
+SAMPLE     High purity AmO2 sample, 99.95% 241Am, in quartz tubes.
+            238Pu/239Pu ratio of about 6E-10.
+METHOD     (ACTIV) Data irradiated for 15 hrs. Counts done at end
+            of irradiation.
+DETECTOR   (GELI)
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG) Flux monitor.
+           Neutron energy determined using Ni foils.
+DECAY-DATA (95-AM-241,432.7YR,DG,662.,, DG,722.)
+CORRECTION Not corrected for any additional production from down-
+            scattered neutrons.
+ERR-ANALYS (ERR-S) Statistical uncertainties given.
+EXP-YEAR   (1973)
+ENDBIB              13
+NOCOMMON             0          0
+DATA                 5         72
+EN         MASS       ELEMENT    DATA       ERR-S
+MEV        NO-DIM     NO-DIM     MB         PER-CENT
+13.7        91.        38.        57.0        1.8
+13.7        93.        39.       105.8       15.5
+13.7        97.        40.       113.0        1.0
+13.7        99.        42.       105.5       15.7
+13.7       103.        44.       128.8        6.8
+13.7       105.        45.       124.4        5.3
+13.7       115.        48.        45.5       14.5
+13.7       125.        50.        38.1       31.9
+13.7       127.        51.        72.1       10.9
+13.7       128.        51.        35.6        1.8
+13.7       131.        53.        86.7        4.3
+13.7       132.        52.        65.3        3.9
+13.7       133.        53.       121.3        2.1
+13.7       140.        56.        75.5        2.2
+14.0        91.        38.        59.1        4.3
+14.0        93.        39.       115.6       45.3
+14.0        97.        40.       103.8        1.2
+14.0        99.        42.        99.5       16.3
+14.0       103.        44.       130.8        4.3
+14.0       105.        45.       126.0        4.2
+14.0       115.        48.        46.0        9.0
+14.0       125.        50.        22.7       21.2
+14.0       127.        51.        63.6        7.0
+14.0       128.        51.        32.1        7.7
+14.0       131.        53.       103.3        2.7
+14.0       132.        52.        65.0        2.4
+14.0       133.        53.       112.7        1.9
+14.0       140.        56.        82.1        1.5
+14.0       143.        58.        72.5       14.4
+14.3        91.        38.        63.9        9.9
+14.3        97.        40.       102.2        1.7
+14.3        99.        42.        68.4       23.7
+14.3       103.        44.       136.8        6.7
+14.3       105.        45.       146.5        7.3
+14.3       115.        48.        57.3       14.4
+14.3       125.        50.        29.5       30.1
+14.3       127.        51.        58.0        5.5
+14.3       128.        51.        32.7       38.9
+14.3       131.        53.       114.1        4.2
+14.3       132.        52.        71.9        1.9
+14.3       133.        53.       120.8        3.4
+14.3       140.        56.        87.8        2.1
+14.3       143.        58.        82.4       11.5
+14.8        91.        38.        61.5        5.0
+14.8        97.        40.       104.7        1.2
+14.8        99.        42.        93.2       15.3
+14.8       103.        44.       126.2        4.8
+14.8       105.        45.       141.1        5.2
+14.8       115.        48.        45.8        7.7
+14.8       125.        50.        27.4       22.3
+14.8       127.        51.        59.0        3.6
+14.8       128.        51.        30.4        6.6
+14.8       131.        53.        93.4        4.2
+14.8       132.        52.        61.9        1.9
+14.8       133.        53.       116.7        2.7
+14.8       140.        56.        76.5        1.6
+14.8       143.        58.        73.8        8.3
+15.1        91.        38.        58.7        2.2
+15.1        93.        39.        71.8       16.9
+15.1        97.        40.       109.6        0.9
+15.1        99.        42.        95.9       12.8
+15.1       103.        44.       132.5        4.9
+15.1       105.        45.       120.6        4.3
+15.1       115.        48.        45.6        6.5
+15.1       125.        50.        33.0       13.1
+15.1       127.        51.        62.7        2.9
+15.1       128.        51.        33.9        2.0
+15.1       131.        53.        92.2        2.8
+15.1       132.        52.        64.0        1.9
+15.1       133.        53.       115.0        1.5
+15.1       140.        56.        81.3        1.2
+15.1       143.        58.        62.8       11.4
+ENDDATA             74
+ENDSUBENT           92
+ENDENTRY             4

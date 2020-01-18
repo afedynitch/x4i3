@@ -66,8 +66,14 @@ def x4EntryFactory(enum, subentsList=None, rawEntry=False):
             "A valid EXFOR ENTRY is a string with exactly 5 characters")
     result = []  # the entry, split into subentries
 
-    entry = open(os.sep.join(
-        [fullDBPath, enum[:3], enum + '.x4']), mode='rU').readlines()
+    try:
+        with open(os.sep.join([fullDBPath, enum[:3], enum + '.x4']),
+            mode='r', newline=None, encoding='latin1') as f:
+            entry = f.readlines()
+    except TypeError:
+        with open(os.sep.join([fullDBPath, enum[:3], enum + '.x4']),
+            mode='rU') as f:
+            entry = f.readlines()
     subent = ''
     for line in entry:
         if line.startswith('ENTRY') or line.startswith('ENDENTRY') or line.startswith('NOSUBENT'):

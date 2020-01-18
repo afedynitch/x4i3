@@ -1,0 +1,73 @@
+ENTRY            11042     830909   20050616   20050926       0000
+SUBENT        11042001     830909   20050616   20050926       0000
+BIB                  6          9
+INSTITUTE  (1USABRK)
+REFERENCE  (J,PR,81,493,51)
+AUTHOR     (R.WALLACE)
+TITLE      90-MEV NEUTRON-PROTON SCATTERING AT LARGE PROTON
+           ANGLES.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+           (830817A) BIB, DATA HEADING CORRECTIONS
+ENDBIB               9
+NOCOMMON             0          0
+ENDSUBENT           12
+SUBENT        11042002     830909   20050616   20050926       0000
+BIB                  4          6
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TRD)      NUCLEAR EMULSIONS
+MONITOR    (1-H-0(N,TOT),,SIG)
+            RENORMALIZATION BY HESS,REV.MOD.PHYS.30,
+            368(1958) TO H TOTAL=78.3MB.
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               6
+COMMON               3          3
+EN         EN-RSL     ANG-RSL
+MEV        MEV        ADEG
+ 9.0    +01 2.0    +01 3.
+ENDCOMMON            3
+DATA                 3          9
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.89900    7.84   +00   40.
+ 0.84800    8.26   +00   35.
+ 0.78800    6.97   +00   30.
+ 0.71900    6.30   +00   27.
+ 0.64300    6.20   +00   25.
+ 0.55900    5.65   +00   23.
+ 0.47000    5.59   +00   23.
+ 0.37500    4.95   +00   21.
+ 0.27600    4.41   +00   20.
+ENDDATA             11
+ENDSUBENT           26
+SUBENT        11042003     830909   20050616   20050926       0000
+BIB                  5          7
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (OUTDT,11042002)
+DETECTOR   (TRD)      NUCLEAR EMULSIONS
+MONITOR    (1-H-0(N,TOT),,SIG)
+            NORMALIZED TO SMOOTH CURVE BY HADLEY, PHYS.
+            REV.75,351(1949).
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               7
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 9.0    +01 2.0    +01
+ENDCOMMON            3
+DATA                 3          9
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.89900    7.60   +00   39.
+ 0.84800    8.01   +00   34.
+ 0.78800    6.77   +00   29.
+ 0.71900    6.11   +00   26.
+ 0.64300    6.02   +00   24.
+ 0.55900    5.48   +00   22.
+ 0.47000    5.42   +00   22.
+ 0.37500    4.8    +00    2.
+ 0.27600    4.28   +00   19.
+ENDDATA             11
+ENDSUBENT           27
+ENDENTRY             3

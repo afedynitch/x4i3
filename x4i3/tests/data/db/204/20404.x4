@@ -1,0 +1,60 @@
+ENTRY            20404   20110611   20120705   20120704       2229
+SUBENT        20404001   20110611   20120705   20120704       2229
+BIB                 13         25
+TITLE      On the differential cross section for neutron-proton
+            scattering at 14.1 MeV
+INSTITUTE  (2JPNYOK)
+REFERENCE  (J,JPJ,36,331,1974)
+AUTHOR     (S.Shirato, K.Saitoh)
+FACILITY   (CCW,2JPNYOK)
+INC-SOURCE (D-T) Ti-T target
+SAMPLE     8.29+/-0.03 mg/cm2 polyethylene, purity 1H/C=1.9999
+DETECTOR   (TELES) 3 proportional and 1 Si(Li) counter telescope
+PART-DET   (P)
+METHOD     (ASSOP)
+REL-REF    (O,20296001,S.Shirato+,J,JPJ,36,331,1974)
+            Experimental result with another (CH2)n radiator
+            (5.34 +/- 0.05 mg/cm2)
+           (I,20296001,M.Tanaka+,J,JPJ,28,11,1970)
+            Experimental geometry
+CORRECTION Correction to obtain the next neutron flux:
+           - attenuation of 14.1 MeV incident neutrons by the
+             T-Ti-Cu base, two apparatus walls, the telescope
+             wall and radiator base
+           - elastic in-scattering of neutrons by scatterers
+           - counting of alpha-monitor (p-n junction Si-detector
+             with a collimator of 2 mm in diameter) for alpha
+             counting
+HISTORY    (20110611C) On
+ENDBIB              25
+COMMON               1          3
+EN
+MEV
+ 14.1
+ENDCOMMON            3
+ENDSUBENT           32
+SUBENT        20404002   20110611   20120705   20120704       2229
+BIB                  4         10
+REACTION   (1-H-1(N,EL)1-H-1,,DA,P)
+REL-REF    (A,20296007,S.Shirato+,J,JPJ,36,331,1974)
+            238.9+/-4.0 mb/sr
+ERR-ANALYS (ERR-T) Over-all error consists of
+           (ERR-S) Statistical error                 (1.0%)
+           (ERR-SYS) Total systematic uncertainty    (1.3%)
+           (ERR-1) Uncertainty in radiator thickness (0.25%)
+           (ERR-2) Uncertainty in geometry           (0.7%)
+           (ERR-3) Neutron flux                      (1.1%)
+STATUS     (TABLE) Text (p.334) of J.Phys.Soc.Jpn.36(1974)331
+ENDBIB              10
+COMMON               5          3
+ERR-S      ERR-SYS    ERR-1      ERR-2      ERR-3
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT
+ 1.0        1.3        0.25       0.7        1.1
+ENDCOMMON            3
+DATA                 3          1
+ANG        DATA       ERR-T
+ADEG       MB/SR      MB/SR
+ 4.0        241.4      3.9
+ENDDATA              3
+ENDSUBENT           22
+ENDENTRY             2

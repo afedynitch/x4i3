@@ -1,0 +1,57 @@
+ENTRY            10315   20020823   20020925   20050926       0000
+SUBENT        10315001   20020823   20020925   20050926       0000
+BIB                 13         34
+INSTITUTE  (1USAWIS)
+REFERENCE  (J,PR/C,6,690,197209)
+AUTHOR     (T.G.Masterson)
+TITLE      Differential Cross Sections for Small Angle Scattering
+            of 24-MeV Neutrons by Protons
+FACILITY   (ACCEL) Tandem accelerator.
+INC-SOURCE (D-T) 7.0 MeV deuterons were incident on a tritium gas
+            cell.
+SAMPLE     Liquid hydrocarbon scintillator, 2.5cm diam. x 2.5-cm
+            high, wrapped in aluminum foil and mounted on RCA 8575
+            phototube. Total number of hydrogen atoms in sample
+            (0.659 +- 0.003)10**24.
+METHOD     Both count rate of neutrons scattered by the target
+            and of neutrons of the zero degree incident beam were
+            measured. The ratio of these two count rates gives
+            the differential cross section and is independent of
+            incident neutron flux. The cross section depends only
+            on the ratio of the detector efficiencies at nearby
+            energies.
+           Open shadow bar shielding only.
+DETECTOR   (SCIN) 2.5-cm. diam. x 5.1-cm. high liquid scintillator
+            mounted on AMPEREX XP1021 photomultiplier tube.
+CORRECTION Corrections were made for:
+            . multiple scattering,
+            . finite geometry,
+            . attenuation in detector, target and air,
+            . wall effects.
+ERR-ANALYS (DATA-ERR) Data uncertainty of approximately 1.5%, due
+            principally to uncertainties in exponential
+            attenuation, multiple scattering, and bias factors.
+STATUS     (APRVD) Approved by author.
+HISTORY    (19730530C) TJK
+           (19830118A) Converted to REACTION formalism
+           (20020823A) Updated to new date formats, lower case.
+ENDBIB              34
+COMMON               2          3
+EN         EN-ERR
+MEV        MEV
+24.03       0.08
+ENDCOMMON            3
+ENDSUBENT           41
+SUBENT        10315002   20020823   20020925   20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3          2
+ANG-CM     DATA       DATA-ERR
+ADEG       MB/SR      MB/SR
+39.3       31.3       0.5
+50.5       30.7       0.6
+ENDDATA              4
+ENDSUBENT           10
+ENDENTRY             2

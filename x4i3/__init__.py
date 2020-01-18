@@ -95,7 +95,7 @@ fullReactionCountFileName = os.path.join(DATAPATH, reactionCountFileName)
 fullDBPath = os.path.join(DATAPATH, dbPath)
 
 # Paths for unit testing only
-TESTDATAPATH = os.sep.join(__path__ + ['test', 'data'])  # Mock db for testing
+TESTDATAPATH = os.sep.join(__path__ + ['tests', 'data'])  # Mock db for testing
 testDBPath = TESTDATAPATH + os.sep + dbPath
 testIndexFileName = TESTDATAPATH + os.sep + indexFileName
 

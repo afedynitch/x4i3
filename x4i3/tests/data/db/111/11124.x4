@@ -1,0 +1,57 @@
+ENTRY            11124     820107              20050926       0000
+SUBENT        11124001     820107              20050926       0000
+BIB                  7         10
+INSTITUTE  (1USAROC)
+REFERENCE  (J,PR,167,1240,6803)
+AUTHOR     (A.R.THOMAS,D.SPALDING,E.H.THORNDIKE)
+TITLE      N-P DIFFERENTIAL CROSS SECTION AND POLARIZATION AT
+           199MEV.
+DETECTOR   (TELES)
+STATUS     (SCSRS)
+HISTORY    (760924T) TRANSLATED FROM SCISRS
+           (800814A) CONVERTED TO REACTION FORMALISM
+           820107U) BIB UPDATE
+ENDBIB              10
+COMMON               3          3
+EN         EN-RSL     EN-ERR
+MEV        MEV        MEV
+ 199.       12.        1.5
+ENDCOMMON            3
+ENDSUBENT           17
+SUBENT        11124002     820107              20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,REL)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3          8
+COS-CM     DATA       DATA-ERR
+NO-DIM     ARB-UNITS  ARB-UNITS
+ 0.22670    2.73   -01 8.     -03
+ 0.05930    2.92   -01 7.     -03
+-0.1097     3.20   -01 8.     -03
+-0.4555     4.61   -01 1.0    -02
+-0.6074     5.78   -01 1.3    -02
+-0.7408     7.01   -01 1.5    -02
+-0.8490     8.36   -01 1.7    -02
+-0.9278     1.000  +00 2.1    -02
+ENDDATA             10
+ENDSUBENT           16
+SUBENT        11124003     800814              20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,POL/DA)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3          8
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+ 76.9       0.132      0.028
+ 86.6       0.029      0.017
+ 96.3      -0.075      0.014
+117.1      -0.111      0.011
+127.4      -0.125      0.010
+137.8      -0.125      0.009
+148.1      -0.117      0.011
+158.1      -0.071      0.012
+ENDDATA             10
+ENDSUBENT           16
+ENDENTRY             3

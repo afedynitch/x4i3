@@ -1,0 +1,36 @@
+ENTRY            30327   20090115   20090508   20090506       3134
+SUBENT        30327001   20090115   20090508   20090506       3134
+BIB                 13         18
+INSTITUTE  (3HUNKFI)
+REFERENCE  (J,PL/B,29,105,196904)
+AUTHOR     (T.Czibok, GY.Hrehuss, I.Kovacs, L.Nagy, I.Vinnay)
+TITLE      Measurements on the differential cross-section of
+           n-p scattering below 3 MeV
+FACILITY   (CCW) Cockcroft-Walton accelerator
+INC-SOURCE (D-D) Deuteron-deuterium
+SAMPLE     Terylene film, 5.5 mg/cm2 thick
+METHOD     (COINC) Counter telescope.Proton counters (at 0 and
+           15 degrees) in coincidence with a thin scintillation
+           layer (deposited directly onto the surface of the
+           radiator) in order to reduce the background.
+DETECTOR   (SIBAR) surface barrier Si detectors
+PART-DET   (P) Protons
+ERR-ANALYS (DATA-ERR) The errors given are standard deviations.
+STATUS     (TABLE) Data taken from Phys.Lett.B29(1969)105,Table 1.
+HISTORY    (19760303C) OS.
+           (20090125A) BIB section updated
+ENDBIB              18
+NOCOMMON             0          0
+ENDSUBENT           21
+SUBENT        30327002   20090115   20090508   20090506       3134
+BIB                  1          1
+REACTION   ((1-H-1(N,EL)1-H-1,,DA)//(1-H-1(N,EL)1-H-1,,DA))
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 6          1
+ANG-CM-NM  ANG-CM-DN  EN         EN-ERR     DATA       DATA-ERR
+ADEG       ADEG       MEV        MEV        NO-DIM     NO-DIM
+ 0.0        30.        2.4600E+00 1.0000E-01 1.0700E+00 2.4000E-02
+ENDDATA              3
+ENDSUBENT            9
+ENDENTRY             2

@@ -35,7 +35,7 @@ import sys
 from .exfor_exceptions import ParticleParsingError, IsomerMathParsingError
 from .exfor_grammers import x4particle, x4nucleus, x4chemical_compound
 from .exfor_dicts import X4DictionaryServer
-import pyparsing
+from .pyparsing import ParseException, ParseResults
 
 # ------------------------------------------------------
 # Global data
@@ -123,9 +123,9 @@ class X4ParticleBase:
     def __init__(self, x):
         if isinstance(x, str):
             x = self.parse(x)
-        if not isinstance(x, pyparsing.ParseResults):
+        if not isinstance(x, ParseResults):
             raise TypeError(
-                "__init__ takes pyparsing.ParseResults as argument, got " + str(type(x)) + ":" + str(x))
+                "__init__ takes ParseResults as argument, got " + str(type(x)) + ":" + str(x))
         self.parse_results = x
         self.num = 1
         self.Z = None
@@ -184,7 +184,7 @@ class X4Particle(X4ParticleBase):
                 x = x.upper()
                 X4ParticleBase.__init__(self, x)
                 x = self.parse_results.asList()
-            elif isinstance(x, pyparsing.ParseResults):
+            elif isinstance(x, ParseResults):
                 X4ParticleBase.__init__(self, 'N')
                 self.parse_results = x
                 x = [y.lower() for y in x.asList()]
@@ -208,7 +208,7 @@ class X4Particle(X4ParticleBase):
     def parse(self, x):
         try:
             return x4particle.parseString(x)
-        except pyparsing.ParseException as err:
+        except ParseException as err:
             raise ParticleParsingError(
                 'Can not parse particle "' +
                 x +
@@ -263,7 +263,7 @@ class X4Nucleus(X4ParticleBase):
     def parse(self, x):
         try:
             return x4nucleus.parseString(x)
-        except pyparsing.ParseException as err:
+        except ParseException as err:
             raise ParticleParsingError(
                 'Can not parse nucleus "' +
                 x +
@@ -381,7 +381,7 @@ class X4ChemicalCompound(X4ParticleBase):
     def parse(self, x):
         try:
             return x4chemical_compound.parseString(x)
-        except pyparsing.ParseException as err:
+        except ParseException as err:
             raise ParticleParsingError(
                 'Can not parse chemical compound "' +
                 x +

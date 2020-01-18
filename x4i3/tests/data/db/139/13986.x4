@@ -1,0 +1,55 @@
+ENTRY            13986   20070417   20070719   20070713       1343
+SUBENT        13986001   20070417   20070719   20070713       1343
+BIB                  8         16
+INSTITUTE  (1USAINU,2SWDUPP,1USAOHO,3TAICHM)
+REFERENCE  (J,PRL,94,082303,2005)
+           (J,PR/C,74,044003,2006)
+AUTHOR     (M.Sarsour,T.Peterson,M.Planinic,S.E.Vigdor,C.Allgower,
+            B.Bergenwall,J.Blomgren,T.Hossbach,W.W.Jacobs,
+            C.Johansson,J.Klug,A.V.Klyachko,P.Nadel-Turonski,
+            L.Nilsson,N.Olsson,S.Pomp,J.Rapaport,T.Rinckel,
+            E.J.Stephenson,U.Tippawan,S.W.Wissink,Y. Zhou)
+TITLE      Measurement of the Absolute np Scattering Differential
+            Cross Section at 194 MeV
+FACILITY   (CYCLO,1USAINU) Indiana University Cyclotron Facility
+DETECTOR   (SISD) Double sided silicon strip detector
+           (SIBAR) Silicon pad
+SAMPLE     CH2 and C targets
+HISTORY    (20050315C) DR
+           (20060124C) DR PR/C reference added
+ENDBIB              16
+NOCOMMON             0          0
+ENDSUBENT           19
+SUBENT        13986002   20050315   20050610   20050926       1332
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ERR-ANALYS (ERR-S) Statistical error
+           (ERR-SYS) Systematic error
+STATUS     Data received from M. Sarsour
+ENDBIB               4
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+194.       0.15
+ENDCOMMON            3
+DATA                 4         15
+ANG-CM     DATA-CM    ERR-S      ERR-SYS
+ADEG       MB/SR      MB/SR      MB/SR
+177.02     11.86      0.34       0.19
+171.04     10.62      0.19       0.17
+165.02      8.89      0.14       0.14
+158.97      7.61      0.11       0.12
+152.92      6.64      0.10       0.10
+146.89      5.98      0.08       0.09
+140.86      5.34      0.08       0.08
+134.85      4.75      0.07       0.07
+128.84      4.01      0.06       0.06
+122.83      3.47      0.06       0.05
+116.81      3.01      0.05       0.05
+110.80      2.57      0.05       0.04
+104.79      2.31      0.05       0.04
+ 98.76      2.00      0.05       0.04
+ 92.74      1.98      0.06       0.04
+ENDDATA             17
+ENDSUBENT           30
+ENDENTRY             2

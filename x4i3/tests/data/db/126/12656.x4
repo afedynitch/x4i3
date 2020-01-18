@@ -1,0 +1,76 @@
+ENTRY            12656     930309              20050926       0000
+SUBENT        12656001     930309              20050926       0000
+BIB                 14         29
+INSTITUTE  (1USACLA)
+REFERENCE  (J,DA/B,27,2085,6612)
+           (T,TAGLIAFERRI,66)
+AUTHOR     (E.TAGLIAFERRI JR)
+TITLE      THE DIFFERENTIAL CROSS SECTION OF 40 MEV NEUTRONS
+            SCATTERED FROM PROTONS.
+FACILITY   (CYCLO) UCLA 50 MEV CYCLOTRON.
+INC-SOURCE (P-D) NEUTRONS FROM DEUTERON BREAK UP IN HEAVY WATER.
+SAMPLE     PROTONS IN PLASTIC SCINTILLATOR.
+METHOD     (COINC,TOF) RECOIL PROTON DETECTED IN COINCIDENCE WITH
+             SCATTERED NEUTRON.
+           ENERGY OF SCATTERED NEUTRON DETERMINED BY TIME OF
+             FLIGHT.
+DETECTOR   (SCIN) PLASTIC SCINTILLATOR, DIFFERENT FROM SAMPLE.
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG)
+ANALYSIS   AVERAGE OF THREE MEASUREMENTS.
+CORRECTION DATA TAKEN AT 40 DEGREES(CMS) ADJUSTED UPWARD BY 33.2%.
+           DATA FROM 90 TO 140 DEGREES(CMS) ADJUSTED DOWNWARD.
+           CORRECTIONS INCREASED IN SIZE WITH INCREASING
+            SCATTERING SCATTERING ANGLE AND RANGED FROM
+            1.7+-0.3% AT 90 DEGREES TO 29+-7% AT 140 DEGREES.
+           CORRECTED FOR:
+           . BACKGROUND
+           . NEUTRON DETECTION EFFICIENCY
+           . ATTENUATION IN TARGET
+ERR-ANALYS (DATA-ERR) STATISTICAL UNCERTAINTY
+HISTORY    (790726C)
+           (930309A) UPDATED AS PER THESIS. CONVERTED TO LOWER
+                     CASE. ENERGY MOVED TO SUBENTRY 1.
+ENDBIB              29
+COMMON               2          3
+EN         EN-ERR
+MEV        MEV
+   40.0     4.
+ENDCOMMON            3
+ENDSUBENT           36
+SUBENT        12656002     930309              20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,COS)
+STATUS     (DEP,12656003)
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3          3
+NUMBER     DATA       DATA-ERR
+NO-DIM     B/SR       B/SR
+  0.0       13.04       0.38
+  1.0       -2.98       1.15
+  2.0        7.11       1.62
+ENDDATA              5
+ENDSUBENT           12
+SUBENT        12656003     930309              20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+HISTORY    (930309C)
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3         11
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       MB/SR      MB/SR
+ 40.        15.3        1.5
+ 50.        13.4        0.5
+ 60.        14.6        0.6
+ 70.        11.4        0.7
+ 80.        15.6        0.9
+ 90.        12.8        0.6
+100.        13.3        0.9
+110.        13.6        0.6
+120.        19.2        1.1
+130.        17.7        1.2
+140.        19.2        3.9
+ENDDATA             13
+ENDSUBENT           20
+ENDENTRY             3

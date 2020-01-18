@@ -1,0 +1,54 @@
+ENTRY            11078     820106              20050926       0000
+SUBENT        11078001     820106              20050926       0000
+BIB                  6          7
+INSTITUTE  (1USACAR)
+REFERENCE  (J,PR,95,591,5407)
+AUTHOR     (A.J.HARTZLER,R.T.SIEGEL,W.OPITZ)
+TITLE      SMALL-ANGLE NEUTRON-PROTON SCATTERING AT 400 MEV.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+ENDBIB               7
+NOCOMMON             0          0
+ENDSUBENT           10
+SUBENT        11078002     860331              20050926       0000
+BIB                  4          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TELES)    COUNTER TELESCOPE
+MONITOR    (1-H-0(N,EL)1-H-0,,SIG)
+HISTORY    (860331A) BIB, DATA HEADING CORRECTIONS.
+ENDBIB               4
+COMMON               3          3
+EN         EN-RSL     MONIT
+MEV        MEV        MB
+ 4.00   +02 1.5    +01 33.
+ENDCOMMON            3
+DATA                 3         23
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.97600    3.73   +00 2.10   +00
+ 0.96600    4.43   +00 4.6    -01
+ 0.94000    3.07   +00 3.7    -01
+ 0.86600    2.84   +00 5.7    -01
+ 0.76600    3.33   +00 2.0    -01
+ 0.70700    3.35   +00 2.0    -01
+ 0.64300    3.38   +00 1.2    -01
+ 0.57400    2.56   +00 2.3    -01
+ 0.50000    2.48   +00 8.     -02
+ 0.34200    2.22   +00 9.     -02
+ 0.17400    1.85   +00 6.     -02
+ 0.00000    1.54   +00 6.     -02
+-0.1740     1.42   +00 8.     -02
+-0.3420     1.50   +00 8.     -02
+-0.5000     1.94   +00 8.     -02
+-0.6430     2.50   +00 9.     -02
+-0.7660     3.21   +00 9.     -02
+-0.8660     4.17   +00 1.1    -01
+-0.9400     5.25   +00 1.4    -01
+-0.9660     5.82   +00 2.2    -01
+-0.9850     7.93   +00 2.8    -01
+-0.9962     9.57   +00 3.4    -01
+-1.         1.349  +01 9.1    -01
+ENDDATA             25
+ENDSUBENT           38
+ENDENTRY             2

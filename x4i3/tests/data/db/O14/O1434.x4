@@ -1,0 +1,189 @@
+ENTRY            O1434   20080114   20080407   20080403       O034
+SUBENT        O1434001   20080114   20080407   20080403       O034
+BIB                 13         58
+TITLE      Vector and tensor analyzing powers of elastic deuteron
+           proton scattering at 130 MeV deuteron beam energy.
+AUTHOR     (E.Stephan, St.Kistryn, R.Sworst, A.Biegun, K.Bodek,
+           I.Ciepal, A.Deltuva, E.Epelbaum, A.Fonseca, W.Gloeckle,
+           J.Golak, N.Kalantar-Nayestanaki, H.Kamada, M.Kis,
+           A.Kozela, M.Mahjour-Shafiei, A.Micherdzinska, A.Nogga,
+           P.U.Sauer, R.Skibinski, H.Witala, J.Zejma, W.Zipper)
+INSTITUTE  (3POLPOL) University of Silesia, Katowice, Poland
+           (3POLUJK)
+           (2PRTLIS)
+           (2GERJUL)
+           (2GERBOC)
+           (2NEDKVI)
+           (2JPNJPN) Kyushu Institute of Technology, Kitakyushu,
+            Japan.
+           (3POLIFJ)
+           (2GERUH)
+REFERENCE  (J,PR/C,76,057001,2007)
+           (J,PL/B,641,23,2006)    It is O1450
+           (J,PR/C,72,044006,2005) It is O1518
+           More detailed experimental information.
+SAMPLE     A liquid hydrogen target of 6-mm thickness.
+INC-SOURCE (POLIS) The atomic-beam-type polarized ion source.
+DETECTOR   (SPEC) The SALAD(small angle large detector,
+           consisting of a three-plane multiwire proportional
+           chamber (MWPC) and a segmented scintillator hodoscope
+            (PSH)-transmission delta-E and stopping E-detector.
+           (MWPC) The active area of the MWPC is 380*380-mm**2
+           with exclusion of the central hole of 97.2-mm in
+           diameter.
+           (SCIN) The PSH consists of 24 transmission detectors-
+           delta-E strips(plastic scintillator BC-408 2-mm
+           thick and 60-mm wide) and 24 stopping detectors-E slabs
+            (plastic scintillator BC-400, 113-mm thick and 60-mm
+            wide). The strips and slabs are arranged
+            perpendicularly to one another.
+            The thickness of the E-counters is sufficient to stop
+            protons with  energies up to 130-MeV.
+            The  energy  resolution  of  the  E-counters is about
+            5%.
+            Within the acceptance of the SALAD detector
+             three-classes of the elastic scattering events can
+             be distinguished-
+            -proton-deuteron coincidences when both particles are
+             fully identified,
+            -proton-deuteron coincidences when deuterons have
+             energies too low to reach the stopping detector, i.e.
+             to be identified,
+            -single deuterons.
+FACILITY   (CYCLO,2NEDKVI) Agor-cyclotron
+METHOD     (EDE)
+           (COINC)
+ERR-ANALYS (ERR-S).Statistical error.
+           (ERR-SYS).Total systematic error.
+STATUS     (TABLE) The data were received from S.Kistyn
+           (APRVD) By S.Kistryn 14.01.2008
+CORRECTION Correction for dead time losses was applaid.
+HISTORY    (20080105C) SB
+ENDBIB              58
+COMMON               1          3
+EN
+MEV
+       130.
+ENDCOMMON            3
+ENDSUBENT           65
+SUBENT        O1434002   20080114   20080407   20080403       O034
+BIB                  1          1
+REACTION   (1-H-1(D,EL)1-H-1,20,POL/DA,,TAP)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 4         30
+ANG-CM     DATA       ERR-S      ERR-SYS
+ADEG       NO-DIM     NO-DIM     NO-DIM
+  46.78      0.0185      0.0153      0.0360
+  50.09      0.0171      0.0152      0.0377
+  53.45      0.0154      0.0153      0.0381
+  56.86      0.0154      0.0156      0.0373
+  60.34      0.0422      0.0157      0.0382
+  63.90      0.0370      0.0158      0.0380
+  67.54      0.0317      0.0161      0.0395
+  71.29      0.0372      0.0161      0.0333
+  75.18      0.0013      0.0177      0.0373
+  79.23     -0.0173      0.0169      0.0229
+  83.49     -0.0220      0.0165      0.0252
+  88.04     -0.0701      0.0162      0.0389
+  93.00     -0.1505      0.0168      0.0415
+  98.62     -0.2483      0.0175      0.0446
+ 118.50     -0.4899      0.0160      0.0514
+ 120.53     -0.4975      0.0160      0.0516
+ 122.56     -0.4896      0.0160      0.0514
+ 124.60     -0.4753      0.0159      0.0509
+ 126.63     -0.4520      0.0157      0.0502
+ 128.67     -0.4026      0.0153      0.0487
+ 130.71     -0.3542      0.0149      0.0473
+ 132.75     -0.2924      0.0146      0.0453
+ 134.79     -0.2089      0.0143      0.0427
+ 136.84     -0.1092      0.0144      0.0395
+ 138.88     -0.0234      0.0145      0.0319
+ 140.93      0.0601      0.0150      0.0395
+ 142.98      0.1364      0.0156      0.0441
+ 145.03      0.1916      0.0162      0.0475
+ 147.08      0.2288      0.0166      0.0497
+ 149.13      0.2484      0.0169      0.0509
+ENDDATA             32
+ENDSUBENT           38
+SUBENT        O1434003   20080114   20080407   20080403       O034
+BIB                  1          1
+REACTION   (1-H-1(D,EL)1-H-1,22,POL/DA,,TAP)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 4         30
+ANG-CM     DATA       ERR-S      ERR-SYS
+ADEG       NO-DIM     NO-DIM     NO-DIM
+  46.78     -0.0482      0.0028      0.0030
+  50.09     -0.0607      0.0029      0.0038
+  53.45     -0.0642      0.0031      0.0040
+  56.86     -0.0744      0.0035      0.0046
+  60.34     -0.0818      0.0035      0.0051
+  63.90     -0.0844      0.0038      0.0052
+  67.54     -0.0977      0.0043      0.0061
+  71.29     -0.1055      0.0045      0.0065
+  75.18     -0.1264      0.0054      0.0078
+  79.23     -0.1207      0.0056      0.0075
+  83.49     -0.1231      0.0056      0.0076
+  88.04     -0.1397      0.0053      0.0087
+  93.00     -0.1441      0.0065      0.0089
+  98.62     -0.1418      0.0072      0.0088
+ 118.50     -0.1280      0.0043      0.0080
+ 120.53     -0.1287      0.0038      0.0080
+ 122.56     -0.1305      0.0040      0.0081
+ 124.60     -0.1368      0.0041      0.0085
+ 126.63     -0.1466      0.0044      0.0091
+ 128.67     -0.1549      0.0044      0.0096
+ 130.71     -0.1761      0.0046      0.0109
+ 132.75     -0.1925      0.0049      0.0119
+ 134.79     -0.2132      0.0053      0.0132
+ 136.84     -0.2273      0.0056      0.0141
+ 138.88     -0.2506      0.0060      0.0156
+ 140.93     -0.2650      0.0063      0.0164
+ 142.98     -0.2735      0.0065      0.0170
+ 145.03     -0.2726      0.0065      0.0169
+ 147.08     -0.2608      0.0062      0.0162
+ 149.13     -0.2464      0.0059      0.0153
+ENDDATA             32
+ENDSUBENT           38
+SUBENT        O1434004   20080114   20080407   20080403       O034
+BIB                  1          1
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)
+ENDBIB               1
+NOCOMMON             0          0                                O
+DATA                 4         30
+ANG-CM     DATA       ERR-S      ERR-SYS
+ADEG       NO-DIM     NO-DIM     NO-DIM
+  46.78      0.1168      0.0034      0.0051
+  50.09      0.1201      0.0034      0.0053
+  53.45      0.1022      0.0032      0.0044
+  56.86      0.0811      0.0035      0.0036
+  60.34      0.0362      0.0033      0.0016
+  63.90      0.0107      0.0037      0.0005
+  67.54     -0.0298      0.0039      0.0012
+  71.29     -0.0846      0.0041      0.0037
+  75.18     -0.1383      0.0043      0.0060
+  79.23     -0.1865      0.0050      0.0082
+  83.49     -0.2729      0.0059      0.0120
+  88.04     -0.3263      0.0064      0.0144
+  93.00     -0.3904      0.0075      0.0172
+  98.62     -0.3818      0.0073      0.0169
+ 118.50     -0.3260      0.0056      0.0144
+ 120.53     -0.2952      0.0049      0.0131
+ 122.56     -0.2678      0.0048      0.0118
+ 124.60     -0.2235      0.0044      0.0098
+ 126.63     -0.1811      0.0041      0.0079
+ 128.67     -0.1162      0.0035      0.0050
+ 130.71     -0.0829      0.0032      0.0036
+ 132.75     -0.0285      0.0028      0.0012
+ 134.79      0.0218      0.0028      0.0010
+ 136.84      0.0806      0.0029      0.0035
+ 138.88      0.1248      0.0031      0.0055
+ 140.93      0.1663      0.0032      0.0073
+ 142.98      0.1941      0.0035      0.0085
+ 145.03      0.2142      0.0037      0.0094
+ 147.08      0.2218      0.0037      0.0098
+ 149.13      0.2224      0.0037      0.0098
+ENDDATA             32
+ENDSUBENT           38
+ENDENTRY             4

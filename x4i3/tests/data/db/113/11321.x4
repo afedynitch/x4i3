@@ -1,0 +1,301 @@
+ENTRY            11321   20110727   20111215   20111113       1374
+SUBENT        11321001   20110727   20111215   20111113       1374
+BIB                 13         39
+INSTITUTE  (1USAWES)
+REFERENCE  (J,PR,109,2105,1958)
+AUTHOR     (R.W.Hill)
+TITLE      Angular distributions of elastic scattering of 5-MeV
+           neutrons.
+FACILITY   (NGEN,1USAWES) electrostatic generator
+INC-SOURCE (D-D) The gas target chamber was 3.2 centimeters in
+           length and was separated from the vacuum system by
+           an aperture 3/16-in. in diameter covered with a
+           0.0001-in. thick nickel foil. A pump circulated the
+           deuterium through a cooling system and returned the
+           cold gas to the chamber through a jet aimed at the foil
+SAMPLE     Scatterers were cylinders two inches long with
+           diameters equal to approximately one-half of a mean
+           free path for 5-MeV neutrons, except oxygen and barium.
+DETECTOR   (SCIN) Biased scintillator. The neutron detector
+           consisted of twenty layers of plastic scintillator
+           0.001 inch thick separated by glass disks 0.050 inch
+           thick and 2 inches in diam., all mounted on an
+           RCA 6342 photomultiplier.
+CORRECTION The cross sections were corrected for the difference
+           in counter efficiency for the detection of the primary
+           and scattered neutrons, since momentum transfer to the
+           target nucleus reduces the energy of the scattered
+           neutrons.Also corrections were made for the attenuation
+           of the incident flux in the scatterers and for
+           multiple scattering.
+REL-REF    (M,,J.Blok+,J,PHY,18,809,1952) -method of the
+           multiple-scattering corrections calculation
+ERR-ANALYS (DATA-ERR) Statistical errors plus an estimation of
+                      the errors in the multiple scattering
+STATUS     (SCSRS)
+           (TABLE) data received in private comm., Hill, 1961/8.
+HISTORY    (19761014T) Translated from SCISRS
+           (19820324A) converted to reaction formalism
+           (20110727A) SD:Updated to new date formats,lower case.
+                corrected according to last EXFOR rules and Dict.
+                BIB updated. In Subent 010 SF4 in REACTION code
+                            changed according to the ref.
+ENDBIB              39
+COMMON               3          3
+EN         EN-RSL     ANG-RSL
+MEV        MEV        ADEG
+ 5.         0.1        10.
+ENDCOMMON            3
+ENDSUBENT           46
+SUBENT        11321002   20110727   20111215   20111113       1374
+BIB                  1          1
+REACTION   (6-C-12(N,EL)6-C-12,,DA)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3         13
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       B/SR       B/SR
+ 30.        0.14
+ 40.        0.13       0.010
+ 50.        0.10       0.005
+ 60.        0.065      0.005
+ 70.        0.046      0.004
+ 80.        0.057      0.004
+ 90.        0.057      0.008
+100.        0.085      0.010
+110.        0.074      0.010
+120.        0.035      0.008
+130.        0.022      0.009
+140.        0.026      0.007
+150.        0.026      0.002
+ENDDATA             15
+ENDSUBENT           21
+SUBENT        11321003   20110727   20111215   20111113       1374
+BIB                  3         17
+REACTION   (8-O-16(N,EL)8-O-16,,DA)
+SAMPLE     High purity sample of sintered Al2O3
+METHOD     Two methods were used to obtain the oxygen cross
+           section. This cross section was measured with a high
+           purity sample of sintered Al2O3, and then the
+           appropriate subtraction of the Al cross section was
+           made. Since the subtraction of two not too dissimilar
+           numbers may be subject to considerable error, a more
+           direct approach was tried. A thin-walled brass can was
+           constructed in order to measure the scattering from
+           water. Of all the compounds of oxygen, water has a
+           decided advantage for elastic-scattering measurement in
+           that the contribution from the scattering from hydrogen
+           is almost negligible for angles larger than about
+           40. degr. because of the large energy loss of the
+           scattered neutrons. Background runs were made with the
+           empty can in place.
+ENDBIB              17
+NOCOMMON             0          0
+DATA                 3         10
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+  0.85      128.       10.
+  0.74      120.        5.
+  0.605      70.        5.
+  0.452      50.        5.
+  0.286      43.        7.
+ -0.063      36.        8.
+ -0.397      94.       13.
+ -0.542      80.       10.
+ -0.791      13.5       4.
+ -.8810      15.       15.
+ENDDATA             12
+ENDSUBENT           34
+SUBENT        11321004   20110727   20111215   20111113       1374
+BIB                  1          1
+REACTION   (13-AL-27(N,EL)13-AL-27,,DA)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3         13
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+  0.866     290.       30.
+  0.766     212.       10.
+  0.643     140.       10.
+  0.5        70.        9.
+  0.342      43.        6.
+  0.174      40.        5.
+  0.         30.        3.
+ -0.174      30.        5.
+ -0.342      25.        4.
+ -0.5        20.        5.
+ -0.643      22.        5.
+ -0.766      22.        4.
+ -0.866      25.        4.
+ENDDATA             15
+ENDSUBENT           21
+SUBENT        11321005   20110727   20111215   20111113       1374
+BIB                  2          2
+REACTION   (26-FE-0(N,EL)26-FE-0,,DA)
+HISTORY    (19860326A) Reaction product added.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3         13
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+  0.866      698.       80.
+  0.766      370.       40.
+  0.643      190.       40.
+  0.5         94.       10.
+  0.342       13.        2.
+  0.174        9.        3.
+  0.          25.        4.
+ -0.174       28.        7.
+ -0.342       36.        7.
+ -0.5         21.        4.
+ -0.643       15.8       5.
+ -0.766        8.9       4.
+ -0.866       14.        3.
+ENDDATA             15
+ENDSUBENT           22
+SUBENT        11321006   20110727   20111215   20111113       1374
+BIB                  2          2
+REACTION   (28-NI-0(N,EL)28-NI-0,,DA)
+HISTORY    (19860326A) Reaction product added.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3         13
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+  0.866     610.       80.
+  0.766     320.       20.
+  0.643     157.       30.
+  0.5        66.       10.
+  0.342      10.        4.
+  0.174      10.        4.
+  0.         24.8       5.
+ -0.174      31.        5.
+ -0.342      35.        5.
+ -0.5        13.        5.
+ -0.643      13.        5.
+ -0.766      12.        5.
+ -0.866      13.        5.
+ENDDATA             15
+ENDSUBENT           22
+SUBENT        11321007   20110727   20111215   20111113       1374
+BIB                  2          2
+REACTION   (29-CU-0(N,EL)29-CU-0,,DA)
+HISTORY    (19860326A) Reaction product added.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3         13
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.866      600.
+ 0.766      340.
+ 0.643      123.
+ 0.500       36.        5.
+ 0.342        9.8       3.
+ 0.174       23.        5.
+ 0.          40.        5.
+-0.174       41.        5.
+-0.342       32.        5.
+-0.5         16.        3.
+-0.643        8.9       3.
+-0.766        7.9       3.
+-0.866       10.        3.
+ENDDATA             15
+ENDSUBENT           22
+SUBENT        11321008   20110727   20111215   20111113       1374
+BIB                  2          2
+REACTION   (42-MO-0(N,EL)42-MO-0,,DA)
+HISTORY    (19860326A) Reaction product added.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3         13
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.866      497.       50.
+ 0.766      200.       50.
+ 0.643       44.        8.
+ 0.500       31.        8.
+ 0.342       74.        6.
+ 0.174      115.       15.
+ 0.000       83.       10.
+-0.174       18.7       7.
+-0.342        4.7       2.5
+-0.5         17.        6.
+-0.643       30.        5.
+-0.766       29.        5.
+-0.866       16.6       5.
+ENDDATA             15
+ENDSUBENT           22
+SUBENT        11321009   20110727   20111215   20111113       1374
+BIB                  3          4
+REACTION   (56-BA-0(N,EL)56-BA-0,,DA)
+SAMPLE     The barium scatterer was rectangular in cross section
+           and two niches long
+HISTORY    (19860326A) Reaction product added.
+ENDBIB               4
+NOCOMMON             0          0
+DATA                 3         10
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.866      820.       100.
+ 0.766      330.        80.
+ 0.643      158.        40.
+ 0.500      110.        20.
+ 0.342      100.        15.
+ 0.000       27.         6.
+-0.342       51.        10.
+-0.643       52.        10.
+-0.766       44.        15.
+-0.866       71.        13.
+ENDDATA             12
+ENDSUBENT           21
+SUBENT        11321010   20110727   20111215   20111113       1374
+BIB                  2          4
+REACTION   (74-W-0(N,EL)74-W-0,,DA)
+HISTORY    (19860326A) Reaction product added.
+           (20110727A) SD: SF4 in REACTION code changed:
+             56-BA-0 -> 74-W-0  according to the PR,109,2105,1958.
+ENDBIB               4
+NOCOMMON             0          0
+DATA                 3         13
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.866      780.       100.
+ 0.766      480.        50.
+ 0.643      110.        10.
+ 0.500       60.4       18.
+ 0.342       32.        10.
+ 0.174       41.5        9.
+ 0.000       54.         6.
+-0.174       53.         7.
+-0.342       58.        14.
+-0.5         27.5       15.
+-0.643       21.4        9.
+-0.766       21.4        9.
+-0.866       17.8       12.
+ENDDATA             15
+ENDSUBENT           24
+SUBENT        11321011   20110727   20111215   20111113       1374
+BIB                  2          2
+REACTION   (82-PB-0(N,EL)82-PB-0,,DA)
+HISTORY    (19860326A) Reaction product added.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 3         13
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       B/SR       B/SR
+  30.        1.52       0.1
+  40.        0.5        0.03
+  50.        0.12       0.005
+  60.        0.056      0.005
+  70.        0.037      0.004
+  80.        0.068      0.005
+  90.        0.087      0.005
+ 100.        0.063      0.006
+ 110.        0.036      0.004
+ 120.        0.02       0.005
+ 130.        0.051      0.005
+ 140.        0.069      0.007
+ 150.        0.05       0.005
+ENDDATA             15
+ENDSUBENT           22
+ENDENTRY            11

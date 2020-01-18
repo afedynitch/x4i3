@@ -1,0 +1,67 @@
+ENTRY            30078   20080215   20080530   20080530       3125
+SUBENT        30078001   20080215   20080530   20080530       3125
+BIB                 15         31
+INSTITUTE  (3ISLHFA)
+REFERENCE  (J,PL/B,24,173,196702)
+AUTHOR     (A.Suhami,R.Fox)
+TITLE      Neutron-proton small angle scattering
+INC-SOURCE (D-T) tritium target
+SAMPLE     Liquid scintillator Ne213 containing hydrogen
+            and carbon
+METHOD     (TOF,COINC) fast time-of-flight technique,detection of
+           recoil protons and scattered neutrons by pulse shape
+           discrimination.
+DETECTOR   (SCIN)liquid scintillator NE213 as target and
+            detector in combination with RCA 8575 photomultiplier
+            for recoil proton detection
+MONITOR    (1-H-1(N,EL)1-H-1,,DA)
+            arithmetic mean normalized to 53 mb/ster
+           calculated for 0 degr. by Nakamura in J.Phys.Soc.Japan,
+           15,1359(1960).
+PART-DET   (N,RCL) recoil protons and energy spectrum of scattered
+           neutrons.
+COMMENT    Reference quotes energy 14.1 MeV but priv.Comm. gives
+           14.2 MeV.
+STATUS     (TABLE) Letter Suhami to NNCSC 67/03/19
+HISTORY    (19670802C) data from author's letter entered in
+            Dastar-00221
+           (19670804A) Dastar proof copy sent to author
+           (19701209T) Dastar-00221 converted to Exfor
+           (19790308U) ND-minor changes-
+           (20080305A) BIB section updated
+CORRECTION Corrected for angular resol.,mult.scattering and
+           detector efficiency
+ERR-ANALYS (ERR-S) Only statistical errors given.
+ENDBIB              31
+COMMON               4          3
+EN         EN-RSL     ANG-RSL    MONIT
+MEV        KEV        ADEG       MB/SR
+ 1.4200E+01 5.0000E+02 1.0000E+00 5.3000E+01
+ENDCOMMON            3
+ENDSUBENT           38
+SUBENT        30078002   20080215   20080530   20080530       3125
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3         15
+ANG-CM     DATA-CM    ERR-S
+ADEG       MB/SR      MB/SR
+ 1.2000E+01 5.1300E+01 2.1000E+00
+ 1.4000E+01 5.7000E+01 2.2000E+00
+ 1.6000E+01 5.4100E+01 2.1000E+00
+ 1.8000E+01 4.9700E+01 2.0000E+00
+ 2.0000E+01 5.5400E+01 2.1000E+00
+ 2.2000E+01 5.0000E+01 2.0000E+00
+ 2.4000E+01 5.3000E+01 2.1000E+00
+ 2.6000E+01 5.2200E+01 2.1000E+00
+ 2.8000E+01 5.2200E+01 2.1000E+00
+ 3.0000E+01 5.3800E+01 2.1000E+00
+ 3.2000E+01 5.2300E+01 2.1000E+00
+ 3.4000E+01 5.6700E+01 2.2000E+00
+ 3.6000E+01 5.2200E+01 2.1000E+00
+ 3.8000E+01 5.3200E+01 2.1000E+00
+ 9.0000E+01 5.2300E+01 2.1000E+00
+ENDDATA             17
+ENDSUBENT           23
+ENDENTRY             2

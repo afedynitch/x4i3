@@ -1,0 +1,50 @@
+ENTRY            41202     960813              20050926       0000
+SUBENT        41202001     960813              20050926       0000
+BIB                 13         13
+TITLE       ELASTIC SCATTERING OF 580-MEV NEUTRONS BY PROTONS
+AUTHOR     (YU.M.KAZARINOV,YU.N.SIMONOB)
+INSTITUTE  (4RUSIFP)
+REFERENCE  (J,ZET,31,(2),169,5608)   GRAPH IS GIVEN
+FACILITY   (SYNCY)  SYNCHRO-CYCLOTRON OF IFP
+METHOD     (REC)    REGISTRATION OF THE RECOIL PROTONS
+DETECTOR   (TELES)  THREE SCINTILLATION COUNTERS TELESCOPE
+MONITOR    (1-H-1(N,TOT),,SIG)
+MONIT-REF  (,,J,ZET,29,369,55)
+CORRECTION  CORRECTIONS WERE MADE ON NUCLEAR ABSORPTION
+SAMPLE      PARAFFIN CUBE
+ERR-ANALYS (ERR-S)  STATISTICAL ERROR
+HISTORY    (960808C)  + + COMPILED AT THE CENTRE - CJD + +
+ENDBIB              13
+NOCOMMON             0          0
+ENDSUBENT           16
+SUBENT        41202002     960813              20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (CURVE)   DATA ARE TAKEN FROM THE CURVE
+ENDBIB               2
+COMMON               4          3
+EN-MEAN    EN-RSL     MONIT      MONIT-ERR
+EV         EV         MB         MB
+   5.80E+08   1.30E+08  26.0       3.
+ENDCOMMON            3
+DATA                 3         15
+ANG-CM     DATA       ERR-S
+ADEG       MB/SR      MB/SR
+  35.         3.75       0.2
+  45.         3.0        0.3
+  53.         2.32       0.2
+  62.         2.12       0.2
+  72.         1.67       0.13
+  82.         1.1        0.12
+  92.         0.86       0.1
+ 102.         0.76       0.1
+ 113.         0.79       0.1
+ 123.         0.92       0.1
+ 135.         1.65       0.15
+ 147.         2.05       0.2
+ 157.         3.34       0.3
+ 170.         5.25       0.5
+ 180.         8.31       0.7
+ENDDATA             17
+ENDSUBENT           28
+ENDENTRY             2

@@ -1,0 +1,356 @@
+ENTRY            20576   20110810   20120427   20120411       2227
+SUBENT        20576001   20110810   20120427   20120411       2227
+BIB                 20         65
+TITLE      -Measurement of the energy spectrum of prompt
+            neutrons from the fission of Pu239 by 0.215 MeV
+            neutrons-
+AUTHOR     (H.Knitter)
+INSTITUTE  (2ZZZGEL)
+REFERENCE  (J,AKE,26,76,1975) Main reference. Graphs given.
+REL-REF    (M,22401001,H.Knitter,J,AKE,22,84,1972) Method of
+                                     corrections calculation
+FACILITY   (VDG,2ZZZGEL) 3 MeV Van de Graaff of Geel lab.
+INC-SOURCE (P-LI7) Li-7(P,N)Be-7 reaction in a Li-F target of
+              326.E-6 g/cm2 thickness. Average proton current
+              4.5 micro-a, pulse width 1 ns. repetition rate
+              1 MHz
+INC-SPECT  .Mean neutron beam energy 0.215 MeV.
+           .Neutron beam energy spread is 32 keV.
+SAMPLE     (94-PU-239,98.91) Isotopic composition 98.91% Pu-239,
+           (94-PU-240,1.09)  1.09% Pu-240. Plutonium cylinder,
+             1.2 cm diameter, 2.5 cm length, 54.803-g weight.
+             Canned in zirkalloy container with 0.2 mm wall
+             thickness
+METHOD     (TOF)
+DETECTOR   (SCIN)  NE224 liquid scintillator,5 cm diameter 3.8 cm
+              length, with low noise photomultiplier RCA-8850.
+              Placed at 90 degree relative to proton beam and at
+              1.972 m from the axis of plutonium sample
+            .Another similar detector used for monitoring of the
+             neutron flux placed at -35 degree relative to proton
+             beam and distance 3.20 m from the target
+ADD-RES    .Maxwellian fit of the data gives e-bar=2.12+-0.01MeV
+           .Fit with the Watt formula gives
+            e-bar=2.116-MeV,t=0.9649-MeV,ef=0.6686-MeV.
+           .Model independent average energy gives 2.125+-
+            0.035 MeV. See details in (J,AKE,26,78,75).
+           .Average of all mean fission neutron energies gives
+            e-bar=2.136+-0.045MeV
+MONITOR    .Detector efficiencies measured at several energies
+            using many reactions.
+           (1-H-3(P,N)2-HE-3,,SIG)
+           (1-H-2(D,N)2-HE-3,,SIG)
+           (4-BE-9(A,N)6-C-12,,SIG)
+           (1-H-1(N,EL)1-H-1,,SIG)
+           (3-LI-7(P,N)4-BE-7,,DA)  At zero angle
+MONIT-REF  (,H.Liskien+,J,AND,11,569,1973)
+           (,H.Liskien+,J,NUK,8,315,1966)
+           (,J.B.Hunt+,C,72NEUHER,,935,1972)
+PART-DET   (N)      Fission neutrons
+EN-SEC     .Good agreement of fission neutron spectrum with
+            maxwellian
+STATUS     .Numerical values of neutron spectrum given in
+            private communication from H.H.Knitter, 1976.
+            The average fission neutron energy calculated in text
+            of J,AKE,26,76,1975.
+CORRECTION .Background.  Substraction of prompt gamma rays from
+            the sample and gamma rays of the target scattered
+            in sample. Details in J,AKE,26,77,1975
+            secondary interactions of fission neutrons in the
+            sample accounted,method described in reference
+            C,72VIENNA,,127,7211.
+ERR-ANALYS .Statistical, detector efficiency and corrections
+            errors accounted.
+HISTORY    (19760608C)
+           (19761217E)
+           (20110707A) Date is corrected to 8 digits format.
+                       Upper case text converted to the lower one.
+           (20110810A) Last checking has been done.
+ENDBIB              65
+COMMON               2          3
+EN         EN-RSL
+KEV        KEV
+   215.       32.
+ENDCOMMON            3
+ENDSUBENT           72
+SUBENT        20576002   20110810   20120427   20120411       2227
+BIB                  4          7
+REACTION   (94-PU-239(N,F)0-NN-1,PR,KE,,,DERIV)  Average of all
+                               average fission neutron energies.
+ERR-ANALYS (DATA-ERR) Not defined explicitly.
+                      Supposed total error by compiler.
+STATUS     (TABLE)  From text of J,AKE,26,76,1975
+           (DEP,20576004)
+HISTORY    (20110810U) BIB information corrected.
+ENDBIB               7
+NOCOMMON             0          0
+DATA                 2          1
+DATA       DATA-ERR
+MEV        MEV
+      2.136    0.045
+ENDDATA              3
+ENDSUBENT           15
+SUBENT        20576003   20110810   20120427   20120411       2227
+BIB                  4         11
+REACTION   (94-PU-239(N,F),PR,NU/DE,,REL) Reference quantity
+                                          not given
+ERR-ANALYS (DATA-ERR)  Not specified
+           (ERR-1)     Error of the relative detector efficiency
+STATUS     (TABLE)  Obtained from H.Knitter by letter
+             Corresponds to Fig. 2 of J,ANE,76,1975.
+           (COREL,20576005)
+HISTORY    (20110810A) REACTION code SF4, SF5, SF6, SF7 changed
+            from ",PR,DE,N" to "0-NN-1,PR,NU/DE,".
+            Status code and errors specified. Data units changed
+            from 1/MEV to ARB-UNITS.
+ENDBIB              11
+NOCOMMON             0          0
+DATA                 5        183
+E          E-RSL      DATA       DATA-ERR   ERR-1
+MEV        MEV        ARB-UNITS  ARB-UNITS  PER-CENT
+ 2.8000E-01 1.0000E-02 6.6800E+01 2.5000E+00      2.
+ 3.1000E-01 1.0000E-02 7.0200E+01 2.4000E+00      2.
+ 3.4000E-01 1.0000E-02 6.5100E+01 2.2000E+00      2.
+ 3.6000E-01 1.0000E-02 7.0500E+01 2.2000E+00      2.
+ 3.9000E-01 1.0000E-02 6.8800E+01 2.1000E+00      2.
+ 4.1000E-01 1.0000E-02 7.4200E+01 2.1000E+00      2.
+ 4.4000E-01 1.0000E-02 7.5600E+01 2.2000E+00      2.
+ 4.6000E-01 1.0000E-02 7.4800E+01 2.1000E+00      2.
+ 4.9000E-01 1.0000E-02 7.4800E+01 2.1000E+00      2.
+ 5.1000E-01 1.0000E-02 7.3600E+01 2.0000E+00      2.
+ 5.4000E-01 1.0000E-02 7.4200E+01 2.0000E+00      2.
+ 5.6000E-01 1.0000E-02 7.5700E+01 2.0000E+00      2.
+ 5.9000E-01 1.0000E-02 7.5800E+01 2.0000E+00      2.
+ 6.1000E-01 1.0000E-02 7.6600E+01 2.1000E+00      2.
+ 6.3000E-01 1.0000E-02 7.5400E+01 2.0000E+00      2.
+ 6.6000E-01 1.0000E-02 7.8700E+01 2.1000E+00      2.
+ 6.9000E-01 1.0000E-02 7.6300E+01 2.0000E+00      2.
+ 7.1000E-01 1.0000E-02 7.8600E+01 2.1000E+00      2.
+ 7.3000E-01 1.0000E-02 7.4600E+01 2.1000E+00      2.
+ 7.6000E-01 1.0000E-02 7.8700E+01 2.0000E+00      2.
+ 7.9000E-01 2.0000E-02 7.9400E+01 2.1000E+00      2.
+ 8.1000E-01 2.0000E-02 7.8300E+01 2.1000E+00      2.
+ 8.4000E-01 2.0000E-02 7.6600E+01 2.0000E+00      2.
+ 8.6000E-01 2.0000E-02 8.0000E+01 2.2000E+00      2.
+ 8.9000E-01 2.0000E-02 8.1000E+01 2.1000E+00      2.
+ 9.1000E-01 2.0000E-02 8.0200E+01 2.1000E+00      2.
+ 9.4000E-01 2.0000E-02 7.9500E+01 2.1000E+00      2.
+ 9.6000E-01 2.0000E-02 7.8400E+01 2.1000E+00      2.
+ 9.8000E-01 2.0000E-02 7.7800E+01 2.1000E+00      2.
+ 1.0100E+00 2.0000E-02 7.6800E+01 2.2000E+00      2.
+ 1.0400E+00 2.0000E-02 7.8400E+01 2.0000E+00      2.
+ 1.0600E+00 2.0000E-02 7.8300E+01 2.2000E+00      2.
+ 1.0900E+00 2.0000E-02 7.7800E+01 2.1000E+00      2.
+ 1.1100E+00 2.0000E-02 7.4900E+01 2.1000E+00      2.
+ 1.1300E+00 3.0000E-02 7.5100E+01 2.1000E+00      2.
+ 1.1600E+00 3.0000E-02 7.6000E+01 2.1000E+00      2.
+ 1.1900E+00 3.0000E-02 7.6100E+01 2.1000E+00      2.
+ 1.2100E+00 3.0000E-02 7.4000E+01 2.0000E+00      2.
+ 1.2400E+00 3.0000E-02 7.3500E+01 2.2000E+00      2.
+ 1.2600E+00 3.0000E-02 7.6700E+01 1.6000E+00      2.
+ 1.2900E+00 3.0000E-02 7.4500E+01 1.6000E+00      2.
+ 1.3200E+00 3.0000E-02 7.2300E+01 1.5000E+00      2.
+ 1.3500E+00 3.0000E-02 7.2800E+01 1.5000E+00      2.
+ 1.3900E+00 4.0000E-02 7.2200E+01 1.5000E+00      2.
+ 1.4200E+00 4.0000E-02 7.2100E+01 1.5000E+00      2.
+ 1.4500E+00 4.0000E-02 6.9100E+01 1.7000E+00      2.
+ 1.4700E+00 4.0000E-02 7.0700E+01 1.8000E+00      2.
+ 1.5000E+00 4.0000E-02 7.1300E+01 1.8000E+00      2.
+ 1.5200E+00 4.0000E-02 6.7300E+01 1.7000E+00      2.
+ 1.5500E+00 4.0000E-02 6.8400E+01 1.7000E+00      2.
+ 1.5800E+00 4.0000E-02 6.5100E+01 1.6000E+00      2.
+ 1.6000E+00 4.0000E-02 6.5700E+01 1.6000E+00      2.
+ 1.6300E+00 4.0000E-02 6.4300E+01 1.6000E+00      2.
+ 1.6600E+00 5.0000E-02 6.4100E+01 1.6000E+00      2.
+ 1.6900E+00 5.0000E-02 6.4700E+01 1.6000E+00      2.
+ 1.7200E+00 5.0000E-02 6.1900E+01 1.5000E+00      2.
+ 1.7500E+00 5.0000E-02 6.3100E+01 1.5000E+00      2.
+ 1.7900E+00 5.0000E-02 6.3000E+01 1.5000E+00      2.
+ 1.8200E+00 5.0000E-02 6.0900E+01 1.5000E+00      2.
+ 1.8500E+00 5.0000E-02 5.9900E+01 1.5000E+00      2.
+ 1.8900E+00 6.0000E-02 5.8700E+01 1.4000E+00      2.
+ 1.9300E+00 6.0000E-02 5.8000E+01 1.4000E+00      2.
+ 1.9600E+00 6.0000E-02 5.7000E+01 1.4000E+00      2.
+ 2.0000E+00 6.0000E-02 5.6100E+01 1.4000E+00      2.
+ 2.0400E+00 6.0000E-02 5.4600E+01 1.3000E+00      2.
+ 2.0700E+00 6.0000E-02 5.4100E+01 1.8000E+00      2.
+ 2.0900E+00 6.0000E-02 5.2700E+01 1.8000E+00      2.
+ 2.1100E+00 7.0000E-02 5.2000E+01 1.8000E+00      2.
+ 2.1400E+00 7.0000E-02 5.1600E+01 1.8000E+00      2.
+ 2.1600E+00 7.0000E-02 5.2900E+01 1.8000E+00      2.
+ 2.1800E+00 7.0000E-02 5.1000E+01 1.7000E+00      2.
+ 2.2000E+00 7.0000E-02 5.1000E+01 1.7000E+00      2.
+ 2.2200E+00 7.0000E-02 4.9600E+01 1.7000E+00      2.
+ 2.2500E+00 7.0000E-02 4.8900E+01 1.7000E+00      2.
+ 2.2700E+00 7.0000E-02 4.7300E+01 1.6000E+00      2.
+ 2.2900E+00 7.0000E-02 4.9500E+01 1.7000E+00      2.
+ 2.3200E+00 7.0000E-02 4.6600E+01 1.6000E+00
+ 2.3400E+00 7.0000E-02 4.5400E+01 1.6000E+00
+ 2.3700E+00 8.0000E-02 4.6200E+01 1.6000E+00
+ 2.3900E+00 8.0000E-02 4.6600E+01 1.6000E+00
+ 2.4200E+00 8.0000E-02 4.5300E+01 1.5000E+00
+ 2.4400E+00 8.0000E-02 4.4000E+01 1.5000E+00
+ 2.4700E+00 8.0000E-02 4.4600E+01 1.5000E+00
+ 2.5000E+00 8.0000E-02 4.1600E+01 1.4000E+00
+ 2.5300E+00 9.0000E-02 4.3400E+01 1.5000E+00
+ 2.5600E+00 9.0000E-02 4.1300E+01 1.4000E+00
+ 2.5800E+00 9.0000E-02 4.3200E+01 1.5000E+00
+ 2.6100E+00 9.0000E-02 4.1400E+01 1.4000E+00
+ 2.6400E+00 9.0000E-02 3.9500E+01 1.4000E+00
+ 2.6700E+00 9.0000E-02 3.8900E+01 1.3000E+00
+ 2.7000E+00 9.0000E-02 3.9700E+01 1.4000E+00
+ 2.7300E+00 1.0000E-01 3.7500E+01 1.3000E+00
+ 2.7600E+00 1.0000E-01 3.6400E+01 1.2000E+00
+ 2.7900E+00 1.0000E-01 3.6100E+01 1.2000E+00
+ 2.8200E+00 1.0000E-01 3.6600E+01 1.2000E+00
+ 2.8600E+00 1.0000E-01 3.6200E+01 1.2000E+00
+ 2.8900E+00 1.0000E-01 3.4800E+01 1.2000E+00
+ 2.9300E+00 1.0000E-01 3.4000E+01 1.2000E+00
+ 2.9600E+00 1.0000E-01 3.4100E+01 1.2000E+00
+ 3.0000E+00 1.1000E-01 3.3400E+01 1.2000E+00
+ 3.0300E+00 1.1000E-01 3.1200E+01 1.1000E+00
+ 3.0700E+00 1.1000E-01 3.2400E+01 1.1000E+00
+ 3.1100E+00 1.1000E-01 3.1500E+01 1.1000E+00
+ 3.1500E+00 1.2000E-01 3.0700E+01 1.1000E+00
+ 3.1800E+00 1.2000E-01 2.9300E+01 1.0000E+00
+ 3.2200E+00 1.2000E-01 2.8600E+01 1.0000E+00
+ 3.2600E+00 1.2000E-01 2.8300E+01 1.0000E+00
+ 3.3000E+00 1.2000E-01 2.7100E+01 1.0000E+00
+ 3.3400E+00 1.3000E-01 2.7600E+01 1.0000E+00
+ 3.3900E+00 1.3000E-01 2.6300E+01 9.0000E-01
+ 3.4300E+00 1.3000E-01 2.5400E+01 9.0000E-01
+ 3.4800E+00 1.4000E-01 2.4600E+01 9.0000E-01
+ 3.5200E+00 1.4000E-01 2.4400E+01 9.0000E-01
+ 3.5700E+00 1.4000E-01 2.3700E+01 8.0000E-01
+ 3.6100E+00 1.4000E-01 2.2400E+01 8.0000E-01
+ 3.6600E+00 1.5000E-01 2.1700E+01 8.0000E-01
+ 3.7100E+00 1.5000E-01 2.2500E+01 8.0000E-01
+ 3.7600E+00 1.5000E-01 2.1100E+01 8.0000E-01
+ 3.8100E+00 1.5500E-01 2.0000E+01 7.0000E-01
+ 3.8600E+00 1.5500E-01 1.9000E+01 7.0000E-01
+ 3.9200E+00 1.6500E-01 1.9400E+01 7.0000E-01
+ 3.9700E+00 1.6500E-01 1.7700E+01 7.0000E-01
+ 4.0300E+00 1.6500E-01 1.8000E+01 7.0000E-01
+ 4.0800E+00 1.7500E-01 1.6600E+01 6.0000E-01
+ 4.1400E+00 1.7500E-01 1.6700E+01 6.0000E-01
+ 4.2000E+00 1.8000E-01 1.6000E+01 6.0000E-01
+ 4.2600E+00 1.8500E-01 1.5300E+01 6.0000E-01
+ 4.3200E+00 1.8500E-01 1.5200E+01 6.0000E-01
+ 4.3800E+00 1.9500E-01 1.4500E+01 6.0000E-01
+ 4.4500E+00 1.9500E-01 1.3200E+01 5.0000E-01
+ 4.5100E+00 2.0000E-01 1.3200E+01 5.0000E-01
+ 4.5700E+00 2.0500E-01 1.3100E+01 5.0000E-01
+ 4.6400E+00 2.1000E-01 1.2400E+01 5.0000E-01
+ 4.7200E+00 2.1500E-01 1.2300E+01 5.0000E-01
+ 4.7900E+00 2.2000E-01 1.1300E+01 5.0000E-01
+ 4.8600E+00 2.2500E-01 1.0800E+01 4.0000E-01
+ 4.9400E+00 2.3000E-01 9.7300E+00 4.2000E-01
+ 5.0100E+00 2.3500E-01 1.0000E+01 4.0000E-01
+ 5.0900E+00 2.4000E-01 9.5600E+00 4.1000E-01
+ 5.1700E+00 2.4500E-01 8.7700E+00 3.9000E-01
+ 5.2500E+00 2.5000E-01 8.6100E+00 3.8000E-01
+ 5.3400E+00 2.6000E-01 8.6900E+00 3.8000E-01
+ 5.4200E+00 2.6000E-01 7.9600E+00 3.6000E-01
+ 5.5100E+00 2.7000E-01 7.1600E+00 3.4000E-01
+ 5.6000E+00 2.8000E-01 7.2600E+00 3.4000E-01
+ 5.6900E+00 2.8000E-01 6.0200E+00 3.1000E-01
+ 5.7900E+00 2.9000E-01 6.0600E+00 3.1000E-01
+ 5.8800E+00 3.0000E-01 6.0300E+00 3.1000E-01
+ 5.9900E+00 3.0500E-01 5.8600E+00 3.0000E-01
+ 6.0900E+00 3.1000E-01 5.1600E+00 2.8000E-01
+ 6.1900E+00 3.2000E-01 4.9700E+00 2.8000E-01
+ 6.3000E+00 3.3000E-01 4.8800E+00 2.7000E-01
+ 6.4100E+00 3.3500E-01 4.1800E+00 2.6000E-01
+ 6.5300E+00 3.4500E-01 4.0000E+00 2.5000E-01
+ 6.6400E+00 3.5500E-01 3.7100E+00 2.4000E-01
+ 6.7600E+00 3.6500E-01 3.6100E+00 2.4000E-01
+ 6.8800E+00 3.7500E-01 3.3900E+00 2.3000E-01
+ 7.0100E+00 3.8500E-01 2.8600E+00 2.2000E-01
+ 7.1400E+00 3.9500E-01 2.6700E+00 2.1000E-01
+ 7.2800E+00 4.0500E-01 2.5700E+00 2.1000E-01
+ 7.4100E+00 4.2000E-01 2.2400E+00 2.0000E-01
+ 7.5500E+00 4.3000E-01 2.2200E+00 2.0000E-01
+ 7.7000E+00 4.4000E-01 1.7100E+00 1.9000E-01
+ 7.8500E+00 4.6000E-01 1.9000E+00 1.9000E-01
+ 8.0000E+00 4.7000E-01 1.6100E+00 1.8000E-01
+ 8.1600E+00 4.8000E-01 1.3500E+00 1.7000E-01
+ 8.3300E+00 4.9500E-01 1.2900E+00 1.7000E-01
+ 8.5000E+00 5.1500E-01 1.0000E+00 1.6000E-01
+ 8.6700E+00 5.2500E-01 1.0900E+00 1.5000E-01
+ 8.8500E+00 5.4500E-01 8.7000E-01 1.5000E-01
+ 9.0400E+00 5.6000E-01 9.1000E-01 1.5000E-01
+ 9.2300E+00 5.8000E-01 4.9000E-01 1.4000E-01
+ 9.4200E+00 6.0000E-01 7.3000E-01 1.4000E-01
+ 9.6200E+00 6.2000E-01 4.0000E-01 1.4000E-01
+ 9.8400E+00 6.3500E-01 6.8000E-01 1.4000E-01
+ 1.0060E+01 6.5500E-01 4.8000E-01 1.3000E-01
+ 1.0400E+01 7.0000E-01 1.5000E-01 1.0000E-01
+ 1.0880E+01 7.2500E-01 3.0000E-01 9.0000E-02
+ 1.1400E+01 8.0500E-01 3.4000E-01 8.0000E-02
+ 1.1940E+01 8.6500E-01 9.0000E-02 1.1000E-01
+ 1.2540E+01 9.3000E-01 1.1000E-01 9.0000E-02
+ 1.3180E+01 9.9500E-01 5.0000E-02 1.6000E-01
+ 1.3870E+01 1.0350E+00 5.0000E-02 1.7000E-01
+ENDDATA            185
+ENDSUBENT          201
+SUBENT        20576004   20110810   20120427   20120411       2227
+BIB                  5         25
+REACTION  1(94-PU-239(N,F)0-NN-1,PR,KE,,,DERIV)
+          2(94-PU-239(N,F)0-NN-1,PR,KE,,,DERIV)
+ANALYSIS  1.Average neutron energy obtained via Maxwell fitting
+            of experimental data
+          2.Average neutron energy obtained by independent direct
+            integration of experimental data
+ERR-ANALYS (ERR-S) .Statistical error
+          1(ERR-T) .Total error including neutron secondary inter-
+              actions in sample error, detector efficiency errors,
+              and statistical error.
+           (ERR-1) .Detector efficiency error
+           (ERR-2) .Error due to corrections caused by neutron
+                    interactions in sample
+           (ERR-3,2.,5.) Errors due to systematic changes in
+                   detector efficiency
+          2(ERR-T) .Total error includes errors due to lower and
+              upper energy levels of integration, error due to
+              secondary neutron interactions in sample
+           (ERR-1) .Error due to secondary neutron interactions
+                    in sample
+           (ERR-2,0.2,5.4) .Error due to determination of lower
+              and upper energy levels of integration
+STATUS     (TABLE)  .Data from text of AKE, v.26, p.76, 1975
+           (DEP,20576003)
+HISTORY    (20110810C)  S.M.
+ENDBIB              25
+COMMON               1          3
+ERR-S
+PER-CENT
+  0.5
+ENDCOMMON            3
+DATA                 7          1
+DATA      1ERR-T     1ERR-1     1ERR-2     1DATA      2ERR-T     2
+ERR-1     2
+MEV        MEV        PER-CENT   PER-CENT   MEV        MEV
+PER-CENT
+   2.148      0.045      1.         1.         2.125      0.035
+       1.
+ENDDATA              6
+ENDSUBENT           40
+SUBENT        20576006   20110810   20120427   20120411       2227
+BIB                  5          8
+REACTION   ((94-PU-239(N,F)0-NN-1,PR,KE)/
+           (92-U-235(N,F)0-NN-1,PR,KE))
+REL-REF    (R,,E.D.Kielhofer+,C,71VIENNA,,127,1971) Average energy
+                               of U-235
+ERR-ANALYS (DATA-ERR)  Not specified
+STATUS     (TABLE) Data from text of AKE, v.26, p.76, 1975
+           (DEP,20576002)
+HISTORY    (20110810C)  S.M.
+ENDBIB               8
+NOCOMMON             0          0
+DATA                 2          1
+DATA       DATA-ERR
+NO-DIM     NO-DIM
+   1.037      0.020
+ENDDATA              3
+ENDSUBENT           16
+ENDENTRY             5

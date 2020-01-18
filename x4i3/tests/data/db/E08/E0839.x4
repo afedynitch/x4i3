@@ -1,0 +1,292 @@
+ENTRY            E0839   20040622              20050926       0000
+SUBENT        E0839001   20040622              20050926       0000
+BIB                  9         26
+TITLE       MEASUREMENTS OF ANALYZING POWERS A(Y),A(XX),A(YY)
+            AND A(XZ) IN DP ELASTIC SCATTERING AT E(D)=56 MEV
+AUTHOR     (K.HATANAKA,N.MATSUOKA,H.SAKAI,T.SAITO,K.HOSONO,
+           Y.KOIKE,M.KONDO,K.IMAI,H.SHIMIZU,T.ICHIHARA,
+           K.NISHIMURA,A.OKIHANA)
+INSTITUTE  (2JPNOSA) RESEARCH CENTER FOR NUCLEAR PHYSICS, OSAKA
+            UNIV.
+           (2JPNKTO)
+           (2JPNKUE)
+REFERENCE  (J,NP/A,426,77,1984)
+FACILITY   (CYCLO,2JPNOSA)
+DETECTOR   (COIN,SOLST,SOLST,TELES) OVERALL-ENERGY-RESOLUTION
+            IS 600.KEV
+INC-SOURCE  BEAM-INTENSITY IS BETWEEN 10. AND 100.NA
+            BEAM-POLARIZATION IS BETWEEN 70. AND 80.PER-CENT
+            ION-SOURCE=AN ATOMIC-BEAM-TYPE POLARIZED ION SOURCE
+SAMPLE      TARGET IS NATURAL
+            CHEMICAL-FORM OF TARGET IS ELEMENT
+            PHYSICAL-FORM OF TARGET IS GAS
+            TARGET-THICKNESS=THE TYPICAL GAS PRESSURE WAS 820
+            TORR AT 20 DEG.C.
+            TARGET IS NOT POLARIZED
+            TARGET IS NOT ALIGNED
+HISTORY    (19881021T) CONVERTED FROM NRDF DATA NO. D839
+           (20040401A) PAR in SF5 and E-EXC=0.0 MEV are deleted.
+                       Headings for uncertainties are corrected.
+ENDBIB              26
+NOCOMMON             0          0
+ENDSUBENT           29
+SUBENT        E0839002   20040622              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(D,EL)1-H-1,,DA)
+ERR-ANALYS (ERR-SYS) Uncertaintiy mainly due to beam integration
+           (ERR-S) Statistical uncertainty
+HISTORY    (20040401A) ERR-ANALYS is added.
+ENDBIB               4
+COMMON               2          3
+EN         ERR-SYS
+MEV        PER-CENT
+56.        3.
+ENDCOMMON            3
+DATA                 3         38
+ANG-CM     DATA       ERR-S
+ADEG       MB/SR      MB/SR
+      30.50       66.0        0.2
+      33.62       63.7        0.2
+      36.78       58.5        0.2
+      39.96       54.5        0.2
+      43.17       50.3        0.1
+      46.42       46.9        0.2
+      49.71       42.8        0.2
+      53.05       39.3        0.2
+      56.45       35.3        0.2
+      59.35       30.2        0.1
+      63.33       26.7        0.1
+      67.31       23.5        0.1
+      71.29       20.5        0.1
+      75.27      18.07       0.04
+      79.26      15.70       0.04
+      83.25      13.65       0.04
+      87.25      11.92       0.03
+      91.25      10.33       0.02
+      95.25       8.85       0.02
+      99.26       7.60       0.02
+     103.27       6.34       0.01
+     107.28       5.35       0.01
+     111.30       4.42       0.01
+     115.32       3.63       0.01
+     119.35       2.87       0.01
+     123.38       2.39       0.01
+     127.41       2.19       0.01
+     131.44       2.33       0.01
+     135.48       3.02       0.01
+     139.51       4.52       0.03
+     143.56       6.88       0.05
+     145.58       8.57       0.10
+     147.60      10.45       0.07
+     149.62      12.06       0.13
+     151.65      14.85       0.10
+     153.67      17.44       0.19
+     155.69      20.40       0.12
+     159.74      27.40       0.27
+ENDDATA             40
+ENDSUBENT           53
+SUBENT        E0839003   20040622              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+ERR-ANALYS (ERR-1) Uncertaintiy from error of Ay in polarimeter
+           (ERR-S) Statistical uncertainty
+HISTORY    (20040401A) ERR-ANALYS is added.
+ENDBIB               4
+COMMON               2          3
+EN         ERR-1
+MEV        PER-CENT
+56.        10.
+ENDCOMMON            3
+DATA                 3         38
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+      30.50      0.043      0.006
+      33.62      0.041      0.007
+      36.78      0.038      0.007
+      39.96      0.039      0.005
+      43.17      0.039      0.004
+      46.42      0.028      0.006
+      49.71      0.037      0.006
+      53.05      0.024      0.005
+      56.45      0.016      0.005
+      59.35      0.009      0.004
+      63.33     -0.005      0.004
+      67.31     -0.027      0.008
+      71.29     -0.042      0.008
+      75.27     -0.057      0.009
+      79.26     -0.082      0.009
+      83.25     -0.110      0.009
+      87.25     -0.128      0.010
+      91.25     -0.154      0.009
+      95.25     -0.176      0.010
+      99.26     -0.196      0.010
+     103.27     -0.206      0.009
+     107.28     -0.232      0.010
+     111.30     -0.233      0.010
+     115.32     -0.187      0.009
+     119.35     -0.159      0.009
+     123.38     -0.061      0.009
+     127.41      0.096      0.009
+     131.44      0.224      0.010
+     135.48      0.290      0.011
+     139.51      0.310      0.014
+     143.56      0.239      0.012
+     145.58      0.219      0.021
+     147.60      0.198      0.012
+     149.62      0.185      0.021
+     151.65      0.146      0.011
+     153.67      0.117      0.019
+     155.69      0.101      0.013
+     159.74      0.060      0.019
+ENDDATA             40
+ENDSUBENT           53
+SUBENT        E0839004   20040622              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+ERR-ANALYS (ERR-1) Uncertaintiy from error of Ay in polarimeter
+           (ERR-S) Statistical uncertainty
+HISTORY    (20040401A) ERR-ANALYS is added.
+ENDBIB               4
+COMMON               2          3
+EN         ERR-1
+MEV        PER-CENT
+56.        10.
+ENDCOMMON            3
+DATA                 3         35
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+      36.78     -0.045      0.003
+      39.96     -0.052      0.005
+      43.17     -0.062      0.003
+      46.42     -0.064      0.006
+      49.71     -0.081      0.004
+      53.05     -0.086      0.006
+      56.45     -0.101        0.2
+      59.35     -0.123      0.006
+      63.33     -0.127      0.006
+      67.31     -0.152      0.012
+      71.29     -0.155      0.013
+      75.27     -0.169      0.014
+      79.26     -0.134      0.013
+      83.25     -0.120      0.012
+      87.25     -0.098      0.013
+      91.25     -0.059      0.012
+      95.25      0.013      0.012
+      99.26      0.058      0.013
+     103.27      0.137      0.013
+     107.28      0.206      0.014
+     111.30      0.313      0.014
+     115.32      0.389      0.016
+     119.35      0.375      0.014
+     123.38      0.298      0.014
+     127.41      0.006      0.012
+     131.44     -0.312      0.015
+     135.48     -0.550      0.023
+     139.51     -0.641      0.018
+     143.56     -0.583      0.016
+     145.58     -0.515      0.025
+     147.60     -0.497      0.017
+     149.62     -0.475      0.027
+     151.65     -0.399      0.015
+     153.67     -0.342      0.021
+     155.69     -0.279      0.016
+ENDDATA             37
+ENDSUBENT           50
+SUBENT        E0839005   20040622              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+ERR-ANALYS (ERR-1) Uncertaintiy from error of Ay in polarimeter
+           (ERR-S) Statistical uncertainty
+HISTORY    (20040401A) ERR-ANALYS is added.
+ENDBIB               4
+COMMON               2          3
+EN         ERR-1
+MEV        PER-CENT
+56.        10.
+ENDCOMMON            3
+DATA                 3         38
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+      30.50      0.037      0.006
+      33.62      0.039      0.006
+      36.78      0.033      0.006
+      39.96      0.018      0.004
+      43.17      0.045      0.004
+      46.42      0.050      0.005
+      49.71      0.042      0.005
+      53.05      0.059      0.004
+      56.45      0.070      0.005
+      59.35      0.076      0.004
+      63.33      0.082      0.004
+      67.31      0.094      0.008
+      71.29      0.123      0.009
+      75.27      0.145      0.010
+      79.26      0.151      0.010
+      83.25      0.148      0.009
+      87.25      0.179      0.011
+      91.25      0.195      0.010
+      95.25      0.206      0.011
+      99.26      0.247      0.012
+     103.27      0.277      0.011
+     107.28      0.308      0.012
+     111.30      0.387      0.013
+     115.32      0.448      0.015
+     119.35      0.499      0.013
+     123.38      0.546      0.015
+     127.41      0.587      0.016
+     131.44      0.536      0.016
+     135.48      0.392      0.016
+     139.51      0.229      0.011
+     143.56      0.162      0.009
+     145.58      0.138      0.017
+     147.60      0.099      0.009
+     149.62      0.051      0.017
+     151.65      0.076      0.009
+     153.67      0.036      0.015
+     155.69      0.034      0.010
+     159.74      0.008      0.014
+ENDDATA             40
+ENDSUBENT           53
+SUBENT        E0839006   20040622              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+ERR-ANALYS (ERR-1) Uncertaintiy from error of Ay in polarimeter
+           (ERR-S) Statistical uncertainty
+HISTORY    (20040401A) ERR-ANALYS is added.
+ENDBIB               4
+COMMON               2          3
+EN         ERR-1
+MEV        PER-CENT
+56.        10.
+ENDCOMMON            3
+DATA                 3         25
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+      30.50      0.002      0.009
+      38.36     -0.005      0.008
+      46.42      0.016      0.008
+      54.75      0.049      0.005
+      63.46      0.093      0.006
+      64.32      0.088      0.007
+      69.30      0.128      0.007
+      74.28      0.180      0.012
+      79.26      0.270      0.008
+      84.25      0.298      0.011
+      89.25      0.358      0.013
+      94.25      0.381      0.022
+      99.26      0.447      0.014
+     104.27      0.486      0.013
+     109.29      0.529      0.019
+     114.32      0.401      0.015
+     119.35      0.273      0.017
+     124.38     -0.060      0.033
+     129.42     -0.306      0.018
+     134.47     -0.333      0.016
+     139.51     -0.108      0.022
+     144.57     -0.030      0.017
+     149.62      0.107      0.025
+     154.68      0.095      0.021
+     159.74      0.131      0.021
+ENDDATA             27
+ENDSUBENT           40
+ENDENTRY             6

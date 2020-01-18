@@ -1,0 +1,54 @@
+ENTRY            11128     800814              20050926       0000
+SUBENT        11128001     800814              20050926       0000
+BIB                  6          7
+INSTITUTE  (1USABRK)
+REFERENCE  (R,UCRL-867,50)
+AUTHOR     (R.H.FOX)
+TITLE      NEUTRON-PROTON SCATTERING AT 90 MEV.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (800814A) CONVERTED TO REACTION FORMALISM
+ENDBIB               7
+NOCOMMON             0          0
+ENDSUBENT           10
+SUBENT        11128002     840207              20050926       0000
+BIB                  5          5
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (OUTDT,11128003)
+DETECTOR   (TELES)    COUNTER TELESCOPE
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+HISTORY    (840207A) BIB UPDATE.
+ENDBIB               5
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 9.0    +01 1.5    +01
+ENDCOMMON            3
+NODATA               0          0
+ENDSUBENT           13
+SUBENT        11128003     800814              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TELES) COUNTER TELESCOPE.
+COMMENT    RENORMALIZED BY HESS, REV.MOD.PHYS.30,368(1958) TO H
+            TOTAL=78.3 MB.
+ENDBIB               4
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 9.0    +01 1.5    +01
+ENDCOMMON            3
+DATA                 3          8
+COS-CM     DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+-0.629      8.3    +00 7.5    -01
+-0.937      1.00   +01 8.6    -01
+-0.969      1.17   +01 9.5    -01
+-0.985      1.22   +01 5.2    -01
+-0.990      1.21   +01 6.0    -01
+-0.994      1.39   +01 5.2    -01
+-0.997      1.24   +01 6.3    -01
+-0.999      1.20   +01 6.6    -01
+ENDDATA             10
+ENDSUBENT           23
+ENDENTRY             3

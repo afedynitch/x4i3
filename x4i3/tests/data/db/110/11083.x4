@@ -1,0 +1,56 @@
+ENTRY            11083     820106              20050926       0000
+SUBENT        11083001     820106              20050926       0000
+BIB                  6          7
+INSTITUTE  (1USAHRV)
+REFERENCE  (J,PR,96,1310,5412)
+AUTHOR     (R.H.STAHL,N.F.RAMSEY)
+TITLE      NEUTRON-PROTON SCATTERING AT 91 MEV.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+ENDBIB               7
+NOCOMMON             0          0
+ENDSUBENT           10
+SUBENT        11083002     820106              20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TELES)    COUNTER TELESCOPE
+MONITOR    (1-H-0(N,TOT),,SIG)
+            NORMALIZED TO HYDROGEN TOTAL=78.3+-3MB.
+ENDBIB               4
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 9.1    +01 1.7    +01
+ENDCOMMON            3
+DATA                 4         25
+COS-CM     ANG-RSL    DATA       DATA-ERR
+NO-DIM     ADEG       MB/SR      PER-CENT
+ .5020         4.7     5.61   +00    5.9
+ .4260                 4.88   +00    5.9
+ .3560                 4.26   +00    4.3
+ .2730                 4.08   +00    4.7
+ .2050         3.1     4.17   +00    3.7
+ .1370                 3.96   +00    3.3
+ .0328                 4.19   +00    3.5
+-.1540         2.5     4.53   +00    3.0
+-.3210                 4.93   +00    3.3
+-.4820         2.2     5.99   +00    2.5
+-.6300                 6.51   +00    2.6
+-.7560         1.9     7.74   +00    2.5
+-.7560         2.1     8.08   +00    3.5
+-.8600                 9.13   +00    2.6
+-.9060                 9.97   +00    3.0
+-.9360         1.9     1.042  +01    2.5
+-.9360                 1.084  +01    4.0
+-.9510                 1.085  +01    2.8
+-.9640         1.9     1.182  +01    2.6
+-.9760                 1.184  +01    2.5
+-.9840                 1.261  +01    2.5
+-.9890         1.9     1.324  +01    2.6
+-.9940                 1.330  +01    2.5
+-.9970         1.9     1.309  +01    2.9
+-.9980         2.1     1.308  +01    3.1
+ENDDATA             27
+ENDSUBENT           40
+ENDENTRY             2

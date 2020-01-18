@@ -1,0 +1,194 @@
+ENTRY            O1732   20120614   20120921   20120918       O048
+SUBENT        O1732001   20120614   20120921   20120918       O048
+BIB                 14         58
+TITLE      Cross section and tensor analysing power of the
+           d+d-->eta+alpha reaction near threshold.
+AUTHOR     (A.Budzanowski, A.Chatterjee, R.Gebel, P.Hawranek,
+           R.Jahn, V.Jha, K.Kilian, S.Kliczewski, Da.Kirillov,
+           Di.Kirillov, D.Kolev, M.Kravcikova, M.Lesiak, J.Lieb,
+           H.Machner, A.Magiera, R.Maier, G.Martinska, S.Nedev,
+           N.Piskunov, D.Prasuhn, D.Protic, J.Ritman,
+           P.von Rossen, B.J.Roy, I.Sitnik, R.Siudak, R.Tsenov,
+           J.Urban, G.Vankova, C.Wilkin,GEM Collaboration)
+INSTITUTE  (3POLIFJ)
+           (3INDTRM)
+           (2GERJUL)
+           (3POLUJK)
+           (2GERBON)
+           (2GERUDE)
+           (4ZZZDUB)
+           (3BULSOF)
+           (3SLKSLK) Technical university, Kosice, Slovakia
+           (1USAUSA) George Mason University, Fairfax, VA, USA
+           (3SLKSLK) P.J. Safarik University, Kosice, Slovakia
+           (3BULBUL) University of chemical technology and
+                      Metallurgy, Sofia, Bulgaria
+           (2UK UK) Department of physics and Astronomy, UCL,
+                    London, UK
+REFERENCE  (J,NP/A,821,193,2009)
+SAMPLE     The target was a cell of 6 mm diameter and 4 mm length,
+           which contained liquid deuterium or hydrogen. The
+           target windows were made of Mylar with a thickness of
+           less than 1 mum.
+DETECTOR   (MAGSP) The Big Karl magnetic spectrograph
+           (MWDC) Two sets of multi-wire drift chambers for
+            position measurement and track reconstruction.
+           (SCIN) Scintillating hodoscopes, 4.5 m apart, led to
+           a more accurate TOF measurements and provided the
+           energy-loss information necessary for particle
+           identification.
+REL-REF    (I,A0645001,M.Drochner+,J,NP/A,643,55,1998)
+           (I,,J.Bojowald+,J,NIM/A,487,314,2002)
+            The Big Karl magnetic spectrograph description
+FACILITY   (SYNCH,2GERJUL) Cooler Synchrotron = COSY with deuteron
+            beam momentum 2390 MeV/c corresponds to deuteron
+            kinetic energy= 1160 MeV, excess energy Q=16.6 MeV.
+METHOD     (TOF)
+COMMENT    *By authors*.The experiment was carried out in two
+           stages, first using an unpolarised beam.In order to
+           extract an analyzing power, the beam polarisation had
+           to be established and then used in the measurement of
+           analyzing power.
+CORRECTION  The peak areas were corrected for acceptance and
+           converted into differential cross sections using the
+           known luminosity.
+PART-DET   (ETA)
+           (A)
+STATUS     (TABLE) Table data were received from Dr.H.Machner
+                   28.04.2009
+           (APRVD).By H.Machner
+HISTORY    (20090410C) SB
+           (20120614U) SD:GEM Collaboration added to author's list
+ENDBIB              58
+NOCOMMON             0          0
+ENDSUBENT           61
+SUBENT        O1732002   20090410   20090724   20090723       O039
+BIB                  2          6
+REACTION   (1-H-2(D,ETA)2-HE-4,,DA) fig.5
+            unpolarised incident deuterons
+ERR-ANALYS (ERR-S).The statistical uncertainty is reported by
+            authors.
+           (ERR-SYS).The systematic uncertainty is reported by
+            authors.
+ENDBIB               6
+COMMON               1          3
+MOM
+GEV/C
+2.39
+ENDCOMMON            3
+DATA                 4          6
+COS        DATA       ERR-S      ERR-SYS
+NO-DIM     NB/SR      NB/SR      NB/SR
+0.45       0.9453803  0.1734789  0.05732484
+0.55       0.7352958  0.1559718  0.04458599
+0.65       0.5236197  0.1289155  0.03184713
+0.75       0.5681831  0.1225493  0.03423567
+0.85       0.9979014  0.1257324  0.06130573
+0.95       1.892352   0.1432394  0.116242
+ENDDATA              8
+ENDSUBENT           23
+SUBENT        O1732003   20090410   20090724   20090723       O039
+BIB                  4          5
+REACTION   (6-C-12(D,EL)6-C-12,,POL/DA,,VAP)
+FLAG       (1.).p(zz) =+1 and p(z)=-1/3
+           (2.).p(zz) =-1 and p(z)=-1/3
+STATUS     (TABLE).Table 1  in text
+ERR-ANALYS (ERR-S).The error is reported by authors in table.
+ENDBIB               5
+COMMON               2          3
+EN-MIN     ANG
+MEV        ADEG
+76.        90.
+ENDCOMMON            3
+DATA                 3          2
+DATA       ERR-S      FLAG
+NO-DIM     NO-DIM     NO-DIM
+-0.32      0.02       1.
+-0.33      0.02       2.
+ENDDATA              4
+ENDSUBENT           18
+SUBENT        O1732004   20090410   20090724   20090723       O039
+BIB                  4          7
+REACTION   (1-H-1(D,EL)1-H-1,20,POL/DA,,TAP)
+FLAG       (1.).p(zz) =+1 and p(z)=-1/3
+           (2.).p(zz) =-1 and p(z)=-1/3
+STATUS     (TABLE).Table 1 in text
+ERR-ANALYS (ERR-S).The error is reported by authors in table.
+           (DATA-ERR).Systematic error, arising from the
+            calibration polarisations.
+ENDBIB               7
+COMMON               2          3
+MOM        ANG
+GEV/C      ADEG
+2.39       180.
+ENDCOMMON            3
+DATA                 4          2
+DATA       ERR-S      DATA-ERR   FLAG
+NO-DIM     NO-DIM     NO-DIM     NO-DIM
+0.91       0.14       0.01       1.
+-0.87      0.11       0.01       2.
+ENDDATA              4
+ENDSUBENT           20
+SUBENT        O1732005   20090422   20090724   20090723       O039
+BIB                  4         10
+REACTION   (1-H-2(D,ETA)2-HE-4,,POL/DA,,ANA) fig 9
+COMMENT    *By author*.We employed the vector and tensor polarised
+           deuteron beam incident on the deuteron target to
+           measure the analyzing power.
+ERR-ANALYS (ERR-S).The statistical uncertainty is reported by
+            authors.
+           (ERR-SYS).The systematic uncertainty is reported by
+            authors.
+STATUS     (DEP,O1732003)
+           (DEP,O1732004)
+ENDBIB              10
+COMMON               1          3
+MOM
+GEV/C
+2.39
+ENDCOMMON            3
+DATA                 4          6
+COS        DATA       ERR-S      ERR-SYS
+NO-DIM     NO-DIM     NO-DIM     NO-DIM
+0.45       -0.723     0.299      0.171
+0.55       0.002      0.395      0.151
+0.65       -0.179     0.367      0.152
+0.75       -0.063     0.348      0.154
+0.85       0.491      0.313      0.14
+0.95       -0.565     0.271      0.161
+ENDDATA              8
+ENDSUBENT           27
+SUBENT        O1732006   20090422   20090724   20090723       O039
+BIB                  3          4
+REACTION   (1-H-2(D,ETA)2-HE-4,,DA,,LEG)
+ERR-ANALYS (DATA-ERR).The error is reported by authors.
+STATUS     (TABLE) Data in text
+           (DEP,O1732002)
+ENDBIB               4
+COMMON               1          3
+MOM
+GEV/C
+2.39
+ENDCOMMON            3
+DATA                 3          3
+NUMBER     DATA       DATA-ERR
+NO-DIM     NB/SR      NB/SR
+         0.       1.27       0.03
+         2.      -0.29       0.06
+         4.       1.65       0.07
+ENDDATA              5
+ENDSUBENT           18
+SUBENT        O1732007   20090422   20090724   20090723       O039
+BIB                  3          3
+REACTION   (1-H-2(D,ETA)2-HE-4,,SIG)
+ERR-ANALYS (DATA-ERR).The error is reported by authors on fig.
+STATUS     (DEP,O1732006)
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 3          1
+MOM        DATA       DATA-ERR
+GEV/C      NB         NB
+       2.39       16.0        0.4
+ENDDATA              3
+ENDSUBENT           11
+ENDENTRY             7

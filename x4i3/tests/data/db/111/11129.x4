@@ -1,0 +1,36 @@
+ENTRY            11129     800814              20050926       0000
+SUBENT        11129001     800814              20050926       0000
+BIB                  6          8
+INSTITUTE  (1USABRK)
+REFERENCE  (R,UCRL-2693,54)
+AUTHOR     (J.W.EASLEY)
+TITLE      SMALL-ANGLE NEUTRON-PROTON SCATTERING AT 90 AND 290
+           MEV.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (800814A) CONVERTED TO REACTION FORMALISM
+ENDBIB               8
+NOCOMMON             0          0
+ENDSUBENT           11
+SUBENT        11129002     800814              20050926       0000
+BIB                  4          5
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TELES)    COUNTER TELESCOPE
+MONITOR    (1-H-1(N,EL)1-H-1,,DA)              DATA OF
+            KELLY,PHYS.REV.101,1079(1956).
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               5
+COMMON               3          3
+EN         EN-RSL     ANG-NRM
+MEV        MEV        ADEG
+ 2.90   +02 6.0    +01 37.8
+ENDCOMMON            3
+DATA                 3          3
+COS-CM     DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.98300    5.6    +00   11.
+ 0.92900    4.3    +00    9.
+ 0.79000    3.6    +00    7.
+ENDDATA              5
+ENDSUBENT           19
+ENDENTRY             2

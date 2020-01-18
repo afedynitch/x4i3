@@ -1,0 +1,283 @@
+ENTRY            O1974   20120326   20120702   20120622       O047
+SUBENT        O1974001   20120326   20120702   20120622       O047
+BIB                 12         48
+TITLE      Vector analyzing powers of deuteron-proton elastic
+           scattering and breakup at 130 MeV.
+AUTHOR     (I.Ciepal, St.Kistryn, E.Stephan, A.Biegun, K.Bodek,
+           A.Deltuva, E.Epelbaum, M.Eslami-Kalantari, A.Fonseca,
+           J.Golak, V.Jha, N.Kalantar-Nayestanaki, H.Kamada,
+           G.Khatri, Da.Kirillov, Di.Kirillov, M.Kis,
+           St.Kliczewski, B.Klos, A.Kozela, M.Kravcikova,
+           M.Lesiak, H.Machner, A.Magiera, G.Martinska,
+           J.Messchendorp, A.Nogga, W.Parol,
+           A.Ramazani-Moghaddam-Arani, B.J.Roy, H.Sakai,
+           K.Sekiguchi, I.Sitnik, R.Siudak, R.Skibinski,
+           R.Sworst, J.Urban, H.Witala, A.Wronska, J.Zejma)
+INSTITUTE  (3POLUJK)
+           (3POLPOL) University of Silesia, Katowice, Poland
+           (2NEDKVI)
+           (2PRTLIS)
+           (2GERJUL)
+           (3INDTRM)
+           (2JPNJPN) Kyushu Institute of Technology
+           (4ZZZDUB)
+           (3POLIFJ)
+           (3SLKSLK) Technical University, Kosice, Slovakia and
+                     P.J.Safarik University, Kosice, Slovakia
+           (2GERBON)
+           (2JPNTOK)
+           (2JPNTOH)
+REFERENCE  (J,PR/C,85,017001,2012)
+REL-REF    (I,,M.Betigeri+,J,NIM/A,421,447,1999)
+           More detailed experimental information.
+HISTORY    (20120310C)SB
+SAMPLE     A liquid hydrogen target 2-mm thickness.
+DETECTOR   (HPGE) The Germanium Wall (GeWall) detector is part of
+           the GEM-detector at COSY consist of up to four high-
+           purity germanium detectors with radial symmetry with
+           respect to the beam
+           (MAGSP) magnetic spectrometer 'Big Karl' placed behind
+           the Germanium Wall.
+           A thin 'Quirl-detector with high granularity and
+           excellent spatial resolution and three thicker energy-
+           detectors (named E1-E3) with less granularity and
+           excellent energy resolution. The 'Quirl' detector was
+           used to determine the position and the energy loss
+           delta-E detector of the passing charged particles.
+FACILITY   (SYNCH,2GERGSI) the COSY accelerator
+METHOD     (EDE)
+ERR-ANALYS (DATA-ERR).The uncertainty is reported by authors.
+STATUS     (TABLE).The data were received from Dr.I.Ciepal for
+           fig.1 and fig.2 of J,PR/C,85,017001,2012
+ENDBIB              48
+COMMON               1          3
+EN
+MEV
+       130.
+ENDCOMMON            3
+ENDSUBENT           55
+SUBENT        O1974002   20120310   20120702   20120622       O047
+BIB                  1          1
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 3         16
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+15.26      0.115811   0.00847483
+18.33      0.109433   0.00515963
+21.41      0.101775   0.00458539
+24.51      0.120847   0.00492462
+27.62      0.120522   0.00478541
+30.75      0.131359   0.00500533
+33.90      0.131193   0.00499404
+37.07      0.135952   0.00513535
+155.29     0.166244   0.0137628
+157.35     0.152771   0.0134977
+159.40     0.125951   0.0121478
+161.46     0.110118   0.0119475
+163.52     0.0963718  0.012701
+165.58     0.0781171  0.0160356
+167.64     0.0694695  0.00796508
+169.70     0.0571016  0.00823713
+ENDDATA             18
+ENDSUBENT           24
+SUBENT        O1974003   20120310   20120702   20120622       O047
+BIB                  2          5
+REACTION   (1-H-1(D,N+P)1-H-1,,POL/DA/DA/DE,P/P/P+P,ANA)
+COMMENT    *By authors*. Ang1 and Ang2- polar angles of the two
+           registered protons from the breakup,
+           ANG-AZ-relative azimuthal angle of the protons
+           S-length of the kinematics
+ENDBIB               5
+COMMON               1          3
+ANG-AZ
+ADEG
+60.
+ENDCOMMON            3
+DATA                 5         48
+ANG1       ANG2       S          DATA       DATA-ERR
+ADEG       ADEG       MEV        NO-DIM     NO-DIM
+6.         6.         88.        -0.1505260 0.1953350
+6.         6.         96.        0.11225200 0.0735666
+6.         6.         104.       -0.0318703 0.0488717
+6.         6.         112.       0.00557959 0.0357541
+6.         6.         120.       0.00788259 0.0331061
+6.         6.         128.       0.00768195 0.0335104
+6.         6.         136.       -0.0699586 0.0441990
+6.         6.         144.       -0.004552330.0724083
+6.         9.         88.        0.03767490 0.0772969
+6.         9.         96.        0.08460680 0.0441123
+6.         9.         104.       0.02858630 0.0303232
+6.         9.         112.       0.01343940 0.0219870
+6.         9.         120.       0.02195670 0.0210970
+6.         9.         128.       -0.0129290 0.0231070
+6.         9.         136.       -0.0220044 0.0290081
+6.         9.         144.       0.03640330 0.0455334
+6.         12.        88.        -0.0282558 0.0451284
+6.         12.        96.        -0.003034210.0351811
+6.         12.        104.       -0.0182152 0.0260124
+6.         12.        112.       0.01514840 0.0231189
+6.         12.        120.       -0.000759690.0237457
+6.         12.        128.       -0.0461745 0.0300524
+6.         12.        136.       -0.006884570.0425488
+6.         12.        144.       0.06371990 0.0669929
+9.         9.         88.        -0.0299961 0.0583960
+9.         9.         96.        -0.0415226 0.0443241
+9.         9.         104.       -0.008886170.0301671
+9.         9.         112.       0.00759822 0.0258761
+9.         9.         120.       -0.001770250.0247701
+9.         9.         128.       0.03424980 0.0281143
+9.         9.         136.       0.00962575 0.0391074
+9.         9.         144.       0.16181800 0.0555742
+9.         12.        88.        0.00513778 0.0362177
+9.         12.        96.        0.00121441 0.0271454
+9.         12.        104.       -0.0159250 0.0215662
+9.         12.        112.       -0.000468510.0191891
+9.         12.        120.       0.01514230 0.0204725
+9.         12.        128.       -0.006499240.0261637
+9.         12.        136.       0.03376520 0.0340981
+9.         12.        144.       -0.0134865 0.0489607
+12.        12.        88.        -0.0535882 0.0515599
+12.        12.        96.        -0.0190497 0.0380397
+12.        12.        104.       0.01395810 0.0325753
+12.        12.        112.       0.02283930 0.0310791
+12.        12.        120.       -0.0106921 0.0345037
+12.        12.        128.       -0.0286098 0.0423075
+12.        12.        136.       0.09801310 0.0566253
+12.        12.        144.       0.08387110 0.0907151
+ENDDATA             50
+ENDSUBENT           64
+SUBENT        O1974004   20120310   20120702   20120622       O047
+BIB                  2          5
+REACTION   (1-H-1(D,N+P)1-H-1,,POL/DA/DA/DE,P/P/P+P,ANA)
+COMMENT    *By authors*. Ang1 and Ang2- polar angles of the two
+           registered protons from the breakup,
+           ANG-AZ-relative azimuthal angle of the protons
+           S-length of the kinematics
+ENDBIB               5
+COMMON               1          3
+ANG-AZ
+ADEG
+100.
+ENDCOMMON            3
+DATA                 5         48
+ANG1       ANG2       S          DATA       DATA-ERR
+ADEG       ADEG       MEV        NO-DIM     NO-DIM
+6.         6.         88.        -0.1105530 0.1290240
+6.         6.         96.        -0.0310958 0.0824584
+6.         6.         104.       0.00855225 0.0560771
+6.         6.         112.       0.02533110 0.0421144
+6.         6.         120.       0.00447512 0.0353098
+6.         6.         128.       -0.0134129 0.0410084
+6.         6.         136.       -0.0242297 0.0525263
+6.         6.         144.       0.06324800 0.0826952
+6.         9.         88.        -0.1323770 0.0917791
+6.         9.         96.        0.01529320 0.0555095
+6.         9.         104.       0.00608501 0.0412357
+6.         9.         112.       0.00000111 0.0301501
+6.         9.         120.       0.03317030 0.0264525
+6.         9.         128.       -0.0158352 0.0294339
+6.         9.         136.       0.03889980 0.0363409
+6.         9.         144.       -0.0310376 0.0577106
+6.         12.        88.        0.09147700 0.0725118
+6.         12.        96.        0.03082700 0.0497053
+6.         12.        104.       -0.0482233 0.0395119
+6.         12.        112.       -0.0100062 0.0305894
+6.         12.        120.       -0.0157883 0.0287266
+6.         12.        128.       0.03049080 0.0309221
+6.         12.        136.       -0.0358483 0.0399193
+6.         12.        144.       0.04566050 0.0536529
+9.         9.         88.        -0.0721088 0.0883120
+9.         9.         96.        -0.000838050.0566011
+9.         9.         104.       0.00533169 0.0414230
+9.         9.         112.       -0.0103303 0.0354071
+9.         9.         120.       -0.0516732 0.0342455
+9.         9.         128.       -0.0333587 0.0395766
+9.         9.         136.       0.04324190 0.0508654
+9.         9.         144.       -0.0762294 0.0675612
+9.         12.        88.        0.03746090 0.0572830
+9.         12.        96.        -0.002927840.0422610
+9.         12.        104.       -0.014760400.0326266
+9.         12.        112.       -0.024745900.0293499
+9.         12.        120.       -0.039194000.0279634
+9.         12.        128.       -0.065677900.0318177
+9.         12.        136.       -0.007652710.0407753
+9.         12.        144.       -0.023323900.0519385
+12.        12.        88.        -0.1234030 0.0834213
+12.        12.        96.        0.11331500 0.0701507
+12.        12.        104.       0.02316970 0.0474334
+12.        12.        112.       0.01834200 0.0448250
+12.        12.        120.       0.00242310 0.0468563
+12.        12.        128.       -0.012322000.0508427
+12.        12.        136.       0.04670740 0.0623562
+12.        12.        144.       0.02067180 0.0793870
+ENDDATA             50
+ENDSUBENT           64
+SUBENT        O1974005   20120310   20120702   20120622       O047
+BIB                  2          5
+REACTION   (1-H-1(D,N+P)1-H-1,,POL/DA/DA/DE,P/P/P+P,ANA)
+COMMENT    *By authors*. Ang1 and Ang2- polar angles of the two
+           registered protons from the breakup,
+           ANG-AZ-relative azimuthal angle of the protons
+           S-length of the kinematics
+ENDBIB               5
+COMMON               1          3
+ANG-AZ
+ADEG
+140.
+ENDCOMMON            3
+DATA                 5         48
+ANG1       ANG2       S          DATA       DATA-ERR
+ADEG       ADEG       MEV        NO-DIM     NO-DIM
+6.         6.         88.        0.09863180 0.2081290
+6.         6.         96.        -0.0580941 0.1004290
+6.         6.         104.       -0.0573770 0.0720693
+6.         6.         112.       -0.0423523 0.0488853
+6.         6.         120.       0.00409881 0.0381582
+6.         6.         128.       0.00807379 0.0457678
+6.         6.         136.       0.02778210 0.0545858
+6.         6.         144.       0.17845801 0.0919320
+6.         9.         88.        0.09775450 0.0948888
+6.         9.         96.        -0.0458687 0.0660771
+6.         9.         104.       0.06769200 0.0478787
+6.         9.         112.       0.00420232 0.0349686
+6.         9.         120.       0.01262590 0.0300504
+6.         9.         128.       -0.0049133 0.0323961
+6.         9.         136.       0.06500520 0.0411678
+6.         9.         144.       0.04772230 0.0641262
+6.         12.        88.        0.03018660 0.0912608
+6.         12.        96.        0.05333930 0.0663761
+6.         12.        104.       0.02789160 0.0478645
+6.         12.        112.       0.01656580 0.0375520
+6.         12.        120.       -0.0299424 0.0334615
+6.         12.        128.       0.02872180 0.0371094
+6.         12.        136.       -0.002834350.0423806
+6.         12.        144.       0.00131379 0.0574774
+9.         9.         88.        -0.1445310 0.1285760
+9.         9.         96.        -0.0535799 0.0825510
+9.         9.         104.       -0.0439848 0.0641265
+9.         9.         112.       0.03875560 0.0514350
+9.         9.         120.       -0.0385970 0.0414736
+9.         9.         128.       -0.0587615 0.0443058
+9.         9.         136.       0.00524058 0.0491947
+9.         9.         144.       0.08863760 0.0619822
+9.         12.        88.        0.04597860 0.0728246
+9.         12.        96.        0.00671487 0.0481236
+9.         12.        104.       0.00637182 0.0426253
+9.         12.        112.       -0.0156690 0.0359637
+9.         12.        120.       0.03525660 0.0346518
+9.         12.        128.       0.01165220 0.0389339
+9.         12.        136.       0.09687820 0.0488108
+9.         12.        144.       0.07167510 0.0602544
+12.        12.        88.        -0.0858873 0.1528070
+12.        12.        96.        -0.0225442 0.0919346
+12.        12.        104.       -0.0444347 0.0757499
+12.        12.        112.       0.0441773  0.0614568
+12.        12.        120.       -0.0721067 0.0600652
+12.        12.        128.       -0.0212173 0.063131
+12.        12.        136.       0.0146752  0.0671017
+12.        12.        144.       0.1204290  0.0850332
+ENDDATA             50
+ENDSUBENT           64
+ENDENTRY             5

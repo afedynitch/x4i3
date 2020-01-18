@@ -1,0 +1,157 @@
+ENTRY            C1560   20070620   20070824   20070803       C081
+SUBENT        C1560001   20070620   20070824   20070803       C081
+BIB                  9         12
+INSTITUTE  (1USATNL)
+REFERENCE  (R,TUNL-36,34,1997)
+AUTHOR     (C.R.Brune,B.J.Crowe,B.W.Fisher,W.H.Geist,
+            H.J.Karwowski,A.Kievsky,E.J.Ludwig,K.D.Veal,M.H.Wood)
+TITLE      Vector and Tensor Analyzing Powers for Proton-Deuteron
+            Scattering at Low Energies
+FACILITY   (VDGT,1USATNL) FN tandem
+INC-SPECT  Polarized deuteron and proton beams
+DETECTOR   (SIBAR) Three pairs of symmetrically placed silicon
+            detectors
+SAMPLE     20 microg/cm2 hydrogenated carbon foils
+HISTORY    (20070620C) DR
+ENDBIB              12
+NOCOMMON             0          0
+ENDSUBENT           15
+SUBENT        C1560002   20070620   20070824   20070803       C081
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,21,POL/DA,,TAP)
+ERR-ANALYS (DATA-ERR) No information
+STATUS     (CURVE) Data taken from Fig. 2.4-2
+ENDBIB               3
+COMMON               1          3
+EN-CM
+MEV
+0.432
+ENDCOMMON            3
+DATA                 3         21
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+  3.113E+01  6.204E-03  1.080E-03
+  4.238E+01  1.061E-02  7.919E-04
+  5.203E+01  1.387E-02  6.485E-04
+  6.414E+01  1.590E-02  1.007E-03
+  7.112E+01  1.764E-02  7.919E-04
+  7.302E+01  1.728E-02  7.924E-04
+  7.359E+01  1.599E-02  1.078E-03
+  7.761E+01  1.715E-02  5.041E-04
+  8.516E+01  1.766E-02  7.204E-04
+  8.710E+01  1.572E-02  1.008E-03
+  9.086E+01  1.666E-02  7.906E-04
+  9.815E+01  1.660E-02  1.007E-03
+  1.053E+02  1.273E-02  9.354E-04
+  1.115E+02  1.223E-02  1.008E-03
+  1.134E+02  1.008E-02  1.007E-03
+  1.254E+02  7.220E-03  7.915E-04
+  1.311E+02  6.078E-03  8.635E-04
+  1.332E+02  5.578E-03  1.150E-03
+  1.382E+02  3.643E-03  1.295E-03
+  1.455E+02  1.856E-03  1.080E-03
+  1.517E+02  2.226E-03  1.368E-03
+ENDDATA             23
+ENDSUBENT           35
+SUBENT        C1560003   20070620   20070824   20070803       C081
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+ERR-ANALYS (DATA-ERR) No information
+STATUS     (CURVE) Data taken from Fig. 2.4-2
+ENDBIB               3
+COMMON               1          3
+EN-CM
+MEV
+0.432
+ENDCOMMON            3
+DATA                 3         21
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+  3.163E+01  1.137E-02  6.626E-04
+  4.263E+01  1.527E-02  1.040E-03
+  5.229E+01  1.908E-02  1.419E-03
+  6.448E+01  1.702E-02  1.230E-03
+  7.149E+01  1.779E-02  1.040E-03
+  7.392E+01  1.789E-02  1.608E-03
+  7.799E+01  1.686E-02  9.451E-04
+  8.580E+01  1.792E-02  9.469E-04
+  9.154E+01  1.443E-02  8.511E-04
+  9.156E+01  1.320E-02  1.039E-03
+  9.862E+01  1.066E-02  1.134E-03
+  1.057E+02  7.462E-03  1.702E-03
+  1.120E+02  4.260E-03  1.513E-03
+  1.139E+02  1.900E-03  1.513E-03
+  1.258E+02  2.492E-03  1.513E-03
+  1.320E+02  2.505E-03  1.514E-03
+  1.341E+02  5.253E-03  2.176E-03
+  1.388E+02  3.447E-04  1.702E-03
+  1.458E+02 -9.643E-04  2.553E-03
+  1.518E+02 -6.680E-04  2.364E-03
+  1.591E+02 -5.192E-03  3.121E-03
+ENDDATA             23
+ENDSUBENT           35
+SUBENT        C1560004   20070620   20070824   20070803       C081
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)
+ERR-ANALYS (DATA-ERR) No information
+STATUS     (CURVE) Data taken from Fig. 2.4-3
+ENDBIB               3
+COMMON               1          3
+EN-CM
+MEV
+0.432
+ENDCOMMON            3
+DATA                 3          3
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+  6.084E+01  1.884E-03  1.873E-04
+  8.745E+01  3.506E-03  2.247E-04
+  1.379E+02  1.563E-03  2.247E-04
+ENDDATA              5
+ENDSUBENT           17
+SUBENT        C1560005   20070620   20070824   20070803       C081
+BIB                  3          3
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)
+ERR-ANALYS (DATA-ERR) No information
+STATUS     (CURVE) Data taken from Fig. 2.4-3
+ENDBIB               3
+COMMON               1          3
+ANG-CM
+ADEG
+87.6
+ENDCOMMON            3
+DATA                 3         10
+EN-CM      DATA       DATA-ERR
+MEV        NO-DIM     NO-DIM
+  2.096E-01 -3.648E-03  9.393E-05
+  4.289E-01 -2.857E-03  7.042E-05
+  6.614E-01 -1.877E-03  7.053E-05
+  8.286E-01 -9.665E-04  7.030E-05
+  9.988E-01 -4.082E-04  4.702E-05
+  1.329E+00  7.086E-04  1.646E-04
+  1.496E+00  1.361E-03  1.412E-04
+  1.663E+00  1.308E-03  1.411E-04
+  1.829E+00  1.467E-03  1.410E-04
+  1.999E+00  1.249E-03  1.879E-04
+ENDDATA             12
+ENDSUBENT           24
+SUBENT        C1560006   20070620   20070824   20070803       C081
+BIB                  3          3
+REACTION   (1-H-2(P,EL)1-H-2,,POL/DA,,ANA)
+ERR-ANALYS (DATA-ERR) No information
+STATUS     (CURVE) Data taken from Fig. 2.4-4
+ENDBIB               3
+COMMON               1          3
+EN-CM
+MEV
+0.432
+ENDCOMMON            3
+DATA                 3          3
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+  6.127E+01  3.811E-03  3.972E-04
+  8.768E+01  5.895E-03  3.973E-04
+  1.200E+02  3.591E-03  3.594E-04
+ENDDATA              5
+ENDSUBENT           17
+ENDENTRY             6

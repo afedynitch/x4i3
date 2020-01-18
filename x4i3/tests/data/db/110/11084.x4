@@ -1,0 +1,94 @@
+ENTRY            11084     830909              20050926       0000
+SUBENT        11084001     830909              20050926       0000
+BIB                  7         10
+INSTITUTE  (1USALAS)
+REFERENCE  (J,PR,97,757,5502)
+AUTHOR     (J.D.SEAGRAVE)
+TITLE      RECOIL DEUTERONS AND DISINTEGRATION PROTONS FROM THE
+           N-D INTERACTION, AND N-P SCATTERING AT 14.1 MEV.
+DETECTOR   (TELES)
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+           (830817A) BIB, DATA HEADING CORRECTIONS.
+ENDBIB              10
+NOCOMMON             0          0
+ENDSUBENT           13
+SUBENT        11084002     830909              20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ENDBIB               1
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 1.410  +01 5.     -02
+ENDCOMMON            3
+DATA                 3          6
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.34200    5.24   +01 3.0    +00
+ 0.00000    5.30   +01 2.5    +00
+-0.5000     5.4    +01 2.     +00
+-0.7660     5.55   +01 2.0    +00
+-0.9400     5.5    +01 1.     +00
+-0.9925     5.6    +01 1.     +00
+ENDDATA              8
+ENDSUBENT           18
+SUBENT        11084003     830909              20050926       0000
+BIB                  2          2
+REACTION   (1-H-2(N,EL)1-H-2,,SIG)
+STATUS     (DEP,11084004) INTEGRATED ANGULAR DISTRIBUTION.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 4          1
+EN         EN-ERR     DATA       DATA-ERR
+MEV        MEV        B          B
+ 1.410  +01 5.     -02 6.10   -01 3.0    -02
+ENDDATA              3
+ENDSUBENT           10
+SUBENT        11084004     830909              20050926       0000
+BIB                  1          1
+REACTION   (1-H-2(N,2N)1-H-1,,DA,P)
+ENDBIB               1
+COMMON               3          3
+EN         EN-RSL     ANG-RSL
+MEV        MEV        ADEG
+ 1.410  +01 5.     -02 3.5
+ENDCOMMON            3
+DATA                 3          9
+COS        DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.99600    6.02   +01 4.5    +00
+ 0.98500    6.08   +01 6.1    +00
+ 0.95800    4.95   +01 4.6    +00
+ 0.86600    3.59   +01 4.7    +00
+ 0.70700    2.32   +01 4.1    +00
+ 0.57400    1.5    +01 5.     +00
+ 0.42300    7.5    +00 3.3    +00
+ 0.34200    8.1    +00 2.6    +00
+ 0.17400    7.3    +00 5.0    +00
+ENDDATA             11
+ENDSUBENT           21
+SUBENT        11084005     830909              20050926       0000
+BIB                  1          1
+REACTION   (1-H-2(N,EL)1-H-2,,DA)
+ENDBIB               1
+COMMON               3          3
+EN         EN-RSL     ANG-RSL
+MEV        MEV        ADEG
+ 1.410  +01 5.     -02 3.5
+ENDCOMMON            3
+DATA                 3          8
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.34200    5.27   +01 4.     +00
+ 0.00000    2.65   +01 1.8    +00
+-0.5000     8.8    +00 9.     -01
+-0.8387     4.3    +01 3.     +00
+-0.8910     5.64   +01 2.6
+-0.9397     8.6    +01 2.3
+-0.9816     1.015  +02 1.5
+-0.9945     1.175  +02 3.5
+ENDDATA             10
+ENDSUBENT           20
+ENDENTRY             5

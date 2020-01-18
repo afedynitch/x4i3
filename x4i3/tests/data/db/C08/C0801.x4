@@ -1,0 +1,404 @@
+ENTRY            C0801   20111223   20121029   20120916       C119
+SUBENT        C0801001   20111223   20121029   20120916       C119
+BIB                 11         26
+INSTITUTE  (1USANCA,1USATNL)
+           (2ITYITY)  Italy = Inst. Naz. Fisica Nucleare, Pisa
+REFERENCE  (J,PR/C,63,044013,2001)
+           (J,APP/B,30,1479,1999)
+           (J,PL/B,428,13,199805)
+           (J,PL/B,406,292,1997)
+AUTHOR     (C.R.Brune,W.H.Geist,H.J.Karwowski,E.J.Ludwig,K.D.Veal,
+           M.H.Wood,A.Kievsky,S.Rosati,M.Viviani)
+TITLE      Proton-deuteron elastic scattering at low energies
+INC-SPECT  Incident energy given is mean energy at center
+                                                    of target
+REL-REF    (I,,T.B.Clegg+,J,NIM/A,357,200,1995) - atomic-beam
+            polarized ion source description
+METHOD     (BCINT)
+DETECTOR   (SIBAR) Scattered particles detected in both singles
+            and coincidence modes in a pair of silicon surface-
+            barrier detectors 100-mu-m-thick.
+CORRECTION Corrected for background and dead time.
+STATUS     (TABLE) Data received from C. Brune, 26 March 2001.
+           No reply from C. Brune to author proof.
+HISTORY    (20010403C) VM
+           (20111223A) SD: REACTION code was corrected in
+             Subents 009,010. BIB update in all Subents according
+             to last EXFOR rules.  Subents 2,3 deleted - data are
+             deduced from partial-wave analysis and from data
+             published in PR,148,1031,1966.
+ENDBIB              26
+NOCOMMON             0          0
+ENDSUBENT           29
+NOSUBENT      C0801002   20111223   20121029   20120916       C119
+NOSUBENT      C0801003   20111223   20121029   20120916       C119
+SUBENT        C0801004   20111223   20121029   20120916       C119
+BIB                  8         16
+REACTION   (1-H-2(P,EL)1-H-2,,DA) fig.5
+FACILITY   (ACCEL,1USATNL) TUNL minitandem accelerator.
+             The name 'tandem' thus derives from the fact that the
+           beam is accelerated twice: upon entering the dome, and
+           then again upon leaving.
+REL-REF    (I,,T.C.Black+,J,NIM/A,333,239,1993)  - minitandem
+                   accelerator description
+INC-SOURCE 650-keV proton beam.
+SAMPLE     Deuterated carbon targets. Beams lose about 10 keV
+            in target.
+PART-DET   (P)
+MONITOR    (1-H-1(P,EL)1-H-1,,DA) Normalized to absolute data
+            measured relative to p-p elastic scattering at 25
+            and 35 degrees (lab).
+ERR-ANALYS (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+ENDBIB              16
+COMMON               1          3
+EN-CM
+KEV
+ 431.3
+ENDCOMMON            3
+DATA                 3         11
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       MB/SR      MB/SR
+  37.40     863.6        6.4
+  41.77     644.1        4.9
+  44.67     531.5        3.9
+  49.00     430.4        3.2
+  51.86     386.4        2.5
+  58.94     304.9        1.7
+  65.89     260.8        1.5
+  72.70     237.6        1.1
+  79.36     224.8        1.4
+  85.83     219.1        1.4
+  92.11     211.7        1.3
+ENDDATA             13
+ENDSUBENT           38
+SUBENT        C0801005   20111223   20121029   20120916       C119
+BIB                  8         15
+REACTION   (1-H-2(P,EL)1-H-2,,DA)  fig.5
+FACILITY   (ACCEL,1USATNL) TUNL minitandem accelerator.
+             The name 'tandem' thus derives from the fact that the
+           beam is accelerated twice: upon entering the dome, and
+           then again upon leaving.
+REL-REF    (I,,T.C.Black+,J,NIM/A,333,239,1993)  - minitandem
+                   accelerator description
+INC-SOURCE 650-keV proton beam.
+SAMPLE     Deuterated carbon targets.
+PART-DET   (D)
+MONITOR    (1-H-1(P,EL)1-H-1,,DA) Normalized to absolute data
+            measured relative to p-p elastic scattering at 25
+            degrees (lab).
+ERR-ANALYS (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+ENDBIB              15
+COMMON               1          3
+EN-CM
+KEV
+ 431.3
+ENDCOMMON            3
+DATA                 3          8
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       MB/SR      MB/SR
+  89.73     213.4        1.1
+  99.73     213.3        1.1
+ 109.73     221.4        1.3
+ 113.73     228.3        1.7
+ 119.73     234.1        1.6
+ 123.73     240.6        1.9
+ 129.73     253.0        1.7
+ 133.73     256.8        2.7
+ENDDATA             10
+ENDSUBENT           34
+SUBENT        C0801006   20111223   20121029   20120916       C119
+BIB                  7         17
+REACTION   (1-H-2(P,EL)1-H-2,,POL/DA,,ANA) fig.7
+FACILITY   (ACCEL,1USATNL) TUNL minitandem accelerator.
+             The name 'tandem' thus derives from the fact that the
+           beam is accelerated twice: upon entering the dome, and
+           then again upon leaving.
+REL-REF    (I,,T.C.Black+,J,NIM/A,333,239,1993)  - minitandem
+                   accelerator description
+INC-SOURCE (ATOMI) Polarized 1H- ions converted to 650-keV 1H+
+            ions by minitandem.
+SAMPLE     Deuterated carbon targets. Beams lose about 10 keV
+            in target.
+MONITOR    Polarization determined using the 6Li(p,3He)4He
+            reaction in a polarimeter located at the rear of the
+            scattering chamber.
+ERR-ANALYS (POL-BM-ERR) Systematic error in proton polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+ENDBIB              17
+COMMON               2          3
+EN-CM      POL-BM-ERR
+MEV        NO-DIM
+ 431.3       0.04
+ENDCOMMON            3
+DATA                 3          3
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+ 61.2       0.0044     0.0004
+ 87.8       0.0059     0.0004
+138.0       0.0042     0.0005
+ENDDATA              5
+ENDSUBENT           31
+SUBENT        C0801007   20111223   20121029   20120916       C119
+BIB                  7         14
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)  fig.7
+FACILITY   (VDGT,1USATNL) TUNL FN tandem accelerator.
+INC-SOURCE (ATOMI) Polarized 2H- ions converted to 650-keV 2H+
+            ions by FN tandem.
+SAMPLE     Hydrogenated carbon targets.
+MONITOR    Polarization determined using the 12C(d,p) reaction
+            in a polarimeter located behind the scattering
+            chamber.
+ERR-ANALYS (POL-BM-ERR) Systematic error in proton polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+HISTORY    (20111223A) SD: REACTION code corrected: SF1 and SF2
+            (also SF3,SF4) were exchanged according to the
+             inc.source
+ENDBIB              14
+COMMON               2          3
+EN-CM      POL-BM-ERR
+MEV        NO-DIM
+ 431.3       0.04
+ENDCOMMON            3
+DATA                 3          3
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+ 61.2       0.00188    0.00018
+ 87.8       0.00350    0.00023
+138.0       0.00156    0.00023
+ENDDATA              5
+ENDSUBENT           28
+SUBENT        C0801008   20111223   20121029   20120916       C119
+BIB                  7         14
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,VAP)  fig.8
+FACILITY   (VDGT,1USATNL) TUNL FN tandem accelerator.
+INC-SOURCE (ATOMI) Polarized 2H- ions converted to 650-keV 2H+
+            ions by FN tandem.
+SAMPLE     Hydrogenated carbon targets.
+MONITOR    Polarization determined using the 12C(d,p) reaction
+            in a polarimeter located behind the scattering
+            chamber.
+ERR-ANALYS (POL-BM-ERR) Systematic error in proton polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+HISTORY    (20111223A) SD: REACTION code corrected: SF1 and SF2
+            (also SF3,SF4) were exchanged according to the
+             inc.source
+ENDBIB              14
+COMMON               2          3
+ANG-CM     POL-BM-ERR
+ADEG       NO-DIM
+ 87.8        0.04
+ENDCOMMON            3
+DATA                 3          9
+EN-CM      DATA       DATA-ERR
+MEV        NO-DIM     NO-DIM
+   0.4313    0.350E-02   0.24E-03
+   0.667     0.741E-02   0.23E-03
+   0.83      0.112E-01   0.31E-03
+   1.00      0.134E-01   0.35E-03
+   1.33      0.177E-01   0.50E-03
+   1.50      0.205E-01   0.62E-03
+   1.67      0.203E-01   0.55E-03
+   1.83      0.209E-01   0.68E-03
+   2.00      0.200E-01   0.61E-03
+ENDDATA             11
+ENDSUBENT           34
+SUBENT        C0801009   20111223   20121029   20120916       C119
+BIB                  8         16
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)   fig.6
+FACILITY   (VDGT,1USATNL) TUNL FN tandem accelerator.
+INC-SOURCE (ATOMI) Polarized 2H- ions converted to 650-keV 2H+
+            ions by FN tandem.
+SAMPLE     Hydrogenated carbon targets.
+PART-DET   (D)
+MONITOR    Polarization determined using the 3He(d,p) reaction in
+            an online polarimeter located behind the scattering
+            chamber.
+ERR-ANALYS (EN-ERR) Error in c.m. energy.
+           (POL-BM-ERR) Systematic error in deuteron polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+HISTORY    (20111223A) SD: REACTION code corrected: SF1 and SF2
+            (also SF3,SF4) were exchanged according to the
+             inc.source
+ENDBIB              16
+COMMON               3          3
+EN-CM      EN-ERR     POL-BM-ERR
+KEV        KEV        NO-DIM
+ 431.3       0.08       0.04
+ENDCOMMON            3
+DATA                 3          7
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+ 31.9       0.0114     0.0012
+ 42.9       0.0153     0.0014
+ 52.8       0.0191     0.0017
+ 64.9       0.0170     0.0016
+ 74.4       0.0180     0.0017
+ 78.4       0.0168     0.0012
+ 92.1       0.0144     0.0012
+ENDDATA              9
+ENDSUBENT           34
+SUBENT        C0801010   20111223   20121029   20120916       C119
+BIB                  8         16
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)    fig.6
+FACILITY   (VDGT,1USATNL) TUNL FN tandem accelerator.
+INC-SOURCE (ATOMI) Polarized 2H- ions converted to 650-keV 2H+
+            ions by FN tandem.
+SAMPLE     Hydrogenated carbon targets.
+MONITOR    Polarization determined using the 3He(d,p) reaction in
+            an online polarimeter located behind the scattering
+            chamber.
+PART-DET   (P)
+ERR-ANALYS (EN-ERR) Error in c.m. energy.
+           (POL-BM-ERR) Systematic error in deuteron polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+HISTORY    (20111223A) SD: REACTION code corrected: SF1 and SF2
+            (also SF3,SF4) were exchanged according to the
+             inc.source
+ENDBIB              16
+COMMON               3          3
+EN-CM      EN-ERR     POL-BM-ERR
+KEV        KEV        NO-DIM
+ 431.3       0.08       0.04
+ENDCOMMON            3
+DATA                 3         15
+ANG-CM     DATA       DATA-ERR
+ADEG       NO-DIM     NO-DIM
+ 72.0       0.0179     0.0013
+ 74.0       0.0170     0.0013
+ 86.0       0.0181     0.0015
+ 92.0       0.0132     0.0013
+ 99.0       0.0108     0.0015
+106.0       0.0075     0.0020
+112.0       0.0043     0.0019
+114.0       0.0019     0.0019
+126.0       0.0024     0.0017
+132.0       0.0024     0.0016
+134.0       0.0053     0.0025
+139.0       0.0005     0.0022
+146.0      -0.0009     0.0028
+152.0      -0.0007     0.0026
+159.0      -0.0052     0.0033
+ENDDATA             17
+ENDSUBENT           42
+SUBENT        C0801011   20111223   20121029   20120916       C119
+BIB                  8         16
+REACTION  1(1-H-2(P,EL)1-H-2,20,POL/DA,,TAP)    fig.6
+          2(1-H-2(P,EL)1-H-2,21,POL/DA,,TAP)
+          3(1-H-2(P,EL)1-H-2,22,POL/DA,,TAP)
+FACILITY   (VDGT,1USATNL) TUNL FN tandem accelerator.
+INC-SOURCE (ATOMI) Polarized 2H- ions converted to 650-keV 2H+
+            ions by FN tandem.
+SAMPLE     Hydrogenated carbon targets.
+PART-DET   (D)
+MONITOR    Polarization determined using the 3He(d,p) reaction in
+            an online polarimeter located behind the scattering
+            chamber.
+ANALYSIS   T22 data derived from T20 and Ayy.
+ERR-ANALYS (EN-ERR) Error in c.m. energy.
+           (POL-BM-ERR) Systematic error in proton polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+ENDBIB              16
+COMMON               3          3
+EN-CM      EN-ERR     POL-BM-ERR
+KEV        KEV        NO-DIM
+ 431.3       0.08       0.04
+ENDCOMMON            3
+DATA                 7          8
+ANG-CM     DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3
+DATA-ERR  3
+ADEG       NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM
+NO-DIM
+ 31.9      -0.0147     0.0006     0.0063     0.0011    -0.0006
+ 0.0007
+ 42.9      -0.0194     0.0007     0.0106     0.0007    -0.0009
+ 0.0009
+ 52.8      -0.0187     0.0009     0.0139     0.0007    -0.0034
+ 0.0011
+ 59.6      -0.0173     0.0008
+
+ 64.9      -0.0142     0.0009     0.0159     0.0009    -0.0040
+ 0.0010
+ 74.4                             0.0160     0.0009
+
+ 78.4      -0.0085     0.0006     0.0172     0.0006    -0.0062
+ 0.0008
+ 92.1      -0.0010     0.0010     0.0164     0.0006    -0.0079
+ 0.0008
+ENDDATA             20
+ENDSUBENT           45
+SUBENT        C0801012   20111223   20121029   20120916       C119
+BIB                  8         16
+REACTION  1(1-H-2(P,EL)1-H-2,20,POL/DA,,TAP)    fig.6
+          2(1-H-2(P,EL)1-H-2,21,POL/DA,,TAP)
+          3(1-H-2(P,EL)1-H-2,22,POL/DA,,TAP)
+FACILITY   (VDGT,1USATNL) TUNL FN tandem accelerator.
+INC-SOURCE (ATOMI) Polarized 2H- ions converted to 650-keV 2H+
+            ions by FN tandem.
+SAMPLE     Hydrogenated carbon targets.
+PART-DET   (P)
+MONITOR    Polarization determined using the 3He(d,p) reaction in
+            an online polarimeter located behind the scattering
+            chamber.
+ANALYSIS   T22 data derived from T20 and Ayy.
+ERR-ANALYS (EN-ERR) Error in c.m. energy.
+           (POL-BM-ERR) Systematic error in proton polarization.
+           (DATA-ERR) Uncertainties include contributions from
+            statistics and background subtraction.
+ENDBIB              16
+COMMON               3          3
+EN-CM      EN-ERR     POL-BM-ERR
+KEV        KEV        NO-DIM
+ 431.3       0.08       0.04
+ENDCOMMON            3
+DATA                 7         18
+ANG-CM     DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3
+DATA-ERR  3
+ADEG       NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM
+NO-DIM
+ 66.0      -0.0145     0.0007
+
+ 72.0      -0.0115     0.0007     0.0176     0.0007    -0.0056
+ 0.0008
+ 74.0      -0.0118     0.0008     0.0172     0.0007    -0.0050
+ 0.0008
+ 86.0      -0.0062     0.0006     0.0177     0.0006    -0.0079
+ 0.0009
+ 87.8                             0.0158     0.0010
+
+ 92.0      -0.0033     0.0006     0.0169     0.0007    -0.0062
+ 0.0008
+ 99.0       0.0000     0.0006     0.0166     0.0009    -0.0062
+ 0.0009
+102.0       0.0013     0.0007
+
+106.0       0.0028     0.0008     0.0128     0.0009    -0.0055
+  0.0012
+112.0       0.0060     0.0010     0.0123     0.0010    -0.0049
+  0.0012
+114.0       0.0052     0.0010     0.0101     0.0009    -0.0032
+  0.0012
+126.0       0.0100     0.0007     0.0073     0.0007    -0.0055
+  0.0010
+132.0       0.0096     0.0007     0.0061     0.0009    -0.0053
+  0.0010
+134.0       0.0113     0.0013     0.0056     0.0011    -0.0077
+  0.0015
+139.0       0.0087     0.0007     0.0037     0.0014    -0.0038
+  0.0013
+142.0       0.0096     0.0011
+
+146.0       0.0103     0.0016     0.0019     0.0010    -0.0037
+  0.0018
+152.0       0.0100     0.0013     0.0023     0.0014    -0.0037
+  0.0016
+ENDDATA             40
+ENDSUBENT           65
+ENDENTRY            12

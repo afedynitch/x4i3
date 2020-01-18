@@ -28,7 +28,7 @@ exfor_grammers module - Collection of pyparsing grammers for parsing Exfor objec
 """
 __version__ = "0.0.1"
 __author__ = "David Brown <brown170@llnl.gov>"
-from pyparsing import (Literal, Optional, Word, Combine, Group,
+from .pyparsing import (Literal, Optional, Word, Combine, Group,
     delimitedList, alphanums, ZeroOrMore, Forward, restOfLine,
     OneOrMore, nestedExpr, alphas, commaSeparatedList)
 from .exfor_dicts import X4DictionaryServer

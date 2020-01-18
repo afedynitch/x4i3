@@ -22,3 +22,11 @@
 # along with this program; if not, write to the Free Software Foundation, 
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA  
 
+import os
+import tarfile
+
+this_path = os.path.abspath(os.path.dirname(__file__))
+
+if not os.path.exists(os.path.join(this_path, 'data')):
+    with tarfile.open(os.path.join(this_path, 'test_data.tar.gz'), "r:gz") as tf:
+        tf.extractall()

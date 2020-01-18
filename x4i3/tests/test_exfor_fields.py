@@ -28,7 +28,7 @@ import unittest
 
 # Set up the paths to x4i & friends
 from x4i3 import exfor_field
-from x4i3.test import __path__
+from x4i3.tests import __path__
 
 test_entry = (
     ''.join(

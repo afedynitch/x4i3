@@ -1,0 +1,69 @@
+ENTRY            12917     850917              20050926       0000
+SUBENT        12917001     850917              20050926       0000
+BIB                 12         17
+INSTITUTE  (1USAINU)
+REFERENCE  (J,PR/C,31,309,8502)
+AUTHOR     (H.O.MEYER,J.R.HALL,M.HUGI,H.J.KARWOSKI,R.E.POLLACK,
+           P.SCHWANDT)
+TITLE      NEUTRON-PROTON RADIATIVE CAPTURE CROSS SECTION AT
+           TN = 185 MEV.
+FACILITY   (CYCLO)
+METHOD     (TOF)
+INC-SOURCE (P-LI7)
+DETECTOR   PROTONS AND DEUTERONS DETECTED WITH AN ARRAY OF PLASTIC
+             SCINTILLATORS.
+SAMPLE     LIQUID HYDROGEN IN THIN-WALLED CYLINDRICAL STAINLESS
+            STEEL CONTAINER 11.2 CM IN DIAMETER AND 6.4 CM THICK.
+CORRECTION CORRESPONDING BACKGROUND EVENTS CORRECTED FOR PROTONS
+             AND DEUTERONS.
+STATUS     NO REPLY TO AUTHOR PROOF.
+HISTORY    (850605C)
+ENDBIB              17
+COMMON               3          3
+EN         EN-RSL     ANG-RSL
+MEV        MEV        ADEG
+ 185.       5.         0.35
+ENDCOMMON            3
+ENDSUBENT           24
+SUBENT        12917002     850917              20050926       0000
+BIB                  4         21
+REACTION  1((1-H-1(N,G)1-H-2,,DA,D)/(1-H-1(N,EL)1-H-1,,DA,P))
+          2(1-H-1(N,G)1-H-2,,DA,D)
+MONITOR   2(1-H-1(N,N)1-H-1,,DA,P)
+           THE STANDARD (N,P) CROSS SECTION WAS ARBITRARILY
+             ASSUMED TO BE SIMILAR IN SHAPE TO THE RESULT OF THE
+             PHASE SHIFT ANALYSIS BUT IN AGREEMENT WITH THE DATA
+             AT THE MOST FORWARD ANGLES.
+ADD-RES    THE ZERO DEGREE(CM) VALUE OBTAINED FROM A THIRD ORDER
+             POLYNOMIAL(IN COSINE) FIT TO THE DATA.
+                = 4.83 +- 0.45 MICRO-BARNS.
+ERR-ANALYS (DATA-ERR)
+             BACKGROUND SUBTRACTION  2 PERCENT
+             DETECTECTOR EFFICIENCY  3 PERCENT
+             DEUTERON BACKGROUND     2 PERCENT
+            POSSIBLE SYSTEMATIC ERRORS DUE TO
+                 . MULTIPLE SCATTERING OF THE OUTGOING PARTICLES
+                 . REACTION LOSSES IN THE SCINTILLATORS AND THE
+                   AIR BETWEEN THEM
+               HAVE BEEN ESTIMATED TO BE NEGLIGIBLE.
+            NO ERROR WAS CONSIDERED FOR THE STANDARD
+               CROSS SECTION IN OBTAINING THE CAPTURE RESULTS.
+ENDBIB              21
+NOCOMMON             0          0
+DATA                 6         11
+ANG        DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT     2
+ADEG       NO-DIM     NO-DIM     MU-B/SR    MU-B/SR    MB/SR
+ 0.35       0.75   -03 0.07   -03 37.4       3.7        49.8
+ 1.05       0.80   -03 0.05   -03 39.4       2.5        49.1
+ 1.75       0.86   -03 0.05   -03 41.4       2.2        48.1
+ 2.45       0.92   -03 0.04   -03 43.1       2.0        46.9
+ 3.15       1.00   -03 0.04   -03 45.4       2.0        45.5
+ 3.85       1.16   -03 0.05   -03 50.7       2.0        43.9
+ 4.55       1.19   -03 0.05   -03 50.2       2.1        42.1
+ 5.25       1.41   -03 0.06   -03 56.7       2.4        40.3
+ 5.95       1.74   -03 0.08   -03 67.0       3.0        38.4
+ 6.65       2.07   -03 0.13   -03 75.3       4.6        36.4
+ 7.35       2.37   -03 0.23   -03 81.5       7.8        34.5
+ENDDATA             13
+ENDSUBENT           39
+ENDENTRY             2

@@ -264,8 +264,14 @@ class X4DataSet(X4BibMetaData):
 
     def csv(self, f):
         import csv
-        writer = csv.writer(open(f, "wb"))
-        writer.writerows([self.labels, self.units] + self.data)
+        try:
+            with open(f, 'w', encoding="utf-8") as csvf:
+                writer = csv.writer(csvf, lineterminator='\n')
+                writer.writerows([self.labels, self.units] + self.data)
+        except TypeError:
+            with open(f, 'w') as csvf:
+                writer = csv.writer(csvf, lineterminator='\n')
+                writer.writerows([self.labels, self.units] + self.data)
 
     def numcols(self): return len(self.labels)
 

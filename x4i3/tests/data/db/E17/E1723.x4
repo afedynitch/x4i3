@@ -1,0 +1,375 @@
+ENTRY            E1723   20081121   20081124   20081121       E055
+SUBENT        E1723001   20081121   20081124   20081121       E055
+BIB                 11         54
+TITLE      Precise measurement of dp elastic scattering at 270
+           MeV and three-nucleon force effects
+AUTHOR     (H.Sakai, K.Sekiguchi, H.Witala, W.Glockle, M.Hatano,
+           H.Kamada, H.Kato, Y.Maeda, A.Nogga, T.Ohnishi,
+           H.Okamura, N.Sakamoto, S.Sakoda, Y.Satou, K.Suda,
+           A.Tamii, T.Uesaka, T.Wakasa, K.Yako)
+INSTITUTE  (2JPNTOK) Department of Physics
+           (3POLUJK) Institute of Physics
+           (2GERBOC) Institute fur Physik II
+           (2JPNSUU) Department of Physics
+           (2JPNIPC)
+           (2JPNOSA) Research Center for Nuclear Physics
+REFERENCE  (J,PRL,84,(23),5288,200006)
+PART-DET   (P,D)
+INC-SOURCE (POLIS)
+SAMPLE     - Target enrichment is unknown.
+           - Chemical-form of target is CH2.
+           - Physical-form of target is solid.
+           - Target-thickness is 46.7 mg/cm**2.
+           - Backing is unknown.
+FACILITY   (CYCLO,2JPNIPC) Riken Accelerator Research Facility
+                           (RARF)
+DETECTOR   Calibration: Polarimeter DPOL was primarily designed
+           and optimized for deuteron polarization measurements.
+           Therefore the effective analyzing power <Ay> of DPOL
+           had to be calibrated for protons. It was done at 198
+           MeV by utilizing the induced polarization Py
+           (MAGSP) To detect either the scattered proton or
+                   deuteron, SMART, see [T.Ichihara et al.,
+                   Nucl.Phys.A569(1994)287c] with Focal-plane
+                   polarimeter DPOL to measure proton
+                   polarization, see [S.Ishida et al., AIP
+                   Conf.Proc.343(1995)182].
+ADD-RES    E1723.007:1-H-1(D,EL)1-H-1
+                     Polarization transfer (Tensor-to-vector
+                     polarization transfer coefficient K(xx,y'))
+                     See NRDF D1723 DATA,6 for detail.
+           E1723.008:1-H-1(D,EL)1-H-1
+                     Polarization transfer (Tensor-to-vector
+                     polarization transfer coefficient K(yy,y'))
+                     See NRDF D1723 DATA,7 for detail.
+           E1723.009:1-H-1(D,EL)1-H-1
+                     Polarization (Induced polarization of
+                     outgoing proton P(y'))
+                     See NRDF D1723 DATA,8 for detail.
+           E1723.010:1-H-1(D,EL)1-H-1
+                     Polarization transfer (Tensor-to-vector
+                     polarization transfer coerricient K(xz,y'))
+                     See NRDF D1723 DATA,9 for detail.
+           (COMP) Faddeev method (See [W.Glockle et al.,
+                  Phys.Rep.274(1996)107].)
+HISTORY    (20020926T) Ay + On. Data converted from NRDF D1723
+           (20041125A) On. INSTITUTE, REFERENCE and heading of
+                       systematic error corrected
+ENDBIB              54
+COMMON               3          3
+EN         POL-BM     POL-BM-ERR
+MEV        NO-DIM     NO-DIM
+ 270.       0.7        0.1
+ENDCOMMON            3
+ENDSUBENT           61
+SUBENT        E1723002   20081121   20081124   20081121       E055
+BIB                  5         17
+REACTION   (1-H-1(D,EL)1-H-1,,DA)
+EN-SEC     ANG-CM is polar angle between beam and proton in
+           center of mass system
+ERR-ANALYS (ERR-S) The statistical error is better than 1.3% over
+                   all the measured angles.
+           (ERR-SYS) Uncertainties in target thickness and charge
+                     collection of the beam, which were estimated
+                     by comparing the measured cross sections for
+                     the p+p scattering with the calculated
+                     values by SAID [R.A.Arndt and L.D.Roper,
+                     Scattering Analysis Program SAID, Virginia
+                     Polytechnic Institute and State University
+                     (unpublished)].
+STATUS     (CURVE) Scanned from Fig.1, p5289 in reference
+HISTORY    (20060801A) At. Re-digitized
+           (20071231A) On. SF1 and SF2 swapped
+           (20081031A) Ty. changed from DATA=>DATA-CM in headings
+ENDBIB              17
+COMMON               2          3
+ERR-SYS    ERR-S
+PER-CENT   PER-CENT
+ 2.         1.3
+ENDCOMMON            3
+DATA                 2         46
+ANG-CM     DATA-CM
+ADEG       MB/SR
+  9.609E+00  1.276E+01
+  1.153E+01  1.333E+01
+  1.922E+01  1.178E+01
+  2.082E+01  1.057E+01
+  2.210E+01  9.771E+00
+  2.530E+01  8.119E+00
+  2.819E+01  6.442E+00
+  3.139E+01  5.111E+00
+  3.523E+01  4.102E+00
+  3.875E+01  3.181E+00
+  4.164E+01  2.553E+00
+  4.420E+01  2.122E+00
+  4.740E+01  1.847E+00
+  5.093E+01  1.570E+00
+  5.541E+01  1.189E+00
+  5.765E+01  1.035E+00
+  6.117E+01  9.438E-01
+  6.246E+01  8.907E-01
+  7.687E+01  5.232E-01
+  9.160E+01  3.489E-01
+  1.073E+02  2.354E-01
+  1.191E+02  2.171E-01
+  1.249E+02  2.171E-01
+  1.268E+02  2.222E-01
+  1.291E+02  2.222E-01
+  1.313E+02  2.248E-01
+  1.332E+02  2.300E-01
+  1.368E+02  2.300E-01
+  1.403E+02  2.524E-01
+  1.428E+02  2.705E-01
+  1.457E+02  2.866E-01
+  1.480E+02  3.072E-01
+  1.499E+02  3.293E-01
+  1.512E+02  3.571E-01
+  1.537E+02  3.828E-01
+  1.557E+02  4.298E-01
+  1.579E+02  4.881E-01
+  1.605E+02  5.542E-01
+  1.624E+02  6.441E-01
+  1.643E+02  7.316E-01
+  1.669E+02  8.504E-01
+  1.691E+02  9.115E-01
+  1.710E+02  9.884E-01
+  1.730E+02  1.023E+00
+  1.746E+02  1.059E+00
+  1.771E+02  1.097E+00
+ENDDATA             48
+ENDSUBENT           74
+SUBENT        E1723003   20081121   20081124   20081121       E055
+BIB                  4          8
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+           Ay for deuteron
+EN-SEC     ANG-CM is polar angle between beam and proton in
+           center of mass system
+STATUS     (CURVE) Scanned from Fig.1, p5289 in reference
+HISTORY    (20060801A) At. Re-digitized
+           (20071231A) On. SF1 and SF2 swapped
+           (20081031A) Ty. changed from DATA=>DATA-CM in headings
+ENDBIB               8
+NOCOMMON             0          0
+DATA                 2         40
+ANG-CM     DATA-CM
+ADEG       NO-DIM
+  1.057E+01  2.400E-01
+  2.210E+01  3.173E-01
+  2.498E+01  3.387E-01
+  2.851E+01  3.493E-01
+  3.139E+01  3.787E-01
+  3.523E+01  3.440E-01
+  3.875E+01  3.627E-01
+  4.196E+01  3.413E-01
+  4.452E+01  2.987E-01
+  4.772E+01  2.453E-01
+  5.093E+01  1.920E-01
+  5.221E+01  1.600E-01
+  5.541E+01  8.533E-02
+  5.733E+01  6.133E-02
+  6.117E+01 -2.933E-02
+  6.246E+01 -5.067E-02
+  6.598E+01 -1.200E-01
+  1.172E+02 -3.227E-01
+  1.272E+02 -2.213E-01
+  1.304E+02 -1.680E-01
+  1.323E+02 -1.413E-01
+  1.352E+02 -9.600E-02
+  1.371E+02 -5.333E-02
+  1.403E+02 -8.000E-03
+  1.435E+02  3.200E-02
+  1.457E+02  5.600E-02
+  1.477E+02  1.147E-01
+  1.499E+02  1.253E-01
+  1.515E+02  1.467E-01
+  1.537E+02  2.027E-01
+  1.557E+02  1.893E-01
+  1.582E+02  1.920E-01
+  1.601E+02  1.813E-01
+  1.624E+02  1.627E-01
+  1.646E+02  1.600E-01
+  1.665E+02  1.440E-01
+  1.691E+02  1.093E-01
+  1.707E+02  9.600E-02
+  1.733E+02  6.400E-02
+  1.781E+02  1.867E-02
+ENDDATA             42
+ENDSUBENT           55
+SUBENT        E1723004   20081121   20081124   20081121       E055
+BIB                  5         10
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+           Axx for deuteron
+EN-SEC     ANG-CM is polar angle between beam and proton in
+           center of mass system
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties
+STATUS     (CURVE) Scanned from Fig.1, p5289 in reference
+HISTORY    (20060801A) At. Re-digitized
+           (20070319A) On. SF7 corrected
+           (20071231A) On. SF1 and SF2 swapped, SF7 deleted
+           (20081031A) Ty. changed from DATA=>DATA-CM in headings
+ENDBIB              10
+NOCOMMON             0          0
+DATA                 3         40
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       NO-DIM     NO-DIM
+  1.057E+01 -8.889E-06
+  2.210E+01 -7.734E-02
+  2.530E+01 -9.334E-02
+  2.819E+01 -1.280E-01
+  3.171E+01 -1.627E-01
+  3.523E+01 -1.787E-01
+  3.875E+01 -2.053E-01
+  4.196E+01 -2.613E-01
+  4.420E+01 -2.880E-01
+  4.740E+01 -3.227E-01
+  5.125E+01 -3.840E-01
+  5.221E+01 -3.893E-01
+  5.573E+01 -4.320E-01
+  5.765E+01 -4.533E-01
+  6.117E+01 -4.773E-01
+  6.214E+01 -4.747E-01
+  6.598E+01 -4.907E-01
+  1.169E+02 -3.173E-01  3.467E-02
+  1.272E+02 -2.800E-01
+  1.300E+02 -2.827E-01
+  1.323E+02 -3.013E-01
+  1.352E+02 -2.880E-01
+  1.371E+02 -2.987E-01
+  1.403E+02 -3.200E-01
+  1.438E+02 -3.547E-01
+  1.457E+02 -3.840E-01
+  1.477E+02 -4.187E-01
+  1.499E+02 -4.667E-01
+  1.515E+02 -4.800E-01
+  1.537E+02 -4.800E-01
+  1.557E+02 -4.773E-01
+  1.582E+02 -4.000E-01
+  1.605E+02 -3.707E-01
+  1.627E+02 -2.773E-01
+  1.646E+02 -1.733E-01
+  1.665E+02 -6.934E-02
+  1.691E+02  2.132E-02
+  1.710E+02  1.120E-01
+  1.730E+02  1.920E-01
+  1.778E+02  3.040E-01
+ENDDATA             42
+ENDSUBENT           57
+SUBENT        E1723005   20081121   20081124   20081121       E055
+BIB                  4          9
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+           Ayy for deuteron
+EN-SEC     ANG-CM is polar angle between beam and proton in
+           center of mass system
+STATUS     (CURVE) Scanned from Fig.1, p5289 in reference
+HISTORY    (20060801A) At. Re-digitized
+           (20070319A) On. SF7 corrected
+           (20071231A) On. SF1 and SF2 swapped, SF7 deleted
+           (20081031A) Ty. changed from DATA=>DATA-CM in headings
+ENDBIB               9
+NOCOMMON             0          0
+DATA                 2         40
+ANG-CM     DATA-CM
+ADEG       NO-DIM
+  1.153E+01  4.000E-02
+  2.210E+01  9.067E-02
+  2.498E+01  1.040E-01
+  2.851E+01  1.387E-01
+  3.171E+01  1.573E-01
+  3.555E+01  1.813E-01
+  3.843E+01  2.027E-01
+  4.196E+01  2.320E-01
+  4.420E+01  2.293E-01
+  4.740E+01  2.693E-01
+  5.093E+01  2.853E-01
+  5.189E+01  3.040E-01
+  5.541E+01  3.040E-01
+  5.733E+01  3.200E-01
+  6.117E+01  3.493E-01
+  6.246E+01  3.627E-01
+  6.598E+01  3.600E-01
+  1.172E+02  6.800E-01
+  1.275E+02  6.267E-01
+  1.300E+02  5.973E-01
+  1.323E+02  6.000E-01
+  1.355E+02  6.027E-01
+  1.374E+02  6.000E-01
+  1.403E+02  5.920E-01
+  1.435E+02  5.680E-01
+  1.454E+02  5.680E-01
+  1.477E+02  5.733E-01
+  1.499E+02  5.707E-01
+  1.515E+02  5.760E-01
+  1.537E+02  5.813E-01
+  1.557E+02  5.440E-01
+  1.579E+02  5.227E-01
+  1.605E+02  4.960E-01
+  1.627E+02  4.533E-01
+  1.646E+02  4.427E-01
+  1.669E+02  4.187E-01
+  1.688E+02  3.840E-01
+  1.710E+02  3.733E-01
+  1.730E+02  3.413E-01
+  1.781E+02  3.040E-01
+ENDDATA             42
+ENDSUBENT           56
+SUBENT        E1723006   20081121   20081124   20081121       E055
+BIB                  5         10
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+           Axz for deuteron
+EN-SEC     ANG-CM is polar angle between beam and proton in
+           center of mass system
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties
+STATUS     (CURVE) Scanned from Fig.1, p5289 in reference
+HISTORY    (20060801A) At. Re-digitized
+           (20070319A) On. SF7 corrected
+           (20071231A) On. SF1 and SF2 swapped, SF7 deleted
+           (20081031A) Ty. changed from DATA=>DATA-CM in headings
+ENDBIB              10
+NOCOMMON             0          0
+DATA                 3         37
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       NO-DIM     NO-DIM
+  2.182E+01 -5.656E-03
+  2.470E+01 -1.370E-02
+  2.824E+01  4.915E-03
+  3.145E+01  1.020E-02
+  4.428E+01  2.601E-02
+  4.718E+01  5.797E-02
+  5.071E+01  7.125E-02
+  5.200E+01  1.006E-01
+  5.521E+01  1.165E-01
+  5.746E+01  1.271E-01
+  6.068E+01  1.911E-01
+  6.229E+01  2.017E-01
+  6.583E+01  2.497E-01  3.467E-02
+  1.169E+02  4.143E-01  4.267E-02
+  1.272E+02  4.648E-01  2.400E-02
+  1.304E+02  4.727E-01  2.133E-02
+  1.323E+02  4.940E-01
+  1.352E+02  5.020E-01  2.401E-02
+  1.374E+02  5.420E-01
+  1.403E+02  5.712E-01  2.399E-02
+  1.435E+02  5.739E-01  2.666E-02
+  1.458E+02  6.352E-01
+  1.477E+02  6.751E-01  2.933E-02
+  1.500E+02  7.204E-01  2.933E-02
+  1.516E+02  7.497E-01  2.667E-02
+  1.539E+02  7.924E-01  2.933E-02
+  1.561E+02  8.137E-01  3.200E-02
+  1.580E+02  8.163E-01  2.933E-02
+  1.584E+02  8.616E-01
+  1.606E+02  8.776E-01  2.934E-02
+  1.629E+02  8.349E-01
+  1.648E+02  7.735E-01  2.667E-02
+  1.670E+02  6.668E-01
+  1.689E+02  5.895E-01
+  1.711E+02  4.615E-01
+  1.730E+02  3.601E-01
+  1.781E+02  9.869E-02
+ENDDATA             39
+ENDSUBENT           54
+NOSUBENT      E1723007   20030306   20030310   20050926       0000
+NOSUBENT      E1723008   20030306   20030310   20050926       0000
+NOSUBENT      E1723009   20030306   20030310   20050926       0000
+NOSUBENT      E1723010   20030306   20030310   20050926       0000
+ENDENTRY            10

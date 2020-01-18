@@ -1,0 +1,46 @@
+ENTRY            10241   20011130   20020117   20050926       0000
+SUBENT        10241001   20011130   20020117   20050926       0000
+BIB                 10         14
+INSTITUTE  (1USAORL)
+REFERENCE  (P,ORNL-4534,5,197007)
+AUTHOR     (M.J.Saltmarsh,M.L.Halbert,C.R.Bingham,C.A.Ludemann,
+            A.Van Der Woude)
+TITLE      n-p ELASTIC SCATTERING AT 60 MeV
+FACILITY   (ICTR) Oak Ridge Insulated Core Transformer
+METHOD     (TOF,PHD)
+DETECTOR   (SCIN)
+MONITOR    No information
+ERR-ANALYS No information
+HISTORY    (19750102C)
+           (19760209A) Data added
+           (19821018A) Converted to REACTION formalism
+           (20011130A) Converted to new date formats, lower case.
+ENDBIB              14
+NOCOMMON             0          0
+ENDSUBENT           17
+SUBENT        10241002   20011130   20020117   20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (CURVE) Read from Fig. 1.6, page 6 of ORNL-4534.
+ENDBIB               2
+COMMON               1          3
+EN
+MEV
+60.
+ENDCOMMON            3
+DATA                 3         10
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       MB/SR      MB/SR
+ 88.        6.5       0.94
+ 98.       10.        0.8
+108.        8.9       0.47
+118.        7.83      0.4
+129.        9.2       0.4
+139.       10.7       0.4
+149.       11.9       0.67
+159.       12.9       0.67
+166.       13.1       0.54
+174.       13.7       0.88
+ENDDATA             12
+ENDSUBENT           23
+ENDENTRY             2

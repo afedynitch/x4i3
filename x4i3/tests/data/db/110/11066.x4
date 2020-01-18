@@ -1,0 +1,103 @@
+ENTRY            11066     830909              20050926       0000
+SUBENT        11066001     830909              20050926       0000
+BIB                  7         10
+INSTITUTE  (1USALAS)
+REFERENCE  (J,PR,91,90,5307)
+AUTHOR     (J.C.ALLRED,A.H.ARMSTRONG,L.ROSEN)
+TITLE      THE INTERACTION OF 14-MEV NEUTRONS WITH PROTONS AND
+           DEUTERONS.
+DETECTOR   (TRD) NUCLEAR EMULSIONS
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+           (830817U) BIB, DATA HEADING CORRECTIONS.
+ENDBIB              10
+NOCOMMON             0          0
+ENDSUBENT           13
+SUBENT        11066002     830909              20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ENDBIB               1
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 1.41   +01 1.     -01
+ENDCOMMON            3
+DATA                 3          8
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      PER-CENT
+ 0.66910    5.07   +01    4.6
+ 0.39230    4.93   +01    5.0
+ 0.10280    5.33   +01    4.4
+-0.1822     5.13   +01    4.7
+-0.4116     5.18   +01    3.5
+-0.6652     5.33   +01    3.8
+-0.8349     5.40   +01    3.5
+-0.9026     5.47   +01    2.6
+ENDDATA             10
+ENDSUBENT           20
+SUBENT        11066003     830909              20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,SIG)
+STATUS     (DEP,11066002) INTEGRATED ANGULAR DISTRIBUTION
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 4          1
+EN         EN-RSL     DATA       DATA-ERR
+MEV        MEV        B          B
+ 1.41   +01 1.     -01 6.6    -01 5.     -02
+ENDDATA              3
+ENDSUBENT           10
+SUBENT        11066004     830909              20050926       0000
+BIB                  2          2
+REACTION   (1-H-2(N,EL)1-H-2,,SIG)
+STATUS     (DEP,11066005) INTEGRATED ANGULAR DISTRIBUTION
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 4          1
+EN         EN-RSL     DATA       DATA-ERR
+MEV        MEV        B          B
+ 1.41   +01 1.     -01 6.70   -01 1.00   -01
+ENDDATA              3
+ENDSUBENT           10
+SUBENT        11066005     830909              20050926       0000
+BIB                  1          1
+REACTION   (1-H-2(N,EL)1-H-2,,DA)
+ENDBIB               1
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 1.41   +01 1.     -01
+ENDCOMMON            3
+DATA                 3         26
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      PER-CENT
+ 0.69470    8.59   +01   11.
+ 0.65610    8.41   +01    6.5
+ 0.43210    5.98   +01    3.9
+ 0.35180    5.2    +01    7.7
+ 0.25540    4.77   +01    5.4
+ 0.21470    4.22   +01    5.5
+ 0.05931    3.55   +01    5.1
+-0.2215     1.71   +01    5.7
+-0.3486     1.32   +01    8.4
+-0.4131     1.22   +01    6.4
+-0.4909     1.15   +01    6.5
+-0.5210     1.15   +01    8.5
+-0.5962     1.10   +01    8.5
+-0.6587     1.13   +01   12.
+-0.6794     1.23   +01    9.7
+-0.6972     1.50   +01    8.3
+-0.7478     1.91   +01    9.2
+-0.8028     2.98   +01    6.2
+-0.8192     3.28   +01    7.1
+-0.8660     4.89   +01    8.0
+-0.8746     5.37   +01    5.1
+-0.8829     5.05   +01    5.8
+-0.8988     5.9    +01    6.0
+-0.9078     5.85   +01    5.0
+-0.9272     7.95   +01    5.9
+-0.9976     1.10   +02    3.4
+ENDDATA             28
+ENDSUBENT           38
+ENDENTRY             5

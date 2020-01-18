@@ -1,0 +1,67 @@
+ENTRY            13150     890410              20050926       0000
+SUBENT        13150001     890410              20050926       0000
+BIB                 11         18
+INSTITUTE  (1CANTMF)
+REFERENCE  (J,PL/B,201,25,8801)
+AUTHOR     (K.P.JACKSON,A.CELLER,W.P.ALFORD,K.RAYWOOD,R.ABEGG,
+           R.E.AZUMA,C.K.CAMPBELL,S.EL-KATEB,D.FREKERS,P.W.GREEN,
+           O.HAUSSER,R.L.HELMER,R.S.HENDERSON,K.H.HICKS,
+           R.JEPPESEN,P.LEWIS,C.A.MILLER,A.MOALEM,M.A.MOINESTER,
+           R.B.SCHUBANK,G.G.SHUTE,B.M.SPICER,M.C.VETTERLI,
+           A.I.YAVIN,S.YEN)
+TITLE      THE (N,P) REACTION AS A PROBE OF GAMOW-TELLER STRENGTH
+FACILITY   TRIUMF CHARGE EXCHANGE FACILITY
+INC-SOURCE (P-LI7)
+DETECTOR   (PROPC) MULTIWIRE PROPORTIONAL COUNTERS
+MONITOR   2(1-H-1(N,EL)1-H-1,,DA) GIVEN IN LAB SYSTEM
+ERR-ANALYS1NO INFORMATION ON SOURCE OF UNCERTAINTIES
+          2ERRORS DO NOT INCLUDE UNCERTAINTY IN STANDARD
+            VALUE.
+STATUS     NO REPLY TO AUTHOR PROOF
+HISTORY    (881130C)
+ENDBIB              18
+COMMON               3          3
+EN         ANG        MONIT     2
+MEV        ADEG       MB/SR
+ 198.       0.         55.3
+ENDCOMMON            3
+ENDSUBENT           25
+SUBENT        13150002     890123              20050926       0000
+BIB                  1          2
+REACTION  1((3-LI-6(N,P)2-HE-6,,DA)/(1-H-1(N,EL)1-H-1,,DA))
+          2(3-LI-6(N,P)2-HE-6,,DA)
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 4          1
+DATA      1DATA-ERR  1DATA-CM   2DATA-ERR  2
+NO-DIM     NO-DIM     MB/SR      MB/SR
+ 0.403      0.015     15.51       0.55
+ENDDATA              3
+ENDSUBENT           10
+SUBENT        13150003     890123              20050926       0000
+BIB                  2          3
+REACTION  1((6-C-12(N,P)5-B-12,,DA)/(1-H-1(N,EL)1-H-1,,DA))
+          2(6-C-12(N,P)5-B-12,,DA)
+SAMPLE     NATURAL C
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 4          1
+DATA      1DATA-ERR  1DATA-CM   2DATA-ERR  2
+NO-DIM     NO-DIM     MB/SR      MB/SR
+ 0.180      0.006      8.19       0.27
+ENDDATA              3
+ENDSUBENT           11
+SUBENT        13150004     890123              20050926       0000
+BIB                  2          3
+REACTION  1((6-C-13(N,P)5-B-13,,DA)/(1-H-1(N,EL)1-H-1,,DA))
+          2(6-C-13(N,P)5-B-13,,DA)
+SAMPLE     POWDER SAMPLE, 99% 13C. SAMPLE THICKNESS 81 MG/CM**2
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 4          1
+DATA      1DATA-ERR  1DATA-CM   2DATA-ERR  2
+NO-DIM     NO-DIM     MB/SR      MB/SR
+ 0.157      0.007      7.24       0.33
+ENDDATA              3
+ENDSUBENT           11
+ENDENTRY             4

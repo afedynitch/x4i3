@@ -1,0 +1,251 @@
+ENTRY            22949   20070219   20070521   20070506       2184
+SUBENT        22949001   20070219   20070521   20070506       2184
+BIB                 13         73
+TITLE      .Charge-particle spectrometry using a pencil-beam DT
+            neutron source for double-differential cross-section
+            measurement.
+AUTHOR     (K.Kondo, I.Murata, K.Ochiai, H.Miyamaru, N.Kubota,
+           S.Takagi, S.Shido, A.Takahashi, T.Nishitani)
+INSTITUTE  (2JPNOSA) Kondo, Murata, Miyamaru,Takagi, Shido,
+              Tahahashi - Division of Electrical, Electronic and
+                          Informational Engineering
+           (2JPNJAE) Ociai, Kubota, Nishitani
+REFERENCE  (J,NIM/A,568,723,2006)
+FACILITY   (FNS,2JPNJAE)  Fusion neutron source of JAERI
+METHOD     (COINC)
+           (EDE)
+           (PHD)    Pulse-height spectrum was obtained after
+           particle discrimination and combining the
+           anticoincidence spectrum of the del'Ta-e detector with
+           the coincidence spectrum.
+DETECTOR   (TELES,SIBAR,SIBAR) A counter-telescope system with a
+            pair of silicon surface barrier detectors, one
+            for delta-E and one for E detector.
+                         Telescope1            telescope2
+                         delta-E  E-detector  delta-E  E-detector
+            thickness
+            of depletion
+            layer        20-mum   1500-mum    9.6-mum   760-mum
+           *
+            area         150-mm**2  300-mm**2  50-mm**2  300-mm**2
+INC-SOURCE (D-T) The pencil-beam neutron source. A deuteron beam
+             is accelerated up to 350 keV and bombards a rotating
+             target of 3.7E+13 Bq tritium. A maximum neutron yield
+             of 4.E+12 n/s is available with a beam current of 20
+             milli-ampere.
+INC-SPECT   .Mean neutron energy calculated according to reaction
+             kinematics is 14.2 MeV, spread of neutron energy is
+             130 keV calculated with MCNP-4C2 code. Beam solid
+             angle divergence is 2.5E-5 sterad.
+            .The maximum neutron flux at the outlet of the beam
+             is 1.E+6 neutrons/sec/cm**2 and the background
+             neutron flux outside the beam is lower than
+             5.E+2 neutrons/sec/cm**2
+CORRECTION  .Corrections were made for energy loss in a sample.
+MONITOR    (92-U-238(N,F),,SIG)    For flux monitoring
+ERR-ANALYS .Total error is a quadratic sum of constituents given
+            below -
+           -- Errors in the determination of neutron flux--
+           (ERR-1) Max uncertainty in the statistics of gamma-ray
+                   count is less than 1.5%.
+           (ERR-2).The uncertainty in the detector efficiencies
+                   is 2%.
+           (ERR-3) Max uncertainty in the sample weight is less
+                   than 0.1%.
+           (ERR-4) Max uncertainty in the irradiation, cooling
+                   and measuring time is less than 0.1%.
+           (ERR-5) Max uncertainty in the self-absorption of
+                   gamma ray in a sample foil is less than 0.1%.
+           (ERR-6) Max correction factor error due to coincidence
+                   sum is less than 0.1%.
+           (ERR-7) Max uncertainty in the statistics of U-238
+                   flux monitor is less than 0.2%.
+           -- Errors in the charged-particle measurement and data
+               processing--
+           (ERR-8) Max uncertainty in the sample weight is less
+                     than 0.1%.
+           (ERR-9) Max uncertainty due to a particle
+                   discrimination is less than 0.5%.
+           (ERR-10) The uncertainty in the area of apertures of
+                    detectors is 1%.
+           (ERR-11) The uncertainty in the distance of a sample an
+                    aperture is 1%.
+           (ANG-ERR) The uncertainty in the detection angle of
+                    emitted charged-particle is +-1-degree.
+HISTORY    (20070215C) S.M.
+           (20070225A) Last corrections have been done.
+ENDBIB              73
+COMMON              14          9
+EN         EN-RSL     ERR-1      ERR-2      ERR-3      ERR-4
+ERR-5      ERR-6      ERR-7      ERR-8      ERR-9      ERR-10
+ERR-11     ANG-ERR
+MEV        KEV        PER-CENT   PER-CENT   PER-CENT   PER-CENT
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT
+PER-CENT   ADEG
+       14.2      130.         1.5        2.         0.1        0.1
+        0.1        0.1        0.2        0.1        0.5        1.
+        1.         1.
+ENDCOMMON            9
+ENDSUBENT           86
+SUBENT        22949002   20070219   20070521   20070506       2184
+BIB                  2          3
+REACTION   (13-AL-27(N,X)2-HE-4,,DA/DE)
+STATUS     (TABLE)   Keitaro Kondo, 2007-02-24 via INTERNET
+           (APRVD)   Keitaro Kondo
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 4         74
+ANG        E          DATA       ERR-S
+ADEG       MEV        MB/SR/MEV  MB/SR/MEV
+  45.         1.75       8.08E-02   1.13E-01
+  45.         2.25       1.16E+00   3.52E-01
+  45.         2.75       2.75E+00   4.62E-01
+  45.         3.25       1.53E+00   3.02E-01
+  45.         3.75       1.77E+00   2.92E-01
+  45.         4.25       1.62E+00   2.53E-01
+  45.         4.75       1.51E+00   2.22E-01
+  45.         5.25       1.81E+00   2.26E-01
+  45.         5.75       1.96E+00   2.19E-01
+  45.         6.25       2.19E+00   2.16E-01
+  45.         6.75       2.51E+00   2.18E-01
+  45.         7.25       1.76E+00   1.73E-01
+  45.         7.75       1.30E+00   1.41E-01
+  45.         8.25       1.22E+00   1.30E-01
+  45.         8.75       1.27E+00   1.26E-01
+  45.         9.25       1.39E+00   1.27E-01
+  45.         9.75       1.05E+00   1.08E-01
+  45.        10.25       6.01E-01   8.15E-02
+  45.        10.75       2.74E-01   5.50E-02
+  45.        11.25       1.14E-01   3.54E-02
+  45.        11.75       3.31E-02   1.89E-02
+  70.         1.75       4.22E-02   6.87E-02
+  70.         2.25       5.46E-01   1.98E-01
+  70.         2.75       2.15E+00   3.36E-01
+  70.         3.25       1.75E+00   2.63E-01
+  70.         3.75       1.45E+00   2.14E-01
+  70.         4.25       2.00E+00   2.27E-01
+  70.         4.75       2.18E+00   2.18E-01
+  70.         5.25       1.75E+00   1.79E-01
+  70.         5.75       1.40E+00   1.50E-01
+  70.         6.25       1.21E+00   1.30E-01
+  70.         6.75       1.03E+00   1.13E-01
+  70.         7.25       1.03E+00   1.07E-01
+  70.         7.75       1.13E+00   1.06E-01
+  70.         8.25       1.13E+00   1.01E-01
+  70.         8.75       8.31E-01   8.20E-02
+  70.         9.25       6.87E-01   7.13E-02
+  70.         9.75       4.53E-01   5.55E-02
+  70.        10.25       1.40E-01   2.97E-02
+  70.        10.75       2.20E-02   1.15E-02
+ 110.         1.75       9.75E-02   8.43E-02
+ 110.         2.25       1.15E+00   2.32E-01
+ 110.         2.75       2.58E+00   2.97E-01
+ 110.         3.25       2.36E+00   2.47E-01
+ 110.         3.75       1.66E+00   1.85E-01
+ 110.         4.25       1.67E+00   1.68E-01
+ 110.         4.75       1.47E+00   1.45E-01
+ 110.         5.25       1.41E+00   1.30E-01
+ 110.         5.75       1.20E+00   1.12E-01
+ 110.         6.25       1.02E+00   9.63E-02
+ 110.         6.75       1.03E+00   9.09E-02
+ 110.         7.25       8.21E-01   7.68E-02
+ 110.         7.75       6.33E-01   6.41E-02
+ 110.         8.25       5.25E-01   5.53E-02
+ 110.         8.75       4.19E-01   4.70E-02
+ 110.         9.25       2.22E-01   3.27E-02
+ 110.         9.75       6.20E-02   1.66E-02
+ 110.        10.25       1.51E-02   7.88E-03
+ 135.         1.75       4.65E-02   5.30E-02
+ 135.         2.25       8.93E-01   1.91E-01
+ 135.         2.75       2.15E+00   2.52E-01
+ 135.         3.25       1.54E+00   1.87E-01
+ 135.         3.75       1.54E+00   1.68E-01
+ 135.         4.25       1.68E+00   1.59E-01
+ 135.         4.75       2.06E+00   1.60E-01
+ 135.         5.25       1.98E+00   1.46E-01
+ 135.         5.75       1.22E+00   1.07E-01
+ 135.         6.25       9.67E-01   8.88E-02
+ 135.         6.75       1.04E+00   8.66E-02
+ 135.         7.25       7.97E-01   7.17E-02
+ 135.         7.75       8.30E-01   6.95E-02
+ 135.         8.25       6.29E-01   5.76E-02
+ 135.         8.75       1.57E-01   2.74E-02
+ 135.         9.25       2.67E-02   1.08E-02
+ENDDATA             76
+ENDSUBENT           84
+SUBENT        22949003   20070219   20070521   20070506       2184
+BIB                  7         11
+REACTION   (13-AL-27(N,X)2-HE-4,PAR,DA)
+SAMPLE     .Metal circular foil of Al-27, thickness 50 micro-M,
+            2.17 cm in diameter
+EN-SEC     (E-MIN,A)   Min energy of alpha particles registration
+ANALYSIS   (INTED)
+COMMENT    *By authors* the angular differential cross section
+            was obtained by integrating of DDX over energy.
+ERR-ANALYS (DATA-ERR)  Sum of the statistical and systematic
+                       errors
+STATUS     (TABLE) From authors via N.Ohtsuka
+           (DEP,22949002)
+ENDBIB              11
+COMMON               1          3
+E-MIN
+MEV
+     2.5
+ENDCOMMON            3
+DATA                 4          4
+ANG        COS        DATA       DATA-ERR
+ADEG       NO-DIM     MB/SR      MB/SR
+   45.          0.707       14.0       0.587
+   70.          0.342       10.5       0.430
+  110.         -0.342        9.18      0.367
+  135.         -0.707        8.78      0.334
+ENDDATA              6
+ENDSUBENT           26
+SUBENT        22949004   20070219   20070521   20070506       2184
+BIB                  8         12
+REACTION   (13-AL-27(N,X)2-HE-4,PAR,SIG)
+EN-SEC     (E-MIN,A)   Min energy of alpha particles registration
+MONITOR    ((MONIT)13-AL-27(N,A)11-NA-24,,SIG)
+MONIT-REF  (,K.SHIBATA+,J,NST,39,1125,2002) For monit1
+SAMPLE     .Metal circular foil of aluminium, thickness 50
+            micrometers, 2.17 cm in diameter
+ANALYSIS   (INTAD)
+COMMENT    *By  authors*.A total cross section was obtained by
+            fitting ADX with Legendre polynomial series and
+            integrating it over angle.
+STATUS     (DEP,22949003)
+           .Table 4 in text
+ENDBIB              12
+NOCOMMON             0          0
+DATA                 4          1
+E-MIN      DATA       ERR-T      MONIT
+MEV        MB         MB         MB
+      2.5        134.5        5.5       122.
+ENDDATA              3
+ENDSUBENT           20
+SUBENT        22949005   20070219   20070521   20070506       2184
+BIB                  6          8
+REACTION   (1-H-1(N,EL)1-H-1,PAR,DA)
+EN-SEC     (E-MIN,P)   Min energy of proton registration
+SAMPLE     .Polyethylene film, thickness 4.6-mg/cm**2 = 50
+            micrometers, 2.51 cm in diameter
+COMMENT    *By authors* the cross section of the Al-27(N,a)
+            reaction was used for the standard cross section.
+STATUS     (TABLE) From authors via N.Ohtsuka
+ERR-ANALYS (DATA-ERR) Statistical and systematic error
+ENDBIB               8
+COMMON               1          3
+E-MIN
+MEV
+     0.7
+ENDCOMMON            3
+DATA                 3          4
+COS        DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ -0.755         55.4         1.50
+ -0.485         54.9         1.54
+ -0.208         53.7         1.47
+  0.122         53.0         1.45
+ENDDATA              6
+ENDSUBENT           23
+ENDENTRY             5

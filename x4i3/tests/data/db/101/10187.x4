@@ -1,0 +1,81 @@
+ENTRY            10187   20010214   20010404   20050926       0000
+SUBENT        10187001   20010214   20010404   20050926       0000
+BIB                 15         46
+INSTITUTE  (1USAMHG,1USAPTN,1USASTF)
+REFERENCE  (J,NP/B,30,77,197107)
+AUTHOR     (B.G.GIBBARD,M.J.LONGO,L.W.JONES,J.R.FALLON,
+            M.N.KREISLER,M.L.PERL)
+TITLE      Neutron-proton elastic scattering from 5 to 30 GeV/c
+FACILITY   (SYNCH,1USABNL) Brookhaven AGS.
+INC-SOURCE (P-BE) 29.4 GeV/c protons incident on beryllium target.
+SAMPLE     Liquid hydrogen target flask was made of .025 cm mylar,
+            length = 30.5 cm, dia.= 6.35 cm.
+METHOD     Angles of the proton and neutron and proton momentum
+            were measured and used as inputs for a fitting
+            program, which included error estimates on the
+            measured quantities.
+DETECTOR   (TRD) Scattered neutrons were detected in a thick
+            plate spark-chamber array while the recoil protons
+            were detected and momentum analyzed in a magnetic
+            spectrometer with thin foil spark chambers.
+           Neutron beam was 15 mrad with respect to primary proton
+            beam. The distance from the internal Be target to
+            liquid hydrogen sample was 49.2 m. The defining
+            collimator was 2.54 cm in diameter and was located
+            34.7 m from internal Be target.
+PART-DET   (N,P) Both scattered neutrons and recoil protons were
+            detected
+MONITOR    (1-H-1(N,TOT),,SIG)
+           Normalized by fitting
+            to the zero degree point determined from the optical
+            theorem and existing data on the real part of the
+            forward scattering amplitude. The value of the total
+            neutron-proton cross section used was 38 mb. A linear
+            variation was assumed in the ratio of the real to the
+            imaginary part of the scattering amplitude, with
+            a value -0.33 near 20 GeV/c and -.45 near 5 GeV/c.
+CORRECTION Corrections were made for proton energy loss as it
+            passed through sample, for inelastics, and for target-
+            empty events.
+ERR-ANALYS (DATA-ERR) A Monte Carlo study indicated that the
+            uncertainty in the momentum transfer was essentially
+            independent of the momentum transfer and of the
+            incident momentum, remaining constant at +/- 0.017
+            (GeV/c)**2.
+STATUS     (APRVD) Approved by author
+           Data received from M. Perl, 14 August 1973.
+HISTORY    (19730502C)
+           (19820916A) Converted to REACTION formalism
+           (20010214A) Converted to new date formats, lower case.
+ENDBIB              46
+NOCOMMON             0          0
+ENDSUBENT           49
+SUBENT        10187002   20010214   20010404   20050926       0000
+BIB                  2          2
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+HISTORY    (19820901A) SUBENTRIES 2-7 COMBINED.
+ENDBIB               2
+NOCOMMON             0          0
+DATA                 5         12
+EN         EN-ERR     ANG-CM     DATA-CM    DATA-ERR
+GEV        GEV        ADEG       MB/SR      MB/SR
+6.5        2.0        13.7       26.09      0.78
+6.5        2.0        15.5       18.30      0.58
+6.5        2.0        17.2       12.17      0.49
+6.5        2.0        18.7       9.73       0.45
+6.5        2.0        20.1       6.76       0.39
+6.5        2.0        21.4       4.38       0.32
+6.5        2.0        22.7       3.05       0.33
+6.5        2.0        24.2       3.09       0.27
+6.5        2.0        26.6       1.37       0.20
+6.5        2.0        28.5       0.91       0.17
+6.5        2.0        30.6       0.50       0.13
+6.5        2.0        32.1       0.25       0.08
+ENDDATA             14
+ENDSUBENT           21
+NOSUBENT      10187003     820916              20050926       0000
+NOSUBENT      10187004     820916              20050926       0000
+NOSUBENT      10187005     820916              20050926       0000
+NOSUBENT      10187006     820916              20050926       0000
+NOSUBENT      10187007     820916              20050926       0000
+ENDENTRY             7

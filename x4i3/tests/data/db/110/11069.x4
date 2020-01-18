@@ -1,0 +1,64 @@
+ENTRY            11069     830909   20050616   20050926       0000
+SUBENT        11069001     830909   20050616   20050926       0000
+BIB                  7          9
+INSTITUTE  (1USAHRV)
+REFERENCE  (J,PR,92,724,5311)
+AUTHOR     (W.SELOVE,K.STRAUCH,F.TITUS)
+TITLE      NEUTRON-PROTON SCATTERING NEAR 180 DEGREES AT 93 MEV.
+DETECTOR   (TELES)
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+           (830817A) BIB CORRECTIONS. MONIT ADDED TO DATA.
+ENDBIB               9
+NOCOMMON             0          0
+ENDSUBENT           12
+SUBENT        11069002     830909   20050616   20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-0(N,TOT),,SIG)
+            RENORMALIZATION BY HESS,REV.MOD.PHYS.30,368(1958)
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               4
+COMMON               3          3
+EN         EN-RSL     MONIT
+MEV        MEV        MB
+ 9.3    +01 1.7    +01 78.3
+ENDCOMMON            3
+DATA                 3          6
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+-0.9092     9.83   +00   27.
+-0.9478     1.108  +01   28.
+-0.9763     1.232  +01   30.
+-0.9890     1.289  +01   31.
+-0.9968     1.312  +01   32.
+-0.9990     1.330  +01   34.
+ENDDATA              8
+ENDSUBENT           21
+SUBENT        11069003     830909   20050616   20050926       0000
+BIB                  4          6
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (OUTDT,11069002)
+MONITOR    (1-H-0(N,TOT),,SIG)
+            NORMALIZED TO SMOOTH CURVE BY HADLEY,PHYS.
+            REV.75,351(1949).
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               6
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 9.3    +01 1.7    +01
+ENDCOMMON            3
+DATA                 3          6
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+-0.9092     9.53   +00   26.
+-0.9478     1.075  +01   27.
+-0.9763     1.196  +01   29.
+-0.9890     1.250  +01   30.
+-0.9968     1.273  +01   31.
+-0.9990     1.290  +01   33.
+ENDDATA              8
+ENDSUBENT           23
+ENDENTRY             3

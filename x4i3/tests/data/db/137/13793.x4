@@ -1,0 +1,36 @@
+ENTRY            13793   20021202   20030219   20050926       0000
+SUBENT        13793001   20021202   20030219   20050926       0000
+BIB                 12         14
+INSTITUTE  (1USADAV)
+REFERENCE  (C,85SANTA,,959,198505)
+AUTHOR     (J.R.Drummond,F.P.Brady,J.L.Romero,T.D.Ford,
+           C.M.Castaneda,B.McEachern,M.A.Hamilton)
+TITLE      A measurement of the n-p 180/90 degree cross section
+            at 65 and 50 MeV.
+FACILITY   (ISOCY,1USADAV)
+INC-SOURCE (P-LI7)
+SAMPLE     CH2 and C targets mounted in air.
+METHOD     (BCINT)
+DETECTOR   (PSSCN) Position sensitive wire chambers.
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainty.
+STATUS     Data taken from paper.
+HISTORY    (20021202C)
+ENDBIB              14
+COMMON               2          3
+EN-RSL-FW  EN-ERR
+MEV        KEV
+  1.       300.
+ENDCOMMON            3
+ENDSUBENT           21
+SUBENT        13793002   20030103   20030219   20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,RSD)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 4          1
+EN         ANG        DATA       DATA-ERR
+MEV        ADEG       NO-DIM     PER-CENT
+ 65.       180.         1.76       7.
+ENDDATA              3
+ENDSUBENT            9
+ENDENTRY             2

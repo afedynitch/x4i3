@@ -1,0 +1,130 @@
+ENTRY            10316   20020823   20020925   20050926       0000
+SUBENT        10316001   20020823   20020925   20050926       0000
+BIB                 15         36
+INSTITUTE  (1USAWIS)
+REFERENCE  (J,PR/C,7,1306,197304)
+           (T,BURROWS,1972)
+AUTHOR     (T.W.Burrows)
+TITLE      Angular Distribution of 24.0- and 27.2 MeV Neutrons
+            Scattered by Protons
+INC-SOURCE (D-T) 3H(d,n)4He reaction. Gas cell target containing
+            1.0 atm. of tritium behind a molybdenum foil.
+INC-SPECT  Total neutron energy spread (FWHM) caused by:
+            . spreading of deuteron beam due to energy straggling
+              in slits, entrance foil, and gas,
+            . angle subtended by the radiator.
+SAMPLE     Polyethylene foils, 22.6 and 67.8 mg/cm**2 thick with
+            a hydrogen to carbon ratio of 1.98+-0.01 mounted on
+            0.25 mm. thick platinum sheet.
+METHOD     Relationship derived by Nakamura was used to obtain
+            the mean laboratory recoil angle.
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG) Data normalized to total cross
+            section calculated by Hopkins and Breit.
+MONIT-REF  (,HOPKINS+,J,ND/A,9,137,1971)
+CORRECTION Corrected for attenuation of neutrons by inelastic
+            processes in the platinum backing and windows (0.7%
+            in the ratio of the cross section at 158 degrees
+            relative to 71.3 degrees).
+           No corrections made for dead-time effects, or Coulomb
+            scattering inelastic scattering in the detectors,
+            since these corrections were very small.
+ERR-ANALYS (DATA-ERR) Uncertainties include uncertainties in
+            areal densities and compositions, statistics, and
+            normalization.
+REL-REF    (R,,NAKAMURA,J,JPJ,15,1359,1960)
+STATUS     (APRVD) Approved by T.W.Burrows, 79/7/18.
+HISTORY    (19730629C) AP
+           (19790607A) BIB corrections and additions. Converted
+            to REACTION formalism.
+           (20020823A) Updated to new date formats, lower case.
+ENDBIB              36
+NOCOMMON             0          0
+ENDSUBENT           39
+SUBENT        10316002   20020823   20020925   20050926       0000
+BIB                  4          8
+REACTION  1(1-H-1(N,EL)1-H-1,,DA,,REL)
+          2(1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TELES,SOLST,SCIN) Counter telescope containing silicon
+            surface-barrier transmission detector and NE-102
+            scintillator energy detector thick enough to stop
+            30 MeV protons coupled to an RCA-8575 phototube.
+STATUS     Data taken from Tablr II in main reference.
+HISTORY    (19790712A) Subentries 2, 4 combined. Data modified.
+ENDBIB               8
+COMMON               1          3
+ANG-NRM
+ADEG
+ 158.
+ENDCOMMON            3
+DATA                 7          9
+EN         EN-RSL     ANG-CM     DATA      1DATA-ERR  1DATA      2
+DATA-ERR  2
+MEV        KEV        ADEG       NO-DIM     NO-DIM     MB/SR
+MB/SR
+ 24.0       80.        71.3       0.88       0.02       30.4
+ 0.7
+ 24.0       80.        88.7       0.91       0.02       31.4
+ 0.8
+ 24.0       80.       103.0       0.90       0.03       31.0
+ 1.2
+ 24.0       80.       157.9       1.00       0.01       34.4
+ 0.7
+ 27.2       90.        71.3       0.85       0.02       26.1
+ 0.7
+ 27.2       90.        88.6       0.86       0.01       26.6
+ 0.4
+ 27.2       90.       111.4       0.89       0.04       27.4
+ 1.3
+ 27.2       90.       117.0       0.92       0.03       28.3
+ 1.0
+ 27.2       90.       157.8       1.00       0.01       30.8
+ 0.5
+ENDDATA             22
+ENDSUBENT           39
+SUBENT        10316003   20020823   20020925   20050926       0000
+BIB                  3          3
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,LEG/REL)Relative to 158 degrees.
+STATUS     (DEP,10316002)
+HISTORY    (19790712A) Relative coefficients coded.
+ENDBIB               3
+NOCOMMON             0          0
+DATA                 5          6
+EN         EN-RSL     NUMBER     DATA       DATA-ERR
+MEV        KEV        NO-DIM     NO-DIM     NO-DIM
+24.0        80.       0.          0.92       0.02
+24.0        80.       1.         -0.06       0.04
+24.0        80.       2.          0.03       0.03
+27.2        90.       0.          0.889      0.005
+27.2        90.       1.         -0.08       0.01
+27.2        90.       2.          0.05       0.01
+ENDDATA              8
+ENDSUBENT           16
+NOSUBENT      10316004     790521              20050926       0000
+SUBENT        10316005   20020823   20020925   20050926       0000
+BIB                  4          6
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TELES,SOLST,SCIN) Counter telescope consisting of two
+            silicon surface-barrier detectors and a Cs-I
+            scintillator energy detector.
+STATUS     Data taken from thesis
+HISTORY    (19790712C)
+ENDBIB               6
+NOCOMMON             0          0
+DATA                 5         12
+EN         EN-RSL     ANG-CM     DATA-CM    DATA-ERR
+MEV        KEV        ADEG       MB/SR      MB/SR
+ 23.8       90.        88.7       31.        7.
+ 23.8       90.       117.        33.        7.
+ 23.8       90.       144.        37.        8.
+ 23.8       90.       160.        35.        8.
+ 26.0       60.        88.7       28.        2.
+ 26.0       60.       117.        28.        2.
+ 26.0       60.       145.        31.        2.
+ 26.0       60.       161.        34.        2.
+ 29.2       70.        88.7       23.        2.
+ 29.2       70.       117.        25.        2.
+ 29.2       70.       145.        29.        2.
+ 29.2       70.       161.        29.        2.
+ENDDATA             14
+ENDSUBENT           25
+ENDENTRY             5

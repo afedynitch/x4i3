@@ -42,7 +42,7 @@ from .exfor_particle import (
     X4Isomer,
     X4ChemicalCompound,
     X4VariableParticle)
-import pyparsing
+from .pyparsing import ParseResults, ParseException
 
 # ------------------------------------------------------
 # Global data
@@ -72,9 +72,9 @@ class X4Process:
     def __init__(self, xl, IgnoreIsomerMath=False):
         if isinstance(xl, str):
             xl = self.parse(xl)
-        if not isinstance(xl, pyparsing.ParseResults):
+        if not isinstance(xl, ParseResults):
             raise TypeError(
-                "__init__ takes pyparsing.ParseResults as argument, got " + str(type(xl)))
+                "__init__ takes ParseResults as argument, got " + str(type(xl)))
         self.parse_results = xl
         self.IgnoreIsomerMath = IgnoreIsomerMath
         self.targ = self.setParticleType(xl[0])
@@ -100,7 +100,7 @@ class X4Process:
     def parse(self, x):
         try:
             return x4process.parseString(x)
-        except pyparsing.ParseException as err:
+        except ParseException as err:
             raise ReactionParsingError(
                 'Can not parse process "' +
                 x +
@@ -110,7 +110,7 @@ class X4Process:
 
     def setParticleType(self, i):
         """Figures out what a particle i corresponds to, then creates it"""
-        if isinstance(i, pyparsing.ParseResults):
+        if isinstance(i, ParseResults):
             il = i.asList()
         elif isinstance(i, list):
             il = i
@@ -223,7 +223,7 @@ class X4Reaction(X4Process, X4Measurement):
     def parse(self, x):
         try:
             return x4reaction.parseString(x)
-        except pyparsing.ParseException as err:
+        except ParseException as err:
             if "/" in x or "+" in x or "//" in x:
                 raise IsomerMathParsingError(
                     'Reaction ' + x + ' looks like it contains "isomer math"')
@@ -272,7 +272,7 @@ class X4ReactionCombination(X4Measurement):
     def parse(self, x):
         try:
             return x4compound_expression.parseString(x)
-        except pyparsing.ParseException as err:
+        except ParseException as err:
             raise ReactionParsingError(
                 'Can not parse compound reaction expression "' +
                 x +

@@ -1,0 +1,31 @@
+ENTRY            13795   20020724   20020925   20050926       0000
+SUBENT        13795001   20020724   20020925   20050926       0000
+BIB                  9          9
+INSTITUTE  (1USALAS)
+REFERENCE  (P,ERDA-NDC-3,101,197605)
+AUTHOR     (M.DROSG)
+TITLE      180 degree n-p cross sections near 25 MeV.
+METHOD     (TOF)
+DETECTOR   (TELES) Proton recoil counter telescope.
+ERR-ANALYS (DATA-ERR) Absolute uncertainties given.
+STATUS     Data taken from reference.
+HISTORY    (20020624C) IS
+ENDBIB               9
+COMMON               1          3
+ANG-CM
+ADEG
+ 180.
+ENDCOMMON            3
+ENDSUBENT           16
+SUBENT        13795002   20020724   20020925   20050926       0000
+BIB                  1          1
+REACTION   ((1-H-1(N,EL)1-H-1,,DA)//(1-H-1(N,EL)1-H-1,,DA))
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 4          1
+EN-NM      EN-DN      DATA       DATA-ERR
+MEV        MEV        NO-DIM     NO-DIM
+ 11.2       25.3       2.22       0.06
+ENDDATA              3
+ENDSUBENT            9
+ENDENTRY             2

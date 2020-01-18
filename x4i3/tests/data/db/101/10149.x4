@@ -1,0 +1,67 @@
+ENTRY            10149   20001211   20010328   20050926       0000
+SUBENT        10149001   20001211   20010328   20050926       0000
+BIB                 16         33
+INSTITUTE  (1USAHRV,1USAOBR)
+REFERENCE  (J,PR/C,3,144,197101)
+AUTHOR     (J.N.PALMIERI,J.P.WOLFE)
+TITLE      Neutron-Proton Scattering at 152 MeV
+FACILITY   (SYNCY,1USAHRV) Harvard proton synchrocyclotron.
+INC-SPECT  Determined energy of 155.1 MeV at peak of neutron beam
+            spectrum. Average energy of included counts given.
+SAMPLE     Liquid hydrogen target in vertical cylinder container,
+            2 in diameter by 5 in long with 002-in Kapton poly-
+            imide film walls.
+DETECTOR   (TELES) Counter telescope, consisting of four plastic
+            scintillators plus a NaI crystal. One plastic
+            scintillator in anticoincidence mode.
+           (IOCH) Ionization chamber for neutron beam monitoring.
+PART-DET   (P) Protons.
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG)
+MONIT-REF  (11123001,D.F.MEASDAY+,J,PR,142,584,1966)
+MISC-COL   Laboratory telescope angle.
+CORRECTION Correction for -                   at telescope angle
+                   (in percent)                 5 degr. 50 degr.
+             --------------------------------   ------- --------
+           . reactions in NaI detector              23.     2.
+           . scattering in target and telescope      2.5    8.
+           . low-energy cut-off of telescope                6.+-2.
+ERR-ANALYS (DATA-ERR) Errors include statistical errors and
+            contributions of 0.5% each(added quadratically) due
+            to alignment, monitoring, and telescope NaI
+            corrections.
+STATUS     (APRVD) Approved by author.
+            Data taken from Table II in reference.
+HISTORY    (19711215C)
+           (19820527A) Converted to REACTION formalism
+           (20001211A) Converted to new date formats, lower case.
+ENDBIB              33
+COMMON               2          3
+EN         EN-ERR
+MEV        MEV
+ 152.       1.
+ENDCOMMON            3
+ENDSUBENT           40
+SUBENT        10149002   20001211   20010328   20050926       0000
+BIB                  1          1
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ENDBIB               1
+NOCOMMON             0          0
+DATA                 4         13
+ANG-CM     DATA       DATA-ERR   MISC
+ADEG       MB/SR      MB/SR      ADEG
+  77.8       2.45      .07        50.0
+  87.7       2.47      .05        45.0
+  97.8       2.82      .07        40.0
+ 107.8       3.43      .08        35.0
+ 118.0       4.20      .07        30.0
+ 128.2       5.01      .08        25.0
+ 138.5       6.18      .09        20.0
+ 148.9       6.93      .11        15.0
+ 154.1       7.57      .11        12.56
+ 159.1       8.70      .12        10.07
+ 164.2       9.67      .14         7.60
+ 166.3      10.06      .10         6.61
+ 169.3      10.98      .22         5.15
+ENDDATA             15
+ENDSUBENT           21
+ENDENTRY             2

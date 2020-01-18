@@ -1,0 +1,60 @@
+ENTRY            11072     830909   20050616   20050926       0000
+SUBENT        11072001     830909   20050616   20050926       0000
+BIB                  7          9
+INSTITUTE  (1USABRK)
+REFERENCE  (J,PR,94,208,5404)
+AUTHOR     (O.CHAMBERLAIN,J.W.EASLEY)
+TITLE      SMALL-ANGLE SCATTERING AT 90 MEV.
+DETECTOR   (TELES)
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (820106A) CONVERTED TO REACTION FORMALISM
+           (830817A) BIB, DATA HEADING CORRECTIONS.
+ENDBIB               9
+NOCOMMON             0          0
+ENDSUBENT           12
+SUBENT        11072002     830909   20050616   20050926       0000
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-1(N,TOT),,SIG)
+            RENORMALIZED BY HESS,REV.MOD.PHYS.30,368(1958)
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               4
+COMMON               3          3
+EN         EN-RSL     MONIT
+MEV        MEV        MB
+ 9.0    +01 2.0    +01 78.3
+ENDCOMMON            3
+DATA                 3          4
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.99600    1.33   +01   12.
+ 0.98400    1.24   +01    7.
+ 0.93500    1.06   +01    6.
+ 0.80900    7.8    +00    4.
+ENDDATA              6
+ENDSUBENT           19
+SUBENT        11072003     830909   20050616   20050926       0000
+BIB                  4          6
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+STATUS     (OUTDT,11072002)
+MONITOR    (1-H-1(N,TOT),,SIG)
+            NORMALIZED AT 36DEG TO HADLEY,PHYS.REV.75,
+            351(1959).
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               6
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 9.0    +01 2.0    +01
+ENDCOMMON            3
+DATA                 3          4
+COS-CM     DATA-CM    DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.99600    1.29   +01   12.
+ 0.98400    1.20   +01    7.
+ 0.93500    1.03   +01    6.
+ 0.80900    7.6    +00    4.
+ENDDATA              6
+ENDSUBENT           21
+ENDENTRY             3

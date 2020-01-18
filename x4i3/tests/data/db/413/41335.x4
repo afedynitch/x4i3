@@ -1,0 +1,80 @@
+ENTRY            41335   20130118   20130502   20130410       4159
+SUBENT        41335001   20130118   20130502   20130410       4159
+BIB                 11         19
+TITLE      .Radiative capture of neutrons by U-238 in the energy
+            range 0.024 - 1.1 MeV
+AUTHOR     (Yu.G.Panitkin,Yu.Ya.Stavisskiy,V.A.Tolstikov)
+INSTITUTE  (4RUSFEI)
+REFERENCE  (C,71KIEV,1,321,197105)  Main reference, data are giveN
+FACILITY   (VDG,4RUSFEI)
+INC-SOURCE (P-T)
+           (P-LI7)
+METHOD     (ACTIV)  Activation
+DETECTOR   (GELI)  For gamma detection
+           (FISCH) For U-235 fission fragments detection .
+           Spectrometer resolution for 80 keV gamma-energy is
+           about 2 keV.
+PART-DET   (G,FF)
+ERR-ANALYS (DATA-ERR)  Errors are not specified
+HISTORY    (19981027C)
+           (20130118A) M.M. Upper -> lower case correction.
+           BIB information was updated.
+           Subent 002 was corrected.
+ENDBIB              19
+NOCOMMON             0          0
+ENDSUBENT           22
+SUBENT        41335002   20130118   20130502   20130410       4159
+BIB                  8         20
+REACTION   (92-U-238(N,G)92-U-239,,SIG)
+DECAY-DATA (92-U-239,,DG,74.) After b- decay of U-239 in Np-239.
+MONITOR    ((MONIT1)92-U-235(N,F),,SIG)  Used for c-s trend.
+           ((MONIT2)92-U-238(N,G)92-U-239,,SIG)
+           Used at point 24.4 keV.
+MONIT-REF  (20362002,H.O.Menlove+,J,NSE,33,24,1968) For MONIT2.
+           (,W.Hart,C,68DUBNA,,1968) For MONIT1.
+           Paper UK10 UK-USSR Seminar, June, 1968.
+           Evaluated fission cross sections in the energy range
+           1 keV to 15 MeV.
+CORRECTION -For target scattered neutrons - 2.% in 0.024-0.145 MeV
+           energy range, less 1.% in 0.45 -1.1 MeV.
+           -For background of neutrons scattered in accelerator
+           chamber  < 0.1%.
+           -For neutron beam fluctuations < 0.5%.
+STATUS     (TABLE)  Data are taken from C,71KIEV,1,321,1971
+ERR-ANALYS (DATA-ERR) Errors of MONIT1 (U-235 c-s) and MONIT2
+           were not included.
+HISTORY    (19981027T)   Converted from SUBENT 88035002
+           (20130118A) M.M.  Duplicative line was deleted.
+ENDBIB              20
+COMMON               4          3
+E-NRM      E-RSL      EN-NRM     MONIT2
+KEV        KEV        KEV        MB
+  74.       2.         24.4       516.
+ENDCOMMON            3
+DATA                 5         21
+EN         EN-RSL     DATA       DATA-ERR   MONIT1
+KEV        KEV        MB         MB         B
+ 2.4000E+01 8.0000E+00 5.1600E+02 1.0000E+01 2.45
+ 3.5000E+01 8.0000E+00 4.3900E+02 1.2000E+01 2.19
+ 4.5000E+01 8.5000E+00 3.8200E+02 5.0000E+00 2.00
+ 5.5000E+01 9.0000E+00 3.6600E+02 8.0000E+00 1.90
+ 6.5000E+01 1.0000E+01 3.1000E+02 4.0000E+00 1.82
+ 7.5000E+01 1.0500E+01 2.8400E+02 2.0000E+00 1.76
+ 8.5000E+01 1.1000E+01 2.4800E+02 4.0000E+00 1.70
+ 1.0500E+02 1.1500E+01 2.1100E+02 2.0000E+00 1.62
+ 1.2500E+02 1.2500E+01 1.8600E+02 2.0000E+00 1.56
+ 1.4500E+02 1.3500E+01 1.7000E+02 3.0000E+00 1.51
+ 2.0000E+02 1.8000E+01 1.5000E+02 3.0000E+00 1.42
+ 2.5000E+02 1.9000E+01 1.3600E+02 3.0000E+00 1.35
+ 3.0000E+02 1.9000E+01 1.2600E+02 3.0000E+00 1.30
+ 4.0000E+02 1.9500E+01 1.1700E+02 3.0000E+00 1.23
+ 5.0000E+02 2.2000E+01 1.1200E+02 3.0000E+00 1.16
+ 6.0000E+02 3.4000E+01 1.1200E+02 2.0000E+00 1.14
+ 7.0000E+02 3.5000E+01 1.1700E+02 2.0000E+00 1.14
+ 8.0000E+02 3.6000E+01 1.1900E+02 2.0000E+00 1.16
+ 9.0000E+02 3.6000E+01 1.1900E+02 2.0000E+00 1.18
+ 1.0000E+03 3.9000E+01 1.1200E+02 3.0000E+00 1.21
+ 1.1000E+03 4.1000E+01 1.0900E+02 3.0000E+00 1.23
+ENDDATA             23
+ENDSUBENT           52
+ENDENTRY             2

@@ -1,0 +1,1138 @@
+ENTRY            E1772   20050224              20050926       0000
+SUBENT        E1772001   20050224              20050926       0000
+BIB                  9         24
+TITLE      Complete set of precise deuteron analyzing powers at
+           intermediate energies: Comparison with modern nuclear
+           force predictions
+AUTHOR     (K.Sekiguchi, H.Sakai, H.Witala, W.Glockle, J.Golak,
+           M.Hatano, H.Kamada, H.Kato, Y.Maeda, J.Nishikawa,
+           A.Nogga, T.Ohnishi, H.Okamura, N.Sakamoto, S.Sakoda,
+           Y.Satou, K.Suda, A.Tamii, T.Uesaka, T.Wakasa, K.Yako)
+INSTITUTE  (2JPNTOK) Department of Physics
+           (2JPNIPC)
+           (3POLUJK) Institute of Physics
+           (2GERBOC) Institut fur Theoretische Physik II
+           (2JPNSUU) Department of Physics
+           (2JPNOSA) Research Center for Nuclear Physics
+REFERENCE  (J,PR/C,65,(3),034003,200203)
+PART-DET   (P)
+INC-SOURCE Beam intensity is 0.1 to 10 nA.
+           (POLIS) POL-BM: (Pz,Pzz) = (0,0), (0,-2), (-2/3,0),
+                   and (1/3,1)
+SAMPLE     - Chemical-form of target is CH2.
+           - Physical-form of target is solid.
+           - Backing is unknown.
+FACILITY   (ISOCY,2JPNIPC) AVF and Ring cyclotrons
+HISTORY    (20030312C)
+           (20041125A) INSTITUTE and REFERENCE corrected
+ENDBIB              24
+COMMON               3          3
+POL-BM     POL-BM-ERR ERR-S
+NO-DIM     NO-DIM     PER-CENT
+ 0.7        0.1        1.3
+ENDCOMMON            3
+ENDSUBENT           31
+SUBENT        E1772002   20030627   20030925   20050926       0000
+BIB                  7         11
+REACTION   (1-H-1(D,EL)1-H-1,,DA)
+PART-DET   (P)
+EN-SEC     ANG-CM is polar angle between beam and proton
+SAMPLE     Target-thickness is 29.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+STATUS     (TABLE)Data taken from Table I, p034003-6 in reference
+HISTORY    (20030627A)Data table is corrected.
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         51
+ANG-CM     DATA       ERR-S
+ADEG       MB/SR      MB/SR
+ 13.7       26.175     0.057
+ 16.8       27.313     0.058
+ 22.4       25.95      0.061
+ 28.6       20.752     0.049
+ 33.9       17.247     0.041
+ 37.1       14.537     0.039
+ 38.7       13.15      0.038
+ 40.3       12.345     0.039
+ 41.9       11.446     0.037
+ 44.5       9.352      0.017
+ 47.8       8.133      0.017
+ 51.2       6.744      0.014
+ 55.9       4.87       0.01
+ 62.2       3.805      0.01
+ 63.3       3.58       0.013
+ 68.7       2.685      0.012
+ 72.1       2.394      0.007
+ 83.6       1.619      0.006
+ 86.7       1.398      0.004
+ 91.0       1.303      0.009
+ 91.6       1.276      0.004
+ 96.0       1.17       0.006
+ 100.8      1.059      0.008
+ 103.6      1.024      0.004
+ 107.0      0.99       0.004
+ 109.9      0.95       0.003
+ 113.9      0.911      0.004
+ 119.8      0.854      0.004
+ 121.8      0.846      0.004
+ 124.1      0.826      0.004
+ 126.1      0.824      0.004
+ 128.2      0.821      0.004
+ 133.7      0.838      0.003
+ 135.7      0.85       0.003
+ 138.4      0.882      0.004
+ 140.4      0.928      0.004
+ 142.5      1.022      0.004
+ 145.6      1.19       0.004
+ 148.0      1.463      0.005
+ 150.5      1.765      0.005
+ 153.4      2.204      0.009
+ 155.9      2.713      0.009
+ 158.3      3.236      0.01
+ 160.6      3.601      0.017
+ 163.1      4.345      0.016
+ 166.0      5.266      0.017
+ 168.8      5.996      0.018
+ 171.7      6.622      0.019
+ 174.8      7.149      0.032
+ 176.9      7.347      0.032
+ 179.0      7.637      0.038
+ENDDATA             53
+ENDSUBENT           73
+SUBENT        E1772003   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,,DA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 270mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table II, p034003-6 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         10
+ANG-CM     DATA       ERR-S
+ADEG       MB/SR      MB/SR
+ 57.0       1.088      0.012
+ 66.8       0.766      0.006
+ 76.6       0.541      0.004
+ 86.5       0.401      0.003
+ 90.0       0.357      0.003
+ 96.6       0.288      0.005
+ 106.7      0.24       0.003
+ 116.9      0.228      0.004
+ 127.3      0.227      0.002
+ 137.8      0.233      0.003
+ENDDATA             12
+ENDSUBENT           31
+SUBENT        E1772004   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,,DA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 46.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table III, p034003-7 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         48
+ANG-CM     DATA       ERR-S
+ADEG       MB/SR      MB/SR
+ 9.6        12.818     0.067
+ 11.4       13.494     0.069
+ 18.9       11.95      0.066
+ 20.7       10.683     0.062
+ 22.0       9.877      0.024
+ 25.1       8.187      0.022
+ 28.2       6.515      0.02
+ 31.4       5.128      0.018
+ 35.2       4.14       0.014
+ 38.4       3.202      0.012
+ 41.6       2.582      0.011
+ 44.2       2.13       0.007
+ 47.4       1.86       0.006
+ 50.7       1.584      0.006
+ 55.4       1.202      0.005
+ 57.4       1.046      0.004
+ 60.9       0.947      0.003
+ 62.2       0.893      0.003
+ 76.8       0.522      0.006
+ 91.5       0.348      0.003
+ 107.3      0.236      0.003
+ 119.2      0.216      0.002
+ 124.7      0.219      0.001
+ 126.8      0.221      0.001
+ 128.9      0.22       0.001
+ 131.4      0.225      0.001
+ 133.4      0.229      0.001
+ 136.4      0.233      0.002
+ 140.5      0.252      0.002
+ 142.6      0.27       0.002
+ 145.6      0.287      0.002
+ 147.7      0.305      0.002
+ 149.8      0.331      0.002
+ 151.4      0.358      0.003
+ 153.6      0.386      0.003
+ 155.7      0.432      0.003
+ 157.8      0.49       0.003
+ 158.2      0.507      0.004
+ 160.3      0.559      0.004
+ 162.4      0.653      0.004
+ 164.5      0.744      0.004
+ 166.6      0.851      0.005
+ 168.8      0.92       0.005
+ 170.9      0.989      0.005
+ 173.0      1.032      0.005
+ 174.7      1.06       0.007
+ 176.8      1.1        0.005
+ 179.5      1.115      0.014
+ENDDATA             50
+ENDSUBENT           70
+SUBENT        E1772005   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 29.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table IV, p034003-9 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         41
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 13.7       0.112      0.007
+ 16.8       0.124      0.007
+ 22.4       0.137      0.008
+ 28.6       0.175      0.008
+ 33.9       0.168      0.007
+ 37.1       0.171      0.008
+ 38.7       0.175      0.009
+ 40.3       0.173      0.009
+ 41.9       0.181      0.009
+ 44.5       0.177      0.005
+ 47.8       0.168      0.006
+ 51.2       0.151      0.006
+ 55.9       0.111      0.006
+ 59.4       0.074      0.006
+ 59.7       0.065      0.009
+ 63.3       -0.013     0.009
+ 72.1       -0.125     0.007
+ 121.8      -0.299     0.01
+ 124.1      -0.299     0.019
+ 126.1      -0.226     0.017
+ 128.2      -0.195     0.018
+ 130.2      -0.148     0.018
+ 133.7      -0.066     0.013
+ 135.7      0.039      0.012
+ 138.4      0.142      0.011
+ 140.4      0.172      0.009
+ 142.5      0.217      0.009
+ 145.6      0.226      0.008
+ 148.0      0.243      0.007
+ 150.5      0.243      0.007
+ 153.4      0.234      0.008
+ 155.9      0.206      0.008
+ 158.3      0.193      0.007
+ 160.2      0.181      0.009
+ 163.1      0.135      0.009
+ 166.0      0.112      0.008
+ 168.8      0.089      0.008
+ 172.8      0.036      0.019
+ 174.8      0.047      0.015
+ 176.9      0.02       0.015
+ 179.0      0.004      0.017
+ENDDATA             43
+ENDSUBENT           63
+SUBENT        E1772006   20030606   20030610   20050926       0000
+BIB                  6         12
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+           DATA: Ayy
+PART-DET   (P)
+SAMPLE     Target-thickness is 29.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table IV, p034003-9 in
+                  reference
+ENDBIB              12
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         41
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 13.7       0.045      0.003
+ 16.8       0.043      0.003
+ 22.4       0.027      0.003
+ 28.6       0.053      0.003
+ 33.9       0.049      0.002
+ 37.1       0.064      0.003
+ 38.7       0.062      0.003
+ 40.3       0.077      0.003
+ 41.9       0.073      0.003
+ 44.5       0.074      0.002
+ 47.8       0.074      0.002
+ 51.2       0.08       0.002
+ 55.9       0.102      0.002
+ 59.4       0.104      0.002
+ 59.7       0.106      0.003
+ 63.3       0.113      0.003
+ 72.1       0.141      0.002
+ 121.8      0.601      0.002
+ 124.1      0.595      0.004
+ 126.1      0.596      0.004
+ 128.2      0.577      0.004
+ 130.2      0.568      0.004
+ 133.7      0.548      0.003
+ 135.7      0.493      0.003
+ 138.4      0.471      0.003
+ 140.4      0.416      0.002
+ 142.5      0.41       0.002
+ 145.6      0.315      0.003
+ 148.0      0.284      0.003
+ 150.5      0.246      0.003
+ 153.4      0.201      0.003
+ 155.9      0.168      0.003
+ 158.3      0.152      0.003
+ 160.2      0.134      0.016
+ 163.1      0.122      0.018
+ 166.0      0.108      0.003
+ 168.8      0.099      0.003
+ 172.8      0.094      0.013
+ 174.8      0.088      0.012
+ 176.9      0.083      0.011
+ 179.0      0.081      0.013
+ENDDATA             43
+ENDSUBENT           64
+SUBENT        E1772007   20030606   20030610   20050926       0000
+BIB                  6         12
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+           DATA: Axx
+PART-DET   (P)
+SAMPLE     Target-thickness is 29.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table IV, p034003-9 in
+                  reference
+ENDBIB              12
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         38
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 13.7       0.028      0.002
+ 16.8       0.021      0.002
+ 22.4       -0.032     0.002
+ 28.6       -0.054     0.003
+ 33.9       -0.093     0.003
+ 37.1       -0.107     0.003
+ 38.7       -0.118     0.003
+ 44.5       -0.117     0.003
+ 47.8       -0.154     0.003
+ 51.2       -0.166     0.004
+ 55.9       -0.174     0.003
+ 59.4       -0.206     0.003
+ 63.3       -0.213     0.017
+ 72.1       -0.223     0.005
+ 121.8      0.075      0.003
+ 124.1      0.062      0.004
+ 126.1      0.047      0.004
+ 128.2      -0.002     0.004
+ 130.2      -0.035     0.007
+ 133.7      -0.145     0.003
+ 135.7      -0.225     0.003
+ 138.4      -0.329     0.005
+ 140.4      -0.429     0.005
+ 142.5      -0.47      0.005
+ 145.6      -0.554     0.004
+ 148.0      -0.547     0.004
+ 150.5      -0.523     0.003
+ 153.4      -0.443     0.004
+ 155.9      -0.367     0.004
+ 158.3      -0.308     0.003
+ 160.2      -0.277     0.004
+ 163.1      -0.195     0.003
+ 166.0      -0.106     0.003
+ 168.8      -0.041     0.003
+ 172.8      0.037      0.006
+ 174.8      0.047      0.006
+ 176.9      0.074      0.005
+ 179.0      0.077      0.006
+ENDDATA             40
+ENDSUBENT           61
+SUBENT        E1772008   20030606   20030610   20050926       0000
+BIB                  6         12
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+           DATA: Axz
+PART-DET   (P)
+SAMPLE     Target-thickness is 29.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table IV, p034003-9 in
+                  reference
+ENDBIB              12
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         29
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 33.9       0.001      0.01
+ 37.1       0.02       0.01
+ 38.7       0.037      0.011
+ 44.5       0.058      0.011
+ 51.2       0.083      0.011
+ 55.9       0.125      0.01
+ 59.4       0.161      0.007
+ 63.3       0.19       0.007
+ 72.1       0.234      0.015
+ 121.8      0.207      0.013
+ 124.1      0.154      0.009
+ 126.1      0.132      0.012
+ 128.2      0.109      0.011
+ 130.2      0.091      0.012
+ 133.7      0.038      0.014
+ 135.7      0.026      0.014
+ 138.4      0.002      0.017
+ 140.4      0.019      0.018
+ 142.5      0.049      0.019
+ 145.6      0.17       0.018
+ 148.0      0.23       0.014
+ 150.5      0.274      0.017
+ 153.4      0.318      0.015
+ 155.9      0.349      0.014
+ 158.3      0.359      0.013
+ 160.2      0.368      0.013
+ 163.1      0.332      0.011
+ 166.0      0.297      0.01
+ 168.8      0.241      0.009
+ENDDATA             31
+ENDSUBENT           52
+SUBENT        E1772009   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table V, p034003-10 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         13
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 65.0       -0.018     0.002
+ 70.1       -0.103     0.003
+ 75.0       -0.21      0.003
+ 80.0       -0.293     0.006
+ 85.0       -0.394     0.004
+ 88.2       -0.436     0.004
+ 90.0       -0.479     0.004
+ 95.0       -0.53      0.005
+ 100.0      -0.544     0.004
+ 105.0      -0.552     0.005
+ 110.7      -0.522     0.007
+ 120.0      -0.371     0.006
+ 130.0      -0.127     0.008
+ENDDATA             15
+ENDSUBENT           34
+SUBENT        E1772010   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table V, p034003-10 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         13
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 65.0       0.131      0.003
+ 70.1       0.16       0.003
+ 75.0       0.2        0.004
+ 80.0       0.223      0.008
+ 85.0       0.304      0.005
+ 88.2       0.347      0.005
+ 90.0       0.387      0.005
+ 95.0       0.446      0.005
+ 100.0      0.507      0.005
+ 105.0      0.534      0.006
+ 110.7      0.564      0.025
+ 120.0      0.594      0.007
+ 130.0      0.573      0.008
+ENDDATA             15
+ENDSUBENT           34
+SUBENT        E1772011   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+           DATA: Axx
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table V, p034003-10 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         12
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 70.1       -0.227     0.004
+ 75.0       -0.247     0.004
+ 80.0       -0.263     0.013
+ 85.0       -0.228     0.005
+ 88.2       -0.194     0.007
+ 90.0       -0.195     0.009
+ 95.0       -0.173     0.005
+ 100.0      -0.109     0.004
+ 105.0      -0.058     0.005
+ 110.7      0.018      0.005
+ 120.0      0.07       0.006
+ 130.0      -0.089     0.009
+ENDDATA             14
+ENDSUBENT           34
+SUBENT        E1772012   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+           DATA: Axz
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table V, p034003-10 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 140.0
+ENDCOMMON            3
+DATA                 3         11
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 70.1       0.234      0.005
+ 75.0       0.286      0.004
+ 80.0       0.349      0.006
+ 85.0       0.397      0.007
+ 88.2       0.433      0.009
+ 95.0       0.446      0.008
+ 100.0      0.438      0.008
+ 105.0      0.436      0.008
+ 110.7      0.402      0.011
+ 120.0      0.261      0.006
+ 130.0      0.079      0.008
+ENDDATA             13
+ENDSUBENT           33
+SUBENT        E1772013   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VI, p034003-10 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 200.0
+ENDCOMMON            3
+DATA                 3         14
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 53.0       0.164      0.004
+ 64.0       0.031      0.004
+ 70.0       -0.152     0.004
+ 80.0       -0.32      0.005
+ 82.5       -0.332     0.005
+ 85.0       -0.368     0.005
+ 87.4       -0.383     0.003
+ 90.0       -0.423     0.005
+ 95.0       -0.416     0.005
+ 100.0      -0.451     0.005
+ 110.0      -0.39      0.005
+ 120.0      -0.287     0.006
+ 130.0      -0.118     0.006
+ 145.0      0.151      0.008
+ENDDATA             16
+ENDSUBENT           35
+SUBENT        E1772014   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VI, p034003-10 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 200.0
+ENDCOMMON            3
+DATA                 3         14
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 53.0       0.18       0.005
+ 64.0       0.203      0.005
+ 70.0       0.236      0.005
+ 80.0       0.309      0.005
+ 82.5       0.305      0.005
+ 85.0       0.335      0.005
+ 87.4       0.366      0.003
+ 90.0       0.417      0.005
+ 95.0       0.441      0.005
+ 100.0      0.553      0.005
+ 110.0      0.567      0.004
+ 120.0      0.582      0.005
+ 130.0      0.566      0.006
+ 145.0      0.391      0.008
+ENDDATA             16
+ENDSUBENT           35
+SUBENT        E1772015   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+           DATA: Axx
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VI, p034003-10 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 200.0
+ENDCOMMON            3
+DATA                 3         14
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 53.0       -0.31      0.016
+ 64.0       -0.293     0.015
+ 70.0       -0.326     0.005
+ 80.0       -0.345     0.006
+ 82.5       -0.313     0.006
+ 85.0       -0.317     0.006
+ 87.4       -0.306     0.004
+ 90.0       -0.314     0.005
+ 95.0       -0.282     0.006
+ 100.0      -0.277     0.006
+ 110.0      -0.214     0.006
+ 120.0      -0.155     0.006
+ 130.0      -0.169     0.008
+ 145.0      -0.418     0.01
+ENDDATA             16
+ENDSUBENT           36
+SUBENT        E1772016   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+           DATA: Axz
+PART-DET   (P)
+SAMPLE     Target-thickness is 90mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VI, p034003-10 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 200.0
+ENDCOMMON            3
+DATA                 3          8
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 70.0       0.229      0.017
+ 82.5       0.296      0.009
+ 90.0       0.336      0.017
+ 100.0      0.339      0.019
+ 110.0      0.313      0.025
+ 120.0      0.29       0.023
+ 130.0      0.249      0.019
+ 140.0      0.307      0.02
+ENDDATA             10
+ENDSUBENT           30
+SUBENT        E1772017   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 46.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VII, p034003-11 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         40
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 10.5       0.243      0.02
+ 22.0       0.321      0.015
+ 25.1       0.341      0.016
+ 28.2       0.352      0.017
+ 31.4       0.38       0.019
+ 35.2       0.348      0.018
+ 38.4       0.365      0.02
+ 41.6       0.345      0.021
+ 44.2       0.302      0.017
+ 47.4       0.249      0.015
+ 50.7       0.194      0.016
+ 52.0       0.164      0.015
+ 55.4       0.086      0.014
+ 57.4       0.065      0.01
+ 60.9       -0.027     0.011
+ 62.2       -0.051     0.01
+ 65.8       -0.117     0.013
+ 127.2      -0.218     0.018
+ 130.1      -0.167     0.019
+ 132.2      -0.138     0.021
+ 135.1      -0.094     0.016
+ 137.2      -0.05      0.018
+ 140.1      -0.005     0.017
+ 143.5      0.035      0.018
+ 145.6      0.058      0.017
+ 147.7      0.118      0.016
+ 149.8      0.128      0.016
+ 151.4      0.151      0.024
+ 153.6      0.203      0.023
+ 155.7      0.191      0.022
+ 157.8      0.196      0.02
+ 158.2      0.194      0.023
+ 160.3      0.184      0.022
+ 162.4      0.166      0.02
+ 164.5      0.16       0.018
+ 166.6      0.147      0.017
+ 168.8      0.111      0.017
+ 170.9      0.098      0.016
+ 173.0      0.067      0.015
+ 177.9      0.022      0.018
+ENDDATA             42
+ENDSUBENT           62
+SUBENT        E1772018   20030606   20030610   20050926       0000
+BIB                  6         12
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+           DATA: Ayy
+PART-DET   (P)
+SAMPLE     Target-thickness is 46.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VII, p034003-11 in
+                  reference
+ENDBIB              12
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         40
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 10.5       0.042      0.007
+ 22.0       0.092      0.004
+ 25.1       0.106      0.004
+ 28.2       0.141      0.005
+ 31.4       0.158      0.006
+ 35.2       0.183      0.006
+ 38.4       0.205      0.006
+ 41.6       0.234      0.007
+ 44.2       0.231      0.006
+ 47.4       0.27       0.006
+ 50.7       0.289      0.006
+ 52.0       0.305      0.006
+ 55.4       0.307      0.006
+ 57.4       0.323      0.005
+ 60.9       0.35       0.005
+ 62.2       0.365      0.005
+ 65.8       0.362      0.006
+ 127.2      0.628      0.008
+ 130.1      0.599      0.008
+ 132.2      0.603      0.009
+ 135.1      0.605      0.008
+ 137.2      0.604      0.009
+ 140.1      0.594      0.008
+ 143.5      0.57       0.008
+ 145.6      0.571      0.008
+ 147.7      0.576      0.008
+ 149.8      0.573      0.008
+ 151.4      0.578      0.01
+ 153.6      0.584      0.01
+ 155.7      0.545      0.01
+ 157.8      0.527      0.009
+ 158.2      0.521      0.01
+ 160.3      0.499      0.009
+ 162.4      0.456      0.009
+ 164.5      0.444      0.008
+ 166.6      0.42       0.008
+ 168.8      0.386      0.007
+ 170.9      0.377      0.007
+ 173.0      0.344      0.007
+ 177.9      0.306      0.007
+ENDDATA             42
+ENDSUBENT           63
+SUBENT        E1772019   20030606   20030610   20050926       0000
+BIB                  6         12
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+           DATA: Axx
+PART-DET   (P)
+SAMPLE     Target-thickness is 46.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VII, p034003-11 in
+                  reference
+ENDBIB              12
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         40
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 10.5       0.001      0.017
+ 22.0       -0.077     0.011
+ 25.1       -0.09      0.011
+ 28.2       -0.126     0.011
+ 31.4       -0.162     0.012
+ 35.2       -0.177     0.012
+ 38.4       -0.203     0.013
+ 41.6       -0.26      0.014
+ 44.2       -0.288     0.011
+ 47.4       -0.323     0.011
+ 50.7       -0.383     0.013
+ 52.0       -0.388     0.012
+ 55.4       -0.431     0.013
+ 57.4       -0.454     0.011
+ 60.9       -0.478     0.012
+ 62.2       -0.473     0.011
+ 65.8       -0.492     0.013
+ 127.2      -0.278     0.012
+ 130.1      -0.28      0.012
+ 132.2      -0.299     0.014
+ 135.1      -0.289     0.012
+ 137.2      -0.3       0.013
+ 140.1      -0.318     0.013
+ 143.5      -0.353     0.017
+ 145.6      -0.382     0.016
+ 147.7      -0.418     0.016
+ 149.8      -0.467     0.016
+ 151.4      -0.48      0.019
+ 153.6      -0.481     0.019
+ 155.7      -0.478     0.018
+ 157.8      -0.398     0.016
+ 158.2      -0.406     0.02
+ 160.3      -0.369     0.019
+ 162.4      -0.276     0.017
+ 164.5      -0.173     0.015
+ 166.6      -0.066     0.014
+ 168.8      0.024      0.013
+ 170.9      0.116      0.013
+ 173.0      0.193      0.013
+ 177.9      0.306      0.017
+ENDDATA             42
+ENDSUBENT           63
+SUBENT        E1772020   20030606   20030610   20050926       0000
+BIB                  6         12
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+           DATA: Axz
+PART-DET   (P)
+SAMPLE     Target-thickness is 46.7mg/cm**2.
+DETECTOR   Solid angle of detector is 10msr.
+           (MAGSP)SMART magnetic spectrograph [T.Ichihara et al.,
+                  Nucl.Phys.A569(1994)287c]
+           (MWDC)
+           (SCIN)
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VII, p034003-11 in
+                  reference
+ENDBIB              12
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         37
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 22.0       -0.004     0.013
+ 25.1       -0.013     0.014
+ 28.2       0.006      0.015
+ 31.4       0.011      0.017
+ 44.2       0.029      0.015
+ 47.4       0.06       0.016
+ 50.7       0.074      0.017
+ 52.0       0.103      0.017
+ 55.4       0.119      0.019
+ 57.4       0.129      0.014
+ 60.9       0.192      0.015
+ 62.2       0.204      0.024
+ 65.8       0.252      0.034
+ 116.9      0.419      0.046
+ 127.2      0.47       0.024
+ 130.1      0.476      0.023
+ 132.2      0.498      0.024
+ 135.1      0.504      0.024
+ 137.2      0.545      0.023
+ 140.1      0.575      0.023
+ 143.5      0.578      0.028
+ 145.6      0.639      0.028
+ 147.7      0.68       0.028
+ 149.8      0.723      0.029
+ 151.4      0.751      0.03
+ 153.6      0.796      0.03
+ 155.7      0.816      0.029
+ 157.8      0.819      0.028
+ 158.2      0.866      0.029
+ 160.3      0.881      0.029
+ 162.4      0.842      0.027
+ 164.5      0.779      0.026
+ 166.6      0.67       0.023
+ 168.8      0.593      0.022
+ 170.9      0.467      0.021
+ 173.0      0.362      0.019
+ 177.9      0.101      0.026
+ENDDATA             39
+ENDSUBENT           60
+SUBENT        E1772021   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 270mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VIII, p034003-12 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         10
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 57.0       0.03       0.003
+ 66.8       -0.164     0.004
+ 76.6       -0.297     0.006
+ 86.5       -0.381     0.006
+ 90.0       -0.391     0.006
+ 96.6       -0.4       0.005
+ 106.7      -0.382     0.006
+ 116.9      -0.322     0.008
+ 127.3      -0.199     0.006
+ 137.8      -0.046     0.005
+ENDDATA             12
+ENDSUBENT           31
+SUBENT        E1772022   20030606   20030610   20050926       0000
+BIB                  6         10
+REACTION   (1-H-1(D,EL)1-H-1,NN,POL/DA,,ANA)
+PART-DET   (P)
+SAMPLE     Target-thickness is 270mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VIII, p034003-12 in
+                  reference
+ENDBIB              10
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3         10
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 57.0       0.314      0.01
+ 66.8       0.329      0.013
+ 76.6       0.382      0.015
+ 86.5       0.491      0.016
+ 90.0       0.478      0.016
+ 96.6       0.544      0.013
+ 106.7      0.612      0.018
+ 116.9      0.685      0.011
+ 127.3      0.6        0.011
+ 137.8      0.559      0.02
+ENDDATA             12
+ENDSUBENT           31
+SUBENT        E1772023   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,SS,POL/DA,,ANA)
+           DATA: Axx
+PART-DET   (P)
+SAMPLE     Target-thickness is 270mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VIII, p034003-12 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3          9
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 66.8       -0.5       0.015
+ 76.6       -0.502     0.016
+ 86.5       -0.492     0.014
+ 90.0       -0.45      0.014
+ 96.6       -0.438     0.011
+ 106.7      -0.385     0.013
+ 116.9      -0.318     0.012
+ 127.3      -0.248     0.008
+ 137.8      -0.285     0.014
+ENDDATA             11
+ENDSUBENT           31
+SUBENT        E1772024   20030606   20030610   20050926       0000
+BIB                  6         11
+REACTION   (1-H-1(D,EL)1-H-1,SL,POL/DA,,ANA)
+           DATA: Axz
+PART-DET   (P)
+SAMPLE     Target-thickness is 270mg/cm**2.
+DETECTOR   (SCIN)D-room polarimeter which was made by using the
+                 known analyzing powers for the d-p elastic
+                 scattering [N.Sakamoto et al.,
+                 Phys.Lett.B367(1996)60].
+EN-SEC     ANG-CM is polar angle between beam and proton
+STATUS     (TABLE)Data taken from Table VIII, p034003-12 in
+                  reference
+ENDBIB              11
+COMMON               1          3
+EN
+MEV
+ 270.0
+ENDCOMMON            3
+DATA                 3          9
+ANG-CM     DATA       ERR-S
+ADEG       NO-DIM     NO-DIM
+ 57.0       0.152      0.024
+ 66.8       0.311      0.039
+ 76.6       0.339      0.04
+ 86.5       0.377      0.038
+ 90.0       0.481      0.032
+ 96.6       0.463      0.043
+ 106.7      0.36       0.033
+ 127.3      0.566      0.072
+ 137.8      0.656      0.15
+ENDDATA             11
+ENDSUBENT           31
+ENDENTRY            24

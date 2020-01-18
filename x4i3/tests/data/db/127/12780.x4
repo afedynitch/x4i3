@@ -1,0 +1,67 @@
+ENTRY            12780     850821              20050926       0000
+SUBENT        12780001     850821              20050926       0000
+BIB                 10         12
+INSTITUTE  (1USALAS)
+REFERENCE  (R,LA-7269-MS,7805)
+AUTHOR     (M.DROSG)
+TITLE      INTERACTION OF FAST NEUTRONS WITH 4HE, 3HE AND 1H.
+            ADDITIONAL AND IMPROVED DATA.
+FACILITY   (VDGT)
+INC-SOURCE (D-T)
+METHOD     (TOF)
+DETECTOR   (SCIN) NE123 LIQUID SCINTILLATOR
+                  FLUX MONITORED BY PLASTIC SCINTILLATOR.
+STATUS     (APRVD) M. DROSG, 85/9/5.
+HISTORY    (850808C)
+ENDBIB              12
+NOCOMMON             0          0
+ENDSUBENT           15
+SUBENT        12780002     850821              20050926       0000
+BIB                  4          7
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG) NORMALIZED LEGENDRE FIT TO
+            TOTAL SCATTERING CROSS SECTION
+CORRECTION ANALYTICAL CORRECTION FOR MULTIPLE SCATTERING (SLAB
+            GEOMETRY).
+ERR-ANALYS (DATA-ERR) INCLUDES COUNTING STATISTICS, BACKGROUND
+            SUBTRACTION AND RELATIVE EFFICIENCY UNCERTAINTIES.
+ENDBIB               7
+NOCOMMON             0          0
+DATA                 5         32
+EN         EN-RSL-FW  ANG-CM     DATA-CM    DATA-ERR
+MEV        MEV        ADEG       MB/SR      PER-CENT
+ 22.4       0.5        28.38      33.2       4.9
+ 22.4       0.5        38.44      33.6       2.8
+ 22.4       0.5        49.09      35.6       4.0
+ 22.4       0.5        59.34      33.0       1.4
+ 22.4       0.5        64.35      32.6       1.5
+ 22.4       0.5        69.37      32.6       1.5
+ 22.4       0.5        74.39      32.1       1.5
+ 22.4       0.5        79.20      33.4       1.4
+ 22.4       0.5        89.22      33.5       1.2
+ 22.4       0.5        99.03      34.0       1.1
+ 22.4       0.5       118.83      33.3       2.5
+ 23.7                  53.13      31.0       2.4
+ 23.7                  69.79      30.4       2.0
+ 23.7                  99.25      31.1       1.5
+ 27.1                  40.29      26.7       8.0
+ 27.1                  46.33      25.8       4.4
+ 27.1                  50.35      24.8       4.4
+ 27.1                  57.19      26.6       5.9
+ 27.1                  60.40      27.3       4.3
+ 27.1                  66.83      27.1       6.3
+ 27.1                  70.44      26.5       4.0
+ 27.1                  80.47      27.0       7.4
+ 27.1                  90.49      25.8       4.1
+ 27.1                 100.50      26.0       4.2
+ 27.1                 105.70      26.2       6.1
+ 27.1                 110.50      28.4       4.8
+ 28.5       0.3        41.31      24.8       5.6
+ 28.5       0.3        47.15      25.4       4.6
+ 28.5       0.3        52.38      24.4       5.6
+ 28.5       0.3        57.41      25.0       3.7
+ 28.5       0.3        71.26      24.2       3.2
+ 28.5       0.3        79.49      24.9       2.1
+ENDDATA             34
+ENDSUBENT           46
+ENDENTRY             2

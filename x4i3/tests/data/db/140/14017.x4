@@ -1,0 +1,46 @@
+ENTRY            14017   20050630   20050909   20050926       1336
+SUBENT        14017001   20050630   20050909   20050926       1336
+BIB                 10         18
+INSTITUTE  (1USAINU,2SWDUPP,1USAOHO)
+REFERENCE  (J,NIM/A,527,432,2004)
+AUTHOR     (T.Peterson,S.E.Vigdor,C.Allgower,B.Bergenwall,
+            L.C.Bland,J.Blomgren,J.Doskow,T.Hossbach,W.W.Jacobs,
+            C.Johansson,T.Kinashia,J.Klug,A.V.Klyachko,
+            P.Nadel-Turonski,L.Nilsson,N.Olsson,M.Planinic,S.Pomp,
+            J.Rapaport,T.Rinckel,E.J.Stephenson,U.Tippawan,
+            S.W.Wissink,Y.Zhou)
+TITLE      Development of a tagged neutron facility at intermediat
+            energies
+FACILITY   (LINAC,1USAINU)  Tagged neutron source
+INC-SOURCE (P-D) Electron-cooled circulating proton beam of 200 Me
+            bombarding energy incident on a deuterium gas jet
+            target.
+SAMPLE     CH2 target
+DETECTOR   (PSSSD) Double-sided silicon strip detectors
+METHOD     (EDE)
+HISTORY    (20050630C) DR
+ENDBIB              18
+NOCOMMON             0          0
+ENDSUBENT           21
+SUBENT        14017002   20050630   20050909   20050926       1336
+BIB                  3          3
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+ERR-ANALYS (DATA-ERR) No information
+STATUS     (CURVE) Data read from Fig. 16
+ENDBIB               3
+COMMON               1          3
+EN
+MEV
+193.
+ENDCOMMON            3
+DATA                 3          5
+ANG-CM     DATA-CM    DATA-ERR
+ADEG       MB/SR      MB/SR
+   1.25E+02   3.93E+00
+   1.31E+02   4.31E+00
+   1.37E+02   4.96E+00
+   1.43E+02   5.46E+00   2.47E-01
+   1.50E+02   6.08E+00   3.00E-01
+ENDDATA              7
+ENDSUBENT           19
+ENDENTRY             2

@@ -1,0 +1,43 @@
+ENTRY            11117     800814              20050926       0000
+SUBENT        11117001     800814              20050926       0000
+BIB                  6          7
+INSTITUTE  (1USALAS)
+REFERENCE  (J,PR,128,1268,62)
+AUTHOR     (E.R.FLYNN,P.J.BENDT)
+TITLE      N-P DIFFERENTIAL SCATTERING CROSS SECTION AT 22.5 MEV.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (800814A) CONVERTED TO REACTION FORMALISM
+ENDBIB               7
+NOCOMMON             0          0
+ENDSUBENT           10
+SUBENT        11117002     800814              20050926       0000
+BIB                  4          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+DETECTOR   (TRD)      BUBBLE CHAMBER
+MONITOR    (1-H-0(N,TOT),,SIG)
+ERR-ANALYS  DATA-ERR GIVEN IS STATISTICAL ERROR ONLY
+ENDBIB               4
+COMMON               3          3
+EN         EN-RSL     ANG-RSL
+MEV        MEV        ADEG
+ 2.250  +01 6.5    -01 5.
+ENDCOMMON            3
+DATA                 3         12
+COS-CM     DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.42300    3.33   +01   19.
+ 0.25900    3.28   +01   15.
+ 0.08700    3.27   +01   12.
+-0.0870     3.32   +01   12.
+-0.2590     3.22   +01   12.
+-0.4230     3.24   +01   13.
+-0.5740     3.47   +01   14.
+-0.7070     3.56   +01   15.
+-0.8190     3.70   +01   17.
+-0.9060     3.40   +01   19.
+-0.9660     3.43   +01   26.
+-0.9960     3.59   +01   43.
+ENDDATA             14
+ENDSUBENT           27
+ENDENTRY             2

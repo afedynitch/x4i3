@@ -1,0 +1,82 @@
+ENTRY            11123     800814              20050926       0000
+SUBENT        11123001     800814              20050926       0000
+BIB                  6          8
+INSTITUTE  (1USAHRV)
+REFERENCE  (J,PR,142,584,66)
+AUTHOR     (D.F.MEASDAY)
+TITLE      NEUTRON-PROTON DIFFERENTIAL CROSS SECTION AT 129 AND
+           150 MEV.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (800814A) CONVERTED TO REACTION FORMALISM
+ENDBIB               8
+NOCOMMON             0          0
+ENDSUBENT           11
+SUBENT        11123002     800814              20050926       0000
+BIB                  4          5
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-1(N,TOT),,SIG)      PHASE SHIFT ANALYSIS IN BULL.
+            AM.PHYS.SOC.9,378(1964) WITH TOTAL=56.6MB.
+INC-SPECT  ENERGY SPREAD 6.0MEV. PEAK ENERGY 131.6+-1.0MEV.
+DETECTOR   (SCIN)  PLASTIC SCINTILLATOR COUNTING PROTON RECOILS.
+ENDBIB               5
+COMMON               3          3
+EN         EN-ERR     ANG-RSL
+MEV        MEV        ADEG
+ 1.290  +02 1.0    +00 8.0
+ENDCOMMON            3
+DATA                 3         15
+COS-CM     DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.28900    2.79   +00 1.6    -01
+ 0.20620    2.54   +00 1.4    -01
+ 0.03320    2.73   +00 1.4    -01
+-0.1409     3.00   +00 1.4    -01
+-0.3123     3.36   +00 9.     -02
+-0.4741     4.22   +00 1.2    -01
+-0.6225     5.07   +00 1.4    -01
+-0.7513     5.85   +00 1.5    -01
+-0.8572     7.17   +00 2.2    -01
+-0.8996     7.76   +00 3.6    -01
+-0.9348     8.66   +00 2.6    -01
+-0.9622     9.89   +00 4.9    -01
+-0.9826     1.034  +01 5.5    -01
+-0.9947     1.115  +01 8.0    -01
+-0.9984     1.155  +01 1.12   +00
+ENDDATA             17
+ENDSUBENT           31
+SUBENT        11123003     800814              20050926       0000
+BIB                  4          5
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-1(N,TOT),,SIG)      PHASE SHIFT ANALYSIS IN BULL.
+            AM.PHYS.SOC.9,378(1964) WITH TOTAL=50.3MB.
+INC-SPECT  ENERGY SPREAD 6.0MEV. PEAK ENERGY 150.8+-1.0 MEV.
+DETECTOR   (SCIN)  PLASTIC SCINTILLATOR COUNTING PROTON RECOILS.
+ENDBIB               5
+COMMON               3          3
+EN         EN-ERR     ANG-RSL
+MEV        MEV        ADEG
+ 1.500  +02 1.0    +00 8.0
+ENDCOMMON            3
+DATA                 3         16
+COS-CM     DATA       DATA-ERR
+NO-DIM     MB/SR      MB/SR
+ 0.45090    2.56   +00 1.2    -01
+ 0.37620    2.39   +00 1.0    -01
+ 0.21130    2.11   +00 8.     -02
+ 0.03840    2.16   +00 7.     -02
+-0.1357     2.49   +00 6.     -02
+-0.3074     2.96   +00 7.     -02
+-0.4695     3.70   +00 1.2    -01
+-0.6184     4.78   +00 1.5    -01
+-0.7490     5.82   +00 1.8    -01
+-0.8563     6.62   +00 2.2    -01
+-0.8988     7.20   +00 1.7    -01
+-0.9342     8.08   +00 1.3    -01
+-0.9613     9.27   +00 1.9    -01
+-0.9823     1.046  +01 4.7    -01
+-0.9945     1.159  +01 7.5    -01
+-0.9984     1.116  +01 7.3    -01
+ENDDATA             18
+ENDSUBENT           32
+ENDENTRY             3

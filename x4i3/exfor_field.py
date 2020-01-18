@@ -28,7 +28,7 @@ from . import exfor_dicts
 from . import exfor_grammers
 from . import exfor_reference
 from . import exfor_exceptions
-import pyparsing
+from .pyparsing import ParseException
 import copy
 
 
@@ -141,7 +141,7 @@ class X4ReactionField(X4PlainField):
             d = str(self[p])
             try:
                 f = exfor_reactions.x4reactionfield.parseString(d)
-            except pyparsing.ParseException as err:
+            except ParseException as err:
                 raise exfor_exceptions.ReactionParsingError(
                     'Can not parse reaction "' + d + '",\n    got error "' + str(err) + '"\n   ')
             self.reactions[p] = [self.getMeasurementType(f[0:-1]), f[-1]]
@@ -284,7 +284,7 @@ class X4MonitorField(X4ReactionField):
                         f = exfor_reactions.x4reactionfield.parseString(d)
                         self.reactions[p].append(
                             (self.getMeasurementType(f[0:-1]), f[-1], heading))
-                    except pyparsing.ParseException as err:
+                    except ParseException as err:
                         raise exfor_exceptions.ReactionParsingError(
                             'Can not parse reaction "' + d + '",\n    got error "' + str(err) + '"\n   ')
                 else:
@@ -344,7 +344,7 @@ class X4ReferenceField(X4PlainField):
                         try:
                             xref = exfor_grammers.x4refcodetautology.parseString(
                                 xx).asList()
-                        except pyparsing.ParseException as err:
+                        except ParseException as err:
                             raise exfor_exceptions.ReferenceParsingError(
                                 'Can not parse reference "' + xx + '",\n    got error "' + str(err) + '"\n   ')
                         refcomment = xref[-1]
@@ -354,7 +354,7 @@ class X4ReferenceField(X4PlainField):
                                     self.refs[p].append(
                                         (exfor_reference.X4ReferenceCode(
                                             self.flatten(xxx)), refcomment))
-                            except (KeyError, pyparsing.ParseException, LookupError, AssertionError) as err:
+                            except (KeyError, ParseException, LookupError, AssertionError) as err:
                                 raise exfor_exceptions.ReferenceParsingError(
                                     'Can not parse reference "' + xx + '",\n    got error "' + str(err) + '"\n   ')
                     else:
@@ -365,7 +365,7 @@ class X4ReferenceField(X4PlainField):
                                 (exfor_reference.X4ReferenceCode(
                                     self.flatten(
                                         xref[0])), refcomment))
-                        except (KeyError, pyparsing.ParseException, LookupError, AssertionError) as err:
+                        except (KeyError, ParseException, LookupError, AssertionError) as err:
                             raise exfor_exceptions.ReferenceParsingError(
                                 'Can not parse reference "' + xx + '",\n    got error "' + str(err) + '"\n   ')
             # Take this reference main info from first reference in field that we
@@ -439,7 +439,7 @@ class X4AuthorField(X4PlainField):
             t = ''.join([x.strip() for x in self[p]])
             try:
                 tt = exfor_grammers.x4refcode.parseString(t).asList()
-            except pyparsing.ParseException as err:
+            except ParseException as err:
                 try:
                     tt = tt = exfor_grammers.x4refcode.parseString(t.split(')')[
                                                                    0] + ')').asList()
@@ -452,7 +452,7 @@ class X4AuthorField(X4PlainField):
                         '" when parsing as x4refcode\n   ')
             try:
                 ttt = exfor_grammers.x4authorlist.parseString(' '.join(tt[0])).asList()
-            except pyparsing.ParseException as err:
+            except ParseException as err:
                 raise exfor_exceptions.AuthorParsingError(
                     'Can not parse authors "' +
                     x +
@@ -479,7 +479,7 @@ class X4InstituteField(X4PlainField):
         for p in self:
             try:
                 il = exfor_grammers.x4textfield.parseString(str(self[p])).asList()
-            except pyparsing.ParseException as err:
+            except ParseException as err:
                 raise exfor_exceptions.InstituteParsingError(
                     'Can not parse institute "' + str(x) + '",\n    got error "' + str(err) + '"\n   ')
             for i in il:

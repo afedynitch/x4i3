@@ -1,0 +1,92 @@
+ENTRY            11109   20040122              20050926       0000
+SUBENT        11109001   20040122              20050926       0000
+BIB                 12         17
+INSTITUTE  (1USAHRV)
+REFERENCE  (J,PR,120,2201,1960)
+AUTHOR     (R.K.Hobbie,D.Miller)
+TITLE      Neutron-Proton Polarization and Differential Cross
+            Section at 128 MeV.
+INC-SOURCE (POLNS)
+SAMPLE     Liquid hydrogen target in Mylar cylinder..
+DETECTOR   (TELES) Counter telescope
+MONITOR    Beam monitored using recoil proton telescope.
+METHOD     Measured left-right asymmetries.
+ERR-ANALYS (DATA-ERR1) Relative error
+           (DATA-ERR2) Normalization error
+STATUS     Data taken from table in reference.
+HISTORY    (19760924T) Translated from SCISRS
+           (19800814A) Converted to REACTION formalism
+           (20040122A) Converted to new date formats, lower case.
+              Updated as per reference from SCISRS translation.
+ENDBIB              17
+COMMON               3          3
+EN         EN-RSL     EN-ERR
+MEV        MEV        MEV
+128.        13.         1.
+ENDCOMMON            3
+ENDSUBENT           24
+SUBENT        11109002   20040122              20050926       0000
+BIB                  4         11
+REACTION   (1-H-1(N,EL)1-H-1,,DA)
+MONITOR    (1-H-1(N,TOT),,SIG)
+MONIT-REF  (,J.J.Thresher+,J,PRS/A,229,492,1955)
+CORRECTION Asymmetries corrected for:
+           . counter height,
+           . angular and beam energy resolution,
+           . background energy loss,
+           . target volume correction,
+           . double scattering in target,
+           . absorber losses,
+           . uncertainty in energy cutoff.
+ENDBIB              11
+COMMON               3          3
+MONIT      MONIT-ERR  DATA-ERR2
+MB         MB         PER-CENT
+ 56.         2.         7.
+ENDCOMMON            3
+DATA                 3         10
+ANG-CM     DATA-CM    DATA-ERR1
+ADEG       MB/SR      MB/SR
+ 78.1       2.74       0.11
+ 88.1       2.61       0.09
+ 98.1       2.83       0.11
+108.2       3.45       0.12
+118.4       4.29       0.15
+128.5       5.20       0.19
+138.8       6.28       0.23
+149.0       7.30       0.26
+159.3       9.08       0.33
+169.7      11.37       0.41
+ENDDATA             12
+ENDSUBENT           32
+SUBENT        11109003   20040122              20050926       0000
+BIB                  2          7
+REACTION   (1-H-1(N,EL)1-H-1,,POL/DA)
+CORRECTION Asymmetries corrected for:
+           . alignment of defining counter,
+           . counter and target height,
+           . energy spread of beam,
+           . magnetic field in region transversed by recoil
+             proton.
+ENDBIB               7
+COMMON               3          3
+DATA-ERR2  POL-BM     POL-BM-ERR
+PER-CENT   NO-DIM     NO-DIM
+  8.        0.425      0.034
+ENDCOMMON            3
+DATA                 3         10
+ANG-CM     DATA       DATA-ERR1
+ADEG       NO-DIM     NO-DIM
+ 78.1       0.384      0.028
+ 88.1       0.275      0.028
+ 98.1       0.186      0.028
+108.2       0.052      0.025
+118.4       0.054      0.021
+128.5      -0.016      0.021
+138.8      -0.072      0.017
+149.0      -0.061      0.021
+159.3      -0.045      0.021
+169.7       0.002      0.021
+ENDDATA             12
+ENDSUBENT           28
+ENDENTRY             3

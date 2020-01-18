@@ -1,0 +1,129 @@
+ENTRY            41224   20080219   20080801   20080721       4143
+SUBENT        41224001   20080219   20080801   20080721       4143
+BIB                 13         27
+INSTITUTE  (4RUSITE)
+REFERENCE  (J,ZET,31,(2),169,195608)  Main reference.
+           (J,JET,4,161,1957)
+AUTHOR     (Yu.M.Kazarinov, Yu.N.Simonov)
+TITLE      Neutron elastic scattering by protons at 580 MeV energy
+EXP-YEAR   (1954)
+FACILITY   (SYNCY)
+INC-SOURCE (P-BE)  Neutrons with max energy 600 MeV were obtained
+                 at bombardment of Be-target with 680-MeV protons
+INC-SPECT   Neutron beam has maximum at energy 600 MeV and
+            half-width about 130 MeV. Mean energy was determined
+            to be 580 MeV taking into account detector threshold.
+            Neutron beam intensity at target position -
+            2.E+4 neutron/cm**2/sec.
+METHOD     (REC)      Recoil protons method
+           (COINC)    Coincidence
+DETECTOR   (TELES,SCIN,SCIN)    Counter telescope consisting of
+                   three scintillation counters in coincidence.
+            Detector threshold 450 MeV was ensured by tungsten and
+            copper filters.
+CORRECTION  For charged pi-mesons.
+            For self-absorption.
+STATUS     (SCSRS)
+HISTORY    (19970407C)  +  +  Compiled at the center - CJD +  +
+           (20080219A) M.M. TITLE was added. Upper-lower case
+            correction. Dates were corrected for 4-digits year.
+            BIB information was added. SUBENT 003 was added.
+ENDBIB              27
+NOCOMMON             0          0
+ENDSUBENT           30
+SUBENT        41224002   20080219   20080801   20080721       4143
+BIB                  9         32
+REACTION   (1-H-1(N,EL)1-H-1,,DA) Neutron angular distribution.
+MONITOR    ((MONIT1)1-H-1(N,EL)1-H-1,,SIG,,,DERIV)
+           (6-C-12(N,EL)6-C-12,,SIG)
+ANALYSIS   Absolute values of differential cross-sections were
+           determined by normalization to total elastic
+           cross-section (26.0 +- 3. mb), which was defined as
+           difference of total cross-section (36. +- 2. mb) from
+           REL-REF(Dzhelepov+) and cross-section of pi-mesons
+           production(10. +- 2. mb) at n-p interactions. Differen.
+           cross-section was assumed to be about constant at
+           angles   < 35 deg in CM system and was equal to value
+           at 35 deg.,as it was defined in experiments at energy
+           range 300-400 MeV(see REL-REF of Hartzler+ for details)
+REL-REF    (R,11078001,A.L.Hartzler+,J,PR,95,591,1954)
+           (R,41261002,V.P.Dzhelepov+,J,ZET,29,369,1955)
+            Cross-section data used in normalization.
+ASSUMED    (ASSUM1,1-H-1(N,X)0-P0-0,,SIG) pi-mesons production c-s
+           (ASSUM2,1-H-1(N,TOT),,SIG) total c-s from REL-REF of
+                   Dzhelepov+.
+ERR-ANALYS (ERR-S) Data errors given are standard statistical.
+           (ERR-1) Error of total elastic scattering cross-section
+                   determination.
+           (ERR-2) Uncertainty in normalization.
+SAMPLE      Paraffin and graphite of thickness
+            5., 3., 0.5 gram/cm**2 for angle ranges in lab.system
+            0.-15., 25.-60. , 60.-70. degrees, respectively .
+STATUS      Data are presented on Fig.2 of main reference as
+            dependence from angle in CM system.
+HISTORY    (19970407T)  Data are converted from SUBENT 80348002
+           (20080219A) ANG-RSL was moved into COMMON.
+            -HW was added to EN-RSL. Errors are added.
+            DATA was changed into DATA-CM.
+ENDBIB              32
+COMMON              11          6
+EN         EN-RSL-HW  MONIT1     MONIT1-ERR ANG-RSL    ERR-1
+ERR-2      ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR
+MEV        MEV        MB         MB         ADEG       PER-CENT
+PER-CENT   MB         MB         MB         MB
+ 5.8000E+02 1.3000E+02 26.          3.        2.0       12.
+   10.       10.         2.        36.        2.
+ENDCOMMON            6
+DATA                 3         15
+COS-CM     DATA-CM    ERR-S
+NO-DIM     MB/SR      MB/SR
+ 8.1900E-01 3.7000E+00 2.0000E-01
+ 7.0700E-01 3.0000E+00 3.0000E-01
+ 5.8800E-01 2.3000E+00 2.0000E-01
+ 4.5400E-01 2.1000E+00 2.0000E-01
+ 2.9200E-01 1.6000E+00 1.0000E-01
+ 1.2200E-01 1.1000E+00 1.0000E-01
+-5.2000E-02 9.0000E-01
+-2.2500E-01 8.0000E-01
+-4.0700E-01 8.0000E-01
+-5.5900E-01 1.0000E+00 1.0000E-01
+-7.1900E-01 1.7000E+00 1.0000E-01
+-8.3900E-01 2.1000E+00 2.0000E-01
+-9.1400E-01 3.4000E+00 3.0000E-01
+-9.7800E-01 5.4000E+00 5.0000E-01
+-9.9900E-01 8.5000E+00 8.0000E-01
+ENDDATA             17
+ENDSUBENT           61
+SUBENT        41224003   20080219   20080801   20080721       4143
+BIB                  2          6
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,LEG/1K2/FCT,DERIV) For neutron.
+           Legendre coefficients in form of :
+             d/dA=(1/(4*pi**2))*(1/k**2)*SUM(A(L)*P(L))
+            , where k=1/lambda, lambda= wave length.
+STATUS     (DEP,41224002)
+             Text of main reference, p.172.
+ENDBIB               6
+COMMON               2          3
+EN         EN-RSL-HW
+MEV        MEV
+ 5.8000E+02 1.3000E+02
+ENDCOMMON            3
+DATA                 3         13
+NUMBER-CM  DATA-CM    DATA-ERR
+NO-DIM     NO-DIM     NO-DIM
+0.          1.29         0.05
+1.          0.24         0.13
+2.          1.42         0.2
+3.         -0.87         0.24
+4.          0.28         0.22
+5.         -0.5          0.16
+6.          0.14         0.1
+7.         -0.33         0.1
+8.          0.19         0.18
+9.         -0.2          0.24
+10.         0.39         0.26
+11.         0.1          0.19
+12.         0.25         0.15
+ENDDATA             15
+ENDSUBENT           30
+ENDENTRY             3

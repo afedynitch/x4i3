@@ -1,0 +1,40 @@
+ENTRY            11131     800814              20050926       0000
+SUBENT        11131001     800814              20050926       0000
+BIB                  6          7
+INSTITUTE  (1USACAL)
+REFERENCE  (J,PR,55,131,39)
+AUTHOR     (H.STAUB,W.E.STEPHENS)
+TITLE      ANOMALOUS SCATTERING OF NEUTRONS BY HELIUM.
+STATUS     (SCSRS)
+HISTORY    (760628T) TRANSLATED FROM SCISRS
+           (800814A) CONVERTED TO REACTION FORMALISM
+ENDBIB               7
+NOCOMMON             0          0
+ENDSUBENT           10
+SUBENT        11131002     860121              20050926       0000
+BIB                  3          3
+REACTION   ((2-HE-0(N,EL)2-HE-0,,DA)/(1-H-1(N,EL)1-H-1,,DA))
+DETECTOR   (FISCH)    IONIZATION CHAMBER
+HISTORY    (860121A) REACTION, DATA HEADING UPDATED.
+ENDBIB               3
+COMMON               1          3
+COS
+NO-DIM
+-1.
+ENDCOMMON            3
+DATA                 3         10
+EN         DATA       DATA-ERR
+MEV        NO-DIM     NO-DIM
+ 5.     -01 4.     -01 2.     -01
+ 1.0    +00 9.5    +00 1.4    +00
+ 1.2    +00 6.5    +00 8.     -01
+ 2.2    +00 1.4    +00 3.     -01
+ 2.4    +00 1.8    +00 4.     -01
+ 2.5    +00 1.41   +00 1.8    -01
+ 3.6    +00 1.4    +00 3.     -01
+ 3.8    +00 8.     -01 2.     -01
+ 4.1    +00 1.2    +00 5.     -01
+ 4.3    +00 1.3    +00 5.     -01
+ENDDATA             12
+ENDSUBENT           24
+ENDENTRY             2

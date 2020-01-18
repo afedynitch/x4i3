@@ -1,0 +1,68 @@
+ENTRY            30162   20080208   20080530   20080530       3126
+SUBENT        30162001   20080208   20080530   20080530       3126
+BIB                 12         16
+INSTITUTE  (2GERJEU)
+REFERENCE  (J,ADP,16,354,196507)Graph, sigma versus angle
+AUTHOR     (E.Greiner, H.Karge)
+TITLE      Investigation of n-p-scattering at 14.1 MeV
+EXP-YEAR   (1965)
+FACILITY   (VDG) Cascade-generator
+INC-SOURCE (D-T) 1-H-3(d,n)2-He-4 reaction
+SAMPLE     Hydrogen gas, 45 atmospheres, 99.9% purity
+METHOD     Stereographic camera to registrate and to project
+           the proton tracks in the cloud-chamber
+DETECTOR   High-pressure-diffusion-cloud-chamber
+PART-DET   (P) Recoil protons detected
+HISTORY    (19670727C) Data compiled as Dastar-00113
+           (19720405T) Data converted to Exfor
+           (19760625U) Labcode and other bib corrections. OS
+           (20080208A) BIB section updated
+ENDBIB              16
+COMMON               2          3
+EN         EN-RSL
+MEV        MEV
+ 1.4100E+01 3.5000E-01
+ENDCOMMON            3
+ENDSUBENT           23
+SUBENT        30162002   20080208   20080530   20080530       3126
+BIB                  3          4
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,REL)
+STATUS     (TABLE) Data taken from Karge's letter 23rd Jan 1967
+                  corresponding to fig.3 of Ann.Phys. 16, 354 1967
+ERR-ANALYS (ERR-S) All errors are statistical
+ENDBIB               4
+NOCOMMON             0          0
+DATA                 3          5
+ANG-CM     DATA       ERR-S
+ADEG       ARB-UNITS  ARB-UNITS
+ 1.7000E+02 1.0550E+02 5.8000E+00
+ 1.5000E+02 1.0850E+02 4.9000E+00
+ 1.3000E+02 1.0310E+02 3.8000E+00
+ 1.1000E+02 9.7500E+01 3.4000E+00
+ 9.0000E+01 1.0220E+02 3.2000E+00
+ENDDATA              7
+ENDSUBENT           16
+SUBENT        30162003   20080208   20080530   20080530       3126
+BIB                  4         13
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,COS/RS)
+COMMENT    The experimental points are fitted by
+           sigma(arb-units) = 1. + 0.074 * cos(ang) ** 2
+           which yields
+           diff-sigma(180.Deg) / diff-sigma(90.deg) = 1.074+-0.04
+           All in center-of-mass-system
+STATUS     (DEP,30162002). The given parameters are taken from
+                Large's letter (23rd Jan 1967) corresponding to
+                      the table in Ann.Phys. 16, 354 1967
+                     .And are obtained by fitting cos**2 to the
+                      measured data compiled as Exfor-30162.002
+ERR-ANALYS No error for the cos**2 coefficient given, whereas
+           error for the diff-sigma-ratio is given in the comment
+ENDBIB              13
+NOCOMMON             0          0
+DATA                 2          1
+NUMBER-CM  DATA
+NO-DIM     NO-DIM
+ 2.0000E+00 7.4000E-02
+ENDDATA              3
+ENDSUBENT           21
+ENDENTRY             3
