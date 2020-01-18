@@ -4,11 +4,19 @@ This package `x4i3` is a fork of the original `x4i` developed by David A. Brown 
 
 The database resembles a collection of experimental and evaluated nuclear data files in the EXFOR format (*.x4), a structured markup language. The mark-up language is quite complex and the data has legacy issues, such as data sets entered by hand or issues with the strict alignment criteria of FORTRAN-era punch cards. The documentation by David A. Brown describes a few basics of the format. Please use this [documentation](doc/x4i/x4i.pdf), the references therein and the other files in the [doc](doc) folder. Please also cite the papers about the database if you use these data in your research.
 
-The main purpose of this fork is to ensure that such a valuable and complex tool does stays available. Also, the original link for this code is dead and Python 2 is deprecated.
+The main purpose of this fork is to ensure that such a valuable and complex tool does stays available. Also, the original link for this code is dead and Python 2 is deprecated. As a standalone pure Python package on pip, it may cure derived works from a potential GPL infection.  
 
 ### History
 
 This fork emerged originally in 2016 when we tried to benchmark current photo-nuclear interaction codes against experimental data in a project related to Ultra-High Energy Cosmic Rays. One paper that came out [has a quite useful plot (Figure 1)](https://www.nature.com/articles/s41598-017-05120-7). Actually, this figure is [an interactive matplotlib application](https://github.com/afedynitch/EXFOR-chart) that used the original `x4i` as a backend. When a box is clicked x4i gathers experimental data from EXFOR, applies some filtering and visualizes the data against pre-computed model predictions.
+
+### Examples
+
+Nothing very useful yet. To check out if the installation is successful, try:
+
+        python examples/get-entry.py --data -s 10504002
+
+It should print some fission cross section to stdout.
 
 ### Contributions
 
@@ -40,5 +48,5 @@ There is currently no separate documentation for `x4i3`. Please use the original
 
 ### Copyright and license
 
-This code is distributed under the [GNU General Public License (GPLv2) (see LICENSE)](LICENSE.txt)., without any warranty or guaranty for proper operations. The full disclaimer and license information is located in the [LICENSE](LICENCE.txt). Very unfortunately, the original code is GPLv2 and hence infects in a nontransparent way all derived works such as this. Be warned!
+This code is distributed under the [GNU General Public License (GPLv2) (see LICENSE)](LICENSE.txt) without any warranty or guaranty. The full disclaimer and license information is located in the [LICENSE](LICENCE.txt). Very unfortunately, the original code is GPLv2 infecting in a nontransparent way all derived works such as this. Be warned!
 
