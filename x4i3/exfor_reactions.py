@@ -22,6 +22,8 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
+import sys
+
 from .endl_Z import endl_ZSymbol
 from .exfor_exceptions import (
     ReactionParsingError,
@@ -42,7 +44,11 @@ from .exfor_particle import (
     X4Isomer,
     X4ChemicalCompound,
     X4VariableParticle)
-from .pyparsing import ParseResults, ParseException
+
+if sys.version_info < (3, 0, 0):
+    from .pyparsing2 import ParseException, ParseResults
+else:
+    from .pyparsing3 import ParseException, ParseResults
 
 # ------------------------------------------------------
 # Global data

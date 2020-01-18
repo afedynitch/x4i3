@@ -22,14 +22,21 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
+import sys
+import copy
+
 from . import exfor_utilities
 from . import exfor_reactions
 from . import exfor_dicts
 from . import exfor_grammers
 from . import exfor_reference
 from . import exfor_exceptions
-from .pyparsing import ParseException
-import copy
+
+if sys.version_info < (3, 0, 0):
+    from .pyparsing2 import ParseException
+else:
+    from .pyparsing3 import ParseException
+
 
 
 def chunkifyX4TextField(oldtext):
@@ -106,8 +113,10 @@ class X4PlainField(dict):
             if not pointer in self:
                 self[pointer] = X4SubField()
             self[pointer].append(line[11:66].rstrip())
-        self.sorted_keys = list(self.keys())
-        self.sorted_keys.sort()
+
+    @property
+    def sorted_keys(self):
+        return sorted(list(self.keys()))
 
     def total_len(self): return sum([len(self[p]) for p in self])
 
@@ -208,7 +217,7 @@ class X4ReactionField(X4PlainField):
         ans = []
         if self.reactions == {}:
             return ans
-        for j in self:
+        for j in self.sorted_keys:
             if j == ' ':
                 ans.append(str(self.reactions[j][0]))
             else:

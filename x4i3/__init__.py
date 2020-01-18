@@ -50,7 +50,7 @@ import os
 import sys
 
 MAJOR_VERSION = 1
-MINOR_VERSION = 0
+MINOR_VERSION = 1
 PATCH = 0
 
 __package_name__ = "x4i3 -- The Exfor Interface"

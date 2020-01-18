@@ -33,6 +33,12 @@ from .exfor_column_parsing import (condenseColumn,
 from .exfor_reactions import X4ReactionCombination
 import copy
 from functools import reduce
+import sys
+
+if sys.version_info < (3, 0, 0):
+    pyver = 2
+else:
+    pyver = 3
 
 
 class X4DataSet(X4BibMetaData):
@@ -138,6 +144,14 @@ class X4DataSet(X4BibMetaData):
         return result
 
     def __str__(self):
+        def unify_py2py3_str(s):
+            if pyver == 2:
+                return str(s)
+            try:
+                return str(float(format(j, '.12g')))
+            except:
+                return str(s)
+
         out = self.strHeader()
         out += '\n' + COMMENTSTRING + '        '
         for i in self.labels:
@@ -148,7 +162,7 @@ class X4DataSet(X4BibMetaData):
         out += '\n        '
         for i in self.data:
             for j in i:
-                out += str(j).ljust(14)
+                out += unify_py2py3_str(j).ljust(14)
             out += '\n        '
         return out
 

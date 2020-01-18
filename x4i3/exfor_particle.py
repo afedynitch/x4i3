@@ -35,8 +35,11 @@ import sys
 from .exfor_exceptions import ParticleParsingError, IsomerMathParsingError
 from .exfor_grammers import x4particle, x4nucleus, x4chemical_compound
 from .exfor_dicts import X4DictionaryServer
-from .pyparsing import ParseException, ParseResults
 
+if sys.version_info < (3, 0, 0):
+    from .pyparsing2 import ParseException, ParseResults
+else:
+    from .pyparsing3 import ParseException, ParseResults
 # ------------------------------------------------------
 # Global data
 # ------------------------------------------------------

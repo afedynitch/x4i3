@@ -84,7 +84,7 @@ class TestX4PlainFieldPointer(unittest.TestCase):
 
 
 class TestX4ReactionField(unittest.TestCase):
-
+    
     def setUp(self):
         self.instring = '''REACTION   ((30-ZN-64(N,G)30-ZN-65,,RI)/\n           (30-ZN-64(N,G)30-ZN-65,,SIG))'''
         self.field = exfor_field.X4ReactionField(self.instring.split('\n'))
@@ -129,12 +129,14 @@ class TestX4ReactionField(unittest.TestCase):
         self.assertEqual(
             str(testField),
             '(( Cross section for 248Cm(22Ne,5n)265mSg )+( Cross section for 248Cm(22Ne,5n)265m2Sg ))')
+        
         testFieldString = '''REACTION  1(44-RU-OXI(N,THS)44-RU-OXI,BA/COH,AMP)
           2(44-RU-OXI(N,THS)44-RU-OXI,BA/COH,AMP)
           3(44-RU-OXI(N,THS)44-RU-OXI,BA/COH,AMP) Bound molecule
             coherent scattering length at zero neutron energy.'''
         testField = exfor_field.X4ReactionField(testFieldString.split('\n'))
-        self.assertEqual(str(testField), '[1] Bound-atom coherent scattering amplitude for Ruthenium oxide(n,ThermalScattering)Ruthenium oxide; [3] Bound-atom coherent scattering amplitude for Ruthenium oxide(n,ThermalScattering)Ruthenium oxide, Bound molecule coherent scattering length at zero neutron energy.; [2] Bound-atom coherent scattering amplitude for Ruthenium oxide(n,ThermalScattering)Ruthenium oxide')
+        self.assertEqual(str(testField), '[1] Bound-atom coherent scattering amplitude for Ruthenium oxide(n,ThermalScattering)Ruthenium oxide; [2] Bound-atom coherent scattering amplitude for Ruthenium oxide(n,ThermalScattering)Ruthenium oxide; [3] Bound-atom coherent scattering amplitude for Ruthenium oxide(n,ThermalScattering)Ruthenium oxide, Bound molecule coherent scattering length at zero neutron energy.')
+        
         testFieldString = '''REACTION  1(72-HF-178-M2(N,G)72-HF-179-G,,SIG)
           2(72-HF-178-M2(N,G)72-HF-179-G,,RI)
           3(72-HF-178-M2(N,G)72-HF-179-M2/G,,SIG/RAT)
@@ -143,7 +145,7 @@ class TestX4ReactionField(unittest.TestCase):
         testField = exfor_field.X4ReactionField(testFieldString.split('\n'))
         self.assertEqual(
             str(testField),
-            '[1] Cross section for 178m2Hf(n,gamma)179m0Hf; [3] (( Cross section ratio for 178m2Hf(n,gamma)179m2Hf )/( Cross section ratio for 178m2Hf(n,gamma)179m0Hf )); [2] Resonance integral for 178m2Hf(n,gamma)179m0Hf; [5] Resonance integral for 178m2Hf(n,gamma)179m2Hf; [4] Cross section for 178m2Hf(n,gamma)179m2Hf')
+            '[1] Cross section for 178m2Hf(n,gamma)179m0Hf; [2] Resonance integral for 178m2Hf(n,gamma)179m0Hf; [3] (( Cross section ratio for 178m2Hf(n,gamma)179m2Hf )/( Cross section ratio for 178m2Hf(n,gamma)179m0Hf )); [4] Cross section for 178m2Hf(n,gamma)179m2Hf; [5] Resonance integral for 178m2Hf(n,gamma)179m2Hf')
         testFieldString = '''REACTION   (72-HF-178-M2(N,G)72-HF-179-G+M2,,SIG,,RES)    Indivi-
             dual resonance contribution in capture cross-section'''
         testField = exfor_field.X4ReactionField(testFieldString.split('\n'))

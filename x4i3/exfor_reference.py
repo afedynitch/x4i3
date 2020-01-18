@@ -24,11 +24,16 @@
 
 import string
 import os
+import sys
 import copy
-from .pyparsing import commaSeparatedList, ParseException
+
 from .exfor_utilities import x4Dictionaries
 from .exfor_exceptions import ReferenceParsingError
 
+if sys.version_info < (3, 0, 0):
+    from .pyparsing2 import commaSeparatedList, ParseException
+else:
+    from .pyparsing3 import commaSeparatedList, ParseException
 
 def parseX4Year(date):
     """
