@@ -32,6 +32,8 @@ Currently there is no development goals beyond basic maintenance.
 
     pip install x4i3
 
+Note that on first import ~600MB will be downloaded and 22k files will be decompressed to the data directory.
+
 ### Support tools
 
 To reduce the weight of this package, the database management tools have been moved to a different project [`x4i3_tools`](https://github.com/afedynitch/x4i3_tools) since these are for advanced users anyways.

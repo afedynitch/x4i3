@@ -1,7 +1,6 @@
 ## Changelog
 
-
-### x4i3 - 1.1.0 16/01/2020
+### x4i3 - 1.1.0 19/01/2020
 - initial release of the fork x4i3
 - compatibility with Python 2 and 3
 - DataBaseCache that reads all .x4 files in the db directory into memory. Takes time on first startup (until FS cache kicks in) and requires more RAM (+1.5 GB) but accelerates repeated queries. To use this feature use X4DBManagerCompressedDictionary instead of X4DBManagerPlainFS
@@ -19,6 +18,7 @@
 - added get-entry.py to examples but not debugged
 - Tests successful using Python 2.7.17 and 3.7.5 on Windows and Linux
 - Pyparsing2 and Pyparsing3 modules added since tests with new Pyparsing under Python 2.7
+- automatic download and decompression of the data directory
 
 ### x4i - 1.0.3, 15/02/2011
 - Original release of x4i by David A. Brown (LLNL)
