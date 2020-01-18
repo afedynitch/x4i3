@@ -1,10 +1,12 @@
 # x4i3 specific
 .vscode
-x4i3/data/db
 x4i3/data/*.pickle
 x4i3/data/*.tbl
-x4i3/test/data
-  
+x4i3/data/db
+x4i3/test
+*.csv
+*.xml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -146,3 +148,6 @@ API
 Training
 Blog
 About
+junk1.csv
+data/db/113/11321.x4
+data/x4doi.txt
