@@ -96,7 +96,9 @@ TESTDATAPATH = os.sep.join(__path__ + ['tests', 'data'])  # Mock db for testing
 testDBPath = TESTDATAPATH + os.sep + dbPath
 testIndexFileName = TESTDATAPATH + os.sep + indexFileName
 
-def _download_and_unpack_file(url, outfile):
+# URL to the compressed database files on github
+url="https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz"
+def _download_and_unpack_file(url):
     """Downloads the database files created with setup-exfor-db.py as
     a tarball and unpacks them to the correct folder."""
 
@@ -104,34 +106,53 @@ def _download_and_unpack_file(url, outfile):
     import requests
     import math
     import tarfile
+    import tempfile
 
     # Streaming, so we can iterate over the response.
     r = requests.get(url, stream=True)
+    tarname = os.path.basename(url)
 
     # Total size in bytes.
     total_size = int(r.headers.get('content-length', 0))
     block_size = 1024 * 1024
     wrote = 0
-    with open(outfile, 'wb') as f:
-        for data in tqdm(r.iter_content(block_size), total=math.ceil(total_size // block_size),
-                         unit='MB', unit_scale=True):
-            wrote = wrote + len(data)
-            f.write(data)
+    tempfile = tempfile.TemporaryFile()
+    
+    print('Downloading data file', tarname)
+    for data in tqdm(r.iter_content(block_size), total=math.ceil(total_size // block_size),
+                    unit='MB', unit_scale=True):
+        wrote = wrote + len(data)
+        tempfile.write(data)
     if total_size != 0 and wrote != total_size:
         raise Exception("ERROR, something went wrong")
+    tempfile.flush()
+    tempfile.seek(0)
+    print('Decompressing archive', tarname)
+    wrote = 0
+    with tarfile.open(fileobj=tempfile, mode='r:') as _tar:
+        total = len(_tar.getmembers())
+        for member in tqdm(_tar.getmembers(), total=total):
+            wrote = wrote + len(data)
+            _tar.extract(member, DATAPATH)
+    tempfile.close()
 
-    # Add automatic untar gunzip
-    # if files not found
-    # Check if files are present
-    # Add tqdm to requirements
-
-
-def check_if_exists(path):
+def check_if_exists(path, return_bool=False):
+    if return_bool:
+        if not os.path.exists(path):
+            return False
+        else:
+            return True    
     if not os.path.exists(path):
         raise IOError('File/Directory', path, 'not found. Check installation.')
 
+# Check if all files can be located and redownload the archive
+if not all([check_if_exists(p, return_bool=True) for p in [
+    DATAPATH, fullIndexFileName, fullErrorFileName,
+    fullCoupledFileName, fullMonitoredFileName,
+    fullReactionCountFileName, fullDBPath]]):
+    _download_and_unpack_file(url)
 
-# Check if all files can be located
+# Check if all files can be located and raise exception if still not there
 _ = [check_if_exists(p) for p in [
     DATAPATH, fullIndexFileName, fullErrorFileName,
     fullCoupledFileName, fullMonitoredFileName,
