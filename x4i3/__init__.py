@@ -76,8 +76,6 @@ __disclaimer__ = \
 
 # Common filenames
 indexFileName = 'index.tbl'
-# dictionaryFileName = 'dictionaries.tbl'
-# doiFileName = 'doi.tbl'
 errorFileName = 'error-entries.pickle'
 coupledFileName = 'coupled-entries.pickle'
 monitoredFileName = 'monitored-entries.pickle'
@@ -87,7 +85,6 @@ dbPath = 'db'
 # Paths for standard usage
 DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
 fullIndexFileName = os.path.join(DATAPATH, indexFileName)
-# fullDoiFileName = os.path.join(DATAPATH, doiFileName)
 fullErrorFileName = os.path.join(DATAPATH, errorFileName)
 fullCoupledFileName = os.path.join(DATAPATH, coupledFileName)
 fullMonitoredFileName = os.path.join(DATAPATH, monitoredFileName)
@@ -106,7 +103,7 @@ def _download_and_unpack_file(url, outfile):
     from tqdm import tqdm
     import requests
     import math
-    import gzip
+    import tarfile
 
     # Streaming, so we can iterate over the response.
     r = requests.get(url, stream=True)

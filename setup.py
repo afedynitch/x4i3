@@ -67,14 +67,12 @@ setup(
             os.sep.join(['test_data.tar.gz'])]},
     url='https://github.com/afedynitch/x4i3/',
     install_requires=[
-        'six',
         'tqdm',
         'requests',
-        'pyparsing',
     ],
     extras_require={"tests": ["pytest"]},
     description='A "simple" python interface to the EXFOR library',
-    long_description=open('README.md').read().decode('UTF-8'),
+    long_description=open('README.md', 'rb').read().decode('UTF-8'),
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',

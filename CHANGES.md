@@ -17,7 +17,8 @@
 - check if all data files are available
 - removed "quick access" functions from __init__.py of x4i3 since this is bad practice and can result in circular dependencies
 - added get-entry.py to examples but not debugged
-- Tests successful on Python 2.7 on Windows and Linux
+- Tests successful using Python 2.7.17 and 3.7.5 on Windows and Linux
+- Pyparsing2 and Pyparsing3 modules added since tests with new Pyparsing under Python 2.7
 
 ### x4i - 1.0.3, 15/02/2011
 - Original release of x4i by David A. Brown (LLNL)
