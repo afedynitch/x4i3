@@ -1,11 +1,11 @@
 steps:
   - script: |
       python -c "import x4i3"
-    displayName: 'Download of the binary file'
+    displayName: 'Trigger download of binary database'
 
   - script: |
       pip install pytest pytest-azurepipelines
-      python -m pytest --junitxml=junit/test-results.xml
+      python -m pytest --pyargs x4i3 --junitxml=junit/test-results.xml
     displayName: 'Test with pytest'
 
   - task: PublishTestResults@2

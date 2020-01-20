@@ -35,8 +35,8 @@ jobs:
     displayName: 'Make wheel'
   - task: PublishPipelineArtifact@1
     inputs:
-      artifactName: 'artifact_x4i3_universal'
-      targetPath: 'x4i3_wheels'
+      targetPath: 'dist'
+      artifact: 'artifact_$(package_name)'
 
 
 - job: TestWindows
@@ -71,4 +71,12 @@ jobs:
   pool:
     vmImage: 'vs2017-win2016'
   steps:
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        artifact: 'artifact_$(package_name)'
+    - script: |
+        python -m pip install --upgrade pip
+        python -m pip $(package_name) --no-index -f dist
+      displayName: 'Install wheel'
+
     - template: azure-tests.yml
