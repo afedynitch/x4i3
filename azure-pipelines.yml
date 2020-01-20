@@ -37,7 +37,7 @@ steps:
     targetPath: 'dist'
 
 - script: |
-    python -m x4i3
+    python -c "import x4i3"
   displayName: 'Download of the binary file'
 
 - script: |
