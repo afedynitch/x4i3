@@ -54,10 +54,6 @@ setup(
     maintainer='Anatoli Fedynitch',
     maintainer_email='afedynitch@gmail.com',
     packages=['x4i3', 'x4i3.tests'],
-    # package_dir={
-    #     'x4i3': 'x4i3',
-    #     'x4i3.tests': 'x4i3/tests',
-    # },
     package_data={
         'x4i3': [
             os.sep.join(['dicts', '*.txt']),
