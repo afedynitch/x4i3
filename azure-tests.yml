@@ -1,4 +1,18 @@
 steps:
+  - task: DownloadPipelineArtifact@2
+    inputs:
+      artifact: 'artifact_$(package_name)'
+      path: 'dist'
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+      architecture: '$(python.architecture)'
+      displayName: 'Switch to Python $(python.version) on $(python.architecture)'
+  - script: |
+      python -m pip install --upgrade pip
+      python -m pip install -r requirements.txt
+      python -m pip install $(package_name) --no-index -f dist
+    displayName: 'Install wheel'
   - script: |
       python -c "import x4i3"
     displayName: 'Trigger download of binary database'

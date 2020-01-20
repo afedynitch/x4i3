@@ -42,51 +42,131 @@ jobs:
       artifact: 'artifact_$(package_name)'
 
 
-- job: TestWindows
+# - job: TestWindows
+#   dependsOn: BuildUniversal
+#   condition: succeeded()
+#   pool:
+#     vmImage: 'windows-latest'
+#   strategy:
+#     matrix:
+#       Python27:
+#         python.version: '2.7'
+#         python.architecture: 'x64'
+#       Python36:
+#         python.version: '3.6'
+#         python.architecture: 'x64'
+#       Python37:
+#         python.version: '3.7'
+#         python.architecture: 'x64'
+#       Python38:
+#         python.version: '3.8'
+#         python.architecture: 'x64'
+#       Python27_32:
+#         python.version: '2.7'
+#         python.architecture: 'x86'
+#       Python36_32:
+#         python.version: '3.6'
+#         python.architecture: 'x86'
+#       Python37_32:
+#         python.version: '3.7'
+#         python.architecture: 'x86'
+#       Python38_32:
+#         python.version: '3.8'
+#         python.architecture: 'x86'
+#   steps:
+#     - template: azure-tests.yml
+
+# - job: TestLinux
+#   dependsOn: BuildUniversal
+#   condition: succeeded()
+#   pool:
+#     vmImage: 'ubuntu-latest'
+#   strategy:
+#     matrix:
+#       Python27:
+#         python.version: '2.7'
+#         python.architecture: 'x64'
+#       Python36:
+#         python.version: '3.6'
+#         python.architecture: 'x64'
+#       Python37:
+#         python.version: '3.7'
+#         python.architecture: 'x64'
+#       Python38:
+#         python.version: '3.8'
+#         python.architecture: 'x64'
+#       Python27_32:
+#         python.version: '2.7'
+#         python.architecture: 'x86'
+#       Python36_32:
+#         python.version: '3.6'
+#         python.architecture: 'x86'
+#       Python37_32:
+#         python.version: '3.7'
+#         python.architecture: 'x86'
+#       Python38_32:
+#         python.version: '3.8'
+#         python.architecture: 'x86'
+#   steps:
+#     - template: azure-tests.yml
+
+  
+- job: TestMacOS
   dependsOn: BuildUniversal
   condition: succeeded()
+  pool:
+    vmImage: 'macOS-latest'
+  variables:
+    python.architecture: 'x64'
   strategy:
     matrix:
       Python27:
         python.version: '2.7'
-        python.architecture: 'x64'
       Python36:
         python.version: '3.6'
-        python.architecture: 'x64'
       Python37:
         python.version: '3.7'
-        python.architecture: 'x64'
       Python38:
         python.version: '3.8'
-        python.architecture: 'x64'
-      Python27_32:
-        python.version: '2.7'
-        python.architecture: 'x86'
-      Python36_32:
-        python.version: '3.6'
-        python.architecture: 'x86'
-      Python37_32:
-        python.version: '3.7'
-        python.architecture: 'x86'
-      Python38_32:
-        python.version: '3.8'
-        python.architecture: 'x86'
-  pool:
-    vmImage: 'vs2017-win2016'
   steps:
-    - task: DownloadPipelineArtifact@2
-      inputs:
-        artifact: 'artifact_$(package_name)'
-        path: 'dist'
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(python.version)'
-        architecture: '$(python.architecture)'
-        displayName: 'Switch to Python $(python.version) on $(python.architecture)'
-    - script: |
-        python -m pip install --upgrade pip
-        python -m pip install -r requirements.txt
-        python -m pip install $(package_name) --no-index -f dist
-      displayName: 'Install wheel'
+    - script:
+        PYTHON_VERSION="$1"
+
+        case $PYTHON_VERSION in
+        2.7)
+          FULL_VERSION=2.7.17
+          ;;
+        3.6)
+          FULL_VERSION=3.6.9
+          ;;
+        3.7)
+          FULL_VERSION=3.7.6
+          ;;
+        3.8)
+          FULL_VERSION=3.8.1
+          ;;
+        esac
+
+        INSTALLER_NAME=python-$FULL_VERSION-macosx10.9.pkg
+        URL=https://www.python.org/ftp/python/$FULL_VERSION/$INSTALLER_NAME
+
+        PY_PREFIX=/Library/Frameworks/Python.framework/Versions
+
+        set -e -x
+
+        curl $URL > $INSTALLER_NAME
+
+        sudo installer -pkg $INSTALLER_NAME -target /
+
+        sudo rm /usr/local/bin/python
+        sudo ln -s /usr/local/bin/python$PYTHON_VERSION /usr/local/bin/python
+
+        which python
+        python --version
+        python -m ensurepip
+        python -m pip install pip --upgrade
+        python -m pip install setuptools twine wheel
+      displayName: 'Installing python from python.org'
 
     - template: azure-tests.yml
+  
