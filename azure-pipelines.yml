@@ -85,6 +85,7 @@ jobs:
         displayName: 'Switch to Python $(python.version) on $(python.architecture)'
     - script: |
         python -m pip install --upgrade pip
+        python -m pip install -r requirements.txt
         python -m pip install $(package_name) --no-index -f dist
       displayName: 'Install wheel'
 
