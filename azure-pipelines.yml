@@ -95,18 +95,18 @@ jobs:
       Python38:
         python.version: '3.8'
         python.architecture: 'x64'
-      Python27_32:
-        python.version: '2.7'
-        python.architecture: 'x86'
-      Python36_32:
-        python.version: '3.6'
-        python.architecture: 'x86'
-      Python37_32:
-        python.version: '3.7'
-        python.architecture: 'x86'
-      Python38_32:
-        python.version: '3.8'
-        python.architecture: 'x86'
+      # Python27_32:
+      #   python.version: '2.7'
+      #   python.architecture: 'x86'
+      # Python36_32:
+      #   python.version: '3.6'
+      #   python.architecture: 'x86'
+      # Python37_32:
+      #   python.version: '3.7'
+      #   python.architecture: 'x86'
+      # Python38_32:
+      #   python.version: '3.8'
+      #   python.architecture: 'x86'
   steps:
     - template: azure-tests.yml
 
