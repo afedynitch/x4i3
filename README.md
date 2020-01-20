@@ -12,7 +12,7 @@ The main purpose of this fork is to ensure that such a valuable and complex tool
 
 ### History
 
-This fork emerged originally in 2016 when we tried to benchmark current photo-nuclear interaction codes against experimental data in a project related to Ultra-High Energy Cosmic Rays. One paper that came out [has a quite useful plot (Figure 1)](https://www.nature.com/articles/s41598-017-05120-7). Actually, this figure is [an interactive matplotlib application](https://github.com/afedynitch/EXFOR-chart) that used the original `x4i` as a backend. When a box is clicked x4i gathers experimental data from EXFOR, applies some filtering and visualizes the data against pre-computed model predictions.
+This fork emerged originally in 2016 when we tried to benchmark current photo-nuclear interaction codes against experimental data in a project related to Ultra-High Energy Cosmic Rays. One paper that came out [has a quite useful plot (Figure 1)](https://www.nature.com/articles/s41598-017-05120-7). Actually, this figure is [an interactive matplotlib application](https://github.com/afedynitch/EXFOR_chart) that used the original `x4i` as a backend. When a box is clicked x4i gathers experimental data from EXFOR, applies some filtering and visualizes the data against pre-computed model predictions.
 
 ### Examples
 
