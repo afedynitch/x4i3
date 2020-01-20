@@ -46,6 +46,10 @@ import os
 import setuptools
 from distutils.core import setup
 
+this_directory = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='x4i3',
     version='1.1.0',
@@ -68,6 +72,8 @@ setup(
     ],
     extras_require={"tests": ["pytest"]},
     description='A "simple" python interface to the EXFOR library',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
