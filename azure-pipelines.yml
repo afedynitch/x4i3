@@ -161,10 +161,15 @@ jobs:
         sudo ln -s /usr/local/bin/python$(python.version) /usr/local/bin/python
 
         which python
+
         python --version
+
         python -m ensurepip
+
         python -m pip install pip --upgrade
+
         python -m pip install setuptools twine wheel
+        
       displayName: 'Installing python from python.org'
 
     - template: azure-tests.yml
