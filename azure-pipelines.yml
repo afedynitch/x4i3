@@ -38,7 +38,7 @@ steps:
 
 - script:
   python -m x4i3
-  displayName: Download of the binary file
+  displayName: 'Download of the binary file'
 
 - script: |
     pip install pytest pytest-azurepipelines
