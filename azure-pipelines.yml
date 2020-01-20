@@ -79,7 +79,7 @@ jobs:
         artifact: 'artifact_$(package_name)'
     - script: |
         python -m pip install --upgrade pip
-        python -m pip $(package_name) --no-index -f dist
+        python -m pip install $(package_name) --no-index -f dist
       displayName: 'Install wheel'
 
     - template: azure-tests.yml
