@@ -129,7 +129,7 @@ def _download_and_unpack_file(url):
     tempfile.seek(0)
     print('Decompressing archive', tarname)
     wrote = 0
-    with tarfile.open(fileobj=tempfile, mode='r:') as _tar:
+    with tarfile.open(fileobj=tempfile, mode='r') as _tar:
         total = len(_tar.getmembers())
         for member in tqdm(_tar.getmembers(), total=total):
             wrote = wrote + len(data)
