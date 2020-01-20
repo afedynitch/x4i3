@@ -36,8 +36,8 @@ steps:
     artifactName: 'artifact_$(Agent.OS)_$(Agent.JobName)_$(python.architecture)'
     targetPath: 'dist'
 
-- script:
-  python -m x4i3
+- script: |
+    python -m x4i3
   displayName: 'Download of the binary file'
 
 - script: |
