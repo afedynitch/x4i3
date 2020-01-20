@@ -53,7 +53,7 @@ jobs:
       Python37:
         python.version: '3.7'
         python.architecture: 'x64'
-      Python37:
+      Python38:
         python.version: '3.8'
         python.architecture: 'x64'
       Python27_32:
