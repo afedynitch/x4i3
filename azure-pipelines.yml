@@ -6,41 +6,74 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+pr:
+- master
 
-variables:
-    python.architecture: 'none'
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.7'
-    architecture: 'x64'
+jobs:
 
-- script: |
-    python -m pip install --upgrade pip
-    python -m pip install --upgrade setuptools wheel
-    python -m pip install -r requirements.txt
-  displayName: 'Install dependencies'
+job: Build wheel
 
-- script: |
-    python setup.py sdist
-  displayName: 'Make sdist'
+  pool:
+    vmImage: 'ubuntu-latest'
 
-- script: |
-    python setup.py bdist_wheel --universal
-  displayName: 'Make wheel'
+  variables:
+      python.architecture: 'none'
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.7'
+      architecture: 'x64'
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'artifact_$(Agent.OS)_$(Agent.JobName)_$(python.architecture)'
-    targetPath: 'dist'
+  - script: |
+      python -m pip install --upgrade pip
+      python -m pip install --upgrade setuptools wheel
+      python -m pip install -r requirements.txt
+    displayName: 'Install dependencies'
 
-- script: |
-    python -c "import x4i3"
-  displayName: 'Download of the binary file'
+  - script: |
+      python setup.py sdist
+    displayName: 'Make sdist'
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+  - script: |
+      python setup.py bdist_wheel --universal
+    displayName: 'Make wheel'
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      artifactName: 'artifact_x4i3_universal'
+      targetPath: 'x4i3_wheels'
+
+
+- job: Test wheel Windows
+  dependsOn: Build wheel
+  condition: succeeded()
+  strategy:
+    matrix:
+      Python27:
+        python.version: '2.7'
+        python.architecture: 'x64'
+      Python36:
+        python.version: '3.6'
+        python.architecture: 'x64'
+      Python37:
+        python.version: '3.7'
+        python.architecture: 'x64'
+      Python37:
+        python.version: '3.8'
+        python.architecture: 'x64'
+      Python27_32:
+        python.version: '2.7'
+        python.architecture: 'x86'
+      Python36_32:
+        python.version: '3.6'
+        python.architecture: 'x86'
+      Python37_32:
+        python.version: '3.7'
+        python.architecture: 'x86'
+      Python38_32:
+        python.version: '3.8'
+        python.architecture: 'x86'
+  pool:
+    vmImage: 'vs2017-win2016'
+  steps:
+    - template: azure-tests.yml

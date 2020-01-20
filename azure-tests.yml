@@ -1,0 +1,15 @@
+steps:
+  - script: |
+      python -c "import x4i3"
+    displayName: 'Download of the binary file'
+
+  - script: |
+      pip install pytest pytest-azurepipelines
+      python -m pytest --junitxml=junit/test-results.xml
+    displayName: 'Test with pytest'
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/test-*.xml'
+      testRunTitle: 'Publish test results for Python $(python.version)'
+    condition: succeededOrFailed()
