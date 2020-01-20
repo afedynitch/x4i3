@@ -1,3 +1,7 @@
+![PyPI](https://img.shields.io/pypi/v/x4i3)
+[![Build Status](https://dev.azure.com/afedynitch/NuclearTools/_apis/build/status/afedynitch.x4i3?branchName=master)](https://dev.azure.com/afedynitch/NuclearTools/_build/latest?definitionId=4&branchName=master)
+![Azure DevOps releases](https://img.shields.io/azure-devops/release/afedynitch/66c7ff07-d4ed-41bb-b939-9ed4dd5d61f9/1/1)
+
 # x4i3 - The EXFOR Interface [for Python 3]
 
 This package `x4i3` is a fork of the original `x4i` developed by David A. Brown (LLNL, Livermore CA, 94550). This pure python software acts as an interface to [Experimental Nuclear Reaction Data (EXFOR)](https://www-nds.iaea.org/exfor/) that the [International Atomic Energy Agency (IAEA)](https://www-nds.iaea.org/nrdc/) actively maintains. 
