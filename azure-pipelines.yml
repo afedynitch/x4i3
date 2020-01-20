@@ -9,6 +9,9 @@ trigger:
 pr:
 - master
 
+variables:
+  package_name: x4i3
+
 jobs:
 
 - job: BuildUniversal
