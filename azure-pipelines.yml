@@ -11,7 +11,7 @@ pr:
 
 jobs:
 
-- job: Build wheel
+- job: BuildUniversal
 
   pool:
     vmImage: 'ubuntu-latest'
@@ -39,8 +39,8 @@ jobs:
       targetPath: 'x4i3_wheels'
 
 
-- job: Test wheel Windows
-  dependsOn: Build wheel
+- job: TestWindows
+  dependsOn: BuildUniversal
   condition: succeeded()
   strategy:
     matrix:
