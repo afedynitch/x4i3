@@ -1,5 +1,11 @@
 # Changelog
 
+
+## x4i3 - 1.2.1 28/05/2021
+
+- Added Python 3.9 to CI
+- Test data added to source wheel
+
 ## x4i3 - 1.2.0 28/05/2021
 
 - Update to a more recent EXFOR database dated 2021/03/08

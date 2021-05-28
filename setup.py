@@ -52,7 +52,7 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='x4i3',
-    version='1.2.0',
+    version='1.2.1',
     author='David A. Brown (x4i3: Anatoli Fedynitch)',
     author_email='dbrown@bnl.gov',
     maintainer='Anatoli Fedynitch',
@@ -60,11 +60,11 @@ setup(
     packages=['x4i3', 'x4i3.tests'],
     package_data={
         'x4i3': [
-            os.sep.join(['dicts', '*.txt']),
-            os.sep.join(['data', 'README.data'])],
+            os.path.join('dicts', '*.txt'),
+            os.path.join('data', 'README.data')],
         'x4i3.tests': [
             '*.x4',
-            os.sep.join(['test_data.tar.gz'])]},
+            os.path.join('tests','data')]},
     url='https://github.com/afedynitch/x4i3/',
     install_requires=[
         'tqdm',
@@ -83,6 +83,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Scientific/Engineering :: Physics',
         'Intended Audience :: Science/Research',
         'Development Status :: 4 - Beta',
