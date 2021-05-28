@@ -240,7 +240,7 @@ database_dict = DataBaseCache()
 
 
 __all__ = [
-    '__init__', 'exfor_dataset', 'exfor_exceptions', 'exfor_manager', 'exfor_reference', 'exfor_utilities',
-    'endl_Z', 'exfor_dicts', 'exfor_field', 'exfor_particle', 'exfor_section', 'pyparsing',
+    '__init__', 'exfor_dataset', 'exfor_exceptions', 'exfor_manager', 'exfor_reference',
+    'exfor_utilities', 'endl_Z', 'exfor_dicts', 'exfor_field', 'exfor_particle', 'exfor_section',
     'exfor_column_parsing', 'exfor_entry', 'exfor_grammers', 'exfor_reactions', 'exfor_subentry'
 ]
