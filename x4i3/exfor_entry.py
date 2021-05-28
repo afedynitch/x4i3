@@ -47,15 +47,15 @@
 """
 exfor_entry module 
 """
-from . import exfor_subentry
-from . import exfor_dataset
-from . import exfor_exceptions
+from x4i3 import exfor_subentry
+from x4i3 import exfor_dataset
+from x4i3 import exfor_exceptions
 import os
-from .exfor_utilities import COMMENTSTRING
-from . import DATAPATH, fullDBPath
+from x4i3.exfor_utilities import COMMENTSTRING
+from x4i3 import DATAPATH, fullDBPath
 
 
-def x4EntryFactory(enum, subentsList=None, rawEntry=False):
+def x4EntryFactory(enum, subentsList=None, rawEntry=False, customDBPath=None):
     '''
     This function takes an EXFOR ENTRY number (enum), retrieves the corresponding file 
     from disk, and constructs a valid X4Entry.  The rawEntry=True flag returns optionally 
@@ -66,12 +66,14 @@ def x4EntryFactory(enum, subentsList=None, rawEntry=False):
             "A valid EXFOR ENTRY is a string with exactly 5 characters")
     result = []  # the entry, split into subentries
 
+    dbPath = fullDBPath if customDBPath is None else customDBPath
+    
     try:
-        with open(os.sep.join([fullDBPath, enum[:3], enum + '.x4']),
+        with open(os.path.join(dbPath, enum[:3], enum + '.x4'),
             mode='r', newline=None, encoding='latin1') as f:
             entry = f.readlines()
     except TypeError:
-        with open(os.sep.join([fullDBPath, enum[:3], enum + '.x4']),
+        with open(os.path.join(dbPath, enum[:3], enum + '.x4'),
             mode='rU') as f:
             entry = f.readlines()
     subent = ''
