@@ -1,9 +1,10 @@
 # Changelog
 
-## x4i3 - 1.2.0 27/05/2021
+## x4i3 - 1.2.0 28/05/2021
 
 - Update to a more recent EXFOR database dated 2021/03/08
 - main updates happened under the hood for the x4i3_tools support project
+- fixed bug in testing where entries were accidentally pulled from the real DB instead of the test DB
 
 ### x4i3 - 1.1.0 19/01/2020
 
