@@ -83,7 +83,8 @@ reactionCountFileName = 'reaction-count.pickle'
 dbPath = 'db'
 
 # URL to the compressed database files on github
-url="https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2021-03-08.tar.gz"
+url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2021-03-08.tar.gz'
+# url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz'
 
 # Paths for standard usage
 DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
@@ -107,6 +108,7 @@ def _download_and_unpack_file(url):
     a tarball and unpacks them to the correct folder."""
 
     from tqdm import tqdm
+    from glob import glob
     import requests
     import math
     import tarfile
@@ -125,6 +127,16 @@ def _download_and_unpack_file(url):
             os.remove(f)
         except FileNotFoundError:
             pass
+    # Tag files:
+    tag_files = [
+        f for tag in ['X4-*', 'EXFOR-*'] for f in glob(os.path.join(DATAPATH, tag))
+        ]
+    for tagfile in tag_files:
+        try:
+            os.remove(tagfile)
+        except FileNotFoundError:
+            pass
+        
 
     # Streaming, so we can iterate over the response.
     r = requests.get(url, stream=True)
@@ -167,18 +179,18 @@ def check_if_exists(path, return_bool=False):
     if not os.path.exists(path):
         raise IOError('File/Directory', path, 'not found. Check installation.')
 
-# Check if all files can be located and redownload the archive
-if not all([check_if_exists(p, return_bool=True) for p in [
-    DATAPATH, fullIndexFileName, fullErrorFileName,
-    fullCoupledFileName, fullMonitoredFileName,
-    fullReactionCountFileName, fullDBPath, dbTagFile]]):
-    _download_and_unpack_file(url)
+# # Check if all files can be located and redownload the archive
+# if not all([check_if_exists(p, return_bool=True) for p in [
+#     DATAPATH, fullIndexFileName, fullErrorFileName,
+#     fullCoupledFileName, fullMonitoredFileName,
+#     fullReactionCountFileName, fullDBPath, dbTagFile]]):
+#     _download_and_unpack_file(url)
 
-# Check if all files can be located and raise exception if still not there
-_ = [check_if_exists(p) for p in [
-    DATAPATH, fullIndexFileName, fullErrorFileName,
-    fullCoupledFileName, fullMonitoredFileName,
-    fullReactionCountFileName, fullDBPath, dbTagFile]]
+# # Check if all files can be located and raise exception if still not there
+# _ = [check_if_exists(p) for p in [
+#     DATAPATH, fullIndexFileName, fullErrorFileName,
+#     fullCoupledFileName, fullMonitoredFileName,
+#     fullReactionCountFileName, fullDBPath, dbTagFile]]
 
 # Applications that query multiple entries subsequently using an in-memory
 # dictionary that contains all .x4 files from the db folder can improve performance
