@@ -67,7 +67,6 @@ def x4EntryFactory(enum, subentsList=None, rawEntry=False, customDBPath=None):
     result = []  # the entry, split into subentries
 
     dbPath = fullDBPath if customDBPath is None else customDBPath
-    
     try:
         with open(os.path.join(dbPath, enum[:3], enum + '.x4'),
             mode='r', newline=None, encoding='latin1') as f:

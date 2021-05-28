@@ -206,15 +206,11 @@ class X4DBManagerPlainFS(X4DBManager):
     """Exfor data base manager for data stored on local filesystem in directory hierarchy."""
 
     def __init__(self, **kw):
-        self.DATAPATH = kw.get('datapath', fullDBPath)
-        self.database = kw.get('database', fullIndexFileName)
         X4DBManager.__init__(self, **kw)
-        if 'database' in kw:
-            del kw['database']
-        if 'datapath' in kw:
-            del kw['datapath']
+        self.DATAPATH = kw.pop('datapath', fullDBPath)
+        self.database = kw.pop('database', fullIndexFileName)
         import sqlite3
-        self.CONNECTION = sqlite3.connect(self.database, **kw)
+        self.CONNECTION = sqlite3.connect(self.database, **kw) # pylint: disable=no-member
         self.CURSOR = self.CONNECTION.cursor()
 
     def query(self, author=None, reaction=None, target=None, projectile=None, quantity=None,
@@ -313,7 +309,7 @@ class X4DBManagerPlainFS(X4DBManager):
             SUBENT=SUBENT,
             ENTRY=ENTRY)
         for e in smap:
-            result[e] = x4EntryFactory(e, smap[e], rawEntry=rawEntry)
+            result[e] = x4EntryFactory(e, smap[e], rawEntry=rawEntry, customDBPath=self.DATAPATH)
         return result
 
 

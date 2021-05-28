@@ -1,78 +1,81 @@
-ENTRY            20576   20110810   20120427   20120411       2227
-SUBENT        20576001   20110810   20120427   20120411       2227
-BIB                 20         65
-TITLE      -Measurement of the energy spectrum of prompt
+ENTRY            20576   20181001   20190424   20190420       2273
+SUBENT        20576001   20181001   20190424   20190420       2273
+BIB                 17         68
+TITLE       Measurement of the energy spectrum of prompt
             neutrons from the fission of Pu239 by 0.215 MeV
-            neutrons-
-AUTHOR     (H.Knitter)
+            neutrons
+AUTHOR     (H.H.Knitter)
 INSTITUTE  (2ZZZGEL)
 REFERENCE  (J,AKE,26,76,1975) Main reference. Graphs given.
-REL-REF    (M,22401001,H.Knitter,J,AKE,22,84,1972) Method of
-                                     corrections calculation
 FACILITY   (VDG,2ZZZGEL) 3 MeV Van de Graaff of Geel lab.
 INC-SOURCE (P-LI7) Li-7(P,N)Be-7 reaction in a Li-F target of
               326.E-6 g/cm2 thickness. Average proton current
-              4.5 micro-a, pulse width 1 ns. repetition rate
+              4.5 micro-A, pulse width 1 ns. repetition rate
               1 MHz
 INC-SPECT  .Mean neutron beam energy 0.215 MeV.
            .Neutron beam energy spread is 32 keV.
-SAMPLE     (94-PU-239,98.91) Isotopic composition 98.91% Pu-239,
-           (94-PU-240,1.09)  1.09% Pu-240. Plutonium cylinder,
-             1.2 cm diameter, 2.5 cm length, 54.803-g weight.
+SAMPLE     (94-PU-239,ENR=0.9891) Isotopic composition
+             98.91% Pu-239, 1.09% Pu-240. Plutonium cylinder,
+             1.2 cm diam., 2.5 cm length, 54.803-g weight.
              Canned in zirkalloy container with 0.2 mm wall
              thickness
 METHOD     (TOF)
+REL-REF    (M,22401001,H.Knitter,J,AKE,22,84,1972) Method of
+                                     corrections calculation
+           (C,,T.N.Taddeucci+,J,NDS,123,135,2015)
 DETECTOR   (SCIN)  NE224 liquid scintillator,5 cm diameter 3.8 cm
               length, with low noise photomultiplier RCA-8850.
               Placed at 90 degree relative to proton beam and at
-              1.972 m from the axis of plutonium sample
+              1.972 m from the axis of plutonium sample.
             .Another similar detector used for monitoring of the
              neutron flux placed at -35 degree relative to proton
              beam and distance 3.20 m from the target
-ADD-RES    .Maxwellian fit of the data gives e-bar=2.12+-0.01MeV
-           .Fit with the Watt formula gives
-            e-bar=2.116-MeV,t=0.9649-MeV,ef=0.6686-MeV.
-           .Model independent average energy gives 2.125+-
-            0.035 MeV. See details in (J,AKE,26,78,75).
-           .Average of all mean fission neutron energies gives
-            e-bar=2.136+-0.045MeV
-MONITOR    .Detector efficiencies measured at several energies
+           .Detector efficiencies measured at several energies
             using many reactions.
-           (1-H-3(P,N)2-HE-3,,SIG)
-           (1-H-2(D,N)2-HE-3,,SIG)
-           (4-BE-9(A,N)6-C-12,,SIG)
-           (1-H-1(N,EL)1-H-1,,SIG)
-           (3-LI-7(P,N)4-BE-7,,DA)  At zero angle
-MONIT-REF  (,H.Liskien+,J,AND,11,569,1973)
-           (,H.Liskien+,J,NUK,8,315,1966)
-           (,J.B.Hunt+,C,72NEUHER,,935,1972)
-PART-DET   (N)      Fission neutrons
+            (1-H-3(P,N)2-HE-3,,SIG)
+            (1-H-2(D,N)2-HE-3,,SIG)
+            (4-BE-9(A,N)6-C-12,,SIG)
+            (1-H-1(N,EL)1-H-1,,SIG)
+            (3-LI-7(P,N)4-BE-7,,DA)  At zero angle
 EN-SEC     .Good agreement of fission neutron spectrum with
-            maxwellian
-STATUS     .Numerical values of neutron spectrum given in
+            Maxwellian
+CRITIQUE   T.N.Taddeucchi et al. (2015): Multiple scattering
+            effects are present and were likely severely
+            underestimated in the data analysis.
+ADD-RES    .Maxwellian fit of the data gives E-bar=2.12+-0.01MeV
+           .Fit with the Watt formula gives
+            E-bar=2.116-MeV,t=0.9649-MeV,Ef=0.6686-MeV.
+           .Model independent average energy gives 2.125+-
+            0.035 MeV.
+           .Average of all mean fission neutron energies gives
+            E-bar=2.136+-0.045MeV
+STATUS     (TABLE) Numerical values of neutron spectrum given in
             private communication from H.H.Knitter, 1976.
             The average fission neutron energy calculated in text
-            of J,AKE,26,76,1975.
-CORRECTION .Background.  Substraction of prompt gamma rays from
+            of Atomkernenergie,26(1975)76.
+CORRECTION .Background.  Subtraction of prompt gamma rays from
             the sample and gamma rays of the target scattered
-            in sample. Details in J,AKE,26,77,1975
-            secondary interactions of fission neutrons in the
-            sample accounted,method described in reference
-            C,72VIENNA,,127,7211.
-ERR-ANALYS .Statistical, detector efficiency and corrections
-            errors accounted.
+            in sample.
+            Secondary interactions of fission neutrons in the
+            sample accounted, method described in reference
+            C,72VIENNA,,127,1972.
 HISTORY    (19760608C)
-           (19761217E)
            (20110707A) Date is corrected to 8 digits format.
                        Upper case text converted to the lower one.
            (20110810A) Last checking has been done.
-ENDBIB              65
+           (20131210U) SD: Comments were added to ERR-1 (see
+            ERR-ANALYS) in Subent 003
+           (20181001U) SD: CRITIQUE and ref. to REL-REF were
+           added. ERR-ANALYS deleted (specified in other Subents).
+           MONITOR deleted (used for detector efficiency
+           measurement; info moved to DETECTOR).
+ENDBIB              68
 COMMON               2          3
 EN         EN-RSL
 KEV        KEV
    215.       32.
 ENDCOMMON            3
-ENDSUBENT           72
+ENDSUBENT           75
 SUBENT        20576002   20110810   20120427   20120411       2227
 BIB                  4          7
 REACTION   (94-PU-239(N,F)0-NN-1,PR,KE,,,DERIV)  Average of all
@@ -90,20 +93,23 @@ MEV        MEV
       2.136    0.045
 ENDDATA              3
 ENDSUBENT           15
-SUBENT        20576003   20110810   20120427   20120411       2227
-BIB                  4         11
+SUBENT        20576003   20131210   20140820   20140807       2238
+BIB                  4         14
 REACTION   (94-PU-239(N,F),PR,NU/DE,,REL) Reference quantity
                                           not given
 ERR-ANALYS (DATA-ERR)  Not specified
-           (ERR-1)     Error of the relative detector efficiency
+           (ERR-1) About 2% between 0.2 and 2.5 MeV, and above
+            this energy it increases up to 5% at 19 MeV
 STATUS     (TABLE)  Obtained from H.Knitter by letter
-             Corresponds to Fig. 2 of J,ANE,76,1975.
+             corresponds to Fig. 2 of J,ANE,76,1975.
            (COREL,20576005)
 HISTORY    (20110810A) REACTION code SF4, SF5, SF6, SF7 changed
             from ",PR,DE,N" to "0-NN-1,PR,NU/DE,".
             Status code and errors specified. Data units changed
             from 1/MEV to ARB-UNITS.
-ENDBIB              11
+           (20131210U) SD: Comments from D.Neudecker were added
+            to ERR-1 (see ERR-ANALYS)
+ENDBIB              14
 NOCOMMON             0          0
 DATA                 5        183
 E          E-RSL      DATA       DATA-ERR   ERR-1
@@ -292,7 +298,7 @@ MEV        MEV        ARB-UNITS  ARB-UNITS  PER-CENT
  1.3180E+01 9.9500E-01 5.0000E-02 1.6000E-01
  1.3870E+01 1.0350E+00 5.0000E-02 1.7000E-01
 ENDDATA            185
-ENDSUBENT          201
+ENDSUBENT          204
 SUBENT        20576004   20110810   20120427   20120411       2227
 BIB                  5         25
 REACTION  1(94-PU-239(N,F)0-NN-1,PR,KE,,,DERIV)
