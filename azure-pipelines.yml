@@ -61,6 +61,9 @@ jobs:
       Python38:
         python.version: '3.8'
         python.architecture: 'x64'
+      Python39:
+        python.version: '3.9'
+        python.architecture: 'x64'
       Python27_32:
         python.version: '2.7'
         python.architecture: 'x86'
@@ -72,6 +75,9 @@ jobs:
         python.architecture: 'x86'
       Python38_32:
         python.version: '3.8'
+        python.architecture: 'x86'
+      Python39_32:
+        python.version: '3.9'
         python.architecture: 'x86'
   steps:
     - template: azure-tests.yml
@@ -94,6 +100,9 @@ jobs:
         python.architecture: 'x64'
       Python38:
         python.version: '3.8'
+        python.architecture: 'x64'
+      Python39:
+        python.version: '3.9'
         python.architecture: 'x64'
       # Python27_32:
       #   python.version: '2.7'
@@ -128,20 +137,25 @@ jobs:
         python.version: '3.7'
       Python38:
         python.version: '3.8'
+      Python39:
+        python.version: '3.9'
   steps:
     - script:
         case $(python.version) in
         2.7)
-          FULL_VERSION=2.7.17
+          FULL_VERSION=2.7.18
           ;;
         3.6)
-          FULL_VERSION=3.6.8
+          FULL_VERSION=3.6.13
           ;;
         3.7)
-          FULL_VERSION=3.7.6
+          FULL_VERSION=3.7.10
           ;;
         3.8)
-          FULL_VERSION=3.8.1
+          FULL_VERSION=3.8.10
+          ;;
+        3.9)
+          FULL_VERSION=3.9.5
           ;;
         esac
 
