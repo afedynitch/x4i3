@@ -82,6 +82,9 @@ monitoredFileName = 'monitored-entries.pickle'
 reactionCountFileName = 'reaction-count.pickle'
 dbPath = 'db'
 
+# URL to the compressed database files on github
+url="https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2021-03-08.tar.gz"
+
 # Paths for standard usage
 DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
 fullIndexFileName = os.path.join(DATAPATH, indexFileName)
@@ -90,14 +93,15 @@ fullCoupledFileName = os.path.join(DATAPATH, coupledFileName)
 fullMonitoredFileName = os.path.join(DATAPATH, monitoredFileName)
 fullReactionCountFileName = os.path.join(DATAPATH, reactionCountFileName)
 fullDBPath = os.path.join(DATAPATH, dbPath)
+dbTagFile = os.path.join(DATAPATH, 
+    os.path.splitext(os.path.splitext(os.path.split(url)[1])[0])[0][5:])
 
 # Paths for unit testing only
-TESTDATAPATH = os.sep.join(__path__ + ['tests', 'data'])  # Mock db for testing
-testDBPath = TESTDATAPATH + os.sep + dbPath
-testIndexFileName = TESTDATAPATH + os.sep + indexFileName
+TESTDATAPATH = os.path.abspath(os.path.join(__path__[0], 'tests', 'data'))  # Mock db for testing
+testDBPath = os.path.join(TESTDATAPATH, dbPath)
+testIndexFileName = os.path.join(TESTDATAPATH, indexFileName)
 
-# URL to the compressed database files on github
-url="https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz"
+
 def _download_and_unpack_file(url):
     """Downloads the database files created with setup-exfor-db.py as
     a tarball and unpacks them to the correct folder."""
@@ -107,6 +111,20 @@ def _download_and_unpack_file(url):
     import math
     import tarfile
     import tempfile
+    import shutil
+
+    # cleanup
+    for f in [
+        fullIndexFileName, fullErrorFileName,
+        fullCoupledFileName, fullMonitoredFileName,
+        fullReactionCountFileName, fullDBPath, dbTagFile
+    ]:
+        try:
+            shutil.rmtree(f)
+        except NotADirectoryError:
+            os.remove(f)
+        except FileNotFoundError:
+            pass
 
     # Streaming, so we can iterate over the response.
     r = requests.get(url, stream=True)
@@ -136,6 +154,10 @@ def _download_and_unpack_file(url):
             _tar.extract(member, DATAPATH)
     tempfile.close()
 
+    with open(dbTagFile,'wb') as f:
+        print('Installed database version', dbTagFile)
+        pass
+
 def check_if_exists(path, return_bool=False):
     if return_bool:
         if not os.path.exists(path):
@@ -149,14 +171,14 @@ def check_if_exists(path, return_bool=False):
 if not all([check_if_exists(p, return_bool=True) for p in [
     DATAPATH, fullIndexFileName, fullErrorFileName,
     fullCoupledFileName, fullMonitoredFileName,
-    fullReactionCountFileName, fullDBPath]]):
+    fullReactionCountFileName, fullDBPath, dbTagFile]]):
     _download_and_unpack_file(url)
 
 # Check if all files can be located and raise exception if still not there
 _ = [check_if_exists(p) for p in [
     DATAPATH, fullIndexFileName, fullErrorFileName,
     fullCoupledFileName, fullMonitoredFileName,
-    fullReactionCountFileName, fullDBPath]]
+    fullReactionCountFileName, fullDBPath, dbTagFile]]
 
 # Applications that query multiple entries subsequently using an in-memory
 # dictionary that contains all .x4 files from the db folder can improve performance

@@ -1,6 +1,12 @@
-## Changelog
+# Changelog
+
+## x4i3 - 1.2.0 27/05/2021
+
+- Update to a more recent EXFOR database dated 2021/03/08
+- main updates happened under the hood for the x4i3_tools support project
 
 ### x4i3 - 1.1.0 19/01/2020
+
 - initial release of the fork x4i3
 - compatibility with Python 2 and 3
 - DataBaseCache that reads all .x4 files in the db directory into memory. Takes time on first startup (until FS cache kicks in) and requires more RAM (+1.5 GB) but accelerates repeated queries. To use this feature use X4DBManagerCompressedDictionary instead of X4DBManagerPlainFS
@@ -21,4 +27,5 @@
 - automatic download and decompression of the data directory
 
 ### x4i - 1.0.3, 15/02/2011
+
 - Original release of x4i by David A. Brown (LLNL)
