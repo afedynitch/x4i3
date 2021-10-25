@@ -179,18 +179,20 @@ def check_if_exists(path, return_bool=False):
     if not os.path.exists(path):
         raise IOError('File/Directory', path, 'not found. Check installation.')
 
-# Check if all files can be located and redownload the archive
-if not all([check_if_exists(p, return_bool=True) for p in [
-    DATAPATH, fullIndexFileName, fullErrorFileName,
-    fullCoupledFileName, fullMonitoredFileName,
-    fullReactionCountFileName, fullDBPath, dbTagFile]]):
-    _download_and_unpack_file(url)
+# Don't download an unpack the files if the module is just tested
+if "pytest" not in sys.modules:
+    # Check if all files can be located and redownload the archive
+    if not all([check_if_exists(p, return_bool=True) for p in [
+        DATAPATH, fullIndexFileName, fullErrorFileName,
+        fullCoupledFileName, fullMonitoredFileName,
+        fullReactionCountFileName, fullDBPath, dbTagFile]]):
+        _download_and_unpack_file(url)
 
-# Check if all files can be located and raise exception if still not there
-_ = [check_if_exists(p) for p in [
-    DATAPATH, fullIndexFileName, fullErrorFileName,
-    fullCoupledFileName, fullMonitoredFileName,
-    fullReactionCountFileName, fullDBPath, dbTagFile]]
+    # Check if all files can be located and raise exception if still not there
+    _ = [check_if_exists(p) for p in [
+        DATAPATH, fullIndexFileName, fullErrorFileName,
+        fullCoupledFileName, fullMonitoredFileName,
+        fullReactionCountFileName, fullDBPath, dbTagFile]]
 
 # Applications that query multiple entries subsequently using an in-memory
 # dictionary that contains all .x4 files from the db folder can improve performance
