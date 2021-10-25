@@ -100,7 +100,7 @@ jobs:
   dependsOn: BuildUniversal
   condition: succeeded()
   pool:
-    vmImage: 'macOS-latest'
+    vmImage: 'macOS-11'
   variables:
     python.architecture: 'x64'
   strategy:
