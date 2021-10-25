@@ -23,7 +23,7 @@ jobs:
   steps:
   - task: UsePythonVersion@0
     inputs:
-      versionSpec: '3.7'
+      versionSpec: '3.9'
       architecture: 'x64'
   - script: |
       python -m pip install --upgrade pip
@@ -49,12 +49,6 @@ jobs:
     vmImage: 'windows-latest'
   strategy:
     matrix:
-      Python27:
-        python.version: '2.7'
-        python.architecture: 'x64'
-      Python36:
-        python.version: '3.6'
-        python.architecture: 'x64'
       Python37:
         python.version: '3.7'
         python.architecture: 'x64'
@@ -64,21 +58,18 @@ jobs:
       Python39:
         python.version: '3.9'
         python.architecture: 'x64'
-      Python27_32:
-        python.version: '2.7'
-        python.architecture: 'x86'
-      Python36_32:
-        python.version: '3.6'
-        python.architecture: 'x86'
-      Python37_32:
-        python.version: '3.7'
-        python.architecture: 'x86'
-      Python38_32:
-        python.version: '3.8'
-        python.architecture: 'x86'
-      Python39_32:
-        python.version: '3.9'
-        python.architecture: 'x86'
+      Python310:
+        python.version: '3.10'
+        python.architecture: 'x64'
+      # Python37_32:
+      #   python.version: '3.7'
+      #   python.architecture: 'x86'
+      # Python38_32:
+      #   python.version: '3.8'
+      #   python.architecture: 'x86'
+      # Python39_32:
+      #   python.version: '3.9'
+      #   python.architecture: 'x86'
   steps:
     - template: azure-tests.yml
 
@@ -89,12 +80,6 @@ jobs:
     vmImage: 'ubuntu-latest'
   strategy:
     matrix:
-      Python27:
-        python.version: '2.7'
-        python.architecture: 'x64'
-      Python36:
-        python.version: '3.6'
-        python.architecture: 'x64'
       Python37:
         python.version: '3.7'
         python.architecture: 'x64'
@@ -104,18 +89,9 @@ jobs:
       Python39:
         python.version: '3.9'
         python.architecture: 'x64'
-      # Python27_32:
-      #   python.version: '2.7'
-      #   python.architecture: 'x86'
-      # Python36_32:
-      #   python.version: '3.6'
-      #   python.architecture: 'x86'
-      # Python37_32:
-      #   python.version: '3.7'
-      #   python.architecture: 'x86'
-      # Python38_32:
-      #   python.version: '3.8'
-      #   python.architecture: 'x86'
+      Python310:
+        python.version: '3.10'
+        python.architecture: 'x64'
   steps:
     - template: azure-tests.yml
 
@@ -129,62 +105,54 @@ jobs:
     python.architecture: 'x64'
   strategy:
     matrix:
-      Python27:
-        python.version: '2.7'
-      Python36:
-        python.version: '3.6'
       Python37:
         python.version: '3.7'
       Python38:
         python.version: '3.8'
       Python39:
         python.version: '3.9'
+      Python310:
+        python.version: '3.10'
   steps:
-    - script:
-        case $(python.version) in
-        2.7)
-          FULL_VERSION=2.7.18
-          ;;
-        3.6)
-          FULL_VERSION=3.6.8
-          ;;
-        3.7)
-          FULL_VERSION=3.7.8
-          ;;
-        3.8)
-          FULL_VERSION=3.8.10
-          ;;
-        3.9)
-          FULL_VERSION=3.9.5
-          ;;
-        esac
+    # - script:
+    #     case $(python.version) in
+    #     3.7)
+    #       FULL_VERSION=3.7.8
+    #       ;;
+    #     3.8)
+    #       FULL_VERSION=3.8.10
+    #       ;;
+    #     3.9)
+    #       FULL_VERSION=3.9.5
+    #       ;;
+    #     esac
 
-        INSTALLER_NAME=python-$FULL_VERSION-macosx10.9.pkg
-        URL=https://www.python.org/ftp/python/$FULL_VERSION/$INSTALLER_NAME
+    #     INSTALLER_NAME=python-$FULL_VERSION-macosx10.9.pkg
+    #     URL=https://www.python.org/ftp/python/$FULL_VERSION/$INSTALLER_NAME
 
-        PY_PREFIX=/Library/Frameworks/Python.framework/Versions
+    #     PY_PREFIX=/Library/Frameworks/Python.framework/Versions
 
-        set -e -x
+    #     set -e -x
 
-        curl $URL > $INSTALLER_NAME
+    #     curl $URL > $INSTALLER_NAME
 
-        sudo installer -pkg $INSTALLER_NAME -target /
+    #     sudo installer -pkg $INSTALLER_NAME -target /
 
-        sudo rm -f /usr/local/bin/python
+    #     sudo rm -f /usr/local/bin/python
 
-        sudo ln -s /usr/local/bin/python$(python.version) /usr/local/bin/python
+    #     sudo ln -s /usr/local/bin/python$(python.version) /usr/local/bin/python
 
-        which python
+    #     which python
 
-        python --version
+    #     python --version
 
-        python -m ensurepip
+    #     python -m ensurepip
 
-        python -m pip install pip --upgrade
+    #     python -m pip install pip --upgrade
 
-        python -m pip install setuptools twine wheel
+    #     python -m pip install setuptools twine wheel
 
-      displayName: 'Installing python from python.org'
+    #   displayName: 'Installing python from python.org'
 
     - template: azure-tests.yml
   

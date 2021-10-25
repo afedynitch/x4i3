@@ -3,6 +3,8 @@
 ## x4i3 - 1.2.2 25/10/2021
 
 - Hotfix automatic DB downloads
+- Deprecation of python 2 due to increasing difficulty to maintain. No dramatic change so far and can be re-introduced if really desired.
+- Support for Python 3.10
 
 ## x4i3 - 1.2.1 28/05/2021
 
