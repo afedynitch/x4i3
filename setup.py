@@ -52,7 +52,7 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='x4i3',
-    version='1.2.1',
+    version='1.2.2',
     author='David A. Brown (x4i3: Anatoli Fedynitch)',
     author_email='dbrown@bnl.gov',
     maintainer='Anatoli Fedynitch',
