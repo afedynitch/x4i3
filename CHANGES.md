@@ -1,5 +1,9 @@
 # Changelog
 
+## x4i3 - 1.2.3 06/01/2022
+
+- X43I_DATAPATH environment variable can be used to redirect the data directory, which contains many small files. It can be shared by multiple users. Thanks to @crkrenn.
+
 ## x4i3 - 1.2.2 25/10/2021
 
 - Hotfix automatic DB downloads
