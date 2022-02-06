@@ -87,7 +87,11 @@ url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_forma
 # url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz'
 
 # Paths for standard usage
-DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
+if 'X43I_DATAPATH' in os.environ:
+    DATAPATH = os.environ['X43I_DATAPATH']
+else:
+    DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
+
 fullIndexFileName = os.path.join(DATAPATH, indexFileName)
 fullErrorFileName = os.path.join(DATAPATH, errorFileName)
 fullCoupledFileName = os.path.join(DATAPATH, coupledFileName)
