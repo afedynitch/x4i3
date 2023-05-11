@@ -1,5 +1,10 @@
 # Changelog
 
+## x4i3 - 1.2.4 05/11/2023
+
+- Fixed bug when X43I_DATAPATH is used to set the database location. In 1.2.3 the database entries would be overwritten by the default version.
+- Update to database version 2023/04/29.
+
 ## x4i3 - 1.2.3 06/01/2022
 
 - X43I_DATAPATH environment variable can be used to redirect the data directory, which contains many small files. It can be shared by multiple users. Thanks to @crkrenn.

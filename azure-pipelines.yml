@@ -31,6 +31,9 @@ jobs:
       python -m pip install -r requirements.txt
     displayName: 'Install dependencies'
   - script: |
+      python -c "import x4i3"
+    displayName: 'Trigger download of binary database (test once)'
+  - script: |
       python setup.py sdist
     displayName: 'Make sdist'
   - script: |

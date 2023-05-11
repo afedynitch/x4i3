@@ -14,10 +14,6 @@ steps:
       python -m pip install $(package_name) --no-index -f dist
     displayName: 'Install wheel'
   - script: |
-      python -c "import x4i3"
-    displayName: 'Trigger download of binary database'
-
-  - script: |
       pip install pytest pytest-azurepipelines
       python -m pytest --pyargs x4i3 --ignore=x4i3/data --junitxml=junit/test-results.xml
     displayName: 'Test with pytest'
