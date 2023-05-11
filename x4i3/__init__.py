@@ -51,8 +51,8 @@ import sys
 import pathlib
 
 MAJOR_VERSION = 1
-MINOR_VERSION = 1
-PATCH = 0
+MINOR_VERSION = 2
+PATCH = 4
 
 __package_name__ = "x4i3 -- The Exfor Interface"
 __version__ = ".".join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
@@ -83,7 +83,7 @@ reactionCountFileName = "reaction-count.pickle"
 dbPath = "db"
 
 # URL to the compressed database files on github
-url = "https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2021-03-08.tar.gz"
+url = "https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2023-04-29.tar.gz"
 # url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz'
 
 if "X43I_DATAPATH" in os.environ:
@@ -104,7 +104,7 @@ if "X43I_DATAPATH" in os.environ:
 else:
     # Follow default path
     DATAPATH = pathlib.Path(__path__[0], "data").absolute()
-    dbTagFile = DATAPATH / pathlib.Path(url).stem[:-3]
+    dbTagFile = DATAPATH / pathlib.Path(url).stem[:-4]
 
 
 fullIndexFileName = DATAPATH / indexFileName
@@ -114,12 +114,12 @@ fullMonitoredFileName = DATAPATH / monitoredFileName
 fullReactionCountFileName = DATAPATH / reactionCountFileName
 fullDBPath = DATAPATH / dbPath
 
-print(f"Using database located in: {DATAPATH}")
+print(f"Using database version {dbTagFile.stem} located in: {DATAPATH}")
 
 # Paths for unit testing only
 # Mock db for testing
 TESTDATAPATH = pathlib.Path(__path__[0], "tests", "data").absolute()
-testDBPath = TESTDATAPATH / "dbPath"
+testDBPath = TESTDATAPATH / "db"
 testIndexFileName = TESTDATAPATH / indexFileName
 
 
@@ -152,10 +152,8 @@ def _download_and_unpack_file(url):
         except FileNotFoundError:
             pass
     # Tag files:
-    tag_files = [
-        f for tag in ["X4-*", "EXFOR-*"] for f in glob(os.path.join(DATAPATH, tag))
-    ]
-    for tagfile in tag_files:
+    
+    for tagfile in DATAPATH.glob("X4-*"):
         try:
             os.remove(tagfile)
         except FileNotFoundError:
@@ -192,7 +190,7 @@ def _download_and_unpack_file(url):
     tempfile.close()
 
     with open(dbTagFile, "wb") as f:
-        print("Installed database version", dbTagFile)
+        print("Installed database version", dbTagFile.stem)
         pass
 
 
@@ -224,21 +222,6 @@ if "pytest" not in sys.modules:
             ]
         ]
     ):
-        print(
-            [
-                check_if_exists(p, return_bool=True)
-                for p in [
-                    DATAPATH,
-                    fullIndexFileName,
-                    fullErrorFileName,
-                    fullCoupledFileName,
-                    fullMonitoredFileName,
-                    fullReactionCountFileName,
-                    fullDBPath,
-                    dbTagFile,
-                ]
-            ]
-        )
         _download_and_unpack_file(url)
 
     # Check if all files can be located and raise exception if still not there
@@ -284,25 +267,6 @@ class DataBaseCache(dict):
 
 # Does lazy initialization, only loads x4 files into memory on access
 database_dict = DataBaseCache()
-
-# The stuff below is not well placed here, bad practice, and will be removed soon.
-# from x4i3 import exfor_manager, exfor_entry
-
-# __databaseManager = exfor_manager.X4DBManagerDefault()
-
-# def query(**kw): return __databaseManager.query(**kw)
-
-
-# def raw_retrieve(**kw): return __databaseManager.retrieve(**kw)
-
-
-# def retrieve(**kw):
-#     rr = {}
-#     r = __databaseManager.retrieve(**kw)
-#     for k, v in r.items():
-#         rr[k] = exfor_entry.X4Entry(v)
-#     return rr
-
 
 __all__ = [
     "__init__",
