@@ -48,18 +48,18 @@
 from __future__ import print_function
 import os
 import sys
+import pathlib
 
 MAJOR_VERSION = 1
 MINOR_VERSION = 1
 PATCH = 0
 
 __package_name__ = "x4i3 -- The Exfor Interface"
-__version__ = '.'.join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
-__author__ = 'David Brown <brown170@llnl.gov>, Anatoli Fedynitch <afedynitch@gmail.com>'
-__url__ = 'https://github.com/afedynitch/x4i3'
-__license__ = 'GPLv2'
-__disclaimer__ = \
-    """LLNL Disclaimer:
+__version__ = ".".join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
+__author__ = "David Brown <brown170@llnl.gov>, Anatoli Fedynitch <afedynitch@gmail.com>"
+__url__ = "https://github.com/afedynitch/x4i3"
+__license__ = "GPLv2"
+__disclaimer__ = """LLNL Disclaimer:
   This work was prepared as an account of work sponsored by an agency of the
   United States Government. Neither the United States Government nor the
   University of California nor any of their employees, makes any warranty,
@@ -75,36 +75,52 @@ __disclaimer__ = \
   and shall not be used for advertising or product endorsement purposes."""
 
 # Common filenames
-indexFileName = 'index.tbl'
-errorFileName = 'error-entries.pickle'
-coupledFileName = 'coupled-entries.pickle'
-monitoredFileName = 'monitored-entries.pickle'
-reactionCountFileName = 'reaction-count.pickle'
-dbPath = 'db'
+indexFileName = "index.tbl"
+errorFileName = "error-entries.pickle"
+coupledFileName = "coupled-entries.pickle"
+monitoredFileName = "monitored-entries.pickle"
+reactionCountFileName = "reaction-count.pickle"
+dbPath = "db"
 
 # URL to the compressed database files on github
-url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2021-03-08.tar.gz'
+url = "https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2021-03-08.tar.gz"
 # url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz'
 
-# Paths for standard usage
-if 'X43I_DATAPATH' in os.environ:
-    DATAPATH = os.environ['X43I_DATAPATH']
+if "X43I_DATAPATH" in os.environ:
+    DATAPATH = pathlib.Path(os.environ["X43I_DATAPATH"])
+    if not DATAPATH.exists():
+        raise FileNotFoundError(
+            f"X43I_DATAPATH={DATAPATH} does not exist. Please point this variable"
+            + " to the x4i3_EXFOR-20XX-XX-XX directory created by unpacking"
+            + " masterfiles with x4i3_tools."
+        )
+    tags = list(DATAPATH.glob("X4-20*"))
+    if len(tags) == 0:
+        raise FileNotFoundError(
+            f"No tag file in the format 'X4-20XX-XX-XX' found in {DATAPATH}"
+        )
+    else:
+        dbTagFile = DATAPATH / tags[0]
 else:
-    DATAPATH = os.path.abspath(os.path.join(__path__[0], 'data'))
+    # Follow default path
+    DATAPATH = pathlib.Path(__path__[0], "data").absolute()
+    dbTagFile = DATAPATH / pathlib.Path(url).stem[:-3]
 
-fullIndexFileName = os.path.join(DATAPATH, indexFileName)
-fullErrorFileName = os.path.join(DATAPATH, errorFileName)
-fullCoupledFileName = os.path.join(DATAPATH, coupledFileName)
-fullMonitoredFileName = os.path.join(DATAPATH, monitoredFileName)
-fullReactionCountFileName = os.path.join(DATAPATH, reactionCountFileName)
-fullDBPath = os.path.join(DATAPATH, dbPath)
-dbTagFile = os.path.join(DATAPATH, 
-    os.path.splitext(os.path.splitext(os.path.split(url)[1])[0])[0][5:])
+
+fullIndexFileName = DATAPATH / indexFileName
+fullErrorFileName = DATAPATH / errorFileName
+fullCoupledFileName = DATAPATH / coupledFileName
+fullMonitoredFileName = DATAPATH / monitoredFileName
+fullReactionCountFileName = DATAPATH / reactionCountFileName
+fullDBPath = DATAPATH / dbPath
+
+print(f"Using database located in: {DATAPATH}")
 
 # Paths for unit testing only
-TESTDATAPATH = os.path.abspath(os.path.join(__path__[0], 'tests', 'data'))  # Mock db for testing
-testDBPath = os.path.join(TESTDATAPATH, dbPath)
-testIndexFileName = os.path.join(TESTDATAPATH, indexFileName)
+# Mock db for testing
+TESTDATAPATH = pathlib.Path(__path__[0], "tests", "data").absolute()
+testDBPath = TESTDATAPATH / "dbPath"
+testIndexFileName = TESTDATAPATH / indexFileName
 
 
 def _download_and_unpack_file(url):
@@ -121,9 +137,13 @@ def _download_and_unpack_file(url):
 
     # cleanup
     for f in [
-        fullIndexFileName, fullErrorFileName,
-        fullCoupledFileName, fullMonitoredFileName,
-        fullReactionCountFileName, fullDBPath, dbTagFile
+        fullIndexFileName,
+        fullErrorFileName,
+        fullCoupledFileName,
+        fullMonitoredFileName,
+        fullReactionCountFileName,
+        fullDBPath,
+        dbTagFile,
     ]:
         try:
             shutil.rmtree(f)
@@ -133,70 +153,108 @@ def _download_and_unpack_file(url):
             pass
     # Tag files:
     tag_files = [
-        f for tag in ['X4-*', 'EXFOR-*'] for f in glob(os.path.join(DATAPATH, tag))
-        ]
+        f for tag in ["X4-*", "EXFOR-*"] for f in glob(os.path.join(DATAPATH, tag))
+    ]
     for tagfile in tag_files:
         try:
             os.remove(tagfile)
         except FileNotFoundError:
             pass
-        
 
     # Streaming, so we can iterate over the response.
     r = requests.get(url, stream=True)
     tarname = os.path.basename(url)
 
     # Total size in bytes.
-    total_size = int(r.headers.get('content-length', 0))
+    total_size = int(r.headers.get("content-length", 0))
     block_size = 1024 * 1024
     wrote = 0
     tempfile = tempfile.TemporaryFile()
-    
-    print('Downloading data file', tarname)
-    for data in tqdm(r.iter_content(block_size), total=math.ceil(total_size // block_size),
-                    unit='MB', unit_scale=True):
+
+    print("Downloading data file", tarname)
+    for data in tqdm(
+        r.iter_content(block_size),
+        total=math.ceil(total_size // block_size),
+        unit="MB",
+        unit_scale=True,
+    ):
         wrote = wrote + len(data)
         tempfile.write(data)
     if total_size != 0 and wrote != total_size:
         raise Exception("ERROR, something went wrong")
     tempfile.flush()
     tempfile.seek(0)
-    print('Decompressing archive', tarname)
-    wrote = 0
-    with tarfile.open(fileobj=tempfile, mode='r') as _tar:
+    print("Decompressing archive", tarname)
+    with tarfile.open(fileobj=tempfile, mode="r") as _tar:
         total = len(_tar.getmembers())
         for member in tqdm(_tar.getmembers(), total=total):
-            wrote = wrote + len(data)
             _tar.extract(member, DATAPATH)
     tempfile.close()
 
-    with open(dbTagFile,'wb') as f:
-        print('Installed database version', dbTagFile)
+    with open(dbTagFile, "wb") as f:
+        print("Installed database version", dbTagFile)
         pass
+
 
 def check_if_exists(path, return_bool=False):
     if return_bool:
         if not os.path.exists(path):
             return False
         else:
-            return True    
+            return True
     if not os.path.exists(path):
-        raise IOError('File/Directory', path, 'not found. Check installation.')
+        raise IOError("File/Directory", path, "not found. Check installation.")
+
 
 # Don't download an unpack the files if the module is just tested
 if "pytest" not in sys.modules:
     # Check if all files can be located and redownload the archive
-    if not all([check_if_exists(p, return_bool=True) for p in [
-        DATAPATH, fullIndexFileName, fullErrorFileName,
-        fullCoupledFileName, fullMonitoredFileName,
-        fullReactionCountFileName, fullDBPath, dbTagFile]]):
+    if not all(
+        [
+            check_if_exists(p, return_bool=True)
+            for p in [
+                DATAPATH,
+                fullIndexFileName,
+                fullErrorFileName,
+                fullCoupledFileName,
+                fullMonitoredFileName,
+                fullReactionCountFileName,
+                fullDBPath,
+                dbTagFile,
+            ]
+        ]
+    ):
+        print(
+            [
+                check_if_exists(p, return_bool=True)
+                for p in [
+                    DATAPATH,
+                    fullIndexFileName,
+                    fullErrorFileName,
+                    fullCoupledFileName,
+                    fullMonitoredFileName,
+                    fullReactionCountFileName,
+                    fullDBPath,
+                    dbTagFile,
+                ]
+            ]
+        )
         _download_and_unpack_file(url)
 
     # Check if all files can be located and raise exception if still not there
-    _ = [check_if_exists(p) for p in [
-        DATAPATH, fullIndexFileName, fullErrorFileName,
-        fullCoupledFileName, fullMonitoredFileName,
-        fullReactionCountFileName, fullDBPath, dbTagFile]]
+    _ = [
+        check_if_exists(p)
+        for p in [
+            DATAPATH,
+            fullIndexFileName,
+            fullErrorFileName,
+            fullCoupledFileName,
+            fullMonitoredFileName,
+            fullReactionCountFileName,
+            fullDBPath,
+            dbTagFile,
+        ]
+    ]
 
 # Applications that query multiple entries subsequently using an in-memory
 # dictionary that contains all .x4 files from the db folder can improve performance
@@ -212,9 +270,10 @@ class DataBaseCache(dict):
     def __load_cache(self):
         for sd in os.listdir(fullDBPath):
             for x4f in os.listdir(os.path.join(fullDBPath, sd)):
-                k = sd + '/' + x4f
-                dict.__setitem__(self, k, open(os.path.join(
-                    fullDBPath, sd, x4f), 'rb').readlines())
+                k = sd + "/" + x4f
+                dict.__setitem__(
+                    self, k, open(os.path.join(fullDBPath, sd, x4f), "rb").readlines()
+                )
         self.__initialized = True
 
     def __getitem__(self, key):
@@ -246,7 +305,20 @@ database_dict = DataBaseCache()
 
 
 __all__ = [
-    '__init__', 'exfor_dataset', 'exfor_exceptions', 'exfor_manager', 'exfor_reference',
-    'exfor_utilities', 'endl_Z', 'exfor_dicts', 'exfor_field', 'exfor_particle', 'exfor_section',
-    'exfor_column_parsing', 'exfor_entry', 'exfor_grammers', 'exfor_reactions', 'exfor_subentry'
+    "__init__",
+    "exfor_dataset",
+    "exfor_exceptions",
+    "exfor_manager",
+    "exfor_reference",
+    "exfor_utilities",
+    "endl_Z",
+    "exfor_dicts",
+    "exfor_field",
+    "exfor_particle",
+    "exfor_section",
+    "exfor_column_parsing",
+    "exfor_entry",
+    "exfor_grammers",
+    "exfor_reactions",
+    "exfor_subentry",
 ]

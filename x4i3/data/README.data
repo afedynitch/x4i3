@@ -6,3 +6,5 @@ The first access to the database files by X4i3 initiates the download and decomp
 The binaries are available for manual download from the releases page in https://github.com/afedynitch/x4i3/releases
 More support tools to recreate/update these files are located in the repository https://github.com/afedynitch/x4i3_tools
 
+DO NOT EDIT THESE FILES MANUALLY. Instead use the `X43I_DATAPATH` variable to point to a different database created through the machinery in x4i3 tools.
+"""
