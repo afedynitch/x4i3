@@ -52,7 +52,7 @@ import pathlib
 
 MAJOR_VERSION = 1
 MINOR_VERSION = 2
-PATCH = 4
+PATCH = 5
 
 __package_name__ = "x4i3 -- The Exfor Interface"
 __version__ = ".".join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
