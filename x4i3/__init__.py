@@ -52,7 +52,7 @@ import pathlib
 
 MAJOR_VERSION = 1
 MINOR_VERSION = 2
-PATCH = 4
+PATCH = 5
 
 __package_name__ = "x4i3 -- The Exfor Interface"
 __version__ = ".".join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
@@ -83,7 +83,7 @@ reactionCountFileName = "reaction-count.pickle"
 dbPath = "db"
 
 # URL to the compressed database files on github
-url = "https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2023-04-29.tar.gz"
+url = "https://github.com/avoyles/x4i3/releases/download/v1.2.5/x4i3_X4-2023-10-27.tar.gz"
 # url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz'
 
 if "X43I_DATAPATH" in os.environ:
