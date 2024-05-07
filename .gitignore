@@ -1,10 +1,6 @@
 # x4i3 specific
 .vscode
-x4i3/data/*.pickle
-x4i3/data/*.tbl
-x4i3/data/db
-data/x4doi.txt
-x4i3/data/X4*
+x4i3/data/x4i3_X4*
 x4i3/data/EXFOR*
 x4i3/test
 *.csv
@@ -53,3 +49,4 @@ env.bak/
 venv.bak/
 
 
+x4i3/data/x4i3-2023-12-31/coupled-entries.pickle
