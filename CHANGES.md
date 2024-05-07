@@ -1,5 +1,9 @@
 # Changelog
 
+## x4i3 - 1.2.5 05/08/2024
+
+- Update to database version 2023/12/31.
+
 ## x4i3 - 1.2.4 05/11/2023
 
 - Fixed bug when X43I_DATAPATH is used to set the database location. In 1.2.3 the database entries would be overwritten by the default version.

@@ -52,7 +52,7 @@ import pathlib
 
 MAJOR_VERSION = 1
 MINOR_VERSION = 2
-PATCH = 4
+PATCH = 5
 
 __package_name__ = "x4i3 -- The Exfor Interface"
 __version__ = ".".join(map(str, [MAJOR_VERSION, MINOR_VERSION, PATCH]))
@@ -83,8 +83,9 @@ reactionCountFileName = "reaction-count.pickle"
 dbPath = "db"
 
 # URL to the compressed database files on github
-url = "https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2023-04-29.tar.gz"
+url = "https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_X4-2023-12-31.tar.gz"
 # url='https://github.com/afedynitch/x4i3/releases/download/last_before_pep8_formatting/x4i3_EXFOR-2016-04-01.tar.gz'
+current_tag = pathlib.Path(pathlib.Path(url).stem).stem
 
 if "X43I_DATAPATH" in os.environ:
     DATAPATH = pathlib.Path(os.environ["X43I_DATAPATH"])
@@ -103,8 +104,8 @@ if "X43I_DATAPATH" in os.environ:
         dbTagFile = DATAPATH / tags[0]
 else:
     # Follow default path
-    DATAPATH = pathlib.Path(__path__[0], "data").absolute()
-    dbTagFile = DATAPATH / pathlib.Path(url).stem[:-4]
+    DATAPATH = pathlib.Path(__path__[0], "data").absolute() / current_tag
+    dbTagFile = DATAPATH / current_tag
 
 
 fullIndexFileName = DATAPATH / indexFileName
@@ -114,7 +115,7 @@ fullMonitoredFileName = DATAPATH / monitoredFileName
 fullReactionCountFileName = DATAPATH / reactionCountFileName
 fullDBPath = DATAPATH / dbPath
 
-print(f"Using database version {dbTagFile.stem} located in: {DATAPATH}")
+print(f"Using database version {current_tag} located in: {DATAPATH}")
 
 # Paths for unit testing only
 # Mock db for testing
@@ -136,21 +137,21 @@ def _download_and_unpack_file(url):
     import shutil
 
     # cleanup
-    for f in [
-        fullIndexFileName,
-        fullErrorFileName,
-        fullCoupledFileName,
-        fullMonitoredFileName,
-        fullReactionCountFileName,
-        fullDBPath,
-        dbTagFile,
-    ]:
-        try:
-            shutil.rmtree(f)
-        except NotADirectoryError:
-            os.remove(f)
-        except FileNotFoundError:
-            pass
+    # for f in [
+    #     fullIndexFileName,
+    #     fullErrorFileName,
+    #     fullCoupledFileName,
+    #     fullMonitoredFileName,
+    #     fullReactionCountFileName,
+    #     fullDBPath,
+    #     dbTagFile,
+    # ]:
+    #     try:
+    #         shutil.rmtree(f)
+    #     except NotADirectoryError:
+    #         os.remove(f)
+    #     except FileNotFoundError:
+    #         pass
     # Tag files:
     
     for tagfile in DATAPATH.glob("X4-*"):
@@ -196,7 +197,8 @@ def _download_and_unpack_file(url):
 
 def check_if_exists(path, return_bool=False):
     if return_bool:
-        if not os.path.exists(path):
+        if not pathlib.Path(path).exists():
+            print("File/Directory", path, "not found. Check installation.")
             return False
         else:
             return True
