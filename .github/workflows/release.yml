@@ -2,14 +2,14 @@ name: release
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - v*
-  pull_request:
-    branches:
-      - master
-    types:
-      - closed
+  # push:
+  #   tags:
+  #     - v*
+  # pull_request:
+  #   branches:
+  #     - master
+  #   types:
+  #     - closed
 
 
 jobs:
