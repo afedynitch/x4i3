@@ -43,77 +43,34 @@ jobs:
 
 
 
-  # wheels:
-  #   if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/v') }}
-  #   name: ${{ matrix.py }} ${{ matrix.os }} ${{ matrix.arch }}
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       os: [ubuntu-latest, windows-latest, macos-latest]
-  #       arch: [native, arm64]
-  #       py: [cp39, cp310, cp311, cp312]
-  #       exclude:
-  #           - os: ubuntu-latest
-  #             arch: arm64
-  #           - os: windows-latest
-  #             arch: arm64
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #       with:
-  #         submodules: true
+  wheels:
+    name: ${{ matrix.py }} ${{ matrix.os }} ${{ matrix.arch }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        arch: [native, arm64]
+        py: [cp39, cp310, cp311, cp312]
+        exclude:
+            - os: ubuntu-latest
+              arch: arm64
+            - os: windows-latest
+              arch: arm64
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
 
-  #     - if: ${{ matrix.os == 'windows-latest' }}
-  #       name: cibuildwheel on Windows
-  #       uses: pypa/cibuildwheel@v2.16.5
-  #       env:
-  #         CIBW_BUILD: ${{ matrix.py }}-*
-  #         CIBW_ARCHS: ${{ matrix.arch }}
-  #         CMAKE_GENERATOR: "MinGW Makefiles"
-  #         FC: ${{ steps.setup-fortran.outputs.fc }}
+      - name: cibuildwheel
+        uses: pypa/cibuildwheel@v2.16.5
+        env:
+          CIBW_BUILD: ${{ matrix.py }}-*
+          CIBW_ARCHS: ${{ matrix.arch }}
 
-  #     - if: ${{ matrix.os == 'ubuntu-latest' }}
-  #       name: cibuildwheel on Linux
-  #       uses: pypa/cibuildwheel@v2.16.5
-  #       env:
-  #         CIBW_BUILD: ${{ matrix.py }}-*
-  #         CIBW_ARCHS: ${{ matrix.arch }}
-  #         CIBW_ENVIRONMENT_PASS_LINUX: CI
-  #         CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
-
-  #     - if: ${{ matrix.os == 'macos-latest' &&  matrix.arch == 'native' }}
-  #       name: cibuildwheel on MacOS native
-  #       uses: pypa/cibuildwheel@v2.16.5
-  #       env:
-  #         CIBW_BUILD: ${{ matrix.py }}-*
-  #         CIBW_ARCHS: ${{ matrix.arch }}
-  #         no_proxy: '*'
-
-  #     - if: ${{ matrix.os == 'macos-latest' &&  matrix.arch == 'arm64' }}
-  #       name: cibuildwheel on MacOS arm64
-  #       id: cibw_step
-  #       uses: pypa/cibuildwheel@v2.16.5
-  #       env:
-  #         CIBW_BUILD: ${{ matrix.py }}-*
-  #         CIBW_ARCHS: ${{ matrix.arch }}
-  #         CIBW_ARCHS_MACOS: arm64
-  #         CIBW_BEFORE_BUILD: |
-  #           # Taken from https://github.com/numpy/numpy/tree/main/tools/wheels
-  #           set -xe
-  #           export PLAT="arm64"
-  #           chmod +x .github/workflows/gfortran_utils.sh
-  #           source .github/workflows/gfortran_utils.sh
-  #           install_arm64_cross_gfortran
-  #         # Although FC is set in the CIBW_BEFORE_BUILD script above,
-  #         # it is not found by pip and cmake. So here FC is set by hand!!!
-  #         # It can be a problem if gfortran will be installed in different place.
-  #         FC: "/opt/gfortran-darwin-arm64-cross/bin/arm64-apple-darwin20.0.0-gfortran"
-  #         MACOSX_DEPLOYMENT_TARGET: "11.0"
-  #         no_proxy: '*'
-
-  #     - uses: actions/upload-artifact@v3
-  #       with:
-  #         path: ./wheelhouse/*.whl
+      - uses: actions/upload-artifact@v3
+        with:
+          path: ./wheelhouse/*.whl
 
   sdist:
     name: source package
