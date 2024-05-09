@@ -5,11 +5,11 @@ on:
   # push:
   #   tags:
   #     - v*
-  # pull_request:
-  #   branches:
-  #     - master
-  #   types:
-  #     - closed
+  pull_request:
+    branches:
+      - master
+    # types:
+    #   - closed
 
 
 jobs:
