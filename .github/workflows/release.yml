@@ -62,12 +62,11 @@ jobs:
         with:
           submodules: true
 
-      - name: cibuildwheel
-        uses: pypa/cibuildwheel@v2.16.5
-        env:
-          CIBW_BUILD: ${{ matrix.py }}-*
-          CIBW_ARCHS: ${{ matrix.arch }}
-
+      - run: python -m pip install --upgrade pip wheel setuptools pytest
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip wheel -w ./wheelhouse
+      # - run: python -m pip install x4i3 --no-index -f ./wheelhouse/*.whl
+      # - run: python -m pytest --pyargs x4i3 --ignore=x4i3/data --junitxml=junit/test-results.xm     
       - uses: actions/upload-artifact@v3
         with:
           path: ./wheelhouse/*.whl
