@@ -1,6 +1,5 @@
 ![PyPI](https://img.shields.io/pypi/v/x4i3)
-[![Build Status](https://dev.azure.com/afedynitch/NuclearTools/_apis/build/status/afedynitch.x4i3?branchName=master)](https://dev.azure.com/afedynitch/NuclearTools/_build/latest?definitionId=4&branchName=master)
-![Azure DevOps releases](https://img.shields.io/azure-devops/release/afedynitch/66c7ff07-d4ed-41bb-b939-9ed4dd5d61f9/1/1)
+[![CI](https://github.com/afedynitch/x4i3/actions/workflows/release.yml/badge.svg)](https://github.com/afedynitch/x4i3/actions/workflows/release.yml)
 
 # x4i3 - The EXFOR Interface [for Python 3]
 
